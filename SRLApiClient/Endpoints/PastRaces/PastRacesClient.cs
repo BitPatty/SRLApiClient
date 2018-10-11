@@ -42,12 +42,16 @@ namespace SRLApiClient.Endpoints.PastRaces
     /// Fetches all past races from a player
     /// </summary>
     /// <param name="playerName">Name of the palyer</param>
+    /// <param name="gameAbbrevation">Filter response by game</param>
     /// <returns></returns>
-    public ReadOnlyCollection<PastRace> GetByPlayer(string playerName)
+    public ReadOnlyCollection<PastRace> GetByPlayer(string playerName, string gameAbbrevation = null)
     {
       if (String.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
 
-      SrlClient.Get(BasePath + "?player=" + playerName, out PlayerPastRaces ppr);
+      string path = BasePath + "?player=" + playerName;
+      if (!String.IsNullOrWhiteSpace(gameAbbrevation)) path += "&game=" + gameAbbrevation;
+
+      SrlClient.Get(path, out PlayerPastRaces ppr);
       if (ppr != null)
       {
         foreach (PastRace pr in ppr.Races)
