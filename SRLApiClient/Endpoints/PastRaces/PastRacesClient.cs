@@ -1,4 +1,9 @@
-﻿namespace SRLApiClient.Endpoints.PastRaces
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Runtime.Serialization;
+
+namespace SRLApiClient.Endpoints.PastRaces
 {
   public class PastRacesClient : SRLEndpoint
   {
@@ -11,6 +16,8 @@
     /// <returns></returns>
     public PastRace Get(string raceId)
     {
+      if (String.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
+
       SrlClient.Get(BasePath + "/" + raceId.ToLower(), out PastRace r);
       if (r != null)
       {
@@ -19,6 +26,40 @@
       }
 
       return r;
+    }
+
+    [DataContract]
+    private sealed class PlayerPastRaces : SRLDataType
+    {
+      [DataMember(Name = "count", IsRequired = true)]
+      public int Count { get; private set; }
+
+      [DataMember(Name = "races", IsRequired = true)]
+      public List<PastRace> Races { get; private set; }
+    }
+
+    /// <summary>
+    /// Fetches all past races from a player
+    /// </summary>
+    /// <param name="playerName">Name of the palyer</param>
+    /// <returns></returns>
+    public ReadOnlyCollection<PastRace> GetByPlayer(string playerName)
+    {
+      if (String.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
+
+      SrlClient.Get(BasePath + "?player=" + playerName, out PlayerPastRaces ppr);
+      if (ppr != null)
+      {
+        foreach (PastRace pr in ppr.Races)
+        {
+          SrlClient.Get("/rules/" + pr.Game.Abbrevation, out GameRules r);
+          pr.Game.Rules = r.Rules;
+        }
+
+        return ppr.Races.AsReadOnly();
+      }
+
+      return null;
     }
 
     /// <summary>
