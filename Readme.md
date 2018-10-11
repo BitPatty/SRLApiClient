@@ -1,4 +1,4 @@
-﻿## SRL API Client
+﻿# SRL API Client
 
 This repository contains a basic .Net client library for the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
 
@@ -12,20 +12,21 @@ Install-Package SRLApiClient
 
 ---
 
-### Requirements
+## Requirements
 
 .Net Core 2.0 or greater. Platform specific prequisites can be found here:
+
 - [Windows](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore21),
 - [Linux](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x),
 - [macOS](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)
 
 ---
 
-### Usage
+## Usage
 
-#### Initialization
+### Initialization
 
-##### `SRLClient`
+#### `SRLClient`
 
 To create a client you can simply use the following statement:
 
@@ -39,9 +40,21 @@ To use the Client with a custom host that uses the SRL flow you can pass the hos
 SRLClient Client = new SRLClient("example.com");
 ```
 
+##### Properties
+
+| Property     | Type                                        | Description                               |
+| ------------ | ------------------------------------------- | ----------------------------------------- |
+| Games        | `Endpoints.Games.GamesClient`               | Client for fetching games                 |
+| Players      | `Endpoints.Players.PlayersClient`           | Client for fetching player data           |
+| Leaderboards | `Endpoints.Leaderboards.LeaderboardsClient` | Client for fetching leaderboard data      |
+| Races        | `Endpoints.Races.RacesClient`               | Client for fetching races                 |
+| PastRaces    | `Endpoints.PastRaces.PastRacesClient`       | Client for fetching past races            |
+| Countries    | `Endpoints.Countries.CountriesClient`       | Client for fetching countries             |
+| Stats        | `Endpoints.Stats.StatsClient`               | Client for fetching game and player stats |
+
 ---
 
-#### Authentication
+### Authentication
 
 Certain requests require authentication. To authenticate the client you're gonna need valid SRL credentials.
 
@@ -51,23 +64,25 @@ Client.Authenticate("psychonauter", "password");
 
 `Authenticate()` returns a boolean value that tells you if the authentication was successful.
 
-
 ---
 
-#### Endpoints
+### Endpoints
 
-
-##### Countries
+#### Countries
 
 Use the following to get a list of available countries on SRL:
 
 ```
-ReadOnlyCollection countries = Client.Countries.Get();
+ReadOnlyCollection<string> countries = Client.Countries.Get();
 ```
+
+##### Properties
+
+_none_
 
 ---
 
-##### Games
+#### Games
 
 To fetch a game from SRL you need to know its abbrevation.
 
@@ -87,9 +102,20 @@ You can also search for games to find the correct abbrevation.
 ReadOnlyCollection<Game> searchResults = Client.Games.Search("super mario sunshine");
 ```
 
+##### Properties
+
+| Property       | Type     | Description                |
+| -------------- | -------- | -------------------------- |
+| Id             | `int`    | Game Id                    |
+| Name           | `string` | Full name of the game      |
+| Abbrevation    | `string` | The games abbrevation      |
+| Popularity     | `int`    | The games popularity level |
+| PopularityRank | `int`    | The games popularity rank  |
+| Rules          | `string` | The games rules (HTML)     |
+
 ---
 
-##### Leaderboards
+#### Leaderboards
 
 To fetch a leaderboard for a game from SRL you need to know the games abbrevation.
 
@@ -103,9 +129,27 @@ or
 Leaderboard board = Client.Leaderbaords["sms"];
 ```
 
+##### Properties (Leaderboard)
+
+| Property      | Type                         | Description               |
+| ------------- | ---------------------------- | ------------------------- |
+| Game          | `Endpoints.Games.Game`       | The associated game       |
+| LeadersCount  | `int`                        | Count of ranked players   |
+| Leaders       | `ReadOnlyCollection<Leader>` | List of ranked leaders    |
+| UnrankedCount | `int`                        | Count of unranked players |
+| Unranked      | `ReadOnlyCollection<Leader>` | List of unranked leaders  |
+
+##### Properties (Leader)
+
+| Property  | Type     | Description      |
+| --------- | -------- | ---------------- |
+| Name      | `string` | Player Name      |
+| TrueSkill | `int`    | Trueskill value  |
+| Rank      | `int`    | Leaderboard Rank |
+
 ---
 
-##### Races
+#### Races
 
 Use the following to get a list of active races:
 
@@ -131,15 +175,83 @@ Creating a race requires **authentication**. Also, you either have to be racebot
 Race newRace = Client.Races.Create("sms");
 ```
 
+##### Properties (Race)
+
+| Property    | Type                          | Description                                       |
+| ----------- | ----------------------------- | ------------------------------------------------- |
+| Id          | `string`                      | Race Id                                           |
+| Game        | `Endpoints.Games.Game`        | The associated game                               |
+| Goal        | `string`                      | Race Goal                                         |
+| Time        | `int`                         | Total race time (after the last entrant finishes) |
+| State       | `Endpoints.RaceState`         | Current state of the race                         |
+| StateText   | `string`                      | Readable version of the current state             |
+| FileName    | `string`                      | Filename used (if set via racebot)                |
+| NumEntrants | `int`                         | Count of entrants                                 |
+| Entrants    | `ReadOnlyCollection<Entrant>` | List of entrants                                  |
+
+##### Properties (Entrant)
+
+| Property  | Type                   | Description                           |
+| --------- | ---------------------- | ------------------------------------- |
+| Name      | `string`               | Player Name                           |
+| Place     | `int`                  | Place (>0 if finished)                |
+| Time      | `string`               | Final Time (>0 if finished)           |
+| State     | `Endpoints.RacerState` | Current state of the entrant          |
+| StateText | `string`               | Readable version of the current state |
+| Twitch    | `string`               | Twitch channel                        |
+| TrueSkill | `int`                  | Current TrueSkill value               |
+
 ---
 
-##### PastRaces
+#### PastRaces
 
-PastRaces work the same as Races, except that you can't create new ones.
+To get a specific race you can use the following:
+
+```c#
+PastRace pastRace = Client.PastRaces.Get("raceid");
+```
+
+You can filter past races by player and game:
+
+```c#
+// Get my past races
+ReadOnlyCollection<PastRace> pastRaces =  GetByPlayer("psychonauter");
+
+// Get my past races in ffx
+ReadOnlyCollection<PastRace> pastRaces = GetByPlayer("psychonauter", "ffx");
+```
+
+##### Properties (Race)
+
+| Property      | Type                         | Description                             |
+| ------------- | ---------------------------- | --------------------------------------- |
+| Id            | `string`                     | Race Id                                 |
+| Game          | `Endpoints.Games.Game`       | The associated game                     |
+| Goal          | `string`                     | Race Goal                               |
+| Date          | `int`                        | Timestamp of when the race was recorded |
+| NumEntrants   | `int`                        | Count of entrants                       |
+| Results       | `ReadOnlyCollection<Result>` | List of individual results              |
+| RankedResults | `ReadOnlyCollection<Result>` | List of individual ranked results       |
+
+##### Properties (Result)
+
+| Property           | Type     | Description                                        |
+| ------------------ | -------- | -------------------------------------------------- |
+| Race               | `int`    | Race Id                                            |
+| Place              | `int`    | Players place                                      |
+| PlayerName         | `string` | Players Name                                       |
+| Time               | `int`    | Players Final Time                                 |
+| Comment            | `string` | Players Comment                                    |
+| OldTrueSkill       | `int`    | TrueSkill value before the race was recorded       |
+| NewTrueSkill       | `int`    | TrueSkill value after the race was recorded        |
+| TrueSkillChange    | `int`    | TrueSkill difference                               |
+| OldSeasonTrueSkill | `int`    | Season TrueSkill before the race was recorded      |
+| NewTrueSkill       | `int`    | Season TrueSkill value after the race was recorded |
+| TrueSkillChange    | `int`    | Season TrueSkill difference                        |
 
 ---
 
-##### Players
+#### Players
 
 To get a player you need to know their username.
 
@@ -171,5 +283,16 @@ or
 Client.Players.Edit("psychonauter", twitter: "psychonauter");
 ```
 
----
+##### Properties
 
+| Property  | Type                 | Description                      |
+| --------- | -------------------- | -------------------------------- |
+| Id        | `int`                | Player Id                        |
+| Name      | `string`             | Player name                      |
+| Channel   | `string`             | Channel name (Twitch / Hitbox)   |
+| Twitter   | `string`             | Twitter channel                  |
+| Youtube   | `string`             | Youtube channel                  |
+| StreamApi | `Entrants.StreamApi` | Api used for fetching the stream |
+| Country   | `string`             | Player Country                   |
+
+---
