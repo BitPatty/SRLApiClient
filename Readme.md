@@ -126,7 +126,7 @@ Leaderboard board = Client.Leaderboards.Get("sms");
 or
 
 ```c#
-Leaderboard board = Client.Leaderbaords["sms"];
+Leaderboard board = Client.Leaderboards["sms"];
 ```
 
 ##### Properties (Leaderboard)
@@ -215,13 +215,13 @@ You can filter past races by player and game:
 
 ```c#
 // Get my past races
-ReadOnlyCollection<PastRace> pastRaces =  GetByPlayer("psychonauter");
+ReadOnlyCollection<PastRace> pastRaces =  Client.Races.GetByPlayer("psychonauter");
 
 // Get my past races in ffx
-ReadOnlyCollection<PastRace> pastRaces = GetByPlayer("psychonauter", "ffx");
+ReadOnlyCollection<PastRace> pastRaces = Client.Races.GetByPlayer("psychonauter", "ffx");
 ```
 
-##### Properties (Race)
+##### Properties (PastRace)
 
 | Property      | Type                         | Description                             |
 | ------------- | ---------------------------- | --------------------------------------- |
