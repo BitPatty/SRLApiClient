@@ -26,18 +26,18 @@ Install-Package SRLApiClient
 
 ### Index
 
-- [SRLClient](#`SRLClient`)
-- [Authentication](#Authentication)
-- [Endpoints:](#Endpoints)
-  - [Countries](#Countries)
-  - [Games](#Games)
-  - [Leaderboards](#Leaderboards)
-  - [Races](#Races)
-  - [PastRaces](#PastRaces)
+- [SRLClient](#srlclient)
+- [Authentication](#authentication)
+- [Endpoints:](#endpoints)
+  - [Countries](#countries)
+  - [Games](#games)
+  - [Leaderboards](#leaderboards)
+  - [Races](#races)
+  - [PastRaces](#pastraces)
   - [Players](#Players)
-- [Extensions](#Extensions)
-  - [Leaderboard Extensions](#Leaderboard%20Extensions)
-  - [Race Extensions](#Race%20Extensions)
+- [Extensions](#extensions)
+  - [Leaderboard Extensions](#leaderboard-extensions)
+  - [Race Extensions](#race-extensions)
 
 ### Initialization
 
