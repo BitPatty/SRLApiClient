@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <AssemblyVersion>0.2.1.0</AssemblyVersion>
+    <FileVersion>0.2.1.0</FileVersion>
+    <Version>0.2.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>BitPatty &lt;psy@zint.ch&gt;</Authors>
+    <Description>.NET Core API Wrapper for the SpeedRunsLive API</Description>
+    <RepositoryUrl>https://github.com/BitPatty/SRLApiClient</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/BitPatty/SRLApiClient</PackageProjectUrl>
+    <PackageLicenseUrl>https://www.gnu.org/licenses/agpl-3.0.en.html</PackageLicenseUrl>
+    <PackageReleaseNotes>.NET Core API Wrapper for the SpeedRunsLive API</PackageReleaseNotes>
+    <PackageTags>speedrunslive</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>System</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
