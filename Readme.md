@@ -1,6 +1,16 @@
 ﻿## SRL API Client
 
-This repository contains a basic .Net client library for the [SpeedRunsLive](http://speedrunslive.com) API.
+This repository contains a basic .Net client library for the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
+
+```bash
+#.Net
+dotnet add package SRLApiClient
+
+#Package Manager
+Install-Package SRLApiClient
+```
+
+---
 
 ### Requirements
 
@@ -9,16 +19,9 @@ This repository contains a basic .Net client library for the [SpeedRunsLive](htt
 - [Linux](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x),
 - [macOS](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)
 
+---
 
 ### Usage
-
-#### General Information
-
-- The SRL Client supports authentication for profile edits etc. However, due to limitations of the API, this is pretty much the only thing you can do (unless you have 'voice' permission), since Racebot manages all the other stuff over IRC.
-- Not all endpoints are supported, since most of them aren't really useful to anyone but the site itself.
-- Communication between the client and SRL is generally not encrypted, since SRL doesn't provide any valid certificates. In the future the client might just accept the invalid certificates.
-- It's worth noting that the SRL Client generally returns back all values as read only (collections).
-
 
 #### Initialization
 
@@ -169,3 +172,4 @@ Client.Players.Edit("psychonauter", twitter: "psychonauter");
 ```
 
 ---
+

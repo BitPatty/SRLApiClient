@@ -1,4 +1,22 @@
-﻿using System;
+﻿/*
+ * SRLApiClient - A .NET client library for the SpeedRunsLive API
+ * Copyright (c) 2018 Matt Collet
+ * 
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ * 
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -259,7 +277,7 @@ namespace SRLApiClient
     /// <summary>
     /// Reauthenticate with the stored credentials
     /// </summary>
-    /// <returns>Returns true if the authentification was successful</returns>
+    /// <returns>Returns true if the authentication was successful</returns>
     public bool ReAuthenticate() => Authenticate(_userName, _userPassword, true);
 
     /// <summary>
@@ -268,7 +286,7 @@ namespace SRLApiClient
     /// <param name="username">SRL Username</param>
     /// <param name="password">SRL Password</param>
     /// <param name="storeCredentials">If True the password is stored in the client</param>
-    /// <returns>Returns true if the authentification was successful</returns>
+    /// <returns>Returns true if the authentication was successful</returns>
     public bool Authenticate(string username, string password, bool storeCredentials = false)
     {
       if (String.IsNullOrWhiteSpace(username)) throw new ArgumentNullException(nameof(username), "Parameter can't be empty");
