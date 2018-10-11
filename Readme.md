@@ -24,9 +24,28 @@ Install-Package SRLApiClient
 
 ## Usage
 
+### Index
+
+- [SRLClient](#`SRLClient`)
+- [Authentication](#Authentication)
+- [Endpoints:](#Endpoints)
+  - [Countries](#Countries)
+  - [Games](#Games)
+  - [Leaderboards](#Leaderboards)
+  - [Races](#Races)
+  - [PastRaces](#PastRaces)
+  - [Players](#Players)
+- [Extensions](#Extensions)
+  - [Leaderboard Extensions](#Leaderboard%20Extensions)
+  - [Race Extensions](#Race%20Extensions)
+
 ### Initialization
 
 #### `SRLClient`
+
+```c#
+using SRLApiClient;
+```
 
 To create a client you can simply use the following statement:
 
@@ -156,6 +175,10 @@ Use the following to get a list of active races:
 ```c#
 ReadOnlyCollection<Race> activeRaces = Client.Races.GetActive();
 ```
+
+_Note:_ `GetActive()` generally returns all races whose state is lower than `RaceState.Over`. However, the API sometimes already removes races from the endpoint as soon as they reach `RaceState.Finished`. So if you're actively tracking the races make sure you fetch the single race if it no longer shows up in the results.
+
+_Note 2:_ The race id from `Races` doesn't match the `PastRaces` id. When the game is recorded it receives a new id and gets dropped from `Races`.
 
 To fetch a specific Race you need to know the race id:
 
@@ -296,3 +319,69 @@ Client.Players.Edit("psychonauter", twitter: "psychonauter");
 | Country   | `string`             | Player Country                   |
 
 ---
+
+### Extensions
+
+The library currently contains a few extension methods to make it easier to filter API responses. You can include them by importing `SRLApiClient.Exensions`.
+
+#### Leaderboard Extensions
+
+##### `ContainsPlayer(string playerName)`
+
+Checks if a leaderboard contains a player matching `playerName`
+
+```c#
+Leaderboard board = Client.Leaderboards.Get("sms");
+board.ContainsPlayer("psychonauter") //true
+```
+
+##### `FindPlayer(string playerName)`
+
+Checks if the player exists and then returns the Leader object of the player (or null if they're not on the leaderboard).
+
+```c#
+Leaderboard board = Client.Leaderboards.Get("sms");
+Leader leader = board.FindPlayer("psychonauter");
+```
+
+---
+
+#### Race Extensions
+
+Note: `T` can be any type that implements `IEnumerable<Race>`.
+
+##### `FilterByGame<T>(string gameAbbrevation)`
+
+Returns the subset of races matching the `gameAbbrevation`.
+
+```c#
+//Returns all active Super Mario Sunshine races
+ReadOnlyCollection<Race> races = Client.Races.GetActive().FilterByGame("sms");
+```
+
+##### `FilterByState<T>(RaceState state)`
+
+Returns the subset of races matching the `state`.
+
+```c#
+//Returns all active races that are in progress
+ReadOnlyCollection<Race> races = Client.Races.GetActive().FilterByState(RaceState.InProgress);
+```
+
+##### `FilterByEntrant<T>(string playerName)`
+
+Returns the subset of races the player with the name `playerName` is participating in.
+
+```c#
+//Returns all active races I'm participating in
+ReadOnlyCollection<Race> races = Client.Races.GetActive().FilterByEntrant("psychonauter");
+```
+
+##### `FilterById<T>(string raceId)
+
+Returns the race matching the provided `raceId` or `null` if the race isn't in the collection.
+
+```c#
+//Returns the active race matching raceId if it exists
+Race race = Client.Races.GetActive().FilterById("someId");
+```
