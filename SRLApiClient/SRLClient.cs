@@ -82,6 +82,11 @@ namespace SRLApiClient
     /// </summary>
     public Endpoints.Countries.CountriesClient Countries { get; private set; }
 
+    /// <summary>
+    /// /stat endpoint
+    /// </summary>
+    public Endpoints.Stats.StatsClient Stats { get; private set; }
+
     private TimeSpan _requestTimeout = TimeSpan.FromMilliseconds(10000);
 
     /// <summary>
@@ -128,6 +133,7 @@ namespace SRLApiClient
       Races = new Endpoints.Races.RacesClient(this);
       PastRaces = new Endpoints.PastRaces.PastRacesClient(this);
       Countries = new Endpoints.Countries.CountriesClient(this);
+      Stats = new Endpoints.Stats.StatsClient(this);
     }
 
     /// <summary>
