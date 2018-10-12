@@ -1,17 +1,17 @@
 ﻿/*
  * SRLApiClient - A .NET client library for the SpeedRunsLive API
  * Copyright (c) 2018 Matt Collet
- * 
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
  * published by the Free Software Foundation, either version 3 of the
  * License, or (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Affero General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU Affero General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
@@ -32,8 +32,14 @@ using SRLApiClient.Endpoints;
 
 namespace SRLApiClient
 {
+  /// <summary>
+  /// A client for interacting with the SpeedRunsLive API
+  /// </summary>
   public sealed partial class SRLClient : IDisposable
   {
+    /// <summary>
+    /// The host used for requests
+    /// </summary>
     public string Host { get; private set; }
     private string _baseDomain => "." + Host;
     private string _apiUrl => "http://api." + Host;
@@ -41,7 +47,7 @@ namespace SRLApiClient
     private string _baseUrl => "http://" + Host;
 
     /// <summary>
-    /// User account associated with the client if authenticated.
+    /// The user account associated with the client (if authenticated)
     /// </summary>
     public SRLUser User { get; private set; }
     private string _userName { get; set; }
@@ -53,44 +59,44 @@ namespace SRLApiClient
     public bool IsAuthenticated { get; private set; }
 
     /// <summary>
-    /// /games endpoint
+    /// Client to perform request on the /games endpoint
     /// </summary>
     public Endpoints.Games.GamesClient Games { get; private set; }
 
     /// <summary>
-    /// /players endpoint
+    /// Client to perform request on the /players endpoint
     /// </summary>
     public Endpoints.Players.PlayersClient Players { get; private set; }
 
     /// <summary>
-    /// /leaderboards endpoint
+    /// Client to perform request on the /leaderboards endpoint
     /// </summary>
     public Endpoints.Leaderboards.LeaderboardsClient Leaderboards { get; private set; }
 
     /// <summary>
-    /// /races endpoint
+    /// Client to perform request on the /races endpoint
     /// </summary>
     public Endpoints.Races.RacesClient Races { get; private set; }
 
     /// <summary>
-    /// /pastraces endpoint
+    /// Client to perform request on the /pastraces endpoint
     /// </summary>
     public Endpoints.PastRaces.PastRacesClient PastRaces { get; private set; }
 
     /// <summary>
-    /// /country endpoint
+    /// Client to perform request on the /country endpoint
     /// </summary>
     public Endpoints.Countries.CountriesClient Countries { get; private set; }
 
     /// <summary>
-    /// /stat endpoint
+    /// Client to perform request on the /stat endpoint
     /// </summary>
     public Endpoints.Stats.StatsClient Stats { get; private set; }
 
     private TimeSpan _requestTimeout = TimeSpan.FromMilliseconds(10000);
 
     /// <summary>
-    /// Timeout for Http Requests
+    /// The timeout for Http Requests
     /// </summary>
     public TimeSpan RequestTimeout
     {
@@ -104,9 +110,9 @@ namespace SRLApiClient
     private readonly SemaphoreSlim _slim = new SemaphoreSlim(1, 1);
 
     /// <summary>
-    /// Create a new SRL Client
+    /// Creates a new SRL Client
     /// </summary>
-    /// <param name="host">Custom host</param>
+    /// <param name="host">The custom host</param>
     public SRLClient(string host = "speedrunslive.com")
     {
       if (String.IsNullOrWhiteSpace(host)) throw new ArgumentException(nameof(host), "Parameter cannot be empty");
@@ -137,12 +143,12 @@ namespace SRLApiClient
     }
 
     /// <summary>
-    /// Perform a GET request on an endpoint
+    /// Performs a GET request on an endpoint
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    /// <param name="endpoint">Endpoint to perform the request on</param>
-    /// <param name="res">Deserialized response</param>
-    /// <returns>Returns true if the request and deserialization are successful</returns>
+    /// <param name="endpoint">The endpoint to perform the request on</param>
+    /// <param name="res">The object to hold the deserialized response</param>
+    /// <returns>Returns true if the request and deserialization were successful</returns>
     public bool Get<T>(string endpoint, out T res) where T : SRLDataType
     {
       string ep = endpoint.StartsWith('/') ? endpoint : '/' + endpoint;
@@ -151,37 +157,37 @@ namespace SRLApiClient
     }
 
     /// <summary>
-    /// Perform a PUT request on an endpoint
+    /// Performs a PUT request on an endpoint
     /// </summary>
-    /// <param name="endpoint">Endpoint to perform the request on</param>
-    /// <param name="data">PUT data</param>
+    /// <param name="endpoint">The endpoint to perform the request on</param>
+    /// <param name="data">The data to PUT</param>
     /// <returns>Returns true if the PUT request was successful</returns>
     public bool Put(string endpoint, Dictionary<string, string> data) => SubmitJson(endpoint, data, HttpMethod.Put, out _);
 
     /// <summary>
-    /// Perform a PUT request on an endpoint
+    /// Performs a PUT request on an endpoint
     /// </summary>
-    /// <param name="endpoint">Endpoint to perform the request on</param>
-    /// <param name="data">PUT data</param>
-    /// <param name="response">The HTTP response received from the endpoint</param>
+    /// <param name="endpoint">The endpoint to perform the request on</param>
+    /// <param name="data">The data to PUT</param>
+    /// <param name="response">The object to hold the HTTP response received from the endpoint</param>
     /// <returns>Returns true if the PUT request was successful</returns>
     public bool Put(string endpoint, Dictionary<string, string> data, out HttpResponseMessage response) => SubmitJson(endpoint, data, HttpMethod.Put, out response);
 
     /// <summary>
-    /// Perform a POST request on an endpoint
+    /// Performs a POST request on an endpoint
     /// </summary>
-    /// <param name="endpoint">Endpoint to perform the request on</param>
-    /// <param name="data">PUT data</param>
-    /// <returns>Returns true if the PUT request was successful</returns>
+    /// <param name="endpoint">The endpoint to perform the request on</param>
+    /// <param name="data">The data to PUT</param>
+    /// <returns>Returns true if the POST request was successful</returns>
     public bool Post(string endpoint, Dictionary<string, string> data) => SubmitJson(endpoint, data, HttpMethod.Post, out _);
 
     /// <summary>
-    /// Perform a POST request on an endpoint
+    /// Performs a POST request on an endpoint
     /// </summary>
-    /// <param name="endpoint">Endpoint to perform the request on</param>
-    /// <param name="data">PUT data</param>
-    /// <param name="response">The HTTP response received from the endpoint</param>
-    /// <returns>Returns true if the PUT request was successful</returns>
+    /// <param name="endpoint">The endpoint to perform the request on</param>
+    /// <param name="data">The data to PUT</param>
+    /// <param name="response">The object to hold the HTTP response received from the endpoint</param>
+    /// <returns>Returns true if the POST request was successful</returns>
     public bool Post(string endpoint, Dictionary<string, string> data, out HttpResponseMessage response) => SubmitJson(endpoint, data, HttpMethod.Post, out response);
 
     private bool SubmitJson(string endpoint, Dictionary<string, string> data, HttpMethod method, out HttpResponseMessage response)
@@ -190,8 +196,7 @@ namespace SRLApiClient
       string s = Serialize(data);
       _slim.Wait();
 
-      HttpRequestMessage req = new HttpRequestMessage(method, _apiUrl + ep);
-      req.Content = new StringContent(s);
+      HttpRequestMessage req = new HttpRequestMessage(method, _apiUrl + ep) { Content = new StringContent(s) };
       req.Headers.Accept.Clear();
       req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
@@ -216,10 +221,10 @@ namespace SRLApiClient
     /// <summary>
     /// Deserializes a JSON stream
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <param name="s">The stream</param>
-    /// <param name="res">The deserialized object</param>
-    /// <returns>Returns true if the deserialization was successful</returns>
+    /// <typeparam name="T">An object of type <see cref="SRLDataType"/></typeparam>
+    /// <param name="s">The stream to deserialize</param>
+    /// <param name="res">The object to hold the deserialized stream</param>
+    /// <returns>Returns true if the deserialization were successful</returns>
     public bool DeSerialize<T>(Stream s, out T res) where T : SRLDataType
     {
       DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(T), new DataContractJsonSerializerSettings { UseSimpleDictionaryFormat = true });
@@ -266,7 +271,7 @@ namespace SRLApiClient
     }
 
     /// <summary>
-    /// Delete user information associated with the client
+    /// Deletes the user information associated with the client
     /// </summary>
     public void Logout()
     {
@@ -281,17 +286,17 @@ namespace SRLApiClient
     }
 
     /// <summary>
-    /// Reauthenticate with the stored credentials
+    /// Reauthenticate the client with the stored credentials
     /// </summary>
     /// <returns>Returns true if the authentication was successful</returns>
-    public bool ReAuthenticate() => Authenticate(_userName, _userPassword, true);
+    public bool ReAuthenticate() => !String.IsNullOrWhiteSpace(_userName) && !string.IsNullOrWhiteSpace(_userPassword) && Authenticate(_userName, _userPassword, true);
 
     /// <summary>
     /// Asssociate the client with a user account
     /// </summary>
-    /// <param name="username">SRL Username</param>
-    /// <param name="password">SRL Password</param>
-    /// <param name="storeCredentials">If True the password is stored in the client</param>
+    /// <param name="username">The SRL username</param>
+    /// <param name="password">The SRL password</param>
+    /// <param name="storeCredentials">If true the password is stored in the client for <see cref="ReAuthenticate()"/></param>
     /// <returns>Returns true if the authentication was successful</returns>
     public bool Authenticate(string username, string password, bool storeCredentials = false)
     {
@@ -315,8 +320,7 @@ namespace SRLApiClient
         new KeyValuePair<string, string>("password", password)
       };
 
-      HttpRequestMessage req = new HttpRequestMessage(HttpMethod.Post, _authUrl);
-      req.Content = new FormUrlEncodedContent(x_form);
+      HttpRequestMessage req = new HttpRequestMessage(HttpMethod.Post, _authUrl) { Content = new FormUrlEncodedContent(x_form) };
       req.Headers.Accept.Clear();
       req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
 
@@ -371,11 +375,15 @@ namespace SRLApiClient
       return User?.Verify() ?? false;
     }
 
+    /// <summary>
+    /// Releases the unmanaged resources and disposes of the managed resources
+    /// used by the <see cref="SRLClient"/>
+    /// </summary>
     public void Dispose()
     {
-      _client.Dispose();
-      _clientHandler.Dispose();
-      _slim.Dispose();
+      _client?.Dispose();
+      _clientHandler?.Dispose();
+      _slim?.Dispose();
     }
   }
 }

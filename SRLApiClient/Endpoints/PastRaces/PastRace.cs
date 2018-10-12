@@ -4,11 +4,14 @@ using System.Runtime.Serialization;
 
 namespace SRLApiClient.Endpoints.PastRaces
 {
+  /// <summary>
+  /// PastRace object
+  /// </summary>
   [DataContract, KnownType(typeof(SRLDataType))]
   public class PastRace : SRLDataType
   {
     /// <summary>
-    /// The race id
+    /// The races id
     /// </summary>
     [DataMember(Name = "id", IsRequired = true)]
     public string Id { get; protected set; }
@@ -20,34 +23,33 @@ namespace SRLApiClient.Endpoints.PastRaces
     public Game Game { get; protected set; }
 
     /// <summary>
-    /// The race goal
+    /// The races goal
     /// </summary>
     [DataMember(Name = "goal", IsRequired = true)]
     public string Goal { get; protected set; }
 
     /// <summary>
-    /// Date when the race was recorded
+    /// The date when the race was recorded
     /// </summary>
     [DataMember(Name = "date", IsRequired = true)]
     public string Date { get; protected set; }
 
     /// <summary>
-    /// Number of entrants in the race
+    /// The count of entrants in the race
     /// </summary>
     [DataMember(Name = "numentrants", IsRequired = true)]
     public int NumEntrants { get; protected set; }
 
     /// <summary>
-    /// List of individual racer results
+    /// The list of individual racer results
     /// </summary>
     [DataMember(Name = "results", IsRequired = true)]
     public List<Result> Results { get; protected set; }
 
     /// <summary>
-    /// List of individual ranked racer results
+    /// The list of individual ranked racer results
     /// </summary>
     [DataMember(Name = "ranked_results", IsRequired = true)]
     public List<Result> RankedResults { get; protected set; }
-
   }
 }

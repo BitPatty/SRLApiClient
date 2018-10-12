@@ -2,29 +2,32 @@
 
 namespace SRLApiClient.Endpoints.Games
 {
+  /// <summary>
+  /// Game object
+  /// </summary>
   [DataContract, KnownType(typeof(SRLDataType))]
   public class Game : SRLDataType
   {
     /// <summary>
-    /// The game ID
+    /// The games id
     /// </summary>
     [DataMember(Name = "id", IsRequired = true)]
     public int Id { get; protected set; }
 
     /// <summary>
-    /// Full Name of the game
+    /// Full name of the game
     /// </summary>
     [DataMember(Name = "name", IsRequired = true)]
     public string Name { get; protected set; }
 
     /// <summary>
-    /// SRL Abbrevation of the game, used globabally for indexing
+    /// SRL abbrevation of the game, used globally for indexing
     /// </summary>
     [DataMember(Name = "abbrev", IsRequired = true)]
     public string Abbrevation { get; protected set; }
 
     /// <summary>
-    /// The games popularity
+    /// The games popularity level
     /// </summary>
     [DataMember(Name = "popularity", IsRequired = true)]
     public int Popularity { get; protected set; }
@@ -36,7 +39,7 @@ namespace SRLApiClient.Endpoints.Games
     public int PopularityRank { get; protected set; }
 
     /// <summary>
-    /// The game specific rules
+    /// The games rules
     /// </summary>
     public string Rules { get; internal set; }
   }

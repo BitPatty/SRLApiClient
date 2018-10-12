@@ -2,6 +2,9 @@
 
 namespace SRLApiClient.Endpoints.Players
 {
+  /// <summary>
+  /// Player object
+  /// </summary>
   [DataContract, KnownType(typeof(SRLDataType))]
   public class Player : SRLDataType
   {
@@ -35,17 +38,20 @@ namespace SRLApiClient.Endpoints.Players
     [DataMember(Name = "youtube", IsRequired = false)]
     public string Youtube { get; protected set; }
 
+    /// <summary>
+    /// The streaming API used by srl
+    /// </summary>
     [DataMember(Name = "api", IsRequired = false)]
-    protected string api { get; set; }
+    protected string _api { get; set; }
 
     /// <summary>
-    /// The API used by srl to check for the players stream 
+    /// The streaming API used by srl
     /// </summary>
     public StreamApi StreamApi
     {
       get
       {
-        switch (api)
+        switch (_api)
         {
           case "twitch": return StreamApi.Twitch;
           case "hitbox": return StreamApi.Hitbox;

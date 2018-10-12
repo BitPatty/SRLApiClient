@@ -4,6 +4,9 @@ using SRLApiClient.Endpoints.Leaderboards;
 
 namespace SRLApiClient.Extensions
 {
+  /// <summary>
+  /// Extensions for the <see cref="Leaderboard"/> type
+  /// </summary>
   public static class LeaderboardExtensions
   {
     /// <summary>

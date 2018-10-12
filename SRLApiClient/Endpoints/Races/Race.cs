@@ -5,11 +5,14 @@ using System.Runtime.Serialization;
 
 namespace SRLApiClient.Endpoints.Races
 {
+  /// <summary>
+  /// Race object
+  /// </summary>
   [DataContract, KnownType(typeof(SRLDataType))]
   public class Race : SRLDataType
   {
     /// <summary>
-    /// The race id
+    /// The races id
     /// </summary>
     [DataMember(Name = "id", IsRequired = true)]
     public string Id { get; protected set; }
@@ -27,7 +30,7 @@ namespace SRLApiClient.Endpoints.Races
     public string Goal { get; protected set; }
 
     /// <summary>
-    /// The final time of the race
+    /// The races final time
     /// </summary>
     [DataMember(Name = "time", IsRequired = true)]
     public int Time { get; protected set; }
@@ -39,7 +42,7 @@ namespace SRLApiClient.Endpoints.Races
     {
       get
       {
-        switch (state)
+        switch (_state)
         {
           case 1: return RaceState.EntryOpen;
           case 2: return RaceState.EntryClosed;
@@ -51,8 +54,11 @@ namespace SRLApiClient.Endpoints.Races
       }
     }
 
+    /// <summary>
+    /// The races current state
+    /// </summary>
     [DataMember(Name = "state", IsRequired = true)]
-    protected int state { get; set; }
+    protected int _state { get; set; }
 
     /// <summary>
     /// The races current state text
@@ -67,16 +73,20 @@ namespace SRLApiClient.Endpoints.Races
     public string FileName { get; protected set; }
 
     /// <summary>
-    /// The number of entrants
+    /// The count of entrants
     /// </summary>
     [DataMember(Name = "numentrants", IsRequired = true)]
     public int NumEntrants { get; protected set; }
 
     /// <summary>
-    /// List of race entrants
+    /// The list of race entrants
     /// </summary>
     [DataMember(Name = "entrants", IsRequired = true)]
-    protected List<Entrant> entrants { get; set; }
-    public ReadOnlyCollection<Entrant> Entrants => entrants.AsReadOnly();
+    protected List<Entrant> _entrants { get; set; }
+
+    /// <summary>
+    /// The list of race entrants
+    /// </summary>
+    public ReadOnlyCollection<Entrant> Entrants => _entrants.AsReadOnly();
   }
 }

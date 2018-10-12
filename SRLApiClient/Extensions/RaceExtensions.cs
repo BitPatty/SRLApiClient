@@ -6,6 +6,9 @@ using SRLApiClient.Endpoints.Races;
 
 namespace SRLApiClient.Extensions
 {
+  /// <summary>
+  /// Extensions for the <see cref="Race"/> type
+  /// </summary>
   public static class RaceExtensions
   {
     /// <summary>
@@ -13,7 +16,7 @@ namespace SRLApiClient.Extensions
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="races">The original collection to apply the filter on</param>
-    /// <param name="gameAbbrevation">The game abbrevation look for</param>
+    /// <param name="gameAbbrevation">The games abbrevation look for</param>
     /// <returns>Returns the races with the provided game abbreviation</returns>
     public static T FilterByGame<T>(this T races, string gameAbbrevation) where T : IEnumerable<Race>
       => (T)races.Where(r => r.Game.Abbrevation.Equals(gameAbbrevation, StringComparison.OrdinalIgnoreCase));
@@ -23,7 +26,7 @@ namespace SRLApiClient.Extensions
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="races">The original collection to apply the filter on</param>
-    /// <param name="state">The game abbrevation to look for</param>
+    /// <param name="state">The games abbrevation to look for</param>
     /// <returns>Returns the races with the provided race state</returns>
     public static T FilterByState<T>(this T races, RaceState state) where T : IEnumerable<Race>
       => (T)races.Where(r => r.State.Equals(state));
@@ -43,7 +46,7 @@ namespace SRLApiClient.Extensions
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <param name="races">The collection to apply the filter on</param>
-    /// <param name="raceId">The race id</param>
+    /// <param name="raceId">The races id</param>
     /// <returns>Returns the race or null if it wasn't found</returns>
     public static Race FilterById<T>(this T races, string raceId) where T : IEnumerable<Race>
       => races.FirstOrDefault(r => r.Id.Equals(raceId, StringComparison.OrdinalIgnoreCase));

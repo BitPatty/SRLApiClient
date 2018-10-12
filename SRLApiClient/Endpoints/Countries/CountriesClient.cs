@@ -1,13 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace SRLApiClient.Endpoints.Countries
 {
+  /// <summary>
+  /// A client to perform requests on the /country endpoint
+  /// </summary>
   public class CountriesClient : SRLEndpoint
   {
+    /// <summary>
+    /// Creates a new client to perform requests on the /country endpoint
+    /// </summary>
+    /// <param name="baseClient">The <see cref="SRLClient"/> used to perform requests</param>
     public CountriesClient(SRLClient baseClient) : base("/country", baseClient) { }
 
     [DataContract, KnownType(typeof(SRLDataType))]
@@ -21,9 +26,9 @@ namespace SRLApiClient.Endpoints.Countries
     }
 
     /// <summary>
-    /// Fetches the list of available countries on SRL
+    /// Gets the list of available countries on SRL
     /// </summary>
-    /// <returns>List of countries</returns>
+    /// <returns>Returns the list of countries or null</returns>
     public ReadOnlyCollection<string> Get()
     {
       if (SrlClient.Get(BasePath, out Countries countries)) return countries.List.AsReadOnly();

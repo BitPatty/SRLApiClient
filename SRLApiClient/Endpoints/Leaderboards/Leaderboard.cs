@@ -5,6 +5,9 @@ using System.Runtime.Serialization;
 
 namespace SRLApiClient.Endpoints.Leaderboards
 {
+  /// <summary>
+  /// Leaderboard object
+  /// </summary>
   [DataContract, KnownType(typeof(SRLDataType))]
   public class Leaderboard : SRLDataType
   {
@@ -15,30 +18,37 @@ namespace SRLApiClient.Endpoints.Leaderboards
     public Game Game { get; protected set; }
 
     /// <summary>
-    /// Count of ranked players
+    /// The count of ranked players
     /// </summary>
     [DataMember(Name = "leadersCount", IsRequired = true)]
     public int LeadersCount { get; protected set; }
 
+    /// <summary>
+    /// The list of ranked players
+    /// </summary>
     [DataMember(Name = "leaders", IsRequired = true)]
     protected List<Leader> _leaders { get; set; }
 
     /// <summary>
-    /// List of ranked players
+    /// The list of ranked players
     /// </summary>
     public ReadOnlyCollection<Leader> Leaders => _leaders.AsReadOnly();
 
     /// <summary>
-    /// Count of unranked players
+    /// The count of unranked players
     /// </summary>
     [DataMember(Name = "unrankedCount", IsRequired = true)]
     public int UnrankedCount { get; protected set; }
 
     /// <summary>
-    /// List of unranked players
+    /// The list of unranked players
     /// </summary>
     [DataMember(Name = "unranked", IsRequired = true)]
     protected List<Leader> _unranked { get; set; }
+
+    /// <summary>
+    /// The list of unranked players
+    /// </summary>
     public ReadOnlyCollection<Leader> Unranked => _unranked.AsReadOnly();
   }
 }

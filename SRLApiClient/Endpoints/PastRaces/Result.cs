@@ -2,6 +2,9 @@
 
 namespace SRLApiClient.Endpoints.PastRaces
 {
+  /// <summary>
+  /// Result object
+  /// </summary>
   [DataContract, KnownType(typeof(SRLDataType))]
   public class Result : SRLDataType
   {
@@ -71,5 +74,4 @@ namespace SRLApiClient.Endpoints.PastRaces
     [DataMember(Name = "seasontrueskillchange", IsRequired = true)]
     public int SeasonTrueSkillChange { get; protected set; }
   }
-
 }

@@ -5,12 +5,19 @@ using System.Runtime.Serialization;
 
 namespace SRLApiClient.Endpoints.Players
 {
+  /// <summary>
+  /// A client to perform requests on the /players endpoint
+  /// </summary>
   public class PlayersClient : SRLEndpoint
   {
+    /// <summary>
+    /// Creates a new client to perform requests on the /players endpoint
+    /// </summary>
+    /// <param name="baseClient">The <see cref="SRLClient"/> used to perform requests</param>
     public PlayersClient(SRLClient baseClient) : base("/players", baseClient) { }
 
     /// <summary>
-    /// Fetches a single player
+    /// Gets a single player
     /// </summary>
     /// <param name="name">The players name</param>
     /// <returns>The player or null</returns>
@@ -31,9 +38,9 @@ namespace SRLApiClient.Endpoints.Players
     }
 
     /// <summary>
-    /// Search for a player
+    /// Searches for a player
     /// </summary>
-    /// <param name="name">Name of the player</param>
+    /// <param name="name">The players name</param>
     /// <returns>List of players matching the queried name</returns>
     public ReadOnlyCollection<Player> Search(string name)
     {
@@ -44,16 +51,17 @@ namespace SRLApiClient.Endpoints.Players
     }
 
     /// <summary>
-    /// Edit a players profile
+    /// Edits a players profile
     /// </summary>
-    /// <permission cref="UserRole.User">You can only edit your own channel unless you're racebot</permission>
-    /// <param name="playerName">Player name (used for indexing)</param>
-    /// <param name="youtube">New youtube channel</param>
-    /// <param name="twitter">New twitter name</param>
-    /// <param name="channel">New streaming channel</param>
-    /// <param name="api">New Streaming API</param>
-    /// <param name="country">New Country</param>
-    /// <param name="casename">New name capitalization</param>
+    /// <permission cref="UserRole.User">Editing a profile requires the <see cref="SRLClient"/> to be authorized
+    /// with the appropriate account (or the racebot account)</permission>
+    /// <param name="playerName">The players name</param>
+    /// <param name="youtube">The new youtube channel</param>
+    /// <param name="twitter">The new twitter name</param>
+    /// <param name="channel">The new streaming channel</param>
+    /// <param name="api">The new Streaming API</param>
+    /// <param name="country">The new Country</param>
+    /// <param name="casename">The new name capitalization</param>
     /// <returns>Returns true on success</returns>
     public bool Edit(string playerName, string youtube = null, string twitter = null, string channel = null, StreamApi api = StreamApi.Unknown, string country = null, string casename = null)
     {
@@ -74,9 +82,9 @@ namespace SRLApiClient.Endpoints.Players
     }
 
     /// <summary>
-    /// Fetches a single player
+    /// Gets a single player
     /// </summary>
-    /// <param name="name">the players name</param>
+    /// <param name="name">The players name</param>
     /// <returns>Returns the player or null</returns>
     public Player this[string name] => Get(name);
   }

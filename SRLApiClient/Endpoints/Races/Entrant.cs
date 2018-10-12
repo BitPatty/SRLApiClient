@@ -2,6 +2,9 @@
 
 namespace SRLApiClient.Endpoints.Races
 {
+  /// <summary>
+  /// Entrant object
+  /// </summary>
   [DataContract, KnownType(typeof(SRLDataType))]
   public class Entrant : SRLDataType
   {
@@ -11,13 +14,16 @@ namespace SRLApiClient.Endpoints.Races
     [DataMember(Name = "displayname", IsRequired = true)]
     public string Name { get; protected set; }
 
+    /// <summary>
+    /// The place returned by srl. If the player hasn't finished yet the value will be > 9990
+    /// </summary>
     [DataMember(Name = "place", IsRequired = true)]
-    protected int place { get; set; }
+    protected int _place { get; set; }
 
     /// <summary>
     /// The players rank (-1 if not finished)
     /// </summary>
-    public int Place => place >= 9990 ? -1 : place;
+    public int Place => _place >= 9990 ? -1 : _place;
 
     /// <summary>
     /// The players time (see <see cref="State"/> if smaller than 1)
@@ -56,7 +62,7 @@ namespace SRLApiClient.Endpoints.Races
     public string Twitch { get; protected set; }
 
     /// <summary>
-    /// The players trueskill rank
+    /// The players trueskill level
     /// </summary>
     [DataMember(Name = "trueskill", IsRequired = true)]
     public string TrueSkill { get; protected set; }

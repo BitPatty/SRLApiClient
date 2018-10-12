@@ -5,15 +5,22 @@ using System.Runtime.Serialization;
 
 namespace SRLApiClient.Endpoints.PastRaces
 {
+  /// <summary>
+  /// A client to perform requests on the /pastraces endpoint
+  /// </summary>
   public class PastRacesClient : SRLEndpoint
   {
+    /// <summary>
+    /// Creates a new client to perform requests on the /pastraces endpoint
+    /// </summary>
+    /// <param name="baseClient">The <see cref="SRLClient"/> used to perform requests</param>
     public PastRacesClient(SRLClient baseClient) : base("/pastraces", baseClient) { }
 
     /// <summary>
-    /// Fetches a single past race
+    /// Gets a single past race
     /// </summary>
-    /// <param name="raceId">Id of the race</param>
-    /// <returns></returns>
+    /// <param name="raceId">The races id</param>
+    /// <returns>Returns the past race or null</returns>
     public PastRace Get(string raceId)
     {
       if (String.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
@@ -39,11 +46,11 @@ namespace SRLApiClient.Endpoints.PastRaces
     }
 
     /// <summary>
-    /// Fetches all past races from a player
+    /// Gets all past races from a player
     /// </summary>
-    /// <param name="playerName">Name of the palyer</param>
-    /// <param name="gameAbbrevation">Filter response by game</param>
-    /// <returns></returns>
+    /// <param name="playerName">The players name</param>
+    /// <param name="gameAbbrevation">If provided, only returns races from the specified game</param>
+    /// <returns>Returns a list of past races or null</returns>
     public ReadOnlyCollection<PastRace> GetByPlayer(string playerName, string gameAbbrevation = null)
     {
       if (String.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
@@ -67,16 +74,16 @@ namespace SRLApiClient.Endpoints.PastRaces
     }
 
     /// <summary>
-    /// Fetches a single past race
+    /// Gets a single past race
     /// </summary>
-    /// <param name="raceId">The race id</param>
-    /// <returns>Returns the past race or null</returns>
+    /// <param name="raceId">The races id</param>
+    /// <returns>Returns the past races or null</returns>
     public PastRace this[string raceId] => Get(raceId);
 
     /// <summary>
-    /// Fetches a single past race
+    /// Gets a single past race
     /// </summary>
-    /// <param name="raceId">The race id</param>
+    /// <param name="raceId">The races id</param>
     /// <returns>Returns the past race or null</returns>
     public PastRace this[int raceId] => Get(raceId.ToString());
   }
