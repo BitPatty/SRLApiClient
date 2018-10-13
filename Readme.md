@@ -34,7 +34,7 @@ Install-Package SRLApiClient
   - [Leaderboards](#leaderboards)
   - [Races](#races)
   - [PastRaces](#pastraces)
-  - [Players](#Players)
+  - [Players](#players)
 - [Extensions](#extensions)
   - [Leaderboard Extensions](#leaderboard-extensions)
   - [Race Extensions](#race-extensions)
@@ -377,7 +377,7 @@ Returns the subset of races the player with the name `playerName` is participati
 ReadOnlyCollection<Race> races = Client.Races.GetActive().FilterByEntrant("psychonauter");
 ```
 
-##### `FilterById<T>(string raceId)
+##### `FilterById<T>(string raceId)`
 
 Returns the race matching the provided `raceId` or `null` if the race isn't in the collection.
 
