@@ -14,11 +14,7 @@ Install-Package SRLApiClient
 
 ## Requirements
 
-.Net Core 2.0 or greater. Platform specific prequisites can be found here:
-
-- [Windows](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore21),
-- [Linux](https://docs.microsoft.com/en-us/dotnet/core/linux-prerequisites?tabs=netcore2x),
-- [macOS](https://docs.microsoft.com/en-us/dotnet/core/macos-prerequisites?tabs=netcore2x)
+The SRL API Client supports any platform that implements [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support).
 
 ---
 

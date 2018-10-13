@@ -151,7 +151,7 @@ namespace SRLApiClient
     /// <returns>Returns true if the request and deserialization were successful</returns>
     public bool Get<T>(string endpoint, out T res) where T : SRLDataType
     {
-      string ep = endpoint.StartsWith('/') ? endpoint : '/' + endpoint;
+      string ep = endpoint.StartsWith("/") ? endpoint : "/" + endpoint;
       res = default(T);
       return GetStream(_apiUrl + ep, out Stream s) && s != null && DeSerialize(s, out res);
     }
@@ -192,7 +192,7 @@ namespace SRLApiClient
 
     private bool SubmitJson(string endpoint, Dictionary<string, string> data, HttpMethod method, out HttpResponseMessage response)
     {
-      string ep = endpoint.StartsWith('/') ? endpoint : '/' + endpoint;
+      string ep = endpoint.StartsWith("/") ? endpoint : "/" + endpoint;
       string s = Serialize(data);
       _slim.Wait();
 
@@ -337,10 +337,10 @@ namespace SRLApiClient
               {
                 string[] c_key = key.Split(';');
                 Dictionary<string, string> cookie = new Dictionary<string, string>();
-                for (int i = 1; i < c_key.Length; i++) cookie.Add(c_key[i].Trim().Split('=', 2)[0].ToLower(), c_key[i].Trim().Split('=', 2)[1]);
+                for (int i = 1; i < c_key.Length; i++) cookie.Add(c_key[i].Trim().Split(new char[] { '=' }, 2)[0].ToLower(), c_key[i].Trim().Split(new char[] { '=' }, 2)[1]);
 
                 string c_name = c_key[0].Split('=')[0];
-                string c_val = c_key[0].Split('=', 2)[1];
+                string c_val = c_key[0].Split(new char[] { '=' }, 2)[1];
                 string c_path = cookie.ContainsKey("path") ? cookie["path"] : "";
                 string c_domain = cookie.ContainsKey("domain") ? cookie["domain"] : _baseDomain;
                 DateTime c_expires = cookie.ContainsKey("expires") && DateTime.TryParse(cookie["expires"], out DateTime dt) ?
@@ -387,4 +387,3 @@ namespace SRLApiClient
     }
   }
 }
-
