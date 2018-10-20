@@ -56,7 +56,7 @@ namespace SRLApiClient
     /// <summary>
     /// True if client uses an authenticated account
     /// </summary>
-    public bool IsAuthenticated { get; private set; }
+    public bool IsAuthenticated { get => User?.Verify() ?? false; }
 
     /// <summary>
     /// Client to perform request on the /games endpoint
@@ -281,7 +281,6 @@ namespace SRLApiClient
       _userName = null;
       _userPassword = null;
       User = null;
-      IsAuthenticated = false;
       _slim.Release();
     }
 

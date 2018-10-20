@@ -46,7 +46,7 @@ namespace SRLApiClient
     /// <returns>Returns true if the <see cref="SRLUser"/> account could be verified</returns>
     public bool Verify()
     {
-      if (_srlClient.Get("/token", out Token t) && !t.Role.Equals(UserRole.Unknown) && !t.Role.Equals(UserRole.Anon) && _srlClient.Get("/players/" + t.Name, out Player p))
+      if (_srlClient.Get("/token", out Token t) && t.Role > UserRole.Anon && _srlClient.Get("/players/" + t.Name, out Player p))
       {
         Name = t.Name;
         Role = t.Role;
