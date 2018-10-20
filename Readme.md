@@ -1,6 +1,11 @@
 ﻿# SRL API Client
+ 
+[![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient)
+[![AppVeyor branch](https://img.shields.io/appveyor/ci/bitpatty/srlapiclient/master.svg)](https://ci.appveyor.com/project/BitPatty/srlapiclient/branch/master)
+[![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
 
-This repository contains a basic .Net client library for the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
+
+This repository contains a compact .Net Standard 2.0 library for the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
 
 ```bash
 #.Net
@@ -14,7 +19,11 @@ Install-Package SRLApiClient
 
 ## Requirements
 
-The SRL API Client supports any platform that implements [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support).
+The SRL API Client supports any platform that implements [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support), such as Mono or .NET Core.
+
+### Dependencies
+
+_none_
 
 ---
 
@@ -57,15 +66,19 @@ SRLClient Client = new SRLClient("example.com");
 
 ##### Properties
 
-| Property     | Type                                        | Description                               |
-| ------------ | ------------------------------------------- | ----------------------------------------- |
-| Games        | `Endpoints.Games.GamesClient`               | Client for fetching games                 |
-| Players      | `Endpoints.Players.PlayersClient`           | Client for fetching player data           |
-| Leaderboards | `Endpoints.Leaderboards.LeaderboardsClient` | Client for fetching leaderboard data      |
-| Races        | `Endpoints.Races.RacesClient`               | Client for fetching races                 |
-| PastRaces    | `Endpoints.PastRaces.PastRacesClient`       | Client for fetching past races            |
-| Countries    | `Endpoints.Countries.CountriesClient`       | Client for fetching countries             |
-| Stats        | `Endpoints.Stats.StatsClient`               | Client for fetching game and player stats |
+| Property        | Type                                        | Description                               |
+| --------------- | ------------------------------------------- | ----------------------------------------- |
+| Games           | `Endpoints.Games.GamesClient`               | Client for fetching games                 |
+| Players         | `Endpoints.Players.PlayersClient`           | Client for fetching player data           |
+| Leaderboards    | `Endpoints.Leaderboards.LeaderboardsClient` | Client for fetching leaderboard data      |
+| Races           | `Endpoints.Races.RacesClient`               | Client for fetching races                 |
+| PastRaces       | `Endpoints.PastRaces.PastRacesClient`       | Client for fetching past races            |
+| Countries       | `Endpoints.Countries.CountriesClient`       | Client for fetching countries             |
+| Stats           | `Endpoints.Stats.StatsClient`               | Client for fetching game and player stats |
+| User            | `SRLUser`                                   | Account used for authenticated requests   |
+| IsAuthenticated | `Boolean`                                   | True on successful user verification      |
+| Host            | `String`                                    | The host used for requests                |
+| RequestTimeout  | `TimeSpan`                                  | Timeout for HTTP requests                 |
 
 ---
 
@@ -202,7 +215,7 @@ Race newRace = Client.Races.Create("sms");
 | Game        | `Endpoints.Games.Game`        | The associated game                               |
 | Goal        | `string`                      | Race Goal                                         |
 | Time        | `int`                         | Total race time (after the last entrant finishes) |
-| State       | `Endpoints.RaceState`         | Current state of the race                         |
+| State       | `RaceState`                   | Current state of the race                         |
 | StateText   | `string`                      | Readable version of the current state             |
 | FileName    | `string`                      | Filename used (if set via racebot)                |
 | NumEntrants | `int`                         | Count of entrants                                 |
@@ -215,7 +228,7 @@ Race newRace = Client.Races.Create("sms");
 | Name      | `string`               | Player Name                           |
 | Place     | `int`                  | Place (>0 if finished)                |
 | Time      | `string`               | Final Time (>0 if finished)           |
-| State     | `Endpoints.RacerState` | Current state of the entrant          |
+| State     | `RacerState`           | Current state of the entrant          |
 | StateText | `string`               | Readable version of the current state |
 | Twitch    | `string`               | Twitch channel                        |
 | TrueSkill | `int`                  | Current TrueSkill value               |
@@ -311,7 +324,7 @@ Client.Players.Edit("psychonauter", twitter: "psychonauter");
 | Channel   | `string`             | Channel name (Twitch / Hitbox)   |
 | Twitter   | `string`             | Twitter channel                  |
 | Youtube   | `string`             | Youtube channel                  |
-| StreamApi | `Entrants.StreamApi` | Api used for fetching the stream |
+| StreamApi | `StreamApi`          | Api used for fetching the stream |
 | Country   | `string`             | Player Country                   |
 
 ---
