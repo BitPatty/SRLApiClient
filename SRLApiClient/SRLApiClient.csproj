@@ -14,7 +14,7 @@
     <PackageLicenseUrl>https://www.gnu.org/licenses/agpl-3.0.en.html</PackageLicenseUrl>
     <PackageReleaseNotes>API Wrapper for the SpeedRunsLive API</PackageReleaseNotes>
     <PackageTags>speedrunslive</PackageTags>
-    <Copyright>2018 Matt Collet</Copyright>
+    <Copyright>2018 Matteias Collet</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
