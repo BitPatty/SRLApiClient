@@ -25,14 +25,15 @@ namespace SRLApiClient.Endpoints.PastRaces
     {
       if (String.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
 
-      SrlClient.Get(BasePath + "/" + raceId.ToLower(), out PastRace r);
+      SrlClient.Get(BasePath + "/" + raceId.ToLower(), out PlayerPastRaces r);
+      PastRace pr = r.Races[0];
       if (r != null)
       {
-        SrlClient.Get("/rules/" + r.Game.Abbrevation, out GameRules gr);
-        r.Game.Rules = gr.Rules;
+        SrlClient.Get("/rules/" + pr.Game.Abbrevation, out GameRules gr);
+        pr.Game.Rules = gr.Rules;
       }
 
-      return r;
+      return pr;
     }
 
     [DataContract]
@@ -41,7 +42,7 @@ namespace SRLApiClient.Endpoints.PastRaces
       [DataMember(Name = "count", IsRequired = true)]
       public int Count { get; private set; }
 
-      [DataMember(Name = "races", IsRequired = true)]
+      [DataMember(Name = "pastraces", IsRequired = true)]
       public List<PastRace> Races { get; private set; }
     }
 
