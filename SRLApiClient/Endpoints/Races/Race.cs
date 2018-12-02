@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
+using System.Linq;
 
 namespace SRLApiClient.Endpoints.Races
 {
@@ -82,11 +83,11 @@ namespace SRLApiClient.Endpoints.Races
     /// The list of race entrants
     /// </summary>
     [DataMember(Name = "entrants", IsRequired = true)]
-    protected List<Entrant> _entrants { get; set; }
+    protected Dictionary<string, Entrant> _entrants { get; set; }
 
     /// <summary>
     /// The list of race entrants
     /// </summary>
-    public ReadOnlyCollection<Entrant> Entrants => _entrants.AsReadOnly();
+    public ReadOnlyCollection<Entrant> Entrants => _entrants.Values.ToList().AsReadOnly();
   }
 }
