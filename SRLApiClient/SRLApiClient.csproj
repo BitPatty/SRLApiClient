@@ -11,7 +11,7 @@
     <RepositoryUrl>https://github.com/BitPatty/SRLApiClient</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/BitPatty/SRLApiClient</PackageProjectUrl>
-    <PackageLicenseUrl>https://www.gnu.org/licenses/agpl-3.0.en.html</PackageLicenseUrl>
+    <PackageLicenseUrl>https://github.com/BitPatty/SRLApiClient/blob/master/LICENSE</PackageLicenseUrl>
     <PackageReleaseNotes>API Wrapper for the SpeedRunsLive API</PackageReleaseNotes>
     <PackageTags>speedrunslive</PackageTags>
     <Copyright>2018 Matteias Collet</Copyright>
