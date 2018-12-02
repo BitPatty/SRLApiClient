@@ -7,12 +7,13 @@ using SRLApiClient.Endpoints.PastRaces;
 using SRLApiClient.Endpoints.Races;
 using SRLApiClient.Endpoints.Games;
 using SRLApiClient.Endpoints.Leaderboards;
+using SRLApiClient.Endpoints.Stats;
 
 namespace Tests
 {
   public class Tests
   {
-    SRLClient _client;
+    internal SRLClient _client { get; set; }
 
     [SetUp]
     public void Setup()
@@ -76,6 +77,38 @@ namespace Tests
       Assert.AreEqual(leaderboard.Leaders.Count, leaderboard.LeadersCount);
       Assert.AreEqual(leaderboard.Unranked.Count, leaderboard.UnrankedCount);
       Assert.AreEqual(leaderboard.Leaders[0].Rank, 1);
+    }
+
+    [Test]
+    public void TestMonthlySRLStats()
+    {
+      ReadOnlyCollection<MonthlySRLStats> stats = _client.Stats.GetSRLStats();
+      Assert.IsNotNull(stats);
+      Assert.AreEqual(stats.FirstOrDefault(s => s.Month == 10 && s.Year == 2018)?.TotalRaceTime, 15320129);
+    }
+
+    [Test]
+    public void TestGameStats()
+    {
+      GameStats stats = _client.Stats.GetGameStats("sms");
+      Assert.IsNotNull(stats);
+      Assert.GreaterOrEqual(stats.LargestRaceSize, 45);
+    }
+
+    [Test]
+    public void TestPlayerStats()
+    {
+      PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter");
+      Assert.IsNotNull(stats);
+      Assert.AreEqual(stats.FirstRace, 167799);
+    }
+
+    [Test]
+    public void TestPlayerGameStats()
+    {
+      PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter", "ffx");
+      Assert.IsNotNull(stats);
+      Assert.AreEqual(stats.FirstRace, 172802);
     }
   }
 }

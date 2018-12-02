@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 
 namespace SRLApiClient.Endpoints.Stats
@@ -51,5 +53,19 @@ namespace SRLApiClient.Endpoints.Stats
       if (string.IsNullOrWhiteSpace(gameAbbrevation)) throw new ArgumentException(nameof(gameAbbrevation), "Parameter can't be empty");
       return SrlClient.Get(BasePath + "?game=" + gameAbbrevation, out GameEndpoint ge) ? ge.Stats : null;
     }
+
+    [DataContract, KnownType(typeof(SRLDataType))]
+    private sealed class MonthlyStats : SRLDataType
+    {
+      [DataMember(Name = "monthlyStats", IsRequired = true)]
+      public List<MonthlySRLStats> Stats { get; private set; }
+    }
+
+    /// <summary>
+    /// Gets the monthly statistics of SRL
+    /// </summary>
+    /// <returns>Returns SRLs monthly stats or null</returns>
+    public ReadOnlyCollection<MonthlySRLStats> GetSRLStats() =>
+      SrlClient.Get(BasePath + "/monthly", out MonthlyStats ms) ? ms.Stats?.AsReadOnly() : null;
   }
 }
