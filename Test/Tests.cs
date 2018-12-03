@@ -82,9 +82,9 @@ namespace Tests
     [Test]
     public void TestMonthlySRLStats()
     {
-      ReadOnlyCollection<MonthlySRLStats> stats = _client.Stats.GetSRLStats();
+      ReadOnlyCollection<SRLStats> stats = _client.Stats.GetSRLStats();
       Assert.IsNotNull(stats);
-      Assert.AreEqual(stats.FirstOrDefault(s => s.Month == 10 && s.Year == 2018)?.TotalRaceTime, 15320129);
+      Assert.AreEqual(stats.FirstOrDefault(s => s.Month == 10 && s.Year == 2018)?.TotalTimeRaced, 15320129);
     }
 
     [Test]

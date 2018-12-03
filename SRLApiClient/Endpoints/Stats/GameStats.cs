@@ -9,25 +9,25 @@ namespace SRLApiClient.Endpoints.Stats
   public class GameStats : SRLDataType
   {
     /// <summary>
-    /// The games total count of completed races
+    /// The games total race count
     /// </summary>
     [DataMember(Name = "totalRaces", IsRequired = true)]
     public int TotalRaces { get; protected set; }
 
     /// <summary>
-    /// The games total count of players
+    /// The games total player count
     /// </summary>
     [DataMember(Name = "totalPlayers", IsRequired = true)]
     public int TotalPlayers { get; protected set; }
 
     /// <summary>
-    /// The games date of when the largest race happened
+    /// The ID of the largest race
     /// </summary>
     [DataMember(Name = "largestRace", IsRequired = true)]
-    public int LargestRaceDate { get; protected set; }
+    public int LargestRaceId { get; protected set; }
 
     /// <summary>
-    /// The games total count of players in the largest race
+    /// The games total player count in the largest race
     /// </summary>
     [DataMember(Name = "largestRaceSize", IsRequired = true)]
     public int LargestRaceSize { get; protected set; }
@@ -36,7 +36,7 @@ namespace SRLApiClient.Endpoints.Stats
     /// The games total accumulated race time for the game
     /// </summary>
     [DataMember(Name = "totalRaceTime", IsRequired = true)]
-    public int TotalRaceTime { get; protected set; }
+    public int TotalTimeRaced { get; protected set; }
 
     /// <summary>
     /// The games total accumulated play time

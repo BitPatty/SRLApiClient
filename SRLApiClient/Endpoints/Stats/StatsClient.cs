@@ -58,14 +58,14 @@ namespace SRLApiClient.Endpoints.Stats
     private sealed class MonthlyStats : SRLDataType
     {
       [DataMember(Name = "monthlyStats", IsRequired = true)]
-      public List<MonthlySRLStats> Stats { get; private set; }
+      public List<SRLStats> Stats { get; private set; }
     }
 
     /// <summary>
     /// Gets the monthly statistics of SRL
     /// </summary>
     /// <returns>Returns SRLs monthly stats or null</returns>
-    public ReadOnlyCollection<MonthlySRLStats> GetSRLStats() =>
+    public ReadOnlyCollection<SRLStats> GetSRLStats() =>
       SrlClient.Get(BasePath + "/monthly", out MonthlyStats ms) ? ms.Stats?.AsReadOnly() : null;
   }
 }

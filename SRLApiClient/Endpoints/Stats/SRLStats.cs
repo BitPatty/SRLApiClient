@@ -6,7 +6,7 @@ namespace SRLApiClient.Endpoints.Stats
   /// Monthly SRL Stats
   /// </summary>
   [DataContract, KnownType(typeof(SRLDataType))]
-  public sealed class MonthlySRLStats : SRLDataType
+  public sealed class SRLStats : SRLDataType
   {
     /// <summary>
     /// The month of the year of the associated stats
@@ -54,7 +54,7 @@ namespace SRLApiClient.Endpoints.Stats
     /// The total race time in the associated month
     /// </summary>
     [DataMember(Name = "totalRaceTime", IsRequired = true)]
-    public int TotalRaceTime { get; private set; }
+    public int TotalTimeRaced { get; private set; }
 
     /// <summary>
     /// The total play time in the associated month

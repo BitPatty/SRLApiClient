@@ -14,7 +14,7 @@ namespace SRLApiClient.Endpoints.Stats
     /// <summary>
     /// The players rank on the games associated leaderboard (if queried)
     /// </summary>
-    [DataMember(Name ="rank", IsRequired = true)]
+    [DataMember(Name = "rank", IsRequired = true)]
     public int Rank { get; protected set; }
 
     /// <summary>
@@ -24,13 +24,13 @@ namespace SRLApiClient.Endpoints.Stats
     public int TotalRaces { get; protected set; }
 
     /// <summary>
-    /// The id of the players first race
+    /// The ID of the players first race
     /// </summary>
     [DataMember(Name = "firstRace", IsRequired = true)]
     public int FirstRace { get; protected set; }
 
     /// <summary>
-    /// The of the players first race
+    /// The date of the players first race
     /// </summary>
     [DataMember(Name = "firstRaceDate", IsRequired = true)]
     public int FirstRaceDate { get; protected set; }

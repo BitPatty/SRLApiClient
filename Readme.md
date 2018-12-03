@@ -1,9 +1,10 @@
 ﻿# SRL API Client
- 
-[![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient)
-[![AppVeyor branch](https://img.shields.io/appveyor/ci/bitpatty/srlapiclient/master.svg)](https://ci.appveyor.com/project/BitPatty/srlapiclient/branch/master)
-[![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
 
+[![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient)
+
+[![AppVeyor branch](https://img.shields.io/appveyor/ci/bitpatty/srlapiclient/master.svg)](https://ci.appveyor.com/project/BitPatty/srlapiclient/branch/master)
+
+[![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
 
 This repository contains a compact .Net Standard 2.0 library for the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
 
@@ -40,6 +41,7 @@ _none_
   - [Races](#races)
   - [PastRaces](#pastraces)
   - [Players](#players)
+  - [Stats](#stats)
 - [Extensions](#extensions)
   - [Leaderboard Extensions](#leaderboard-extensions)
   - [Race Extensions](#race-extensions)
@@ -223,15 +225,15 @@ Race newRace = Client.Races.Create("sms");
 
 ##### Properties (Entrant)
 
-| Property  | Type                   | Description                           |
-| --------- | ---------------------- | ------------------------------------- |
-| Name      | `string`               | Player Name                           |
-| Place     | `int`                  | Place (>0 if finished)                |
-| Time      | `string`               | Final Time (>0 if finished)           |
-| State     | `RacerState`           | Current state of the entrant          |
-| StateText | `string`               | Readable version of the current state |
-| Twitch    | `string`               | Twitch channel                        |
-| TrueSkill | `int`                  | Current TrueSkill value               |
+| Property  | Type         | Description                           |
+| --------- | ------------ | ------------------------------------- |
+| Name      | `string`     | Player Name                           |
+| Place     | `int`        | Place (>0 if finished)                |
+| Time      | `string`     | Final Time (>0 if finished)           |
+| State     | `RacerState` | Current state of the entrant          |
+| StateText | `string`     | Readable version of the current state |
+| Twitch    | `string`     | Twitch channel                        |
+| TrueSkill | `int`        | Current TrueSkill value               |
 
 ---
 
@@ -317,15 +319,76 @@ Client.Players.Edit("psychonauter", twitter: "psychonauter");
 
 ##### Properties
 
-| Property  | Type                 | Description                      |
-| --------- | -------------------- | -------------------------------- |
-| Id        | `int`                | Player Id                        |
-| Name      | `string`             | Player name                      |
-| Channel   | `string`             | Channel name (Twitch / Hitbox)   |
-| Twitter   | `string`             | Twitter channel                  |
-| Youtube   | `string`             | Youtube channel                  |
-| StreamApi | `StreamApi`          | Api used for fetching the stream |
-| Country   | `string`             | Player Country                   |
+| Property  | Type        | Description                      |
+| --------- | ----------- | -------------------------------- |
+| Id        | `int`       | Player Id                        |
+| Name      | `string`    | Player name                      |
+| Channel   | `string`    | Channel name (Twitch / Hitbox)   |
+| Twitter   | `string`    | Twitter channel                  |
+| Youtube   | `string`    | Youtube channel                  |
+| StreamApi | `StreamApi` | Api used for fetching the stream |
+| Country   | `string`    | Player Country                   |
+
+---
+
+#### Stats
+
+The client supports three kinds of stats: Player stats, game stats and SRL stats, which are available via the following calls:
+
+```c#
+//Player Stats
+PlayerStats playerStats = Client.Stats.GetPlayerStats("psychonauter");
+
+//Game Stats
+GameStats gameStats = Client.Stats.GetGameStats("sms");
+
+//Player stats in the specificed game
+PlayerStats playerGameStats = Client.Stats.GetPlayerStast("psychonauter","sms");
+
+//SRL Stats
+SRLStats srlStats = Client.Stats.GetSRLStats();
+```
+
+##### Properties
+
+###### PlayerStats
+
+| Property               | Type  | Description                                                  |
+| ---------------------- | ----- | ------------------------------------------------------------ |
+| Rank                   | `int` | Player Rank (if game is specified)                           |
+| TotalRaces             | `int` | Total races [in the game]                                    |
+| FirstRace              | `int` | ID of the first race [in the game]                           |
+| FirstRaceDate          | `int` | Date of the first race [in the game]                         |
+| TotalTimePlayed        | `int` | Total play time [in the game]                                |
+| TotalFirstPlace        | `int` | How many times the player reached first place [in the game]  |
+| TotalSecondPlace       | `int` | How many times the player reached second place [in the game] |
+| TotalThirdPlace        | `int` | How many times the player reached third place [in the game]  |
+| TotalQuits             | `int` | How many times the player forfeited [in the game]            |
+| TotalDisqualifications | `int` | How many times the player got disqualified [in the game]     |
+
+###### GameStats
+
+| Property        | Type  | Description              |
+| --------------- | ----- | ------------------------ |
+| TotalRaces      | `int` | Total count of races     |
+| TotalPlayers    | `int` | Total count of players   |
+| LargestRaceId   | `int` | ID of the largest race   |
+| LargestRaceSize | `int` | Size of the largest race |
+| TotalTimeRaced  | `int` | Total time raced         |
+| TotalTimePlayed | `int` | Total time played        |
+
+###### SRLStats
+
+| Property        | Type  | Description                               |
+| --------------- | ----- | ----------------------------------------- |
+| Month           | `int` | Month                                     |
+| Year            | `int` | Year                                      |
+| TotalRaces      | `int` | Total count of races during that period   |
+| TotalPlayers    | `int` | Total count of players during that period |
+| LargestRaceId   | `int` | ID of the largest race                    |
+| LargestRaceSize | `int` | Size of the largest race                  |
+| TotalTimeRaced  | `int` | Total time raced                          |
+| TotalTimePlayed | `int` | Total time played                         |
 
 ---
 
