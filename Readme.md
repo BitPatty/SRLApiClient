@@ -1,10 +1,6 @@
 ﻿# SRL API Client
 
-[![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient)
-
-[![AppVeyor branch](https://img.shields.io/appveyor/ci/bitpatty/srlapiclient/master.svg)](https://ci.appveyor.com/project/BitPatty/srlapiclient/branch/master)
-
-[![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
+[![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient) [![GitHub release](https://img.shields.io/github/release/bitpatty/srlapiclient.svg)](https://github.com/BitPatty/SRLApiClient/releases) [![AppVeyor branch](https://img.shields.io/appveyor/ci/bitpatty/srlapiclient/master.svg)](https://ci.appveyor.com/project/BitPatty/srlapiclient/branch/master) [![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
 
 This repository contains a compact .Net Standard 2.0 library for the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
 
