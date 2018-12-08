@@ -1,6 +1,6 @@
 ﻿# SRL API Client
 
-[![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient) [![GitHub release](https://img.shields.io/github/release/bitpatty/srlapiclient.svg)](https://github.com/BitPatty/SRLApiClient/releases) [![AppVeyor branch](https://img.shields.io/appveyor/ci/bitpatty/srlapiclient/master.svg)](https://ci.appveyor.com/project/BitPatty/srlapiclient/branch/master) [![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
+[![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient) [![AppVeyor branch](https://img.shields.io/appveyor/ci/bitpatty/srlapiclient/master.svg)](https://ci.appveyor.com/project/BitPatty/srlapiclient/branch/master) [![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
 
 This repository contains a compact .Net Standard 2.0 library for the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
 
@@ -199,12 +199,6 @@ or
 Race race = Client.Races["someId"];
 ```
 
-Creating a race requires **authentication**. Also, you either have to be racebot or you need at least the 'voice' role on SRL. If you don't know that this is you most probably don't have it.
-
-```c#
-Race newRace = Client.Races.Create("sms");
-```
-
 ##### Properties (Race)
 
 | Property    | Type                          | Description                                       |
@@ -218,6 +212,7 @@ Race newRace = Client.Races.Create("sms");
 | FileName    | `string`                      | Filename used (if set via racebot)                |
 | NumEntrants | `int`                         | Count of entrants                                 |
 | Entrants    | `ReadOnlyCollection<Entrant>` | List of entrants                                  |
+
 
 ##### Properties (Entrant)
 

@@ -349,16 +349,16 @@ namespace SRLApiClient
                 _cookieJar.Add(new Cookie(c_name, c_val, c_path, _baseDomain) { Expires = c_expires });
               }
             }
+          }
 
-            req = new HttpRequestMessage(HttpMethod.Get, _apiUrl + "/token/login");
-            req.Headers.Accept.Clear();
-            req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-            resp = _client.SendAsync(req).Result;
+          req = new HttpRequestMessage(HttpMethod.Get, _apiUrl + "/token/login");
+          req.Headers.Accept.Clear();
+          req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+          resp = _client.SendAsync(req).Result;
 
-            if (resp.IsSuccessStatusCode)
-            {
-              User = new SRLUser(this);
-            }
+          if (resp.IsSuccessStatusCode)
+          {
+            User = new SRLUser(this);
           }
         }
       }

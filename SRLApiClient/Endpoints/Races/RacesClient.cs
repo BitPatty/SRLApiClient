@@ -55,27 +55,6 @@ namespace SRLApiClient.Endpoints.Races
     }
 
     /// <summary>
-    /// Creates a race
-    /// </summary>
-    /// <permission cref="UserRole.Voice">Creating a race requires the <see cref="SRLClient"/> to be authorized and the
-    /// associated user requires at least the 'voice' permission</permission>
-    /// <param name="gameAbbrevation">The games abbrevation</param>
-    /// <returns>Returns the race on success</returns>
-    /// <exception cref="SRLApiException">Throws a <see cref="SRLApiException"/> on failure.</exception>
-    public Race Create(string gameAbbrevation)
-    {
-      if (string.IsNullOrWhiteSpace(gameAbbrevation)) throw new ArgumentException(nameof(gameAbbrevation), "Parameter can't be empty");
-      if (SrlClient.User != null && SrlClient.User.Role < UserRole.Voice) throw new ArgumentException("Missing permission");
-
-      if (SrlClient.Post(BasePath, new Dictionary<string, string>() { { "game", gameAbbrevation } }, out HttpResponseMessage response))
-      {
-        if (SrlClient.DeSerialize(response.Content.ReadAsStreamAsync().Result, out Race r)) return r;
-        else throw new SRLApiException("Failed to Deserialize Response");
-      }
-      else throw new SRLApiException("Failed to create Race");
-    }
-
-    /// <summary>
     /// Gets a single race
     /// </summary>
     /// <param name="raceId">The races id</param>
