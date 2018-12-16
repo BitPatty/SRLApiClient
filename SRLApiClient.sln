@@ -7,11 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRLApiClient", "SRLApiClien
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BA36AD6C-642F-4086-A0CD-9F0C2E4921F5}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		LICENSE = LICENSE
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{44E281DF-EF70-443F-8974-D85E3A97121C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{44E281DF-EF70-443F-8974-D85E3A97121C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
