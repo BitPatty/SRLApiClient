@@ -177,7 +177,7 @@ namespace SRLApiClient
     /// Performs a POST request on an endpoint
     /// </summary>
     /// <param name="endpoint">The endpoint to perform the request on</param>
-    /// <param name="data">The data to PUT</param>
+    /// <param name="data">The data to POST</param>
     /// <returns>Returns true if the POST request was successful</returns>
     public bool Post(string endpoint, Dictionary<string, string> data) => SubmitJson(endpoint, data, HttpMethod.Post, out _);
 
@@ -185,7 +185,7 @@ namespace SRLApiClient
     /// Performs a POST request on an endpoint
     /// </summary>
     /// <param name="endpoint">The endpoint to perform the request on</param>
-    /// <param name="data">The data to PUT</param>
+    /// <param name="data">The data to POST</param>
     /// <param name="response">The object to hold the HTTP response received from the endpoint</param>
     /// <returns>Returns true if the POST request was successful</returns>
     public bool Post(string endpoint, Dictionary<string, string> data, out HttpResponseMessage response) => SubmitJson(endpoint, data, HttpMethod.Post, out response);
