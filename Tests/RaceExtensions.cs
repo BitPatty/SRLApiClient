@@ -69,5 +69,31 @@ namespace Tests
       matches = races.FilterByState(RaceState.Unknown);
       Assert.AreEqual(0, matches.Count);
     }
+
+    [Test]
+    public void FilterByMinState()
+    {
+      ReadOnlyCollection<Race> races = _client.Races.GetActive();
+      RaceState state = races[0].State;
+      ReadOnlyCollection<Race> matches = races.FilterByMinState(state);
+      Assert.Greater(matches.Count, 0);
+      Assert.True(matches.All(m => m.State >= state));
+
+      matches = races.FilterByState(RaceState.Unknown);
+      Assert.AreEqual(0, matches.Count);
+    }
+
+    [Test]
+    public void FilterByMaxState()
+    {
+      ReadOnlyCollection<Race> races = _client.Races.GetActive();
+      RaceState state = races[0].State;
+      ReadOnlyCollection<Race> matches = races.FilterByMaxState(state);
+      Assert.Greater(matches.Count, 0);
+      Assert.True(matches.All(m => m.State <= state));
+
+      matches = races.FilterByState(RaceState.Unknown);
+      Assert.AreEqual(0, matches.Count);
+    }
   }
 }
