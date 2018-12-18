@@ -18,5 +18,7 @@ build_script:
 
     dotnet build Tests/Tests.csproj -c Release
 
+test_script:
+- ps: >-
     dotnet test Tests/
 deploy: off
