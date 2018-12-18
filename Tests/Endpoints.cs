@@ -2,16 +2,16 @@
 using System.Linq;
 using NUnit.Framework;
 using SRLApiClient;
-using SRLApiClient.Endpoints.Players;
-using SRLApiClient.Endpoints.PastRaces;
-using SRLApiClient.Endpoints.Races;
 using SRLApiClient.Endpoints.Games;
 using SRLApiClient.Endpoints.Leaderboards;
+using SRLApiClient.Endpoints.PastRaces;
+using SRLApiClient.Endpoints.Players;
+using SRLApiClient.Endpoints.Races;
 using SRLApiClient.Endpoints.Stats;
 
 namespace Tests
 {
-  public class Tests
+  public class Endpoints
   {
     internal SRLClient _client { get; set; }
 
@@ -22,14 +22,14 @@ namespace Tests
     }
 
     [Test]
-    public void TestCountriesEndpoint()
+    public void Countries()
     {
       ReadOnlyCollection<string> countries = _client.Countries.Get();
       Assert.Contains("Switzerland", countries);
     }
 
     [Test]
-    public void TestGamesEndpoint()
+    public void Games()
     {
       Game game = _client.Games["sms"];
       Assert.AreEqual(game.Name, "Super Mario Sunshine");
@@ -38,7 +38,7 @@ namespace Tests
     }
 
     [Test]
-    public void TestRacesEndpoint()
+    public void Races()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
       Race race = _client.Races.Get(races[0].Id);
@@ -48,7 +48,7 @@ namespace Tests
     }
 
     [Test]
-    public void TestRacesPlayersEndpoints()
+    public void RacesAndPlayers()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
       Assert.GreaterOrEqual(races.Count, 0);
@@ -59,7 +59,7 @@ namespace Tests
     }
 
     [Test]
-    public void TestPastRacesPlayersEndpoints()
+    public void PastRacesAndPlayers()
     {
       PastRace pastRace = _client.PastRaces.Get("239545");
       Assert.AreEqual(pastRace.Results.Count, 2);
@@ -69,7 +69,7 @@ namespace Tests
     }
 
     [Test]
-    public void TestLeaderboardsEndpoint()
+    public void Leaderboards()
     {
       Leaderboard leaderboard = _client.Leaderboards.Get("sms");
       Assert.IsNotNull(leaderboard.Game.Rules);
@@ -80,7 +80,7 @@ namespace Tests
     }
 
     [Test]
-    public void TestMonthlySRLStats()
+    public void MonthlySRLStats()
     {
       ReadOnlyCollection<SRLStats> stats = _client.Stats.GetSRLStats();
       Assert.IsNotNull(stats);
@@ -88,7 +88,7 @@ namespace Tests
     }
 
     [Test]
-    public void TestGameStats()
+    public void GameStats()
     {
       GameStats stats = _client.Stats.GetGameStats("sms");
       Assert.IsNotNull(stats);
@@ -96,7 +96,7 @@ namespace Tests
     }
 
     [Test]
-    public void TestPlayerStats()
+    public void PlayerStats()
     {
       PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter");
       Assert.IsNotNull(stats);
@@ -104,7 +104,7 @@ namespace Tests
     }
 
     [Test]
-    public void TestPlayerGameStats()
+    public void PlayerGameStats()
     {
       PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter", "ffx");
       Assert.IsNotNull(stats);

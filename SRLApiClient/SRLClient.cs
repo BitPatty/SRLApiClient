@@ -1,6 +1,6 @@
 ﻿/*
  * SRLApiClient - A .NET client library for the SpeedRunsLive API
- * Copyright (c) 2018 Matt Collet
+ * Copyright (c) 2018 Matteias Collet
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -35,7 +35,7 @@ namespace SRLApiClient
   /// <summary>
   /// A client for interacting with the SpeedRunsLive API
   /// </summary>
-  public sealed partial class SRLClient : IDisposable
+  public sealed class SRLClient : IDisposable
   {
     /// <summary>
     /// The host used for requests
@@ -153,7 +153,9 @@ namespace SRLApiClient
     {
       string ep = endpoint.StartsWith("/") ? endpoint : "/" + endpoint;
       res = default(T);
-      return GetStream(_apiUrl + ep, out Stream s) && s != null && DeSerialize(s, out res);
+      bool success = GetStream(_apiUrl + ep, out Stream s) && s != null && DeSerialize(s, out res);
+      s.Dispose();
+      return success;
     }
 
     /// <summary>
