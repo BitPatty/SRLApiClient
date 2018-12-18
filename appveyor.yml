@@ -13,7 +13,10 @@ build_script:
     }
 
     dotnet --version
+
     dotnet build SRLApiClient/SRLApiClient.csproj -c Release
+
     dotnet build Tests/Tests.csproj -c Release
+
     dotnet test Tests/
 deploy: off
