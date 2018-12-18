@@ -6,6 +6,7 @@
     <FileVersion>0.9.0.0</FileVersion>
     <Version>0.9.0</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
     <Authors>BitPatty &lt;psy@zint.ch&gt;</Authors>
     <Description>API Wrapper for the SpeedRunsLive API</Description>
     <RepositoryUrl>https://github.com/BitPatty/SRLApiClient</RepositoryUrl>
