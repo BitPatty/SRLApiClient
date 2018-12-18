@@ -7,9 +7,9 @@ build_script:
     git config --global core.autocrlf true
 
     if($env:appveyor_pull_request_number) {
-       Update-AppveyorBuild -Version "pr--$env:appveyor_repo_branch-$env:appveyor_build_number-$($env:appveyor_repo_commit.substring(0,7))"
+        Update-AppveyorBuild -Version "pr--$env:appveyor_repo_branch-$env:appveyor_build_number-$($env:appveyor_repo_commit.substring(0,7))"
     } else {
-       Update-AppveyorBuild -Version "$env:appveyor_repo_branch-$env:appveyor_build_number-$($env:appveyor_repo_commit.substring(0,7))"
+        Update-AppveyorBuild -Version "$env:appveyor_repo_branch-$env:appveyor_build_number-$($env:appveyor_repo_commit.substring(0,7))"
     }
 
     dotnet --version
@@ -17,8 +17,6 @@ build_script:
     dotnet build SRLApiClient/SRLApiClient.csproj -c Release
 
     dotnet build Tests/Tests.csproj -c Release
-
 test_script:
-- ps: >-
-    dotnet test Tests/
+- ps: dotnet test Tests/
 deploy: off
