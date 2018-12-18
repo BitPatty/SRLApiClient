@@ -411,9 +411,7 @@ Leader leader = board.FindPlayer("psychonauter");
 
 #### Race Extensions
 
-Note: `T` can be any type that implements `IEnumerable<Race>`.
-
-##### `FilterByGame<T>(string gameAbbrevation)`
+##### `FilterByGame(string gameAbbrevation)`
 
 Returns the subset of races matching the `gameAbbrevation`.
 
@@ -422,7 +420,7 @@ Returns the subset of races matching the `gameAbbrevation`.
 ReadOnlyCollection<Race> races = Client.Races.GetActive().FilterByGame("sms");
 ```
 
-##### `FilterByState<T>(RaceState state)`
+##### `FilterByState(RaceState state)`
 
 Returns the subset of races matching the `state`.
 
@@ -431,7 +429,25 @@ Returns the subset of races matching the `state`.
 ReadOnlyCollection<Race> races = Client.Races.GetActive().FilterByState(RaceState.InProgress);
 ```
 
-##### `FilterByEntrant<T>(string playerName)`
+##### `FilterByMinState(RaceState state)`
+
+Returns the subset of races greater or equal the provided `state`.
+
+```c#
+//Returns all active races that are in progress, done or over
+ReadOnlyCollection<Race> races = Client.Races.GetActive().FilterByMinState(RaceState.InProgress);
+```
+
+##### `FilterByMaxState(RaceState state)`
+
+Returns the subset of races less or equal the provided `state`.
+
+```c#
+//Returns all active races that are open or closed for entry
+ReadOnlyCollection<Race> races = Client.Races.GetActive().FilterByState(RaceState.InProgress);
+```
+
+##### `FilterByEntrant(string playerName)`
 
 Returns the subset of races the player with the name `playerName` is participating in.
 
@@ -440,7 +456,7 @@ Returns the subset of races the player with the name `playerName` is participati
 ReadOnlyCollection<Race> races = Client.Races.GetActive().FilterByEntrant("psychonauter");
 ```
 
-##### `FilterById<T>(string raceId)`
+##### `FilterById(string raceId)`
 
 Returns the race matching the provided `raceId` or `null` if the race isn't in the collection.
 
