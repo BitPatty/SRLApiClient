@@ -1,0 +1,9 @@
+language: csharp
+mono: none
+dotnet: 2.0.0
+dist: trusty
+script:
+ - dotnet --version
+ - dotnet build SRLApiClient/SRLApiClient.csproj -c Release
+ - dotnet build Tests/Tests.csproj -c Release
+ - dotnet test Tests/
