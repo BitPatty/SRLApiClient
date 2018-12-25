@@ -16,7 +16,7 @@ Install-Package SRLApiClient
 
 ## Requirements
 
-The SRL API Client supports any platform that implements [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support), such as Mono or .NET Core.
+The SRL API Client supports any platform that implements [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support).
 
 ### Dependencies
 
@@ -50,7 +50,7 @@ _none_
 using SRLApiClient;
 ```
 
-To create a client you can simply use the following statement:
+To create a client use the following statement:
 
 ```c#
 SRLClient Client = new SRLClient();
@@ -82,7 +82,7 @@ SRLClient Client = new SRLClient("example.com");
 
 ### Authentication
 
-Certain requests require authentication. To authenticate the client you're gonna need valid SRL credentials.
+Profile modifications (`SRLUser`) require authentication. To authenticate the client you're gonna need valid SRL credentials.
 
 ```c#
 Client.Authenticate("psychonauter", "password");
@@ -110,7 +110,7 @@ _none_
 
 #### Games
 
-To fetch a game from SRL you need to know its abbrevation.
+To fetch a game from SRL you need to specify its abbrevation.
 
 ```c#
 Game game = Client.Games.Get("sms");
@@ -143,7 +143,7 @@ ReadOnlyCollection<Game> searchResults = Client.Games.Search("super mario sunshi
 
 #### Leaderboards
 
-To fetch a leaderboard for a game from SRL you need to know the games abbrevation.
+To fetch a leaderboard for a game from SRL you need to specify the games abbrevation.
 
 ```c#
 Leaderboard board = Client.Leaderboards.Get("sms");
@@ -183,11 +183,11 @@ Use the following to get a list of active races:
 ReadOnlyCollection<Race> activeRaces = Client.Races.GetActive();
 ```
 
-_Note:_ `GetActive()` generally returns all races whose state is lower than `RaceState.Over`. However, the API sometimes already removes races from the endpoint as soon as they reach `RaceState.Finished`. So if you're actively tracking the races make sure you fetch the single race if it no longer shows up in the results.
+_Note:_ `GetActive()` generally returns all races with a state lower than `RaceState.Over`. However, the API sometimes already removes races from the endpoint as soon as they reach `RaceState.Finished`. So if you're actively tracking the races make sure you fetch the single race if it no longer shows up in the results.
 
 _Note 2:_ The race id from `Races` doesn't match the `PastRaces` id. When the game is recorded it receives a new id and gets dropped from `Races`.
 
-To fetch a specific Race you need to know the race id:
+To fetch a specific Race you need to specify the race id:
 
 ```
 Race race = Client.Races.Get("someId");
@@ -400,7 +400,7 @@ board.ContainsPlayer("psychonauter") //true
 
 ##### `FindPlayer(string playerName)`
 
-Checks if the player exists and then returns the Leader object of the player (or null if they're not on the leaderboard).
+Checks if the player exists and then returns the `Leader` object of the player (or null if they're not on the leaderboard).
 
 ```c#
 Leaderboard board = Client.Leaderboards.Get("sms");
