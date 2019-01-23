@@ -27,7 +27,7 @@ namespace SRLApiClient.Endpoints.Races
       SrlClient.Get(BasePath + "/" + raceId.ToLower(), out Race r);
       if (r != null)
       {
-        SrlClient.Get("/rules/" + r.Game.Abbrevation, out GameRules gr);
+        SrlClient.Get("/rules/" + r.Game.Abbreviation, out GameRules gr);
         r.Game.Rules = gr.Rules;
       }
 

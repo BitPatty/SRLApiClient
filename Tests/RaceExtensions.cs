@@ -35,10 +35,10 @@ namespace Tests
     public void FilterByGame()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
-      string abbr = races[0].Game.Abbrevation;
+      string abbr = races[0].Game.Abbreviation;
       ReadOnlyCollection<Race> matches = races.FilterByGame(abbr);
       Assert.Greater(matches.Count, 0);
-      Assert.AreEqual(matches.Count, races.Count(r => r.Game.Abbrevation.Equals(abbr)));
+      Assert.AreEqual(matches.Count, races.Count(r => r.Game.Abbreviation.Equals(abbr)));
 
       matches = races.FilterByGame("nonExistingGame");
       Assert.AreEqual(matches.Count, 0);

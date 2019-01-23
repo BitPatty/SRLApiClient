@@ -21,10 +21,10 @@ namespace SRLApiClient.Endpoints.Games
     public string Name { get; protected set; }
 
     /// <summary>
-    /// SRL abbrevation of the game, used globally for indexing
+    /// SRL abbreviation of the game, used globally for indexing
     /// </summary>
     [DataMember(Name = "abbrev", IsRequired = true)]
-    public string Abbrevation { get; protected set; }
+    public string Abbreviation { get; protected set; }
 
     /// <summary>
     /// The games popularity level

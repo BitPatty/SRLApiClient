@@ -27,13 +27,13 @@ namespace SRLApiClient.Endpoints.Stats
     /// Gets the statistics for a player
     /// </summary>
     /// <param name="playerName">The players name </param>
-    /// <param name="gameAbbrevation">The games abbrevation</param>
+    /// <param name="gameAbbreviation">The games abbreviation</param>
     /// <returns>Returns the players stats or null</returns>
-    public PlayerStats GetPlayerStats(string playerName, string gameAbbrevation = null)
+    public PlayerStats GetPlayerStats(string playerName, string gameAbbreviation = null)
     {
       if (string.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
-      if (gameAbbrevation == null) return SrlClient.Get(BasePath + "?player=" + playerName, out PlayerEndpoint ps) ? ps.Stats : null;
-      else return SrlClient.Get(BasePath + "?player=" + playerName + "&game=" + gameAbbrevation, out PlayerEndpoint ps) ? ps.Stats : null;
+      if (gameAbbreviation == null) return SrlClient.Get(BasePath + "?player=" + playerName, out PlayerEndpoint ps) ? ps.Stats : null;
+      else return SrlClient.Get(BasePath + "?player=" + playerName + "&game=" + gameAbbreviation, out PlayerEndpoint ps) ? ps.Stats : null;
     }
 
     [DataContract, KnownType(typeof(SRLDataType))]
@@ -46,12 +46,12 @@ namespace SRLApiClient.Endpoints.Stats
     /// <summary>
     /// Gets the statistics for a single game
     /// </summary>
-    /// <param name="gameAbbrevation">The games abbrevation</param>
+    /// <param name="gameAbbreviation">The games abbreviation</param>
     /// <returns>Returns the games stats or null</returns>
-    public GameStats GetGameStats(string gameAbbrevation)
+    public GameStats GetGameStats(string gameAbbreviation)
     {
-      if (string.IsNullOrWhiteSpace(gameAbbrevation)) throw new ArgumentException(nameof(gameAbbrevation), "Parameter can't be empty");
-      return SrlClient.Get(BasePath + "?game=" + gameAbbrevation, out GameEndpoint ge) ? ge.Stats : null;
+      if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
+      return SrlClient.Get(BasePath + "?game=" + gameAbbreviation, out GameEndpoint ge) ? ge.Stats : null;
     }
 
     [DataContract, KnownType(typeof(SRLDataType))]

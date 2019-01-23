@@ -15,16 +15,16 @@ namespace SRLApiClient.Extensions
     /// Filter the race collection by a game abbreviation
     /// </summary>
     /// <param name="races">The original collection to apply the filter on</param>
-    /// <param name="gameAbbrevation">The games abbrevation look for</param>
+    /// <param name="gameAbbreviation">The games abbreviation look for</param>
     /// <returns>Returns the races with the provided game abbreviation</returns>
-    public static ReadOnlyCollection<Race> FilterByGame(this ReadOnlyCollection<Race> races, string gameAbbrevation)
-      => races.Where(r => r.Game.Abbrevation.Equals(gameAbbrevation, StringComparison.OrdinalIgnoreCase)).ToList().AsReadOnly();
+    public static ReadOnlyCollection<Race> FilterByGame(this ReadOnlyCollection<Race> races, string gameAbbreviation)
+      => races.Where(r => r.Game.Abbreviation.Equals(gameAbbreviation, StringComparison.OrdinalIgnoreCase)).ToList().AsReadOnly();
 
     /// <summary>
     /// Filter the race collection by the race state
     /// </summary>
     /// <param name="races">The original collection to apply the filter on</param>
-    /// <param name="state">The games abbrevation to look for</param>
+    /// <param name="state">The games abbreviation to look for</param>
     /// <returns>Returns the races with the provided race state</returns>
     public static ReadOnlyCollection<Race> FilterByState(this ReadOnlyCollection<Race> races, RaceState state)
       => races.Where(r => r.State.Equals(state)).ToList().AsReadOnly();

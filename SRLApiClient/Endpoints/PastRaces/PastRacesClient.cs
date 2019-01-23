@@ -29,7 +29,7 @@ namespace SRLApiClient.Endpoints.PastRaces
       PastRace pr = r.Races[0];
       if (r != null)
       {
-        SrlClient.Get("/rules/" + pr.Game.Abbrevation, out GameRules gr);
+        SrlClient.Get("/rules/" + pr.Game.Abbreviation, out GameRules gr);
         pr.Game.Rules = gr.Rules;
       }
 
@@ -50,21 +50,21 @@ namespace SRLApiClient.Endpoints.PastRaces
     /// Gets all past races from a player
     /// </summary>
     /// <param name="playerName">The players name</param>
-    /// <param name="gameAbbrevation">If provided, only returns races from the specified game</param>
+    /// <param name="gameAbbreviation">If provided, only returns races from the specified game</param>
     /// <returns>Returns a list of past races or null</returns>
-    public ReadOnlyCollection<PastRace> GetByPlayer(string playerName, string gameAbbrevation = null)
+    public ReadOnlyCollection<PastRace> GetByPlayer(string playerName, string gameAbbreviation = null)
     {
       if (String.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
 
       string path = BasePath + "?player=" + playerName;
-      if (!String.IsNullOrWhiteSpace(gameAbbrevation)) path += "&game=" + gameAbbrevation;
+      if (!String.IsNullOrWhiteSpace(gameAbbreviation)) path += "&game=" + gameAbbreviation;
 
       SrlClient.Get(path, out PlayerPastRaces ppr);
       if (ppr != null)
       {
         foreach (PastRace pr in ppr.Races)
         {
-          SrlClient.Get("/rules/" + pr.Game.Abbrevation, out GameRules r);
+          SrlClient.Get("/rules/" + pr.Game.Abbreviation, out GameRules r);
           pr.Game.Rules = r.Rules;
         }
 

@@ -14,7 +14,7 @@
     /// <summary>
     /// Gets a single leaderboard
     /// </summary>
-    /// <param name="abbrev">The games abbrevation</param>
+    /// <param name="abbrev">The games abbreviation</param>
     /// <returns>Returns the leaderboard or null</returns>
     public Leaderboard Get(string abbrev)
     {
@@ -29,8 +29,8 @@
     /// <summary>
     /// Gets a single leaderboard
     /// </summary>
-    /// <param name="gameAbbrevation">The games abbrevation</param>
+    /// <param name="gameAbbreviation">The games abbreviation</param>
     /// <returns>Returns the leaderboard or null</returns>
-    public Leaderboard this[string gameAbbrevation] => Get(gameAbbrevation);
+    public Leaderboard this[string gameAbbreviation] => Get(gameAbbreviation);
   }
 }

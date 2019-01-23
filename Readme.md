@@ -110,7 +110,7 @@ _none_
 
 #### Games
 
-To fetch a game from SRL you need to specify its abbrevation.
+To fetch a game from SRL you need to specify its abbreviation.
 
 ```c#
 Game game = Client.Games.Get("sms");
@@ -122,7 +122,7 @@ or simply
 Game game = Client.Games["sms"];
 ```
 
-You can also search for games to find the correct abbrevation.
+You can also search for games to find the correct abbreviation.
 
 ```c#
 ReadOnlyCollection<Game> searchResults = Client.Games.Search("super mario sunshine");
@@ -134,7 +134,7 @@ ReadOnlyCollection<Game> searchResults = Client.Games.Search("super mario sunshi
 | -------------- | -------- | -------------------------- |
 | Id             | `int`    | Game Id                    |
 | Name           | `string` | Full name of the game      |
-| Abbrevation    | `string` | The games abbrevation      |
+| Abbreviation    | `string` | The games abbreviation      |
 | Popularity     | `int`    | The games popularity level |
 | PopularityRank | `int`    | The games popularity rank  |
 | Rules          | `string` | The games rules (HTML)     |
@@ -143,7 +143,7 @@ ReadOnlyCollection<Game> searchResults = Client.Games.Search("super mario sunshi
 
 #### Leaderboards
 
-To fetch a leaderboard for a game from SRL you need to specify the games abbrevation.
+To fetch a leaderboard for a game from SRL you need to specify the games abbreviation.
 
 ```c#
 Leaderboard board = Client.Leaderboards.Get("sms");
@@ -411,9 +411,9 @@ Leader leader = board.FindPlayer("psychonauter");
 
 #### Race Extensions
 
-##### `FilterByGame(string gameAbbrevation)`
+##### `FilterByGame(string gameAbbreviation)`
 
-Returns the subset of races matching the `gameAbbrevation`.
+Returns the subset of races matching the `gameAbbreviation`.
 
 ```c#
 //Returns all active Super Mario Sunshine races

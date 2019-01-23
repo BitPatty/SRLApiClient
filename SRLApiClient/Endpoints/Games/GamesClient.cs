@@ -26,7 +26,7 @@ namespace SRLApiClient.Endpoints.Games
     /// <summary>
     /// Gets a game from SRL
     /// </summary>
-    /// <param name="abbrev">The games abbrevation</param>
+    /// <param name="abbrev">The games abbreviation</param>
     /// <returns>Returns the game or null</returns>
     public Game Get(string abbrev)
     {
@@ -52,7 +52,7 @@ namespace SRLApiClient.Endpoints.Games
     /// <summary>
     /// Searches for a game on SRL
     /// </summary>
-    /// <param name="name">The games name or abbrevation to search for</param>
+    /// <param name="name">The games name or abbreviation to search for</param>
     /// <returns>Returns a list of games matching the search query</returns>
     public ReadOnlyCollection<Game> Search(string name)
     {
@@ -64,7 +64,7 @@ namespace SRLApiClient.Endpoints.Games
     /// <summary>
     /// Gets a game from SRL
     /// </summary>
-    /// <param name="abbrev">The games abbrevation</param>
+    /// <param name="abbrev">The games abbreviation</param>
     /// <returns>Returns the game or null</returns>
     public Game this[string abbrev] => Get(abbrev);
   }
