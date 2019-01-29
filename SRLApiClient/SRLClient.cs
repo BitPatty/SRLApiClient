@@ -25,6 +25,7 @@ using System.Net.Http;
 using System.Reflection;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
+using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
@@ -154,7 +155,7 @@ namespace SRLApiClient
       string ep = endpoint.StartsWith("/") ? endpoint : "/" + endpoint;
       res = default(T);
       bool success = GetStream(_apiUrl + ep, out Stream s) && s != null && DeSerialize(s, out res);
-      s.Dispose();
+      s?.Dispose();
       return success;
     }
 
@@ -198,25 +199,29 @@ namespace SRLApiClient
       string s = Serialize(data);
       _slim.Wait();
 
-      HttpRequestMessage req = new HttpRequestMessage(method, _apiUrl + ep) { Content = new StringContent(s) };
-      req.Headers.Accept.Clear();
-      req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+      using (HttpRequestMessage req = new HttpRequestMessage(method, _apiUrl + ep) { Content = new StringContent(s) })
+      {
+        req.Headers.Accept.Clear();
+        req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-      try
-      {
-        HttpResponseMessage r = _client.SendAsync(req, HttpCompletionOption.ResponseHeadersRead).Result;
-        response = r;
-        return r.IsSuccessStatusCode;
-      }
-      catch (HttpRequestException ex)
-      {
-        Console.WriteLine(ex.Message);
-        response = null;
-        return false;
-      }
-      finally
-      {
-        _slim.Release();
+        try
+        {
+          using (HttpResponseMessage r = _client.SendAsync(req, HttpCompletionOption.ResponseHeadersRead).Result)
+          {
+            response = r;
+            return r.IsSuccessStatusCode;
+          }
+        }
+        catch (HttpRequestException ex)
+        {
+          Console.WriteLine(ex.Message);
+          response = null;
+          return false;
+        }
+        finally
+        {
+          _slim.Release();
+        }
       }
     }
 
@@ -246,9 +251,12 @@ namespace SRLApiClient
 
     private string Serialize(Dictionary<string, string> postData)
     {
-      string s = "{";
-      foreach (KeyValuePair<string, string> kvp in postData) s += String.Format("{0}:{1},", HttpUtility.JavaScriptStringEncode(kvp.Key, true), HttpUtility.JavaScriptStringEncode(kvp.Value, true));
-      return s.TrimEnd(',') + '}';
+      StringBuilder s = new StringBuilder("{");
+
+      foreach (KeyValuePair<string, string> kvp in postData)
+        s.AppendFormat("{0}:{1},", HttpUtility.JavaScriptStringEncode(kvp.Key, true), HttpUtility.JavaScriptStringEncode(kvp.Value, true));
+
+      return s.Replace(',', '}', s.Length - 1, 1).ToString();
     }
 
     private bool GetStream(string url, out Stream data)
@@ -321,56 +329,63 @@ namespace SRLApiClient
         new KeyValuePair<string, string>("password", password)
       };
 
-      HttpRequestMessage req = new HttpRequestMessage(HttpMethod.Post, _authUrl) { Content = new FormUrlEncodedContent(x_form) };
-      req.Headers.Accept.Clear();
-      req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
-
-      try
+      using (HttpRequestMessage authRequest = new HttpRequestMessage(HttpMethod.Post, _authUrl) { Content = new FormUrlEncodedContent(x_form) })
       {
-        HttpResponseMessage resp = _client.SendAsync(req, HttpCompletionOption.ResponseHeadersRead).Result;
-        if (resp.IsSuccessStatusCode || resp.StatusCode == HttpStatusCode.MovedPermanently)
+        authRequest.Headers.Accept.Clear();
+        authRequest.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/x-www-form-urlencoded"));
+
+        try
         {
-          if (resp.StatusCode == HttpStatusCode.MovedPermanently)
+          using (HttpResponseMessage resp = _client.SendAsync(authRequest, HttpCompletionOption.ResponseHeadersRead).Result)
           {
-            foreach (KeyValuePair<string, IEnumerable<string>> val in resp.Headers.Where(t => t.Key.Equals("set-cookie", StringComparison.OrdinalIgnoreCase)))
+            if (resp.IsSuccessStatusCode || resp.StatusCode == HttpStatusCode.MovedPermanently)
             {
-              foreach (string key in val.Value)
+              if (resp.StatusCode == HttpStatusCode.MovedPermanently)
               {
-                string[] c_key = key.Split(';');
-                Dictionary<string, string> cookie = new Dictionary<string, string>();
-                for (int i = 1; i < c_key.Length; i++) cookie.Add(c_key[i].Trim().Split(new char[] { '=' }, 2)[0].ToLower(), c_key[i].Trim().Split(new char[] { '=' }, 2)[1]);
+                foreach (KeyValuePair<string, IEnumerable<string>> val in resp.Headers.Where(t => t.Key.Equals("set-cookie", StringComparison.OrdinalIgnoreCase)))
+                {
+                  foreach (string key in val.Value)
+                  {
+                    string[] c_key = key.Split(';');
+                    Dictionary<string, string> cookie = new Dictionary<string, string>();
+                    for (int i = 1; i < c_key.Length; i++) cookie.Add(c_key[i].Trim().Split(new char[] { '=' }, 2)[0].ToLower(), c_key[i].Trim().Split(new char[] { '=' }, 2)[1]);
 
-                string c_name = c_key[0].Split('=')[0];
-                string c_val = c_key[0].Split(new char[] { '=' }, 2)[1];
-                string c_path = cookie.ContainsKey("path") ? cookie["path"] : "";
-                string c_domain = cookie.ContainsKey("domain") ? cookie["domain"] : _baseDomain;
-                DateTime c_expires = cookie.ContainsKey("expires") && DateTime.TryParse(cookie["expires"], out DateTime dt) ?
-                  dt : cookie.ContainsKey("max-age") && Int32.TryParse(cookie["max-age"], out int res) ?
-                  DateTime.Now + TimeSpan.FromMilliseconds(res) : default(DateTime);
+                    string c_name = c_key[0].Split('=')[0];
+                    string c_val = c_key[0].Split(new char[] { '=' }, 2)[1];
+                    string c_path = cookie.ContainsKey("path") ? cookie["path"] : "";
+                    string c_domain = cookie.ContainsKey("domain") ? cookie["domain"] : _baseDomain;
+                    DateTime c_expires = cookie.ContainsKey("expires") && DateTime.TryParse(cookie["expires"], out DateTime dt) ?
+                      dt : cookie.ContainsKey("max-age") && Int32.TryParse(cookie["max-age"], out int res) ?
+                      DateTime.Now + TimeSpan.FromMilliseconds(res) : default(DateTime);
 
-                _cookieJar.Add(new Cookie(c_name, c_val, c_path, _baseDomain) { Expires = c_expires });
+                    _cookieJar.Add(new Cookie(c_name, c_val, c_path, c_domain) { Expires = c_expires });
+                  }
+                }
+              }
+
+              using (HttpRequestMessage authCheckRequest = new HttpRequestMessage(HttpMethod.Get, _apiUrl + "/token/login"))
+              {
+                authCheckRequest.Headers.Accept.Clear();
+                authCheckRequest.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+                using (HttpResponseMessage authCheckResponse = _client.SendAsync(authRequest).Result)
+                {
+                  if (resp.IsSuccessStatusCode)
+                  {
+                    User = new SRLUser(this);
+                  }
+                }
               }
             }
           }
-
-          req = new HttpRequestMessage(HttpMethod.Get, _apiUrl + "/token/login");
-          req.Headers.Accept.Clear();
-          req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-          resp = _client.SendAsync(req).Result;
-
-          if (resp.IsSuccessStatusCode)
-          {
-            User = new SRLUser(this);
-          }
         }
-      }
-      catch (HttpRequestException ex)
-      {
-        Console.WriteLine(ex.Message);
-      }
-      finally
-      {
-        _slim.Release();
+        catch (HttpRequestException ex)
+        {
+          Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+          _slim.Release();
+        }
       }
 
       return User?.Verify() ?? false;
