@@ -19,6 +19,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("RaceExtensions")]
     public void FilterByEntrant()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -32,6 +33,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("RaceExtensions")]
     public void FilterByGame()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -45,6 +47,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("RaceExtensions")]
     public void FilterById()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -58,6 +61,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("RaceExtensions")]
     public void FilterByState()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -71,6 +75,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("RaceExtensions")]
     public void FilterByMinState()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -84,6 +89,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("RaceExtensions")]
     public void FilterByMaxState()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();

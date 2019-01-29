@@ -26,8 +26,9 @@ namespace SRLApiClient.Endpoints.PastRaces
       if (String.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
 
       SrlClient.Get(BasePath + "/" + raceId.ToLower(), out PlayerPastRaces r);
-      PastRace pr = r.Races[0];
-      if (r != null)
+      PastRace pr = r?.Races[0];
+
+      if (pr != null)
       {
         SrlClient.Get("/rules/" + pr.Game.Abbreviation, out GameRules gr);
         pr.Game.Rules = gr.Rules;
