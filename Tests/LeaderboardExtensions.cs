@@ -16,6 +16,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("LeaderboardExtensions")]
     public void ContainsPlayer()
     {
       Leaderboard board = _client.Leaderboards.Get("sms");
@@ -24,12 +25,13 @@ namespace Tests
     }
 
     [Test]
+    [Category("LeaderboardExtensions")]
     public void FindPlayer()
     {
       Leaderboard board = _client.Leaderboards.Get("sms");
       Leader l = board.FindPlayer("psychonauter");
       Assert.IsNotNull(l);
-      Assert.AreEqual(l.Name, "psychonauter");
+      Assert.AreEqual(l.Name.ToLower(), "psychonauter");
 
       l = board.FindPlayer("nonExistingPlayer");
       Assert.Null(l);

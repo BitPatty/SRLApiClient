@@ -22,6 +22,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void Countries()
     {
       ReadOnlyCollection<string> countries = _client.Countries.Get();
@@ -29,6 +30,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void Games()
     {
       Game game = _client.Games["sms"];
@@ -38,6 +40,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void Races()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -48,6 +51,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void RacesAndPlayers()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -59,6 +63,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void PastRacesAndPlayers()
     {
       PastRace pastRace = _client.PastRaces.Get("239545");
@@ -69,6 +74,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void Leaderboards()
     {
       Leaderboard leaderboard = _client.Leaderboards.Get("sms");
@@ -80,6 +86,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void MonthlySRLStats()
     {
       ReadOnlyCollection<SRLStats> stats = _client.Stats.GetSRLStats();
@@ -88,6 +95,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void GameStats()
     {
       GameStats stats = _client.Stats.GetGameStats("sms");
@@ -96,6 +104,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void PlayerStats()
     {
       PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter");
@@ -104,6 +113,7 @@ namespace Tests
     }
 
     [Test]
+    [Category("Endpoints")]
     public void PlayerGameStats()
     {
       PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter", "ffx");

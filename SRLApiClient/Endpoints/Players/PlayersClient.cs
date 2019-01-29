@@ -74,8 +74,10 @@ namespace SRLApiClient.Endpoints.Players
         if (channel != null) dict.Add("channel", p.Channel);
         if (api != StreamApi.Unknown) dict.Add("api", api.ToString().ToLower());
         if (country != null) dict.Add("country", p.Country);
-        if (casename != null && casename.Equals(playerName, StringComparison.OrdinalIgnoreCase)) dict.Add("casename", casename);
-        if (dict.Count > 0) return SrlClient.Put(BasePath + "/" + playerName, dict);
+        if (casename?.Equals(playerName, StringComparison.OrdinalIgnoreCase) == true) dict.Add("casename", casename);
+
+        if (dict.Count > 0 && SrlClient.Put(BasePath + "/" + playerName, dict))
+          return SrlClient.User.Verify();
       }
 
       return false;

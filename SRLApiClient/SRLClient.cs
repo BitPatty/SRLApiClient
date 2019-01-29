@@ -367,9 +367,9 @@ namespace SRLApiClient
               {
                 authCheckRequest.Headers.Accept.Clear();
                 authCheckRequest.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                using (HttpResponseMessage authCheckResponse = _client.SendAsync(authRequest).Result)
+                using (HttpResponseMessage authCheckResponse = _client.SendAsync(authCheckRequest).Result)
                 {
-                  if (resp.IsSuccessStatusCode)
+                  if (authCheckResponse.IsSuccessStatusCode)
                   {
                     User = new SRLUser(this);
                   }
