@@ -2,12 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>0.9.1.0</AssemblyVersion>
-    <FileVersion>0.9.1.0</FileVersion>
-    <Version>0.9.1</Version>
+    <AssemblyVersion>0.9.2.0</AssemblyVersion>
+    <FileVersion>0.9.2.0</FileVersion>
+    <Version>0.9.2</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
-    <Authors>BitPatty &lt;psy@zint.ch&gt;</Authors>
+    <Authors>Matteias Collet (BitPatty) &lt;matteias.collet@bluewin.ch&gt;</Authors>
     <Description>API Wrapper for the SpeedRunsLive API</Description>
     <RepositoryUrl>https://github.com/BitPatty/SRLApiClient</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -16,6 +16,7 @@
     <PackageReleaseNotes>API Wrapper for the SpeedRunsLive API</PackageReleaseNotes>
     <PackageTags>speedrunslive</PackageTags>
     <Copyright>2018 Matteias Collet</Copyright>
+    <Company></Company>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
