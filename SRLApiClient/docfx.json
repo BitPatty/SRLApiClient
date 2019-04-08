@@ -18,18 +18,18 @@
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/**.md",
+          "**.yml",
+          "**.md",
         ],
-        "src": "docfx",
+        "src": "docfx/api",
         "dest": "api"
       },
       {
         "files": [
-          "articles/**.md",
-          "articles/**.yml"
+          "**.md",
+          "**.yml"
         ],
-        "src": "docfx",
+        "src": "docfx/articles",
         "dest": "articles"
       },
       {

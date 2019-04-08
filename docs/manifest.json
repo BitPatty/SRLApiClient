@@ -8,11 +8,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Countries.CountriesClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Countries.CountriesClient.html",
-          "hash": "EdmPlTuSY358E2UqSOEcGQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.Countries.CountriesClient.html",
+          "hash": "ZNX9kGPpBiUrHsJ+Fl/KIQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -20,11 +20,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Countries.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Countries.html",
-          "hash": "y+vIat84P+vTx6/XWAF5KQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.Countries.html",
+          "hash": "hQIK0xEDxdtdABjfGo0R7A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -32,11 +32,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.EntrantState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.EntrantState.html",
-          "hash": "AvQwbAU3xbbMm7IXRiObUQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.EntrantState.html",
+          "hash": "Gf7Sif5HVklZCewIi7ujTg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -44,11 +44,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Games.Game.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Games.Game.html",
-          "hash": "0EytLw1jYZC1FrYeSBLwOw=="
+          "relative_path": "api/SRLApiClient.Endpoints.Games.Game.html",
+          "hash": "apaifcUAjSbuAyX7DfuRUQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -56,11 +56,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Games.GamesClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Games.GamesClient.html",
-          "hash": "eU0mxIQJ1F5dVlO0CQYlew=="
+          "relative_path": "api/SRLApiClient.Endpoints.Games.GamesClient.html",
+          "hash": "3f6BJoBqO27j7DAXU99Dow=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -68,11 +68,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Games.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Games.html",
-          "hash": "FY54ckw6BQJyHcWfiz/6TA=="
+          "relative_path": "api/SRLApiClient.Endpoints.Games.html",
+          "hash": "wBGdfhA/pntidPKPHh4nlQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -80,11 +80,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Leaderboards.Leader.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Leaderboards.Leader.html",
-          "hash": "Ei13xgn1Kf9gRv2gPf9trA=="
+          "relative_path": "api/SRLApiClient.Endpoints.Leaderboards.Leader.html",
+          "hash": "8HsngNNUizcwU2q27Aeq1A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -92,11 +92,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Leaderboards.Leaderboard.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Leaderboards.Leaderboard.html",
-          "hash": "qQ9IKMwJKDvV42GSKiNThQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.Leaderboards.Leaderboard.html",
+          "hash": "Va0I1qrmU4ejcNoW/uXqow=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -104,11 +104,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.html",
-          "hash": "Eq++KdU2d/W0+aTjkHsZQA=="
+          "relative_path": "api/SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.html",
+          "hash": "9kZ+s3IVBHvNmF6e5ppSRw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -116,11 +116,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Leaderboards.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Leaderboards.html",
-          "hash": "dCZHSd/IIb/h9Y/y9pY/kw=="
+          "relative_path": "api/SRLApiClient.Endpoints.Leaderboards.html",
+          "hash": "1NEC5mUfkJBHU2rlmi2cEg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -128,11 +128,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.PastRaces.PastRace.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.PastRaces.PastRace.html",
-          "hash": "j+AIzQ1ZiLL6I+cPwe1pRA=="
+          "relative_path": "api/SRLApiClient.Endpoints.PastRaces.PastRace.html",
+          "hash": "mvLrYNLA4Vbt2uf155MsUg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -140,11 +140,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html",
-          "hash": "/cm9LzhUV9stp5f3Gath3w=="
+          "relative_path": "api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html",
+          "hash": "YfX275nJxt3ew4xgwg8K/Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -152,11 +152,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.PastRaces.Result.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.PastRaces.Result.html",
-          "hash": "nP2vjDMnIIJWzo8ABLFiMQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.PastRaces.Result.html",
+          "hash": "P2BW6AXKwCNQrNcSoc/aPQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -164,11 +164,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.PastRaces.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.PastRaces.html",
-          "hash": "fAJuXOzBJlxi8LCOHE+2BQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.PastRaces.html",
+          "hash": "tCFMSwM++zD1OnNpYD5Dbg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -176,11 +176,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Players.Player.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Players.Player.html",
-          "hash": "nQ2R1i/XUWt2pISEs3WhFA=="
+          "relative_path": "api/SRLApiClient.Endpoints.Players.Player.html",
+          "hash": "4iGBPNQfGztsGwTjbsDaZA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -188,11 +188,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Players.PlayersClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Players.PlayersClient.html",
-          "hash": "z5c6QkNqxaygOjFKC+NsPw=="
+          "relative_path": "api/SRLApiClient.Endpoints.Players.PlayersClient.html",
+          "hash": "cKiuBWvROliuPPz7QVe2UQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -200,11 +200,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Players.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Players.html",
-          "hash": "VO2ZEuhQXKfGx4FZekaP0g=="
+          "relative_path": "api/SRLApiClient.Endpoints.Players.html",
+          "hash": "8ID8/164jHnkBinjvItlSQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -212,11 +212,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.RaceState.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.RaceState.html",
-          "hash": "WAzZvwQY6nHA7+IlRESk4g=="
+          "relative_path": "api/SRLApiClient.Endpoints.RaceState.html",
+          "hash": "oehMoQRMjryvXyLSaFcgRQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -224,11 +224,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Races.Entrant.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Races.Entrant.html",
-          "hash": "VYisAn+oi/JzSxRiK7YsHQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.Races.Entrant.html",
+          "hash": "RFXDr4m0dLfhBNyNInVXIA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -236,11 +236,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Races.Race.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Races.Race.html",
-          "hash": "F1j2qxITadmyRldrkODAqA=="
+          "relative_path": "api/SRLApiClient.Endpoints.Races.Race.html",
+          "hash": "WzqMFJHtP1HhNn7FJJ3GXw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -248,11 +248,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Races.RacesClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Races.RacesClient.html",
-          "hash": "ZRf5QSDFH4ZYA5rBj06Alw=="
+          "relative_path": "api/SRLApiClient.Endpoints.Races.RacesClient.html",
+          "hash": "HyWFb94g37JP2+hM1RPXQg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -260,11 +260,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Races.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Races.html",
-          "hash": "Jpg3ZQQWkaYiO2pqAp21ng=="
+          "relative_path": "api/SRLApiClient.Endpoints.Races.html",
+          "hash": "dzaCCL9FQ7NLXk1mjHatMQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -272,11 +272,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.SRLDataType.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.SRLDataType.html",
-          "hash": "PDHZG2N7QD3L9lUQsPt/aQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.SRLDataType.html",
+          "hash": "Olzx43GiDhbsaz/1l0ndxw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -284,11 +284,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html",
-          "hash": "Bbm45O8vy/MWR1VyqxIFIA=="
+          "relative_path": "api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html",
+          "hash": "B9j9ASeHA+7zh5gK4w/dyQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -296,11 +296,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.SRLEndpoint.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.SRLEndpoint.html",
-          "hash": "wOJxkXO2zoJQcYKgJvSV5A=="
+          "relative_path": "api/SRLApiClient.Endpoints.SRLEndpoint.html",
+          "hash": "t/rS+3kifQfXjFiaBIZWvA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -308,11 +308,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Stats.GameStats.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Stats.GameStats.html",
-          "hash": "bFiyi9GivMtoGgHvGu09LQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.Stats.GameStats.html",
+          "hash": "GaXCe0+WWsF6cfJMRzh/Pg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -320,11 +320,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Stats.PlayerStats.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Stats.PlayerStats.html",
-          "hash": "cxYFRZ6FstWYjZbrurTgpQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.Stats.PlayerStats.html",
+          "hash": "Pzl+Z6zWdnKUZNW6ujpi8Q=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -332,11 +332,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Stats.SRLStats.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Stats.SRLStats.html",
-          "hash": "AMWSsbrNacnVHQxEVB2YXQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.Stats.SRLStats.html",
+          "hash": "ZU1qfePpQqbuJxfChErUtw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -344,11 +344,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Stats.StatsClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Stats.StatsClient.html",
-          "hash": "YOsMp9bTWIIF6/PHT5DwNQ=="
+          "relative_path": "api/SRLApiClient.Endpoints.Stats.StatsClient.html",
+          "hash": "pDLi8U5KpLjX89wSv4KVmQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -356,11 +356,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.Stats.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.Stats.html",
-          "hash": "JlU9gAw7NiJJo5QP4IrfVA=="
+          "relative_path": "api/SRLApiClient.Endpoints.Stats.html",
+          "hash": "13E5Q9gJtDNQzJuYl8LMhA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -368,11 +368,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.StreamApi.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.StreamApi.html",
-          "hash": "1TZnNkg1gr/fF7IADpt+tA=="
+          "relative_path": "api/SRLApiClient.Endpoints.StreamApi.html",
+          "hash": "Dit/7TDioohpiAV3UrMhtA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -380,11 +380,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Endpoints.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Endpoints.html",
-          "hash": "JpSvsYFBkmfEXWy/GOJNIw=="
+          "relative_path": "api/SRLApiClient.Endpoints.html",
+          "hash": "41/p+M0CauOkkvAxeTY75A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -392,11 +392,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Extensions.LeaderboardExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Extensions.LeaderboardExtensions.html",
-          "hash": "YCqbzXm9VYRc+PlCNCsraw=="
+          "relative_path": "api/SRLApiClient.Extensions.LeaderboardExtensions.html",
+          "hash": "DNdP+Sj5ZV4UzOhvbwe1+w=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -404,11 +404,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Extensions.RaceExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Extensions.RaceExtensions.html",
-          "hash": "ysQiYTDWuNvnk6w8MaAclA=="
+          "relative_path": "api/SRLApiClient.Extensions.RaceExtensions.html",
+          "hash": "6XBjt8vkCHMwbrjlwaL3fQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -416,11 +416,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.Extensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.Extensions.html",
-          "hash": "nwDG4xvFpewivRAqjVQwDA=="
+          "relative_path": "api/SRLApiClient.Extensions.html",
+          "hash": "jGuR5rJ0WHu9NGgPxP2tKg=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -428,11 +428,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.SRLClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.SRLClient.html",
-          "hash": "ejjKiBy4eVJ4aJAG9KPJ/w=="
+          "relative_path": "api/SRLApiClient.SRLClient.html",
+          "hash": "E+AGZwSaCsa14kkQewyDVQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -440,11 +440,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.SRLParseException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.SRLParseException.html",
-          "hash": "qpeFNdyNyhhhzON7c/3Hog=="
+          "relative_path": "api/SRLApiClient.SRLParseException.html",
+          "hash": "NORM4VaT1RbibTSKjDW1fw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -452,11 +452,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.SRLTimeoutException.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.SRLTimeoutException.html",
-          "hash": "2ByE+Pa51FrYk91Hn9vg7A=="
+          "relative_path": "api/SRLApiClient.SRLTimeoutException.html",
+          "hash": "ak0rkX/k9g+JDxx0HCwplw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -464,11 +464,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.SRLUser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.SRLUser.html",
-          "hash": "DKpHto9+q5qpBO2lOWabfg=="
+          "relative_path": "api/SRLApiClient.SRLUser.html",
+          "hash": "HWCZTr6+CGJGYY6s5JJw8A=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -476,11 +476,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.UserRole.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.UserRole.html",
-          "hash": "WLmBuejNXKaxtT7f5Y1vRw=="
+          "relative_path": "api/SRLApiClient.UserRole.html",
+          "hash": "berZZv1tGkpN+1Br64uqaw=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -488,11 +488,11 @@
       "source_relative_path": "docfx/api/SRLApiClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/SRLApiClient.html",
-          "hash": "y1adzTahsA9JhIq207Uv2w=="
+          "relative_path": "api/SRLApiClient.html",
+          "hash": "jdAcJyKqeePtW1f3vW2WoQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -500,7 +500,7 @@
       "source_relative_path": "docfx/api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/api/toc.html",
+          "relative_path": "api/toc.html",
           "hash": "Vyl7FT7iA3VTsR1Vp2M3JA=="
         }
       },
@@ -512,11 +512,11 @@
       "source_relative_path": "docfx/articles/intro.md",
       "output": {
         ".html": {
-          "relative_path": "articles/articles/intro.html",
-          "hash": "yyI4ftks+DKZ+P5X+xYqyw=="
+          "relative_path": "articles/intro.html",
+          "hash": "fTVAH0It1nsLjfFD2/1ZbQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -524,7 +524,7 @@
       "source_relative_path": "docfx/articles/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/articles/toc.html",
+          "relative_path": "articles/toc.html",
           "hash": "t7iiFrmuYmrKWisdq+lN6Q=="
         }
       },
@@ -537,10 +537,10 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "LbNjmQJA2u8F/2k5d4iEMw=="
+          "hash": "Jna3dg5/Hk2TEspclKiFvA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -549,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "5RipJowGgZ0kWzw25LciCg=="
+          "hash": "1EdAT409jJRH04v3wxIpXQ=="
         }
       },
       "is_incremental": false,
@@ -559,25 +559,23 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Disable incremental build by force rebuild option.",
+        "can_incremental": true,
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0,
-        "full_build_reason_code": "ForceRebuild"
+        "skipped_file_count": 0
       },
       "processors": {
         "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 0
+          "skipped_file_count": 2
         },
         "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+          "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 41,
-          "skipped_file_count": 0
+          "skipped_file_count": 41
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
@@ -590,8 +588,8 @@
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

@@ -28,7 +28,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SRLUser
     path: SRLUser.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Id
     path: SRLUser.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Name
     path: SRLUser.cs
@@ -145,7 +145,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Role
     path: SRLUser.cs
@@ -182,7 +182,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Player
     path: SRLUser.cs
@@ -219,7 +219,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: SRLUser.cs
@@ -255,7 +255,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Verify
     path: SRLUser.cs
@@ -290,7 +290,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: VerifyAsync
     path: SRLUser.cs
@@ -325,7 +325,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetChannel
     path: SRLUser.cs
@@ -364,7 +364,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetTwitter
     path: SRLUser.cs
@@ -403,7 +403,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetYoutube
     path: SRLUser.cs
@@ -442,7 +442,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetCapitalization
     path: SRLUser.cs
@@ -481,7 +481,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetApi
     path: SRLUser.cs
@@ -520,7 +520,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetCountry
     path: SRLUser.cs

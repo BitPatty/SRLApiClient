@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/RacesClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RacesClient
     path: Endpoints/Races/RacesClient.cs
@@ -69,7 +69,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/RacesClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Races/RacesClient.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/RacesClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/Races/RacesClient.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/RacesClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Races/RacesClient.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/RacesClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetActive
     path: Endpoints/Races/RacesClient.cs
@@ -218,7 +218,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/RacesClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetActiveAsync
     path: Endpoints/Races/RacesClient.cs
@@ -253,7 +253,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/RacesClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: this[]
     path: Endpoints/Races/RacesClient.cs
