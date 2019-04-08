@@ -37,16 +37,9 @@
     </PackageReference>
   </ItemGroup>
 
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition="'$(OS)' == 'Windows_NT'">
-    <Exec Command="echo &quot;Removing docs folder&quot;&#xD;&#xA;RD /S /Q &quot;../docs&quot;&#xD;&#xA;echo &quot;Docs folder removed&quot;" />
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Condition="'$(OS)' == 'Windows_NT'" Command="echo &quot;Removing docs folder&quot;&#xD;&#xA;RD /S /Q &quot;../docs&quot;&#xD;&#xA;echo &quot;Docs folder removed&quot;" />
+    <Exec Condition="'$(OS)' == 'Unix'" Command="echo &quot;Skipping docs generation!&quot;" />
+    <Exec Condition="'$(OS)' == 'OSX'" Command="echo &quot;Skipping docs generation!&quot;" />
   </Target>
-
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition="'$(OS)' == 'Unix'">
-    <Exec Command="echo &quot;Skipping docs generation!&quot;" />
-  </Target>
-
-  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition="'$(OS)' == 'OSX'">
-    <Exec Command="echo &quot;Skipping docs generation!&quot;" />
-  </Target>
-
 </Project>
