@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="echo &quot;Removing docs folder&quot;&#xD;&#xA;RD /S /Q &quot;..\docs\&quot;&#xD;&#xA;echo &quot;Docs folder removed&quot;" />
+    <Exec Command="echo &quot;Removing docs folder&quot;;&#xD;&#xA;RD /S /Q &quot;..\docs\&quot;;&#xD;&#xA;echo &quot;Docs folder removed&quot;;" />
   </Target>
 
 </Project>
