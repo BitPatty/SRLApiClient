@@ -22,7 +22,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
     public void Countries()
     {
       ReadOnlyCollection<string> countries = _client.Countries.GetAsync().Result;
@@ -30,7 +30,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
     public void Games()
     {
       Game game = _client.Games.GetAsync("sms").Result;
@@ -38,7 +38,15 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
+    public void GameRules()
+    {
+      string rules = _client.Games.GetRulesAsync("sms").Result;
+      Assert.IsNotEmpty(rules);
+    }
+
+    [Test]
+    [Category("EndpointsAsync")]
     public void Races()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActiveAsync().Result;
@@ -47,7 +55,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
     public void RacesAndPlayers()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActiveAsync().Result;
@@ -60,7 +68,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
     public void PastRacesAndPlayers()
     {
       PastRace pastRace = _client.PastRaces.GetAsync("239545").Result;
@@ -71,7 +79,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
     public void Leaderboards()
     {
       Leaderboard leaderboard = _client.Leaderboards.GetAsync("sms").Result;
@@ -81,7 +89,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
     public void MonthlySRLStats()
     {
       ReadOnlyCollection<SRLStats> stats = _client.Stats.GetMonthlySRLStatsAsync().Result;
@@ -90,7 +98,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
     public void GameStats()
     {
       GameStats stats = _client.Stats.GetGameStatsAsync("sms").Result;
@@ -99,7 +107,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
     public void PlayerStats()
     {
       PlayerStats stats = _client.Stats.GetPlayerStatsAsync("psychonauter").Result;
@@ -108,7 +116,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category("EndpointsAsync")]
     public void PlayerGameStats()
     {
       PlayerStats stats = _client.Stats.GetPlayerStatsAsync("psychonauter", "ffx").Result;

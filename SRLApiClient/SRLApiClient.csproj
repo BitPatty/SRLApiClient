@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>0.9.2.0</AssemblyVersion>
-    <FileVersion>0.9.2.0</FileVersion>
-    <Version>0.9.2</Version>
+    <AssemblyVersion>0.10.0.0</AssemblyVersion>
+    <FileVersion>0.10.0.0</FileVersion>
+    <Version>0.10.0-beta</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
     <Authors>Matteias Collet (BitPatty) &lt;matteias.collet@bluewin.ch&gt;</Authors>
@@ -38,7 +38,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Command="echo &quot;Deleting docs folder&quot;&#xD;&#xA;RD /S /Q &quot;..\docs\&quot;" />
+    <Exec Command="echo Removing docs folder&#xD;&#xA;RD /S /Q &quot;..\docs\&quot;&#xD;&#xA;echo Docs folder removed" />
   </Target>
 
 </Project>

@@ -39,6 +39,14 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    public void GameRules()
+    {
+      string rules = _client.Games.GetRules("sms");
+      Assert.IsNotEmpty(rules);
+    }
+
+    [Test]
+    [Category("Endpoints")]
     public void Races()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
