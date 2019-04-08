@@ -37,6 +37,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="docfx\themes\" />
+  </ItemGroup>
+
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
     <Exec Condition="'$(OS)' == 'Windows_NT'" Command="echo &quot;Removing docs folder&quot;&#xD;&#xA;RD /S /Q &quot;../docs&quot;&#xD;&#xA;echo &quot;Docs folder removed&quot;" />
     <Exec Condition="'$(OS)' == 'Unix'" Command="echo &quot;Skipping docs generation!&quot;" />
