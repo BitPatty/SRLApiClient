@@ -1,12 +1,12 @@
 language: csharp
 mono: none
-dotnet: 2.0.0
+dotnet: 2.2.202
 dist: trusty
 branches:
- only:
-  - master
+  only:
+    - master
 script:
- - dotnet --version
- - dotnet build SRLApiClient/SRLApiClient.csproj -c Release
- - dotnet build Tests/Tests.csproj -c Release
- - dotnet test Tests/ -c Release
+  - dotnet --version
+  - dotnet build SRLApiClient/SRLApiClient.csproj -c Release
+  - dotnet build Tests/Tests.csproj -c Release
+  - dotnet test Tests/ -c Release
