@@ -35,7 +35,7 @@
       {
         "files": [
           "**.yml",
-          "**.md"
+          "**.md",
         ],
         "src": "docfx",
         "dest": "."
@@ -44,8 +44,11 @@
     "resource": [
       {
         "files": [
-          "docfx/images/**"
-        ]
+          "CNAME",
+          "images/**"
+        ],
+        "src": "docfx",
+        "dest": "."
       }
     ],
     "dest": "../docs",
