@@ -15,7 +15,7 @@ namespace SRLApiClient.Endpoints.PastRaces
     public int Race { get; protected set; }
 
     /// <summary>
-    /// The players place in the race
+    /// The players placement in the race
     /// </summary>
     [DataMember(Name = "place", IsRequired = true)]
     public int Place { get; protected set; }
@@ -27,7 +27,7 @@ namespace SRLApiClient.Endpoints.PastRaces
     public string PlayerName { get; protected set; }
 
     /// <summary>
-    /// The players final time
+    /// The players final time in seconds
     /// </summary>
     [DataMember(Name = "time", IsRequired = true)]
     public int Time { get; protected set; }

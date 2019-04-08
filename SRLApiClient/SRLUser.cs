@@ -1,6 +1,7 @@
 ﻿using SRLApiClient.Endpoints;
 using SRLApiClient.Endpoints.Players;
 using System.Runtime.Serialization;
+using System.Threading.Tasks;
 
 namespace SRLApiClient
 {
@@ -44,15 +45,27 @@ namespace SRLApiClient
     /// Verifies that the <see cref="SRLUser"/> is an authenticated user
     /// </summary>
     /// <returns>Returns true if the <see cref="SRLUser"/> account could be verified</returns>
-    public bool Verify()
+    public bool Verify() => VerifyAsync().Result;
+
+    /// <summary>
+    /// Asynchronously verifies that the <see cref="SRLUser"/> is properly authenticated
+    /// </summary>
+    /// <returns>Returns true if the verification succeeds</returns>
+    public async Task<bool> VerifyAsync()
     {
-      if (_srlClient.Get("/token", out Token t) && t.Role > UserRole.Anon && _srlClient.Get("/players/" + t.Name, out Player p))
+      Token t = await _srlClient.GetAsync<Token>("/token").ConfigureAwait(false);
+      if (t != null && t.Role > UserRole.Anon)
       {
-        Name = t.Name;
-        Role = t.Role;
-        Player = p;
-        return true;
+        Player p = await _srlClient.GetAsync<Player>($"/players/{t.Name}").ConfigureAwait(false);
+        if (p != null)
+        {
+          Name = t.Name;
+          Role = t.Role;
+          Player = p;
+          return true;
+        }
       }
+
       return false;
     }
 

@@ -15,13 +15,13 @@ namespace SRLApiClient.Endpoints.Games
     public int Id { get; protected set; }
 
     /// <summary>
-    /// Full name of the game
+    /// The games full name
     /// </summary>
     [DataMember(Name = "name", IsRequired = true)]
     public string Name { get; protected set; }
 
     /// <summary>
-    /// SRL abbreviation of the game, used globally for indexing
+    /// The games abbreviation
     /// </summary>
     [DataMember(Name = "abbrev", IsRequired = true)]
     public string Abbreviation { get; protected set; }
@@ -37,10 +37,5 @@ namespace SRLApiClient.Endpoints.Games
     /// </summary>
     [DataMember(Name = "popularityrank", IsRequired = true)]
     public int PopularityRank { get; protected set; }
-
-    /// <summary>
-    /// The games rules
-    /// </summary>
-    public string Rules { get; internal set; }
   }
 }
