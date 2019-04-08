@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Player
     path: Endpoints/Players/Player.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Id
     path: Endpoints/Players/Player.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Name
     path: Endpoints/Players/Player.cs
@@ -200,7 +200,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Channel
     path: Endpoints/Players/Player.cs
@@ -256,7 +256,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Twitter
     path: Endpoints/Players/Player.cs
@@ -312,7 +312,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Youtube
     path: Endpoints/Players/Player.cs
@@ -368,7 +368,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: _api
     path: Endpoints/Players/Player.cs
@@ -422,7 +422,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StreamApi
     path: Endpoints/Players/Player.cs
@@ -459,7 +459,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Country
     path: Endpoints/Players/Player.cs

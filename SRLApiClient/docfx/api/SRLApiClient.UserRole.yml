@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: UserRole
     path: SRLUser.cs
@@ -55,7 +55,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unknown
     path: SRLUser.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Anon
     path: SRLUser.cs
@@ -123,7 +123,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: User
     path: SRLUser.cs
@@ -157,7 +157,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Voice
     path: SRLUser.cs
@@ -191,7 +191,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Halfop
     path: SRLUser.cs
@@ -225,7 +225,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Op
     path: SRLUser.cs
@@ -259,7 +259,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLUser.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Admin
     path: SRLUser.cs

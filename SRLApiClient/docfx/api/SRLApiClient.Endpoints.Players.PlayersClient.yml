@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PlayersClient
     path: Endpoints/Players/PlayersClient.cs
@@ -69,7 +69,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Players/PlayersClient.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/Players/PlayersClient.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Players/PlayersClient.cs
@@ -183,7 +183,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Search
     path: Endpoints/Players/PlayersClient.cs
@@ -222,7 +222,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SearchAsync
     path: Endpoints/Players/PlayersClient.cs
@@ -261,7 +261,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Edit
     path: Endpoints/Players/PlayersClient.cs

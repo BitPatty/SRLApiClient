@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GamesClient
     path: Endpoints/Games/GamesClient.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Games/GamesClient.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/Games/GamesClient.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Games/GamesClient.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Search
     path: Endpoints/Games/GamesClient.cs
@@ -225,7 +225,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SearchAsync
     path: Endpoints/Games/GamesClient.cs
@@ -264,7 +264,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRules
     path: Endpoints/Games/GamesClient.cs
@@ -303,7 +303,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRules
     path: Endpoints/Games/GamesClient.cs
@@ -342,7 +342,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRulesAsync
     path: Endpoints/Games/GamesClient.cs
@@ -381,7 +381,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/GamesClient.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRulesAsync
     path: Endpoints/Games/GamesClient.cs

@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/GameStats.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GameStats
     path: Endpoints/Stats/GameStats.cs
@@ -86,7 +86,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/GameStats.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalRaces
     path: Endpoints/Stats/GameStats.cs
@@ -142,7 +142,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/GameStats.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalPlayers
     path: Endpoints/Stats/GameStats.cs
@@ -198,7 +198,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/GameStats.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: LargestRaceId
     path: Endpoints/Stats/GameStats.cs
@@ -254,7 +254,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/GameStats.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: LargestRaceSize
     path: Endpoints/Stats/GameStats.cs
@@ -310,7 +310,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/GameStats.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalTimeRaced
     path: Endpoints/Stats/GameStats.cs
@@ -366,7 +366,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/GameStats.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalTimePlayed
     path: Endpoints/Stats/GameStats.cs

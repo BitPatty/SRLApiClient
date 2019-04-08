@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Enums.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RaceState
     path: Endpoints/Enums.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Enums.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unknown
     path: Endpoints/Enums.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Enums.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: EntryOpen
     path: Endpoints/Enums.cs
@@ -124,7 +124,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Enums.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: EntryClosed
     path: Endpoints/Enums.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Enums.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: InProgress
     path: Endpoints/Enums.cs
@@ -194,7 +194,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Enums.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Finished
     path: Endpoints/Enums.cs
@@ -229,7 +229,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Enums.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Over
     path: Endpoints/Enums.cs

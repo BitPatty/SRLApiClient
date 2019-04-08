@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leader.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Leader
     path: Endpoints/Leaderboards/Leader.cs
@@ -83,7 +83,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leader.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Name
     path: Endpoints/Leaderboards/Leader.cs
@@ -139,7 +139,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leader.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TrueSkill
     path: Endpoints/Leaderboards/Leader.cs
@@ -195,7 +195,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leader.cs
-      branch: paginated-requests
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Rank
     path: Endpoints/Leaderboards/Leader.cs
