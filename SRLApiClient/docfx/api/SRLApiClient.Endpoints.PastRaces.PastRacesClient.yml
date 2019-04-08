@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PastRacesClient
     path: Endpoints/PastRaces/PastRacesClient.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/PastRaces/PastRacesClient.cs
@@ -106,7 +106,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/PastRaces/PastRacesClient.cs
@@ -145,7 +145,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
@@ -184,7 +184,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayer
     path: Endpoints/PastRaces/PastRacesClient.cs
@@ -223,7 +223,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayer
     path: Endpoints/PastRaces/PastRacesClient.cs
@@ -265,7 +265,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayerAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
@@ -304,7 +304,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayerAsync
     path: Endpoints/PastRaces/PastRacesClient.cs

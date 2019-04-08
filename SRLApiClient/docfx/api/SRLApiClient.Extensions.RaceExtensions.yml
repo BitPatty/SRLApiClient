@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/RaceExtensions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RaceExtensions
     path: Extensions/RaceExtensions.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/RaceExtensions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FilterByGame
     path: Extensions/RaceExtensions.cs
@@ -117,7 +117,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/RaceExtensions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FilterByState
     path: Extensions/RaceExtensions.cs
@@ -168,7 +168,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/RaceExtensions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FilterByMinState
     path: Extensions/RaceExtensions.cs
@@ -219,7 +219,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/RaceExtensions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FilterByMaxState
     path: Extensions/RaceExtensions.cs
@@ -270,7 +270,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/RaceExtensions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FilterByEntrant
     path: Extensions/RaceExtensions.cs
@@ -321,7 +321,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/RaceExtensions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FilterById
     path: Extensions/RaceExtensions.cs

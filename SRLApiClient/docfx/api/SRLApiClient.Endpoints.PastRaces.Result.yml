@@ -26,7 +26,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Result
     path: Endpoints/PastRaces/Result.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Race
     path: Endpoints/PastRaces/Result.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Place
     path: Endpoints/PastRaces/Result.cs
@@ -203,7 +203,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PlayerName
     path: Endpoints/PastRaces/Result.cs
@@ -259,7 +259,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Time
     path: Endpoints/PastRaces/Result.cs
@@ -315,7 +315,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Comment
     path: Endpoints/PastRaces/Result.cs
@@ -371,7 +371,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: OldTrueSkill
     path: Endpoints/PastRaces/Result.cs
@@ -427,7 +427,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: NewTrueSkill
     path: Endpoints/PastRaces/Result.cs
@@ -483,7 +483,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TrueSkillChange
     path: Endpoints/PastRaces/Result.cs
@@ -539,7 +539,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: OldSeasonTrueSkill
     path: Endpoints/PastRaces/Result.cs
@@ -595,7 +595,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: NewSeasonTrueSkill
     path: Endpoints/PastRaces/Result.cs
@@ -651,7 +651,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/Result.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SeasonTrueSkillChange
     path: Endpoints/PastRaces/Result.cs

@@ -40,7 +40,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SRLClient
     path: SRLClient.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Host
     path: SRLClient.cs
@@ -126,7 +126,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: User
     path: SRLClient.cs
@@ -163,7 +163,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: IsAuthenticated
     path: SRLClient.cs
@@ -200,7 +200,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Games
     path: SRLClient.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Players
     path: SRLClient.cs
@@ -274,7 +274,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Leaderboards
     path: SRLClient.cs
@@ -311,7 +311,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Races
     path: SRLClient.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PastRaces
     path: SRLClient.cs
@@ -385,7 +385,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Countries
     path: SRLClient.cs
@@ -422,7 +422,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Stats
     path: SRLClient.cs
@@ -459,7 +459,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RequestTimeout
     path: SRLClient.cs
@@ -496,7 +496,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: SRLClient.cs
@@ -532,7 +532,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: SRLClient.cs
@@ -584,7 +584,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: SRLClient.cs
@@ -636,7 +636,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Put
     path: SRLClient.cs
@@ -681,7 +681,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PutAsync
     path: SRLClient.cs
@@ -726,7 +726,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Post
     path: SRLClient.cs
@@ -771,7 +771,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PostAsync
     path: SRLClient.cs
@@ -816,7 +816,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SubmitPayloadAsync
     path: SRLClient.cs
@@ -864,7 +864,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: DeSerialize
     path: SRLClient.cs
@@ -911,7 +911,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: JsonSerialize
     path: SRLClient.cs
@@ -953,7 +953,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Logout
     path: SRLClient.cs
@@ -985,7 +985,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: ReAuthenticate
     path: SRLClient.cs
@@ -1020,7 +1020,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Authenticate
     path: SRLClient.cs
@@ -1065,7 +1065,7 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Dispose
     path: SRLClient.cs

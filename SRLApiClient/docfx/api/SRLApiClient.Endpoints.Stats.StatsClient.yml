@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StatsClient
     path: Endpoints/Stats/StatsClient.cs
@@ -72,7 +72,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Stats/StatsClient.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStats
     path: Endpoints/Stats/StatsClient.cs
@@ -147,7 +147,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStatsAsync
     path: Endpoints/Stats/StatsClient.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStats
     path: Endpoints/Stats/StatsClient.cs
@@ -228,7 +228,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStatsAsync
     path: Endpoints/Stats/StatsClient.cs
@@ -270,7 +270,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetGameStats
     path: Endpoints/Stats/StatsClient.cs
@@ -309,7 +309,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetGameStatsAsync
     path: Endpoints/Stats/StatsClient.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetMonthlySRLStats
     path: Endpoints/Stats/StatsClient.cs
@@ -383,7 +383,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetMonthlySRLStatsAsync
     path: Endpoints/Stats/StatsClient.cs

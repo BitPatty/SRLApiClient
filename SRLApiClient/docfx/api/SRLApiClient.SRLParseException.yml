@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Exceptions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SRLParseException
     path: Exceptions.cs
@@ -77,7 +77,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Exceptions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Exceptions.cs
@@ -107,7 +107,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Exceptions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Exceptions.cs
@@ -140,7 +140,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Exceptions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Exceptions.cs
@@ -175,7 +175,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Exceptions.cs
-      branch: v1
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Exceptions.cs
