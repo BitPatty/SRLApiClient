@@ -1,0 +1,264 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.EntrantState
+  commentId: T:SRLApiClient.Endpoints.EntrantState
+  id: EntrantState
+  parent: SRLApiClient.Endpoints
+  children:
+  - SRLApiClient.Endpoints.EntrantState.Disqualified
+  - SRLApiClient.Endpoints.EntrantState.Done
+  - SRLApiClient.Endpoints.EntrantState.Entered
+  - SRLApiClient.Endpoints.EntrantState.Forfeit
+  - SRLApiClient.Endpoints.EntrantState.Ready
+  - SRLApiClient.Endpoints.EntrantState.Unknown
+  langs:
+  - csharp
+  - vb
+  name: EntrantState
+  nameWithType: EntrantState
+  fullName: SRLApiClient.Endpoints.EntrantState
+  type: Enum
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: EntrantState
+    path: Endpoints/Enums.cs
+    startLine: 5
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe current state of an entrant\n"
+  example: []
+  syntax:
+    content: 'public enum EntrantState : uint'
+    content.vb: Public Enum EntrantState As UInteger
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: SRLApiClient.Endpoints.EntrantState.Unknown
+  commentId: F:SRLApiClient.Endpoints.EntrantState.Unknown
+  id: Unknown
+  parent: SRLApiClient.Endpoints.EntrantState
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: EntrantState.Unknown
+  fullName: SRLApiClient.Endpoints.EntrantState.Unknown
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Unknown
+    path: Endpoints/Enums.cs
+    startLine: 10
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nFallback value\n"
+  example: []
+  syntax:
+    content: Unknown = 0U
+    return:
+      type: SRLApiClient.Endpoints.EntrantState
+    content.vb: Unknown = 0UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.EntrantState.Entered
+  commentId: F:SRLApiClient.Endpoints.EntrantState.Entered
+  id: Entered
+  parent: SRLApiClient.Endpoints.EntrantState
+  langs:
+  - csharp
+  - vb
+  name: Entered
+  nameWithType: EntrantState.Entered
+  fullName: SRLApiClient.Endpoints.EntrantState.Entered
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Entered
+    path: Endpoints/Enums.cs
+    startLine: 15
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe entrant joined the race but hasn&apos;t readied up yet\n"
+  example: []
+  syntax:
+    content: Entered = 1U
+    return:
+      type: SRLApiClient.Endpoints.EntrantState
+    content.vb: Entered = 1UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.EntrantState.Ready
+  commentId: F:SRLApiClient.Endpoints.EntrantState.Ready
+  id: Ready
+  parent: SRLApiClient.Endpoints.EntrantState
+  langs:
+  - csharp
+  - vb
+  name: Ready
+  nameWithType: EntrantState.Ready
+  fullName: SRLApiClient.Endpoints.EntrantState.Ready
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Ready
+    path: Endpoints/Enums.cs
+    startLine: 20
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe entrant is ready\n"
+  example: []
+  syntax:
+    content: Ready = 2U
+    return:
+      type: SRLApiClient.Endpoints.EntrantState
+    content.vb: Ready = 2UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.EntrantState.Done
+  commentId: F:SRLApiClient.Endpoints.EntrantState.Done
+  id: Done
+  parent: SRLApiClient.Endpoints.EntrantState
+  langs:
+  - csharp
+  - vb
+  name: Done
+  nameWithType: EntrantState.Done
+  fullName: SRLApiClient.Endpoints.EntrantState.Done
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Done
+    path: Endpoints/Enums.cs
+    startLine: 25
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe entrant has finished the race\n"
+  example: []
+  syntax:
+    content: Done = 3U
+    return:
+      type: SRLApiClient.Endpoints.EntrantState
+    content.vb: Done = 3UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.EntrantState.Forfeit
+  commentId: F:SRLApiClient.Endpoints.EntrantState.Forfeit
+  id: Forfeit
+  parent: SRLApiClient.Endpoints.EntrantState
+  langs:
+  - csharp
+  - vb
+  name: Forfeit
+  nameWithType: EntrantState.Forfeit
+  fullName: SRLApiClient.Endpoints.EntrantState.Forfeit
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Forfeit
+    path: Endpoints/Enums.cs
+    startLine: 30
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe entrant quit the race\n"
+  example: []
+  syntax:
+    content: Forfeit = 4U
+    return:
+      type: SRLApiClient.Endpoints.EntrantState
+    content.vb: Forfeit = 4UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.EntrantState.Disqualified
+  commentId: F:SRLApiClient.Endpoints.EntrantState.Disqualified
+  id: Disqualified
+  parent: SRLApiClient.Endpoints.EntrantState
+  langs:
+  - csharp
+  - vb
+  name: Disqualified
+  nameWithType: EntrantState.Disqualified
+  fullName: SRLApiClient.Endpoints.EntrantState.Disqualified
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Disqualified
+    path: Endpoints/Enums.cs
+    startLine: 35
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe entrant got disqualified\n"
+  example: []
+  syntax:
+    content: Disqualified = 5U
+    return:
+      type: SRLApiClient.Endpoints.EntrantState
+    content.vb: Disqualified = 5UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: SRLApiClient.Endpoints.EntrantState
+  commentId: T:SRLApiClient.Endpoints.EntrantState
+  parent: SRLApiClient.Endpoints
+  name: EntrantState
+  nameWithType: EntrantState
+  fullName: SRLApiClient.Endpoints.EntrantState

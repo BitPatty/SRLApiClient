@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient
+  commentId: N:SRLApiClient
+  id: SRLApiClient
+  children:
+  - SRLApiClient.SRLClient
+  - SRLApiClient.SRLParseException
+  - SRLApiClient.SRLTimeoutException
+  - SRLApiClient.SRLUser
+  - SRLApiClient.UserRole
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient
+  nameWithType: SRLApiClient
+  fullName: SRLApiClient
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.SRLTimeoutException
+  commentId: T:SRLApiClient.SRLTimeoutException
+  name: SRLTimeoutException
+  nameWithType: SRLTimeoutException
+  fullName: SRLApiClient.SRLTimeoutException
+- uid: SRLApiClient.SRLParseException
+  commentId: T:SRLApiClient.SRLParseException
+  name: SRLParseException
+  nameWithType: SRLParseException
+  fullName: SRLApiClient.SRLParseException
+- uid: SRLApiClient.SRLClient
+  commentId: T:SRLApiClient.SRLClient
+  parent: SRLApiClient
+  name: SRLClient
+  nameWithType: SRLClient
+  fullName: SRLApiClient.SRLClient
+- uid: SRLApiClient.SRLUser
+  commentId: T:SRLApiClient.SRLUser
+  parent: SRLApiClient
+  name: SRLUser
+  nameWithType: SRLUser
+  fullName: SRLApiClient.SRLUser
+- uid: SRLApiClient.UserRole
+  commentId: T:SRLApiClient.UserRole
+  parent: SRLApiClient
+  name: UserRole
+  nameWithType: UserRole
+  fullName: SRLApiClient.UserRole
+- uid: SRLApiClient
+  commentId: N:SRLApiClient
+  name: SRLApiClient
+  nameWithType: SRLApiClient
+  fullName: SRLApiClient

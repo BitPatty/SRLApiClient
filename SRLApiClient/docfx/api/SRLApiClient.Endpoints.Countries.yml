@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.Countries
+  commentId: N:SRLApiClient.Endpoints.Countries
+  id: SRLApiClient.Endpoints.Countries
+  children:
+  - SRLApiClient.Endpoints.Countries.CountriesClient
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient.Endpoints.Countries
+  nameWithType: SRLApiClient.Endpoints.Countries
+  fullName: SRLApiClient.Endpoints.Countries
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.Endpoints.Countries.CountriesClient
+  commentId: T:SRLApiClient.Endpoints.Countries.CountriesClient
+  parent: SRLApiClient.Endpoints.Countries
+  name: CountriesClient
+  nameWithType: CountriesClient
+  fullName: SRLApiClient.Endpoints.Countries.CountriesClient
+- uid: SRLApiClient.Endpoints.Countries
+  commentId: N:SRLApiClient.Endpoints.Countries
+  name: SRLApiClient.Endpoints.Countries
+  nameWithType: SRLApiClient.Endpoints.Countries
+  fullName: SRLApiClient.Endpoints.Countries

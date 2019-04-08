@@ -1,4 +1,6 @@
-﻿namespace SRLApiClient.Endpoints.Leaderboards
+﻿using System.Threading.Tasks;
+
+namespace SRLApiClient.Endpoints.Leaderboards
 {
   /// <summary>
   /// A client to perform requests on the /leaderboard endpoint
@@ -12,25 +14,37 @@
     public LeaderboardsClient(SRLClient baseClient) : base("/leaderboard", baseClient) { }
 
     /// <summary>
-    /// Gets a single leaderboard
+    /// Gets a single leaderboard synchronously
     /// </summary>
     /// <param name="abbrev">The games abbreviation</param>
-    /// <returns>Returns the leaderboard or null</returns>
+    /// <returns>Returns the leaderboard</returns>
     public Leaderboard Get(string abbrev)
     {
-      if (SrlClient.Get(BasePath + "/" + abbrev.ToLower(), out Leaderboard l) && SrlClient.Get("/rules/" + abbrev.ToLower(), out GameRules rules))
+      try
       {
-        l.Game.Rules = rules.Rules;
-        return l;
+        return SrlClient.Get<Leaderboard>($"{BasePath}/{abbrev.ToLower()}");
       }
-      else return null;
+      catch (SRLParseException)
+      {
+        return null;
+      }
     }
 
     /// <summary>
-    /// Gets a single leaderboard
+    /// Gets a single leaderboard asynchronously
     /// </summary>
-    /// <param name="gameAbbreviation">The games abbreviation</param>
-    /// <returns>Returns the leaderboard or null</returns>
-    public Leaderboard this[string gameAbbreviation] => Get(gameAbbreviation);
+    /// <param name="abbrev">The games abbreviation</param>
+    /// <returns>Returns the leaderboard</returns>
+    public async Task<Leaderboard> GetAsync(string abbrev)
+    {
+      try
+      {
+        return await SrlClient.GetAsync<Leaderboard>($"{BasePath}/{abbrev.ToLower()}").ConfigureAwait(false);
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
   }
 }

@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyVersion>0.9.2.0</AssemblyVersion>
-    <FileVersion>0.9.2.0</FileVersion>
-    <Version>0.9.2</Version>
+    <AssemblyVersion>0.10.0.0</AssemblyVersion>
+    <FileVersion>0.10.0.0</FileVersion>
+    <Version>0.10.0-beta</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
     <Authors>Matteias Collet (BitPatty) &lt;matteias.collet@bluewin.ch&gt;</Authors>
@@ -29,5 +29,24 @@
     <NoWarn>1701;1702;RCS1170</NoWarn>
     <DocumentationFile>bin\Release\SRLApiClient.XML</DocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="docfx.console" Version="2.41.0" Condition="'$(OS)' == 'Windows_NT'">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition="'$(OS)' == 'Windows_NT'">
+    <Exec Command="echo &quot;Removing docs folder&quot;&#xD;&#xA;RD /S /Q &quot;../docs&quot;&#xD;&#xA;echo &quot;Docs folder removed&quot;" />
+  </Target>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition="'$(OS)' == 'Unix'">
+    <Exec Command="echo &quot;Skipping docs generation!&quot;" />
+  </Target>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent" Condition="'$(OS)' == 'OSX'">
+    <Exec Command="echo &quot;Skipping docs generation!&quot;" />
+  </Target>
 
 </Project>

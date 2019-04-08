@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.Games
+  commentId: N:SRLApiClient.Endpoints.Games
+  id: SRLApiClient.Endpoints.Games
+  children:
+  - SRLApiClient.Endpoints.Games.Game
+  - SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient.Endpoints.Games
+  nameWithType: SRLApiClient.Endpoints.Games
+  fullName: SRLApiClient.Endpoints.Games
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.Endpoints.Games.Game
+  commentId: T:SRLApiClient.Endpoints.Games.Game
+  parent: SRLApiClient.Endpoints.Games
+  name: Game
+  nameWithType: Game
+  fullName: SRLApiClient.Endpoints.Games.Game
+- uid: SRLApiClient.Endpoints.Games.GamesClient
+  commentId: T:SRLApiClient.Endpoints.Games.GamesClient
+  parent: SRLApiClient.Endpoints.Games
+  name: GamesClient
+  nameWithType: GamesClient
+  fullName: SRLApiClient.Endpoints.Games.GamesClient
+- uid: SRLApiClient.Endpoints.Games
+  commentId: N:SRLApiClient.Endpoints.Games
+  name: SRLApiClient.Endpoints.Games
+  nameWithType: SRLApiClient.Endpoints.Games
+  fullName: SRLApiClient.Endpoints.Games

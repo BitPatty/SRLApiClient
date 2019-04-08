@@ -1,0 +1,615 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  commentId: T:SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  id: LeaderboardsClient
+  parent: SRLApiClient.Endpoints.Leaderboards
+  children:
+  - SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.#ctor(SRLApiClient.SRLClient)
+  - SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.Get(System.String)
+  - SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.GetAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: LeaderboardsClient
+  nameWithType: LeaderboardsClient
+  fullName: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  type: Class
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Leaderboards/LeaderboardsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: LeaderboardsClient
+    path: Endpoints/Leaderboards/LeaderboardsClient.cs
+    startLine: 7
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Leaderboards
+  summary: "\nA client to perform requests on the /leaderboard endpoint\n"
+  example: []
+  syntax:
+    content: 'public class LeaderboardsClient : SRLEndpoint'
+    content.vb: >-
+      Public Class LeaderboardsClient
+          Inherits SRLEndpoint
+  inheritance:
+  - System.Object
+  - SRLApiClient.Endpoints.SRLEndpoint
+  inheritedMembers:
+  - SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  - SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.#ctor(SRLApiClient.SRLClient)
+  commentId: M:SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.#ctor(SRLApiClient.SRLClient)
+  id: '#ctor(SRLApiClient.SRLClient)'
+  parent: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  langs:
+  - csharp
+  - vb
+  name: LeaderboardsClient(SRLClient)
+  nameWithType: LeaderboardsClient.LeaderboardsClient(SRLClient)
+  fullName: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.LeaderboardsClient(SRLApiClient.SRLClient)
+  type: Constructor
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Leaderboards/LeaderboardsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: .ctor
+    path: Endpoints/Leaderboards/LeaderboardsClient.cs
+    startLine: 13
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Leaderboards
+  summary: "\nCreates a new client to perform requests on the /leaderboard endpoint\n"
+  example: []
+  syntax:
+    content: public LeaderboardsClient(SRLClient baseClient)
+    parameters:
+    - id: baseClient
+      type: SRLApiClient.SRLClient
+      description: The <xref href="SRLApiClient.SRLClient" data-throw-if-not-resolved="false"></xref> used to perform requests
+    content.vb: Public Sub New(baseClient As SRLClient)
+  overload: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.Get(System.String)
+  commentId: M:SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.Get(System.String)
+  id: Get(System.String)
+  parent: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  nameWithType: LeaderboardsClient.Get(String)
+  fullName: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.Get(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Leaderboards/LeaderboardsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Get
+    path: Endpoints/Leaderboards/LeaderboardsClient.cs
+    startLine: 20
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Leaderboards
+  summary: "\nGets a single leaderboard synchronously\n"
+  example: []
+  syntax:
+    content: public Leaderboard Get(string abbrev)
+    parameters:
+    - id: abbrev
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+      description: Returns the leaderboard
+    content.vb: Public Function Get(abbrev As String) As Leaderboard
+  overload: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.Get*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.GetAsync(System.String)
+  commentId: M:SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.GetAsync(System.String)
+  id: GetAsync(System.String)
+  parent: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String)
+  nameWithType: LeaderboardsClient.GetAsync(String)
+  fullName: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.GetAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Leaderboards/LeaderboardsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetAsync
+    path: Endpoints/Leaderboards/LeaderboardsClient.cs
+    startLine: 37
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Leaderboards
+  summary: "\nGets a single leaderboard asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<Leaderboard> GetAsync(string abbrev)
+    parameters:
+    - id: abbrev
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Leaderboards.Leaderboard}
+      description: Returns the leaderboard
+    content.vb: Public Function GetAsync(abbrev As String) As Task(Of Leaderboard)
+  overload: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.GetAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: SRLApiClient.Endpoints.Leaderboards
+  commentId: N:SRLApiClient.Endpoints.Leaderboards
+  name: SRLApiClient.Endpoints.Leaderboards
+  nameWithType: SRLApiClient.Endpoints.Leaderboards
+  fullName: SRLApiClient.Endpoints.Leaderboards
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SRLApiClient.Endpoints.SRLEndpoint
+  commentId: T:SRLApiClient.Endpoints.SRLEndpoint
+  parent: SRLApiClient.Endpoints
+  name: SRLEndpoint
+  nameWithType: SRLEndpoint
+  fullName: SRLApiClient.Endpoints.SRLEndpoint
+- uid: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  name: BasePath
+  nameWithType: SRLEndpoint.BasePath
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+- uid: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  name: SrlClient
+  nameWithType: SRLEndpoint.SrlClient
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: SRLApiClient.SRLClient
+  commentId: T:SRLApiClient.SRLClient
+  parent: SRLApiClient
+  name: SRLClient
+  nameWithType: SRLClient
+  fullName: SRLApiClient.SRLClient
+- uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.#ctor*
+  commentId: Overload:SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.#ctor
+  name: LeaderboardsClient
+  nameWithType: LeaderboardsClient.LeaderboardsClient
+  fullName: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.LeaderboardsClient
+- uid: SRLApiClient
+  commentId: N:SRLApiClient
+  name: SRLApiClient
+  nameWithType: SRLApiClient
+  fullName: SRLApiClient
+- uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.Get*
+  commentId: Overload:SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.Get
+  name: Get
+  nameWithType: LeaderboardsClient.Get
+  fullName: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+  commentId: T:SRLApiClient.Endpoints.Leaderboards.Leaderboard
+  parent: SRLApiClient.Endpoints.Leaderboards
+  name: Leaderboard
+  nameWithType: Leaderboard
+  fullName: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+- uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.GetAsync*
+  commentId: Overload:SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.GetAsync
+  name: GetAsync
+  nameWithType: LeaderboardsClient.GetAsync
+  fullName: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.GetAsync
+- uid: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Leaderboards.Leaderboard}
+  commentId: T:System.Threading.Tasks.Task{SRLApiClient.Endpoints.Leaderboards.Leaderboard}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Leaderboard>
+  nameWithType: Task<Leaderboard>
+  fullName: System.Threading.Tasks.Task<SRLApiClient.Endpoints.Leaderboards.Leaderboard>
+  nameWithType.vb: Task(Of Leaderboard)
+  fullName.vb: System.Threading.Tasks.Task(Of SRLApiClient.Endpoints.Leaderboards.Leaderboard)
+  name.vb: Task(Of Leaderboard)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+    name: Leaderboard
+    nameWithType: Leaderboard
+    fullName: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+    name: Leaderboard
+    nameWithType: Leaderboard
+    fullName: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks

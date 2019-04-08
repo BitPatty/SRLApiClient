@@ -1,6 +1,6 @@
 ﻿/*
  * SRLApiClient - A .NET client library for the SpeedRunsLive API
- * Copyright (c) 2018 Matteias Collet
+ * Copyright (c) 2018 - 2019 Matteias Collet
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -146,17 +146,34 @@ namespace SRLApiClient
     /// <summary>
     /// Performs a GET request on an endpoint
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T">The type to deserialize the response into</typeparam>
     /// <param name="endpoint">The endpoint to perform the request on</param>
-    /// <param name="res">The object to hold the deserialized response</param>
-    /// <returns>Returns true if the request and deserialization were successful</returns>
-    public bool Get<T>(string endpoint, out T res) where T : SRLDataType
+    /// <returns>Returns the parsed response</returns>
+    /// <exception cref="SRLParseException" />
+    /// <exception cref="SRLTimeoutException" />
+    public T Get<T>(string endpoint) where T : SRLDataType => GetAsync<T>(endpoint).Result;
+
+    /// <summary>
+    /// Performs an asynchronous GET request on an endpoint
+    /// </summary>
+    /// <typeparam name="T">The type to deserialize the response into</typeparam>
+    /// <param name="endpoint">The endpoint to perform the request on</param>
+    /// <returns>Returns the parsed response</returns>
+    /// <exception cref="SRLParseException" />
+    /// <exception cref="SRLTimeoutException" />
+    public async Task<T> GetAsync<T>(string endpoint) where T : SRLDataType
     {
-      string ep = endpoint.StartsWith("/") ? endpoint : "/" + endpoint;
-      res = default(T);
-      bool success = GetStream(_apiUrl + ep, out Stream s) && s != null && DeSerialize(s, out res);
-      s?.Dispose();
-      return success;
+      using (Stream responseStream = await GetStreamAsync($"{_apiUrl}/{endpoint.ToLower().TrimStart('/')}").ConfigureAwait(false))
+      {
+        try
+        {
+          return DeSerialize<T>(responseStream);
+        }
+        catch (SerializationException ex)
+        {
+          throw new SRLParseException("Failed to deserialize the response stream", ex);
+        }
+      }
     }
 
     /// <summary>
@@ -164,120 +181,128 @@ namespace SRLApiClient
     /// </summary>
     /// <param name="endpoint">The endpoint to perform the request on</param>
     /// <param name="data">The data to PUT</param>
-    /// <returns>Returns true if the PUT request was successful</returns>
-    public bool Put(string endpoint, Dictionary<string, string> data) => SubmitJson(endpoint, data, HttpMethod.Put, out _);
+    /// <returns>Returns true if the endpoint responds with HTTP 200</returns>
+    public bool Put(string endpoint, Dictionary<string, string> data) => PutAsync(endpoint, data).Result;
 
     /// <summary>
-    /// Performs a PUT request on an endpoint
+    /// Performs an asynchronous PUT request on an endpoint
     /// </summary>
     /// <param name="endpoint">The endpoint to perform the request on</param>
     /// <param name="data">The data to PUT</param>
-    /// <param name="response">The object to hold the HTTP response received from the endpoint</param>
-    /// <returns>Returns true if the PUT request was successful</returns>
-    public bool Put(string endpoint, Dictionary<string, string> data, out HttpResponseMessage response) => SubmitJson(endpoint, data, HttpMethod.Put, out response);
-
-    /// <summary>
-    /// Performs a POST request on an endpoint
-    /// </summary>
-    /// <param name="endpoint">The endpoint to perform the request on</param>
-    /// <param name="data">The data to POST</param>
-    /// <returns>Returns true if the POST request was successful</returns>
-    public bool Post(string endpoint, Dictionary<string, string> data) => SubmitJson(endpoint, data, HttpMethod.Post, out _);
-
-    /// <summary>
-    /// Performs a POST request on an endpoint
-    /// </summary>
-    /// <param name="endpoint">The endpoint to perform the request on</param>
-    /// <param name="data">The data to POST</param>
-    /// <param name="response">The object to hold the HTTP response received from the endpoint</param>
-    /// <returns>Returns true if the POST request was successful</returns>
-    public bool Post(string endpoint, Dictionary<string, string> data, out HttpResponseMessage response) => SubmitJson(endpoint, data, HttpMethod.Post, out response);
-
-    private bool SubmitJson(string endpoint, Dictionary<string, string> data, HttpMethod method, out HttpResponseMessage response)
+    /// <returns>Returns true if the endpoint responds with HTTP 200</returns>
+    public async Task<bool> PutAsync(string endpoint, Dictionary<string, string> data)
     {
       string ep = endpoint.StartsWith("/") ? endpoint : "/" + endpoint;
-      string s = Serialize(data);
-      _slim.Wait();
+      return await SubmitPayloadAsync(ep, data, HttpMethod.Put).ConfigureAwait(false);
+    }
 
-      using (HttpRequestMessage req = new HttpRequestMessage(method, _apiUrl + ep) { Content = new StringContent(s) })
+    /// <summary>
+    /// Performs a POST request on an endpoint
+    /// </summary>
+    /// <param name="endpoint">The endpoint to perform the request on</param>
+    /// <param name="data">The data to POST</param>
+    /// <returns>Returns true if the endpoint responds with HTTP 200</returns>
+    public bool Post(string endpoint, Dictionary<string, string> data) => PostAsync(endpoint, data).Result;
+
+    /// <summary>
+    /// Performs an asynchronous POST request on an endpoint
+    /// </summary>
+    /// <param name="endpoint">The endpoint to perform the request on</param>
+    /// <param name="data">The data to POST</param>
+    /// <returns>Returns true if the endpoint responds with HTTP 200</returns>
+    public async Task<bool> PostAsync(string endpoint, Dictionary<string, string> data)
+    {
+      string ep = endpoint.StartsWith("/") ? endpoint : "/" + endpoint;
+      return await SubmitPayloadAsync(ep, data, HttpMethod.Post).ConfigureAwait(false);
+    }
+
+    /// <summary>
+    /// Submits the specified data to the specified endpoint
+    /// </summary>
+    /// <param name="endpoint">The endpoint to perform the request on</param>
+    /// <param name="data">The payload</param>
+    /// <param name="method">The method (POST/PUT)</param>
+    /// <returns>Returns true if the endpoint responds with HTTP 200</returns>
+    public async Task<bool> SubmitPayloadAsync(string endpoint, Dictionary<string, string> data, HttpMethod method)
+    {
+      string payload = JsonSerialize(data);
+      await _slim.WaitAsync().ConfigureAwait(false);
+
+      try
       {
-        req.Headers.Accept.Clear();
-        req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-
-        try
+        using (HttpRequestMessage req = new HttpRequestMessage(method, String.Concat(_apiUrl, endpoint)) { Content = new StringContent(payload) })
         {
-          using (HttpResponseMessage r = _client.SendAsync(req, HttpCompletionOption.ResponseHeadersRead).Result)
+          req.Headers.Accept.Clear();
+          req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+          using (HttpResponseMessage r = await _client.SendAsync(req, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
           {
-            response = r;
             return r.IsSuccessStatusCode;
           }
         }
-        catch (HttpRequestException ex)
-        {
-          Console.WriteLine(ex.Message);
-          response = null;
-          return false;
-        }
-        finally
-        {
-          _slim.Release();
-        }
       }
-    }
-
-    /// <summary>
-    /// Deserializes a JSON stream
-    /// </summary>
-    /// <typeparam name="T">An object of type <see cref="SRLDataType"/></typeparam>
-    /// <param name="s">The stream to deserialize</param>
-    /// <param name="res">The object to hold the deserialized stream</param>
-    /// <returns>Returns true if the deserialization were successful</returns>
-    public bool DeSerialize<T>(Stream s, out T res) where T : SRLDataType
-    {
-      DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(T), new DataContractJsonSerializerSettings { UseSimpleDictionaryFormat = true });
-      try
+      catch
       {
-        res = (T)serializer.ReadObject(s);
-        return res != null;
-      }
-      catch (SerializationException ex)
-      {
-        Console.WriteLine(ex.Message);
-        res = default(T);
-      }
-
-      return false;
-    }
-
-    private string Serialize(Dictionary<string, string> postData)
-    {
-      StringBuilder s = new StringBuilder("{");
-
-      foreach (KeyValuePair<string, string> kvp in postData)
-        s.AppendFormat("{0}:{1},", HttpUtility.JavaScriptStringEncode(kvp.Key, true), HttpUtility.JavaScriptStringEncode(kvp.Value, true));
-
-      return s.Replace(',', '}', s.Length - 1, 1).ToString();
-    }
-
-    private bool GetStream(string url, out Stream data)
-    {
-      _slim.Wait();
-      try
-      {
-        data = _client.GetStreamAsync(url).Result;
-        return true;
-      }
-      catch (TaskCanceledException ex)
-      {
-        Console.WriteLine(ex.Message);
-        data = null;
+        throw;
       }
       finally
       {
         _slim.Release();
       }
+    }
 
-      return false;
+    /// <summary>
+    /// Deserializes a response stream into an <see cref="SRLDataType"/>
+    /// </summary>
+    /// <typeparam name="T">The datatype to deserialized the stream into</typeparam>
+    /// <param name="s">The stream to deserialize</param>
+    /// <returns>Returns the resulting object</returns>
+    public T DeSerialize<T>(Stream s) where T : SRLDataType
+    {
+      DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(T), new DataContractJsonSerializerSettings { UseSimpleDictionaryFormat = true });
+      return serializer.ReadObject(s) as T;
+    }
+
+    /// <summary>
+    /// Serializes the dictionary into a JSON body
+    /// </summary>
+    /// <param name="dict">The dictionary to serialize</param>
+    /// <returns>Returns the JSON string</returns>
+    public string JsonSerialize(Dictionary<string, string> dict)
+    {
+      if (dict == null) throw new ArgumentNullException(nameof(dict), "Parameter required");
+
+      StringBuilder s = new StringBuilder("{");
+
+      foreach (KeyValuePair<string, string> kvp in dict)
+        s.AppendFormat("{0}:{1},", HttpUtility.JavaScriptStringEncode(kvp.Key, true), HttpUtility.JavaScriptStringEncode(kvp.Value, true));
+
+      return String.Concat(s.ToString().TrimEnd(','), '}');
+    }
+
+    /// <summary>
+    /// Performs a GET request on the specified URL and returns
+    /// the reponse stream
+    /// </summary>
+    /// <param name="url">The URL to perform the request on</param>
+    /// <returns>Returns the reponse stream</returns>
+    /// <exception cref="SRLTimeoutException" />
+    private async Task<Stream> GetStreamAsync(string url)
+    {
+      await _slim.WaitAsync().ConfigureAwait(false);
+
+      try
+      {
+        return await _client.GetStreamAsync(url).ConfigureAwait(false);
+      }
+      catch (TaskCanceledException ex)
+      {
+        throw new SRLTimeoutException("Request exceeded the timeout limit", ex);
+      }
+      finally
+      {
+        _slim.Release();
+      }
     }
 
     /// <summary>

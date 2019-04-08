@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
+using System.Threading.Tasks;
 
 namespace SRLApiClient.Endpoints.Players
 {
@@ -17,14 +18,37 @@ namespace SRLApiClient.Endpoints.Players
     public PlayersClient(SRLClient baseClient) : base("/players", baseClient) { }
 
     /// <summary>
-    /// Gets a single player
+    /// Gets a single player synchronously
     /// </summary>
     /// <param name="name">The players name</param>
-    /// <returns>The player or null</returns>
+    /// <returns>Returns the player</returns>
     public Player Get(string name)
     {
-      SrlClient.Get(BasePath + "/" + name.ToLower(), out Player p);
-      return p;
+      try
+      {
+        return SrlClient.Get<Player>($"{ BasePath}/{name.ToLower()}");
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
+    /// <summary>
+    /// Gets a single player asynchronously
+    /// </summary>
+    /// <param name="name">The players name</param>
+    /// <returns>Returns the player</returns>
+    public async Task<Player> GetAsync(string name)
+    {
+      try
+      {
+        return await SrlClient.GetAsync<Player>($"{ BasePath}/{name.ToLower()}").ConfigureAwait(false);
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
     }
 
     [DataContract]
@@ -38,7 +62,7 @@ namespace SRLApiClient.Endpoints.Players
     }
 
     /// <summary>
-    /// Searches for a player
+    /// Searches a player synchronously
     /// </summary>
     /// <param name="name">The players name</param>
     /// <returns>List of players matching the queried name</returns>
@@ -46,8 +70,33 @@ namespace SRLApiClient.Endpoints.Players
     {
       if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
 
-      if (SrlClient.Get(BasePath + "?search=" + name.ToLower(), out PlayerSearch ps)) return ps.Players.AsReadOnly();
-      return null;
+      try
+      {
+        return SrlClient.Get<PlayerSearch>($"{BasePath}?search={name.ToLower()}")?.Players?.AsReadOnly();
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
+    /// <summary>
+    /// Searches a player asynchronously
+    /// </summary>
+    /// <param name="name">The players name</param>
+    /// <returns>List of players matching the queried name</returns>
+    public async Task<ReadOnlyCollection<Player>> SearchAsync(string name)
+    {
+      if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
+
+      try
+      {
+        return (await SrlClient.GetAsync<PlayerSearch>($"{BasePath}?search={name.ToLower()}").ConfigureAwait(false))?.Players?.AsReadOnly();
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
     }
 
     /// <summary>
@@ -82,12 +131,5 @@ namespace SRLApiClient.Endpoints.Players
 
       return false;
     }
-
-    /// <summary>
-    /// Gets a single player
-    /// </summary>
-    /// <param name="name">The players name</param>
-    /// <returns>Returns the player or null</returns>
-    public Player this[string name] => Get(name);
   }
 }

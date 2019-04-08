@@ -1,0 +1,521 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.SRLEndpoint
+  commentId: T:SRLApiClient.Endpoints.SRLEndpoint
+  id: SRLEndpoint
+  parent: SRLApiClient.Endpoints
+  children:
+  - SRLApiClient.Endpoints.SRLEndpoint.#ctor(System.String,SRLApiClient.SRLClient)
+  - SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  - SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  langs:
+  - csharp
+  - vb
+  name: SRLEndpoint
+  nameWithType: SRLEndpoint
+  fullName: SRLApiClient.Endpoints.SRLEndpoint
+  type: Class
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/SRLEndpoint.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: SRLEndpoint
+    path: Endpoints/SRLEndpoint.cs
+    startLine: 7
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nBase class for SRL endpoint clients\n"
+  example: []
+  syntax:
+    content: public class SRLEndpoint
+    content.vb: Public Class SRLEndpoint
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - SRLApiClient.Endpoints.Countries.CountriesClient
+  - SRLApiClient.Endpoints.Games.GamesClient
+  - SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  - SRLApiClient.Endpoints.PastRaces.PastRacesClient
+  - SRLApiClient.Endpoints.Players.PlayersClient
+  - SRLApiClient.Endpoints.Races.RacesClient
+  - SRLApiClient.Endpoints.Stats.StatsClient
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  id: BasePath
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  langs:
+  - csharp
+  - vb
+  name: BasePath
+  nameWithType: SRLEndpoint.BasePath
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/SRLEndpoint.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: BasePath
+    path: Endpoints/SRLEndpoint.cs
+    startLine: 12
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe endpoint that is used to peform requests on\n"
+  example: []
+  syntax:
+    content: public string BasePath { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property BasePath As String
+  overload: SRLApiClient.Endpoints.SRLEndpoint.BasePath*
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  id: SrlClient
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  langs:
+  - csharp
+  - vb
+  name: SrlClient
+  nameWithType: SRLEndpoint.SrlClient
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/SRLEndpoint.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: SrlClient
+    path: Endpoints/SRLEndpoint.cs
+    startLine: 17
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nBase client to perform requests\n"
+  example: []
+  syntax:
+    content: protected SRLClient SrlClient { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.SRLClient
+    content.vb: Protected ReadOnly Property SrlClient As SRLClient
+  overload: SRLApiClient.Endpoints.SRLEndpoint.SrlClient*
+  modifiers.csharp:
+  - protected
+  - get
+  modifiers.vb:
+  - Protected
+  - ReadOnly
+- uid: SRLApiClient.Endpoints.SRLEndpoint.#ctor(System.String,SRLApiClient.SRLClient)
+  commentId: M:SRLApiClient.Endpoints.SRLEndpoint.#ctor(System.String,SRLApiClient.SRLClient)
+  id: '#ctor(System.String,SRLApiClient.SRLClient)'
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  langs:
+  - csharp
+  - vb
+  name: SRLEndpoint(String, SRLClient)
+  nameWithType: SRLEndpoint.SRLEndpoint(String, SRLClient)
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.SRLEndpoint(System.String, SRLApiClient.SRLClient)
+  type: Constructor
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/SRLEndpoint.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: .ctor
+    path: Endpoints/SRLEndpoint.cs
+    startLine: 24
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nCreates a new SRL endpoint clinet\n"
+  example: []
+  syntax:
+    content: public SRLEndpoint(string path, SRLClient client)
+    parameters:
+    - id: path
+      type: System.String
+      description: <xref href="SRLApiClient.Endpoints.SRLEndpoint.BasePath" data-throw-if-not-resolved="false"></xref> used for requests
+    - id: client
+      type: SRLApiClient.SRLClient
+      description: <xref href="SRLApiClient.Endpoints.SRLEndpoint.SrlClient" data-throw-if-not-resolved="false"></xref> used for request
+    content.vb: Public Sub New(path As String, client As SRLClient)
+  overload: SRLApiClient.Endpoints.SRLEndpoint.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SRLApiClient.Endpoints.SRLEndpoint.BasePath*
+  commentId: Overload:SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  name: BasePath
+  nameWithType: SRLEndpoint.BasePath
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SRLApiClient.Endpoints.SRLEndpoint.SrlClient*
+  commentId: Overload:SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  name: SrlClient
+  nameWithType: SRLEndpoint.SrlClient
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+- uid: SRLApiClient.SRLClient
+  commentId: T:SRLApiClient.SRLClient
+  parent: SRLApiClient
+  name: SRLClient
+  nameWithType: SRLClient
+  fullName: SRLApiClient.SRLClient
+- uid: SRLApiClient
+  commentId: N:SRLApiClient
+  name: SRLApiClient
+  nameWithType: SRLApiClient
+  fullName: SRLApiClient
+- uid: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  name: BasePath
+  nameWithType: SRLEndpoint.BasePath
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+- uid: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  name: SrlClient
+  nameWithType: SRLEndpoint.SrlClient
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+- uid: SRLApiClient.Endpoints.SRLEndpoint.#ctor*
+  commentId: Overload:SRLApiClient.Endpoints.SRLEndpoint.#ctor
+  name: SRLEndpoint
+  nameWithType: SRLEndpoint.SRLEndpoint
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.SRLEndpoint
+- uid: SRLApiClient.Endpoints.SRLEndpoint
+  commentId: T:SRLApiClient.Endpoints.SRLEndpoint
+  parent: SRLApiClient.Endpoints
+  name: SRLEndpoint
+  nameWithType: SRLEndpoint
+  fullName: SRLApiClient.Endpoints.SRLEndpoint

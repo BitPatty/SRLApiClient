@@ -13,7 +13,7 @@ namespace SRLApiClient.Endpoints.Races
   public class Race : SRLDataType
   {
     /// <summary>
-    /// The races id
+    /// The race id
     /// </summary>
     [DataMember(Name = "id", IsRequired = true)]
     public string Id { get; protected set; }
@@ -25,7 +25,7 @@ namespace SRLApiClient.Endpoints.Races
     public Game Game { get; protected set; }
 
     /// <summary>
-    /// The races goal
+    /// The race goal
     /// </summary>
     [DataMember(Name = "goal", IsRequired = true)]
     public string Goal { get; protected set; }
@@ -74,7 +74,7 @@ namespace SRLApiClient.Endpoints.Races
     public string FileName { get; protected set; }
 
     /// <summary>
-    /// The count of entrants
+    /// The number of entrants
     /// </summary>
     [DataMember(Name = "numentrants", IsRequired = true)]
     public int NumEntrants { get; protected set; }

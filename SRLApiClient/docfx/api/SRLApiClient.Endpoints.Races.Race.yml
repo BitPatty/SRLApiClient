@@ -1,0 +1,1256 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.Races.Race
+  commentId: T:SRLApiClient.Endpoints.Races.Race
+  id: Race
+  parent: SRLApiClient.Endpoints.Races
+  children:
+  - SRLApiClient.Endpoints.Races.Race._entrants
+  - SRLApiClient.Endpoints.Races.Race._state
+  - SRLApiClient.Endpoints.Races.Race.Entrants
+  - SRLApiClient.Endpoints.Races.Race.FileName
+  - SRLApiClient.Endpoints.Races.Race.Game
+  - SRLApiClient.Endpoints.Races.Race.Goal
+  - SRLApiClient.Endpoints.Races.Race.Id
+  - SRLApiClient.Endpoints.Races.Race.NumEntrants
+  - SRLApiClient.Endpoints.Races.Race.State
+  - SRLApiClient.Endpoints.Races.Race.StateText
+  - SRLApiClient.Endpoints.Races.Race.Time
+  langs:
+  - csharp
+  - vb
+  name: Race
+  nameWithType: Race
+  fullName: SRLApiClient.Endpoints.Races.Race
+  type: Class
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Race
+    path: Endpoints/Races/Race.cs
+    startLine: 11
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nRace object\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [KnownType(typeof(SRLDataType))]
+
+      public class Race : SRLDataType
+    content.vb: >-
+      <DataContract>
+
+      <KnownType(GetType(SRLDataType))>
+
+      Public Class Race
+          Inherits SRLDataType
+  inheritance:
+  - System.Object
+  - SRLApiClient.Endpoints.SRLDataType
+  inheritedMembers:
+  - SRLApiClient.Endpoints.SRLDataType.Deserialized
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: System.Runtime.Serialization.KnownTypeAttribute
+    ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: SRLApiClient.Endpoints.SRLDataType
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SRLApiClient.Endpoints.Races.Race.Id
+  commentId: P:SRLApiClient.Endpoints.Races.Race.Id
+  id: Id
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Race.Id
+  fullName: SRLApiClient.Endpoints.Races.Race.Id
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Id
+    path: Endpoints/Races/Race.cs
+    startLine: 17
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe race id\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "id", IsRequired = true)]
+
+      public string Id { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember(Name:="id", IsRequired:=True)>
+
+      Public Property Id As String
+  overload: SRLApiClient.Endpoints.Races.Race.Id*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: id
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Races.Race.Game
+  commentId: P:SRLApiClient.Endpoints.Races.Race.Game
+  id: Game
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: Game
+  nameWithType: Race.Game
+  fullName: SRLApiClient.Endpoints.Races.Race.Game
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Game
+    path: Endpoints/Races/Race.cs
+    startLine: 23
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe game associated with the race\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "game", IsRequired = true)]
+
+      public Game Game { get; protected set; }
+    parameters: []
+    return:
+      type: SRLApiClient.Endpoints.Games.Game
+    content.vb: >-
+      <DataMember(Name:="game", IsRequired:=True)>
+
+      Public Property Game As Game
+  overload: SRLApiClient.Endpoints.Races.Race.Game*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: game
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Races.Race.Goal
+  commentId: P:SRLApiClient.Endpoints.Races.Race.Goal
+  id: Goal
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: Goal
+  nameWithType: Race.Goal
+  fullName: SRLApiClient.Endpoints.Races.Race.Goal
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Goal
+    path: Endpoints/Races/Race.cs
+    startLine: 29
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe race goal\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "goal", IsRequired = true)]
+
+      public string Goal { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember(Name:="goal", IsRequired:=True)>
+
+      Public Property Goal As String
+  overload: SRLApiClient.Endpoints.Races.Race.Goal*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: goal
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Races.Race.Time
+  commentId: P:SRLApiClient.Endpoints.Races.Race.Time
+  id: Time
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: Race.Time
+  fullName: SRLApiClient.Endpoints.Races.Race.Time
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Time
+    path: Endpoints/Races/Race.cs
+    startLine: 35
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe races final time\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "time", IsRequired = true)]
+
+      public int Time { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="time", IsRequired:=True)>
+
+      Public Property Time As Integer
+  overload: SRLApiClient.Endpoints.Races.Race.Time*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: time
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Races.Race.State
+  commentId: P:SRLApiClient.Endpoints.Races.Race.State
+  id: State
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: State
+  nameWithType: Race.State
+  fullName: SRLApiClient.Endpoints.Races.Race.State
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: State
+    path: Endpoints/Races/Race.cs
+    startLine: 41
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe races current state\n"
+  example: []
+  syntax:
+    content: public RaceState State { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.Endpoints.RaceState
+    content.vb: Public ReadOnly Property State As RaceState
+  overload: SRLApiClient.Endpoints.Races.Race.State*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.Endpoints.Races.Race._state
+  commentId: P:SRLApiClient.Endpoints.Races.Race._state
+  id: _state
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: _state
+  nameWithType: Race._state
+  fullName: SRLApiClient.Endpoints.Races.Race._state
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: _state
+    path: Endpoints/Races/Race.cs
+    startLine: 60
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe races current state\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "state", IsRequired = true)]
+
+      protected int _state { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="state", IsRequired:=True)>
+
+      Protected Property _state As Integer
+  overload: SRLApiClient.Endpoints.Races.Race._state*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: state
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: SRLApiClient.Endpoints.Races.Race.StateText
+  commentId: P:SRLApiClient.Endpoints.Races.Race.StateText
+  id: StateText
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: StateText
+  nameWithType: Race.StateText
+  fullName: SRLApiClient.Endpoints.Races.Race.StateText
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: StateText
+    path: Endpoints/Races/Race.cs
+    startLine: 66
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe races current state text\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "statetext", IsRequired = true)]
+
+      public string StateText { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember(Name:="statetext", IsRequired:=True)>
+
+      Public Property StateText As String
+  overload: SRLApiClient.Endpoints.Races.Race.StateText*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: statetext
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Races.Race.FileName
+  commentId: P:SRLApiClient.Endpoints.Races.Race.FileName
+  id: FileName
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: FileName
+  nameWithType: Race.FileName
+  fullName: SRLApiClient.Endpoints.Races.Race.FileName
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: FileName
+    path: Endpoints/Races/Race.cs
+    startLine: 72
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe file name used for the race\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "filename", IsRequired = true)]
+
+      public string FileName { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember(Name:="filename", IsRequired:=True)>
+
+      Public Property FileName As String
+  overload: SRLApiClient.Endpoints.Races.Race.FileName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: filename
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Races.Race.NumEntrants
+  commentId: P:SRLApiClient.Endpoints.Races.Race.NumEntrants
+  id: NumEntrants
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: NumEntrants
+  nameWithType: Race.NumEntrants
+  fullName: SRLApiClient.Endpoints.Races.Race.NumEntrants
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: NumEntrants
+    path: Endpoints/Races/Race.cs
+    startLine: 78
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe number of entrants\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "numentrants", IsRequired = true)]
+
+      public int NumEntrants { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="numentrants", IsRequired:=True)>
+
+      Public Property NumEntrants As Integer
+  overload: SRLApiClient.Endpoints.Races.Race.NumEntrants*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: numentrants
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Races.Race._entrants
+  commentId: P:SRLApiClient.Endpoints.Races.Race._entrants
+  id: _entrants
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: _entrants
+  nameWithType: Race._entrants
+  fullName: SRLApiClient.Endpoints.Races.Race._entrants
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: _entrants
+    path: Endpoints/Races/Race.cs
+    startLine: 84
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe list of race entrants\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "entrants", IsRequired = true)]
+
+      protected Dictionary<string, Entrant> _entrants { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,SRLApiClient.Endpoints.Races.Entrant}
+    content.vb: >-
+      <DataMember(Name:="entrants", IsRequired:=True)>
+
+      Protected Property _entrants As Dictionary(Of String, Entrant)
+  overload: SRLApiClient.Endpoints.Races.Race._entrants*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: entrants
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - protected
+  - get
+  - set
+  modifiers.vb:
+  - Protected
+- uid: SRLApiClient.Endpoints.Races.Race.Entrants
+  commentId: P:SRLApiClient.Endpoints.Races.Race.Entrants
+  id: Entrants
+  parent: SRLApiClient.Endpoints.Races.Race
+  langs:
+  - csharp
+  - vb
+  name: Entrants
+  nameWithType: Race.Entrants
+  fullName: SRLApiClient.Endpoints.Races.Race.Entrants
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Races/Race.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Entrants
+    path: Endpoints/Races/Race.cs
+    startLine: 90
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Races
+  summary: "\nThe list of race entrants\n"
+  example: []
+  syntax:
+    content: public ReadOnlyCollection<Entrant> Entrants { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Entrant}
+    content.vb: Public ReadOnly Property Entrants As ReadOnlyCollection(Of Entrant)
+  overload: SRLApiClient.Endpoints.Races.Race.Entrants*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+references:
+- uid: SRLApiClient.Endpoints.Races
+  commentId: N:SRLApiClient.Endpoints.Races
+  name: SRLApiClient.Endpoints.Races
+  nameWithType: SRLApiClient.Endpoints.Races
+  fullName: SRLApiClient.Endpoints.Races
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SRLApiClient.Endpoints.SRLDataType
+  commentId: T:SRLApiClient.Endpoints.SRLDataType
+  parent: SRLApiClient.Endpoints
+  name: SRLDataType
+  nameWithType: SRLDataType
+  fullName: SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
+  parent: SRLApiClient.Endpoints.SRLDataType
+  name: Deserialized
+  nameWithType: SRLDataType.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: SRLApiClient.Endpoints.Races.Race.Id*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race.Id
+  name: Id
+  nameWithType: Race.Id
+  fullName: SRLApiClient.Endpoints.Races.Race.Id
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SRLApiClient.Endpoints.Races.Race.Game*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race.Game
+  name: Game
+  nameWithType: Race.Game
+  fullName: SRLApiClient.Endpoints.Races.Race.Game
+- uid: SRLApiClient.Endpoints.Games.Game
+  commentId: T:SRLApiClient.Endpoints.Games.Game
+  parent: SRLApiClient.Endpoints.Games
+  name: Game
+  nameWithType: Game
+  fullName: SRLApiClient.Endpoints.Games.Game
+- uid: SRLApiClient.Endpoints.Games
+  commentId: N:SRLApiClient.Endpoints.Games
+  name: SRLApiClient.Endpoints.Games
+  nameWithType: SRLApiClient.Endpoints.Games
+  fullName: SRLApiClient.Endpoints.Games
+- uid: SRLApiClient.Endpoints.Races.Race.Goal*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race.Goal
+  name: Goal
+  nameWithType: Race.Goal
+  fullName: SRLApiClient.Endpoints.Races.Race.Goal
+- uid: SRLApiClient.Endpoints.Races.Race.Time*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race.Time
+  name: Time
+  nameWithType: Race.Time
+  fullName: SRLApiClient.Endpoints.Races.Race.Time
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SRLApiClient.Endpoints.Races.Race.State*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race.State
+  name: State
+  nameWithType: Race.State
+  fullName: SRLApiClient.Endpoints.Races.Race.State
+- uid: SRLApiClient.Endpoints.RaceState
+  commentId: T:SRLApiClient.Endpoints.RaceState
+  parent: SRLApiClient.Endpoints
+  name: RaceState
+  nameWithType: RaceState
+  fullName: SRLApiClient.Endpoints.RaceState
+- uid: SRLApiClient.Endpoints.Races.Race._state*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race._state
+  name: _state
+  nameWithType: Race._state
+  fullName: SRLApiClient.Endpoints.Races.Race._state
+- uid: SRLApiClient.Endpoints.Races.Race.StateText*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race.StateText
+  name: StateText
+  nameWithType: Race.StateText
+  fullName: SRLApiClient.Endpoints.Races.Race.StateText
+- uid: SRLApiClient.Endpoints.Races.Race.FileName*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race.FileName
+  name: FileName
+  nameWithType: Race.FileName
+  fullName: SRLApiClient.Endpoints.Races.Race.FileName
+- uid: SRLApiClient.Endpoints.Races.Race.NumEntrants*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race.NumEntrants
+  name: NumEntrants
+  nameWithType: Race.NumEntrants
+  fullName: SRLApiClient.Endpoints.Races.Race.NumEntrants
+- uid: SRLApiClient.Endpoints.Races.Race._entrants*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race._entrants
+  name: _entrants
+  nameWithType: Race._entrants
+  fullName: SRLApiClient.Endpoints.Races.Race._entrants
+- uid: System.Collections.Generic.Dictionary{System.String,SRLApiClient.Endpoints.Races.Entrant}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,SRLApiClient.Endpoints.Races.Entrant}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, Entrant>
+  nameWithType: Dictionary<String, Entrant>
+  fullName: System.Collections.Generic.Dictionary<System.String, SRLApiClient.Endpoints.Races.Entrant>
+  nameWithType.vb: Dictionary(Of String, Entrant)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, SRLApiClient.Endpoints.Races.Entrant)
+  name.vb: Dictionary(Of String, Entrant)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SRLApiClient.Endpoints.Races.Entrant
+    name: Entrant
+    nameWithType: Entrant
+    fullName: SRLApiClient.Endpoints.Races.Entrant
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: SRLApiClient.Endpoints.Races.Entrant
+    name: Entrant
+    nameWithType: Entrant
+    fullName: SRLApiClient.Endpoints.Races.Entrant
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: SRLApiClient.Endpoints.Races.Race.Entrants*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Race.Entrants
+  name: Entrants
+  nameWithType: Race.Entrants
+  fullName: SRLApiClient.Endpoints.Races.Race.Entrants
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Entrant}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Entrant}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  name: ReadOnlyCollection<Entrant>
+  nameWithType: ReadOnlyCollection<Entrant>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Entrant>
+  nameWithType.vb: ReadOnlyCollection(Of Entrant)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Entrant)
+  name.vb: ReadOnlyCollection(Of Entrant)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Races.Entrant
+    name: Entrant
+    nameWithType: Entrant
+    fullName: SRLApiClient.Endpoints.Races.Entrant
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Races.Entrant
+    name: Entrant
+    nameWithType: Entrant
+    fullName: SRLApiClient.Endpoints.Races.Entrant
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  nameWithType: ReadOnlyCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel

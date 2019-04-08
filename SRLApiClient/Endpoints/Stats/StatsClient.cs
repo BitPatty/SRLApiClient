@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
+using System.Threading.Tasks;
 
 namespace SRLApiClient.Endpoints.Stats
 {
@@ -24,16 +25,83 @@ namespace SRLApiClient.Endpoints.Stats
     }
 
     /// <summary>
-    /// Gets the statistics for a player
+    /// Gets the statistics for a player synchronously
     /// </summary>
-    /// <param name="playerName">The players name </param>
-    /// <param name="gameAbbreviation">The games abbreviation</param>
-    /// <returns>Returns the players stats or null</returns>
-    public PlayerStats GetPlayerStats(string playerName, string gameAbbreviation = null)
+    /// <param name="playerName">The players name</param>
+    /// <returns>Returns the players stats</returns>
+    public PlayerStats GetPlayerStats(string playerName)
     {
       if (string.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
-      if (gameAbbreviation == null) return SrlClient.Get(BasePath + "?player=" + playerName, out PlayerEndpoint ps) ? ps.Stats : null;
-      else return SrlClient.Get(BasePath + "?player=" + playerName + "&game=" + gameAbbreviation, out PlayerEndpoint ps) ? ps.Stats : null;
+
+      try
+      {
+        return SrlClient.Get<PlayerEndpoint>($"{BasePath}?player={playerName}")?.Stats;
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
+    /// <summary>
+    /// Gets the statistics for a player asynchronously
+    /// </summary>
+    /// <param name="playerName">The players name</param>
+    /// <returns>Returns the players stats</returns>
+    public async Task<PlayerStats> GetPlayerStatsAsync(string playerName)
+    {
+      if (string.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
+
+      try
+      {
+        return (await SrlClient.GetAsync<PlayerEndpoint>($"{BasePath}?player={playerName}").ConfigureAwait(false))?.Stats;
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
+    /// <summary>
+    /// Gets the statistics for a player in the specified game synchronously
+    /// </summary>
+    /// <param name="playerName">The players name</param>
+    /// <param name="gameAbbreviation">The games abbreviation</param>
+    /// <returns>Returns the players stats</returns>
+    public PlayerStats GetPlayerStats(string playerName, string gameAbbreviation)
+    {
+      if (string.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
+
+      try
+      {
+        return SrlClient.Get<PlayerEndpoint>($"{BasePath}?player={playerName}&game={gameAbbreviation}")?.Stats;
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
+    /// <summary>
+    /// Gets the statistics for a player in the specified game asynchronously
+    /// </summary>
+    /// <param name="playerName">The players name</param>
+    /// <param name="gameAbbreviation">The games abbreviation</param>
+    /// <returns>Returns the players stats</returns>
+    public async Task<PlayerStats> GetPlayerStatsAsync(string playerName, string gameAbbreviation)
+    {
+      if (string.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
+
+      try
+      {
+        return (await SrlClient.GetAsync<PlayerEndpoint>($"{BasePath}?player={playerName}&game={gameAbbreviation}").ConfigureAwait(false))?.Stats;
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
     }
 
     [DataContract, KnownType(typeof(SRLDataType))]
@@ -44,14 +112,41 @@ namespace SRLApiClient.Endpoints.Stats
     }
 
     /// <summary>
-    /// Gets the statistics for a single game
+    /// Gets the statistics for a single game synchronously
     /// </summary>
     /// <param name="gameAbbreviation">The games abbreviation</param>
-    /// <returns>Returns the games stats or null</returns>
+    /// <returns>Returns the games stats</returns>
     public GameStats GetGameStats(string gameAbbreviation)
     {
       if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
-      return SrlClient.Get(BasePath + "?game=" + gameAbbreviation, out GameEndpoint ge) ? ge.Stats : null;
+
+      try
+      {
+        return SrlClient.Get<GameEndpoint>($"{BasePath}?game={gameAbbreviation}")?.Stats;
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
+    /// <summary>
+    /// Gets the statistics for a single game asynchronously
+    /// </summary>
+    /// <param name="gameAbbreviation">The games abbreviation</param>
+    /// <returns>Returns the games stats</returns>
+    public async Task<GameStats> GetGameStatsAsync(string gameAbbreviation)
+    {
+      if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
+
+      try
+      {
+        return (await SrlClient.GetAsync<GameEndpoint>($"{BasePath}?game={gameAbbreviation}").ConfigureAwait(false))?.Stats;
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
     }
 
     [DataContract, KnownType(typeof(SRLDataType))]
@@ -62,10 +157,35 @@ namespace SRLApiClient.Endpoints.Stats
     }
 
     /// <summary>
-    /// Gets the monthly statistics of SRL
+    /// Gets the monthly statistics synchronously
     /// </summary>
-    /// <returns>Returns SRLs monthly stats or null</returns>
-    public ReadOnlyCollection<SRLStats> GetSRLStats() =>
-      SrlClient.Get(BasePath + "/monthly", out MonthlyStats ms) ? ms.Stats?.AsReadOnly() : null;
+    /// <returns>Returns SRLs monthly stats</returns>
+    public ReadOnlyCollection<SRLStats> GetMonthlySRLStats()
+    {
+      try
+      {
+        return SrlClient.Get<MonthlyStats>($"{BasePath}/monthly")?.Stats?.AsReadOnly();
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
+    /// <summary>
+    /// Gets the monthly statistics asynchronously
+    /// </summary>
+    /// <returns>Returns SRLs monthly stats</returns>
+    public async Task<ReadOnlyCollection<SRLStats>> GetMonthlySRLStatsAsync()
+    {
+      try
+      {
+        return (await SrlClient.GetAsync<MonthlyStats>($"{BasePath}/monthly").ConfigureAwait(false))?.Stats?.AsReadOnly();
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
   }
 }

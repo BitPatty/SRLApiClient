@@ -23,7 +23,7 @@ namespace SRLApiClient.Extensions
     /// </summary>
     /// <param name="leaderboard">The leaderboard to check</param>
     /// <param name="playerName">The players name</param>
-    /// <returns>Returns the leader or null if no match was found</returns>
+    /// <returns>Returns the leader</returns>
     public static Leader FindPlayer(this Leaderboard leaderboard, string playerName)
       => leaderboard.Leaders.FirstOrDefault(l => l.Name.Equals(playerName, StringComparison.OrdinalIgnoreCase));
   }

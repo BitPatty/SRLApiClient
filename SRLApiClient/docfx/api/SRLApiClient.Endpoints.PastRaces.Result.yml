@@ -1,0 +1,1079 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.PastRaces.Result
+  commentId: T:SRLApiClient.Endpoints.PastRaces.Result
+  id: Result
+  parent: SRLApiClient.Endpoints.PastRaces
+  children:
+  - SRLApiClient.Endpoints.PastRaces.Result.Comment
+  - SRLApiClient.Endpoints.PastRaces.Result.NewSeasonTrueSkill
+  - SRLApiClient.Endpoints.PastRaces.Result.NewTrueSkill
+  - SRLApiClient.Endpoints.PastRaces.Result.OldSeasonTrueSkill
+  - SRLApiClient.Endpoints.PastRaces.Result.OldTrueSkill
+  - SRLApiClient.Endpoints.PastRaces.Result.Place
+  - SRLApiClient.Endpoints.PastRaces.Result.PlayerName
+  - SRLApiClient.Endpoints.PastRaces.Result.Race
+  - SRLApiClient.Endpoints.PastRaces.Result.SeasonTrueSkillChange
+  - SRLApiClient.Endpoints.PastRaces.Result.Time
+  - SRLApiClient.Endpoints.PastRaces.Result.TrueSkillChange
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: Result
+  fullName: SRLApiClient.Endpoints.PastRaces.Result
+  type: Class
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Result
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 7
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nResult object\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [KnownType(typeof(SRLDataType))]
+
+      public class Result : SRLDataType
+    content.vb: >-
+      <DataContract>
+
+      <KnownType(GetType(SRLDataType))>
+
+      Public Class Result
+          Inherits SRLDataType
+  inheritance:
+  - System.Object
+  - SRLApiClient.Endpoints.SRLDataType
+  inheritedMembers:
+  - SRLApiClient.Endpoints.SRLDataType.Deserialized
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: System.Runtime.Serialization.KnownTypeAttribute
+    ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: SRLApiClient.Endpoints.SRLDataType
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SRLApiClient.Endpoints.PastRaces.Result.Race
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.Race
+  id: Race
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: Race
+  nameWithType: Result.Race
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.Race
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Race
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 13
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe race id associated with the result\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "race", IsRequired = true)]
+
+      public int Race { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="race", IsRequired:=True)>
+
+      Public Property Race As Integer
+  overload: SRLApiClient.Endpoints.PastRaces.Result.Race*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: race
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.Place
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.Place
+  id: Place
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: Place
+  nameWithType: Result.Place
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.Place
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Place
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 19
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players placement in the race\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "place", IsRequired = true)]
+
+      public int Place { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="place", IsRequired:=True)>
+
+      Public Property Place As Integer
+  overload: SRLApiClient.Endpoints.PastRaces.Result.Place*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: place
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.PlayerName
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.PlayerName
+  id: PlayerName
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: PlayerName
+  nameWithType: Result.PlayerName
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.PlayerName
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: PlayerName
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 25
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players name\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "player", IsRequired = true)]
+
+      public string PlayerName { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember(Name:="player", IsRequired:=True)>
+
+      Public Property PlayerName As String
+  overload: SRLApiClient.Endpoints.PastRaces.Result.PlayerName*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: player
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.Time
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.Time
+  id: Time
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: Time
+  nameWithType: Result.Time
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.Time
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Time
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 31
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players final time in seconds\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "time", IsRequired = true)]
+
+      public int Time { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="time", IsRequired:=True)>
+
+      Public Property Time As Integer
+  overload: SRLApiClient.Endpoints.PastRaces.Result.Time*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: time
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.Comment
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.Comment
+  id: Comment
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: Result.Comment
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.Comment
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Comment
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 37
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players comment on the result\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "message", IsRequired = true)]
+
+      public string Comment { get; protected set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <DataMember(Name:="message", IsRequired:=True)>
+
+      Public Property Comment As String
+  overload: SRLApiClient.Endpoints.PastRaces.Result.Comment*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: message
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.OldTrueSkill
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.OldTrueSkill
+  id: OldTrueSkill
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: OldTrueSkill
+  nameWithType: Result.OldTrueSkill
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.OldTrueSkill
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: OldTrueSkill
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 43
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players old trueskill\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "oldtrueskill", IsRequired = true)]
+
+      public int OldTrueSkill { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="oldtrueskill", IsRequired:=True)>
+
+      Public Property OldTrueSkill As Integer
+  overload: SRLApiClient.Endpoints.PastRaces.Result.OldTrueSkill*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: oldtrueskill
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.NewTrueSkill
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.NewTrueSkill
+  id: NewTrueSkill
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: NewTrueSkill
+  nameWithType: Result.NewTrueSkill
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.NewTrueSkill
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: NewTrueSkill
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 49
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players new trueskill\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "newtrueskill", IsRequired = true)]
+
+      public int NewTrueSkill { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="newtrueskill", IsRequired:=True)>
+
+      Public Property NewTrueSkill As Integer
+  overload: SRLApiClient.Endpoints.PastRaces.Result.NewTrueSkill*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: newtrueskill
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.TrueSkillChange
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.TrueSkillChange
+  id: TrueSkillChange
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: TrueSkillChange
+  nameWithType: Result.TrueSkillChange
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.TrueSkillChange
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: TrueSkillChange
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 55
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players trueskill change\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "trueskillchange", IsRequired = true)]
+
+      public int TrueSkillChange { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="trueskillchange", IsRequired:=True)>
+
+      Public Property TrueSkillChange As Integer
+  overload: SRLApiClient.Endpoints.PastRaces.Result.TrueSkillChange*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: trueskillchange
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.OldSeasonTrueSkill
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.OldSeasonTrueSkill
+  id: OldSeasonTrueSkill
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: OldSeasonTrueSkill
+  nameWithType: Result.OldSeasonTrueSkill
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.OldSeasonTrueSkill
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: OldSeasonTrueSkill
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 61
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players old trueskill (seasons only)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "oldseasontrueskill", IsRequired = true)]
+
+      public int OldSeasonTrueSkill { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="oldseasontrueskill", IsRequired:=True)>
+
+      Public Property OldSeasonTrueSkill As Integer
+  overload: SRLApiClient.Endpoints.PastRaces.Result.OldSeasonTrueSkill*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: oldseasontrueskill
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.NewSeasonTrueSkill
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.NewSeasonTrueSkill
+  id: NewSeasonTrueSkill
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: NewSeasonTrueSkill
+  nameWithType: Result.NewSeasonTrueSkill
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.NewSeasonTrueSkill
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: NewSeasonTrueSkill
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 67
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players new trueskill (seasons only)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "newseasontrueskill", IsRequired = true)]
+
+      public int NewSeasonTrueSkill { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="newseasontrueskill", IsRequired:=True)>
+
+      Public Property NewSeasonTrueSkill As Integer
+  overload: SRLApiClient.Endpoints.PastRaces.Result.NewSeasonTrueSkill*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: newseasontrueskill
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.PastRaces.Result.SeasonTrueSkillChange
+  commentId: P:SRLApiClient.Endpoints.PastRaces.Result.SeasonTrueSkillChange
+  id: SeasonTrueSkillChange
+  parent: SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: SeasonTrueSkillChange
+  nameWithType: Result.SeasonTrueSkillChange
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.SeasonTrueSkillChange
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/Result.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: SeasonTrueSkillChange
+    path: Endpoints/PastRaces/Result.cs
+    startLine: 73
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nThe players trueskill change (seasons only)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "seasontrueskillchange", IsRequired = true)]
+
+      public int SeasonTrueSkillChange { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="seasontrueskillchange", IsRequired:=True)>
+
+      Public Property SeasonTrueSkillChange As Integer
+  overload: SRLApiClient.Endpoints.PastRaces.Result.SeasonTrueSkillChange*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: seasontrueskillchange
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+references:
+- uid: SRLApiClient.Endpoints.PastRaces
+  commentId: N:SRLApiClient.Endpoints.PastRaces
+  name: SRLApiClient.Endpoints.PastRaces
+  nameWithType: SRLApiClient.Endpoints.PastRaces
+  fullName: SRLApiClient.Endpoints.PastRaces
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SRLApiClient.Endpoints.SRLDataType
+  commentId: T:SRLApiClient.Endpoints.SRLDataType
+  parent: SRLApiClient.Endpoints
+  name: SRLDataType
+  nameWithType: SRLDataType
+  fullName: SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
+  parent: SRLApiClient.Endpoints.SRLDataType
+  name: Deserialized
+  nameWithType: SRLDataType.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: SRLApiClient.Endpoints.PastRaces.Result.Race*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.Race
+  name: Race
+  nameWithType: Result.Race
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.Race
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SRLApiClient.Endpoints.PastRaces.Result.Place*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.Place
+  name: Place
+  nameWithType: Result.Place
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.Place
+- uid: SRLApiClient.Endpoints.PastRaces.Result.PlayerName*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.PlayerName
+  name: PlayerName
+  nameWithType: Result.PlayerName
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.PlayerName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SRLApiClient.Endpoints.PastRaces.Result.Time*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.Time
+  name: Time
+  nameWithType: Result.Time
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.Time
+- uid: SRLApiClient.Endpoints.PastRaces.Result.Comment*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.Comment
+  name: Comment
+  nameWithType: Result.Comment
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.Comment
+- uid: SRLApiClient.Endpoints.PastRaces.Result.OldTrueSkill*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.OldTrueSkill
+  name: OldTrueSkill
+  nameWithType: Result.OldTrueSkill
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.OldTrueSkill
+- uid: SRLApiClient.Endpoints.PastRaces.Result.NewTrueSkill*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.NewTrueSkill
+  name: NewTrueSkill
+  nameWithType: Result.NewTrueSkill
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.NewTrueSkill
+- uid: SRLApiClient.Endpoints.PastRaces.Result.TrueSkillChange*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.TrueSkillChange
+  name: TrueSkillChange
+  nameWithType: Result.TrueSkillChange
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.TrueSkillChange
+- uid: SRLApiClient.Endpoints.PastRaces.Result.OldSeasonTrueSkill*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.OldSeasonTrueSkill
+  name: OldSeasonTrueSkill
+  nameWithType: Result.OldSeasonTrueSkill
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.OldSeasonTrueSkill
+- uid: SRLApiClient.Endpoints.PastRaces.Result.NewSeasonTrueSkill*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.NewSeasonTrueSkill
+  name: NewSeasonTrueSkill
+  nameWithType: Result.NewSeasonTrueSkill
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.NewSeasonTrueSkill
+- uid: SRLApiClient.Endpoints.PastRaces.Result.SeasonTrueSkillChange*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.Result.SeasonTrueSkillChange
+  name: SeasonTrueSkillChange
+  nameWithType: Result.SeasonTrueSkillChange
+  fullName: SRLApiClient.Endpoints.PastRaces.Result.SeasonTrueSkillChange

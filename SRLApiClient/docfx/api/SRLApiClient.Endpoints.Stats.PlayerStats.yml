@@ -1,0 +1,1010 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats
+  commentId: T:SRLApiClient.Endpoints.Stats.PlayerStats
+  id: PlayerStats
+  parent: SRLApiClient.Endpoints.Stats
+  children:
+  - SRLApiClient.Endpoints.Stats.PlayerStats.FirstRace
+  - SRLApiClient.Endpoints.Stats.PlayerStats.FirstRaceDate
+  - SRLApiClient.Endpoints.Stats.PlayerStats.Rank
+  - SRLApiClient.Endpoints.Stats.PlayerStats.TotalDisqualifications
+  - SRLApiClient.Endpoints.Stats.PlayerStats.TotalFirstPlace
+  - SRLApiClient.Endpoints.Stats.PlayerStats.TotalQuits
+  - SRLApiClient.Endpoints.Stats.PlayerStats.TotalRaces
+  - SRLApiClient.Endpoints.Stats.PlayerStats.TotalSecondPlace
+  - SRLApiClient.Endpoints.Stats.PlayerStats.TotalThirdPlace
+  - SRLApiClient.Endpoints.Stats.PlayerStats.TotalTimePlayed
+  langs:
+  - csharp
+  - vb
+  name: PlayerStats
+  nameWithType: PlayerStats
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats
+  type: Class
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: PlayerStats
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 10
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nPlayerStats object\n"
+  example: []
+  syntax:
+    content: >-
+      [DataContract]
+
+      [KnownType(typeof(SRLDataType))]
+
+      public class PlayerStats : SRLDataType
+    content.vb: >-
+      <DataContract>
+
+      <KnownType(GetType(SRLDataType))>
+
+      Public Class PlayerStats
+          Inherits SRLDataType
+  inheritance:
+  - System.Object
+  - SRLApiClient.Endpoints.SRLDataType
+  inheritedMembers:
+  - SRLApiClient.Endpoints.SRLDataType.Deserialized
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+  - type: System.Runtime.Serialization.KnownTypeAttribute
+    ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: SRLApiClient.Endpoints.SRLDataType
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.Rank
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.Rank
+  id: Rank
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: Rank
+  nameWithType: PlayerStats.Rank
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.Rank
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Rank
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 16
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe players rank on the games associated leaderboard (if queried)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "rank", IsRequired = true)]
+
+      public int Rank { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="rank", IsRequired:=True)>
+
+      Public Property Rank As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.Rank*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: rank
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalRaces
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.TotalRaces
+  id: TotalRaces
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: TotalRaces
+  nameWithType: PlayerStats.TotalRaces
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalRaces
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: TotalRaces
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 22
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe players total race caount\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "totalRaces", IsRequired = true)]
+
+      public int TotalRaces { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="totalRaces", IsRequired:=True)>
+
+      Public Property TotalRaces As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.TotalRaces*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: totalRaces
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRace
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.FirstRace
+  id: FirstRace
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: FirstRace
+  nameWithType: PlayerStats.FirstRace
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRace
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: FirstRace
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 28
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe ID of the players first race\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "firstRace", IsRequired = true)]
+
+      public int FirstRace { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="firstRace", IsRequired:=True)>
+
+      Public Property FirstRace As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRace*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: firstRace
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRaceDate
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.FirstRaceDate
+  id: FirstRaceDate
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: FirstRaceDate
+  nameWithType: PlayerStats.FirstRaceDate
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRaceDate
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: FirstRaceDate
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 34
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe date of the players first race\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "firstRaceDate", IsRequired = true)]
+
+      public int FirstRaceDate { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="firstRaceDate", IsRequired:=True)>
+
+      Public Property FirstRaceDate As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRaceDate*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: firstRaceDate
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalTimePlayed
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.TotalTimePlayed
+  id: TotalTimePlayed
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: TotalTimePlayed
+  nameWithType: PlayerStats.TotalTimePlayed
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalTimePlayed
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: TotalTimePlayed
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 40
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe players accumulated play time (in the game if queried)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "totalTimePlayed", IsRequired = true)]
+
+      public int TotalTimePlayed { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="totalTimePlayed", IsRequired:=True)>
+
+      Public Property TotalTimePlayed As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.TotalTimePlayed*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: totalTimePlayed
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalFirstPlace
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.TotalFirstPlace
+  id: TotalFirstPlace
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: TotalFirstPlace
+  nameWithType: PlayerStats.TotalFirstPlace
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalFirstPlace
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: TotalFirstPlace
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 46
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe players first place count in race results (of the game if queried)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "totalFirstPlace", IsRequired = true)]
+
+      public int TotalFirstPlace { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="totalFirstPlace", IsRequired:=True)>
+
+      Public Property TotalFirstPlace As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.TotalFirstPlace*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: totalFirstPlace
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalSecondPlace
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.TotalSecondPlace
+  id: TotalSecondPlace
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: TotalSecondPlace
+  nameWithType: PlayerStats.TotalSecondPlace
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalSecondPlace
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: TotalSecondPlace
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 52
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe players second place count in race results (of the game if queried)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "totalSecondPlace", IsRequired = true)]
+
+      public int TotalSecondPlace { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="totalSecondPlace", IsRequired:=True)>
+
+      Public Property TotalSecondPlace As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.TotalSecondPlace*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: totalSecondPlace
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalThirdPlace
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.TotalThirdPlace
+  id: TotalThirdPlace
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: TotalThirdPlace
+  nameWithType: PlayerStats.TotalThirdPlace
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalThirdPlace
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: TotalThirdPlace
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 58
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe players third place count in race results (of the game if queried)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "totalThirdPlace", IsRequired = true)]
+
+      public int TotalThirdPlace { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="totalThirdPlace", IsRequired:=True)>
+
+      Public Property TotalThirdPlace As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.TotalThirdPlace*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: totalThirdPlace
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalQuits
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.TotalQuits
+  id: TotalQuits
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: TotalQuits
+  nameWithType: PlayerStats.TotalQuits
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalQuits
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: TotalQuits
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 64
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe players forfeit count in race results (of the game if queried)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "totalQuits", IsRequired = true)]
+
+      public int TotalQuits { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="totalQuits", IsRequired:=True)>
+
+      Public Property TotalQuits As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.TotalQuits*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: totalQuits
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalDisqualifications
+  commentId: P:SRLApiClient.Endpoints.Stats.PlayerStats.TotalDisqualifications
+  id: TotalDisqualifications
+  parent: SRLApiClient.Endpoints.Stats.PlayerStats
+  langs:
+  - csharp
+  - vb
+  name: TotalDisqualifications
+  nameWithType: PlayerStats.TotalDisqualifications
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalDisqualifications
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: TotalDisqualifications
+    path: Endpoints/Stats/PlayerStats.cs
+    startLine: 70
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nThe players disqualification count in race results (of the game if queried)\n"
+  example: []
+  syntax:
+    content: >-
+      [DataMember(Name = "totalDisqualifications", IsRequired = true)]
+
+      public int TotalDisqualifications { get; protected set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <DataMember(Name:="totalDisqualifications", IsRequired:=True)>
+
+      Public Property TotalDisqualifications As Integer
+  overload: SRLApiClient.Endpoints.Stats.PlayerStats.TotalDisqualifications*
+  attributes:
+  - type: System.Runtime.Serialization.DataMemberAttribute
+    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: Name
+      type: System.String
+      value: totalDisqualifications
+    - name: IsRequired
+      type: System.Boolean
+      value: true
+  modifiers.csharp:
+  - public
+  - get
+  - protected set
+  modifiers.vb:
+  - Public
+  - Get
+  - Protected Set
+references:
+- uid: SRLApiClient.Endpoints.Stats
+  commentId: N:SRLApiClient.Endpoints.Stats
+  name: SRLApiClient.Endpoints.Stats
+  nameWithType: SRLApiClient.Endpoints.Stats
+  fullName: SRLApiClient.Endpoints.Stats
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SRLApiClient.Endpoints.SRLDataType
+  commentId: T:SRLApiClient.Endpoints.SRLDataType
+  parent: SRLApiClient.Endpoints
+  name: SRLDataType
+  nameWithType: SRLDataType
+  fullName: SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
+  parent: SRLApiClient.Endpoints.SRLDataType
+  name: Deserialized
+  nameWithType: SRLDataType.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.Rank*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.Rank
+  name: Rank
+  nameWithType: PlayerStats.Rank
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.Rank
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalRaces*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.TotalRaces
+  name: TotalRaces
+  nameWithType: PlayerStats.TotalRaces
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalRaces
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRace*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.FirstRace
+  name: FirstRace
+  nameWithType: PlayerStats.FirstRace
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRace
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRaceDate*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.FirstRaceDate
+  name: FirstRaceDate
+  nameWithType: PlayerStats.FirstRaceDate
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.FirstRaceDate
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalTimePlayed*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.TotalTimePlayed
+  name: TotalTimePlayed
+  nameWithType: PlayerStats.TotalTimePlayed
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalTimePlayed
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalFirstPlace*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.TotalFirstPlace
+  name: TotalFirstPlace
+  nameWithType: PlayerStats.TotalFirstPlace
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalFirstPlace
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalSecondPlace*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.TotalSecondPlace
+  name: TotalSecondPlace
+  nameWithType: PlayerStats.TotalSecondPlace
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalSecondPlace
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalThirdPlace*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.TotalThirdPlace
+  name: TotalThirdPlace
+  nameWithType: PlayerStats.TotalThirdPlace
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalThirdPlace
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalQuits*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.TotalQuits
+  name: TotalQuits
+  nameWithType: PlayerStats.TotalQuits
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalQuits
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats.TotalDisqualifications*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.PlayerStats.TotalDisqualifications
+  name: TotalDisqualifications
+  nameWithType: PlayerStats.TotalDisqualifications
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats.TotalDisqualifications

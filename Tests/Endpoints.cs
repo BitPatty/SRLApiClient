@@ -33,10 +33,16 @@ namespace Tests
     [Category("Endpoints")]
     public void Games()
     {
-      Game game = _client.Games["sms"];
+      Game game = _client.Games.Get("sms");
       Assert.AreEqual(game.Name, "Super Mario Sunshine");
-      Assert.IsNotNull(game.Rules);
-      Assert.IsNotEmpty(game.Rules);
+    }
+
+    [Test]
+    [Category("Endpoints")]
+    public void GameRules()
+    {
+      string rules = _client.Games.GetRules("sms");
+      Assert.IsNotEmpty(rules);
     }
 
     [Test]
@@ -46,8 +52,6 @@ namespace Tests
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
       Race race = _client.Races.Get(races[0].Id);
       Assert.AreEqual(race.Id, races[0].Id);
-      Assert.IsNotNull(race.Game.Rules);
-      Assert.IsNotEmpty(race.Game.Rules);
     }
 
     [Test]
@@ -78,8 +82,6 @@ namespace Tests
     public void Leaderboards()
     {
       Leaderboard leaderboard = _client.Leaderboards.Get("sms");
-      Assert.IsNotNull(leaderboard.Game.Rules);
-      Assert.IsNotEmpty(leaderboard.Game.Rules);
       Assert.AreEqual(leaderboard.Leaders.Count, leaderboard.LeadersCount);
       Assert.AreEqual(leaderboard.Unranked.Count, leaderboard.UnrankedCount);
       Assert.AreEqual(leaderboard.Leaders[0].Rank, 1);
@@ -89,7 +91,7 @@ namespace Tests
     [Category("Endpoints")]
     public void MonthlySRLStats()
     {
-      ReadOnlyCollection<SRLStats> stats = _client.Stats.GetSRLStats();
+      ReadOnlyCollection<SRLStats> stats = _client.Stats.GetMonthlySRLStats();
       Assert.IsNotNull(stats);
       Assert.AreEqual(stats.FirstOrDefault(s => s.Month == 10 && s.Year == 2018)?.TotalTimeRaced, 15320129);
     }

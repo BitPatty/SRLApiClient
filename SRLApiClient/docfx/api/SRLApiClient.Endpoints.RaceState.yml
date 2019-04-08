@@ -1,0 +1,264 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.RaceState
+  commentId: T:SRLApiClient.Endpoints.RaceState
+  id: RaceState
+  parent: SRLApiClient.Endpoints
+  children:
+  - SRLApiClient.Endpoints.RaceState.EntryClosed
+  - SRLApiClient.Endpoints.RaceState.EntryOpen
+  - SRLApiClient.Endpoints.RaceState.Finished
+  - SRLApiClient.Endpoints.RaceState.InProgress
+  - SRLApiClient.Endpoints.RaceState.Over
+  - SRLApiClient.Endpoints.RaceState.Unknown
+  langs:
+  - csharp
+  - vb
+  name: RaceState
+  nameWithType: RaceState
+  fullName: SRLApiClient.Endpoints.RaceState
+  type: Enum
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: RaceState
+    path: Endpoints/Enums.cs
+    startLine: 41
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe current state of the race\n"
+  example: []
+  syntax:
+    content: 'public enum RaceState : uint'
+    content.vb: Public Enum RaceState As UInteger
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: SRLApiClient.Endpoints.RaceState.Unknown
+  commentId: F:SRLApiClient.Endpoints.RaceState.Unknown
+  id: Unknown
+  parent: SRLApiClient.Endpoints.RaceState
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: RaceState.Unknown
+  fullName: SRLApiClient.Endpoints.RaceState.Unknown
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Unknown
+    path: Endpoints/Enums.cs
+    startLine: 46
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nFallback value\n"
+  example: []
+  syntax:
+    content: Unknown = 0U
+    return:
+      type: SRLApiClient.Endpoints.RaceState
+    content.vb: Unknown = 0UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.RaceState.EntryOpen
+  commentId: F:SRLApiClient.Endpoints.RaceState.EntryOpen
+  id: EntryOpen
+  parent: SRLApiClient.Endpoints.RaceState
+  langs:
+  - csharp
+  - vb
+  name: EntryOpen
+  nameWithType: RaceState.EntryOpen
+  fullName: SRLApiClient.Endpoints.RaceState.EntryOpen
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: EntryOpen
+    path: Endpoints/Enums.cs
+    startLine: 51
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe race is open for players\n"
+  example: []
+  syntax:
+    content: EntryOpen = 1U
+    return:
+      type: SRLApiClient.Endpoints.RaceState
+    content.vb: EntryOpen = 1UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.RaceState.EntryClosed
+  commentId: F:SRLApiClient.Endpoints.RaceState.EntryClosed
+  id: EntryClosed
+  parent: SRLApiClient.Endpoints.RaceState
+  langs:
+  - csharp
+  - vb
+  name: EntryClosed
+  nameWithType: RaceState.EntryClosed
+  fullName: SRLApiClient.Endpoints.RaceState.EntryClosed
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: EntryClosed
+    path: Endpoints/Enums.cs
+    startLine: 57
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe race is closed but the race hasn&apos;t started yet\n(This is where the 10 second countdown happens)\n"
+  example: []
+  syntax:
+    content: EntryClosed = 2U
+    return:
+      type: SRLApiClient.Endpoints.RaceState
+    content.vb: EntryClosed = 2UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.RaceState.InProgress
+  commentId: F:SRLApiClient.Endpoints.RaceState.InProgress
+  id: InProgress
+  parent: SRLApiClient.Endpoints.RaceState
+  langs:
+  - csharp
+  - vb
+  name: InProgress
+  nameWithType: RaceState.InProgress
+  fullName: SRLApiClient.Endpoints.RaceState.InProgress
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: InProgress
+    path: Endpoints/Enums.cs
+    startLine: 62
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe race is in progress\n"
+  example: []
+  syntax:
+    content: InProgress = 3U
+    return:
+      type: SRLApiClient.Endpoints.RaceState
+    content.vb: InProgress = 3UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.RaceState.Finished
+  commentId: F:SRLApiClient.Endpoints.RaceState.Finished
+  id: Finished
+  parent: SRLApiClient.Endpoints.RaceState
+  langs:
+  - csharp
+  - vb
+  name: Finished
+  nameWithType: RaceState.Finished
+  fullName: SRLApiClient.Endpoints.RaceState.Finished
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Finished
+    path: Endpoints/Enums.cs
+    startLine: 67
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe race has finished but hasn&apos;t been recorded yet\n"
+  example: []
+  syntax:
+    content: Finished = 4U
+    return:
+      type: SRLApiClient.Endpoints.RaceState
+    content.vb: Finished = 4UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.RaceState.Over
+  commentId: F:SRLApiClient.Endpoints.RaceState.Over
+  id: Over
+  parent: SRLApiClient.Endpoints.RaceState
+  langs:
+  - csharp
+  - vb
+  name: Over
+  nameWithType: RaceState.Over
+  fullName: SRLApiClient.Endpoints.RaceState.Over
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Over
+    path: Endpoints/Enums.cs
+    startLine: 72
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe race has been recorded\n"
+  example: []
+  syntax:
+    content: Over = 5U
+    return:
+      type: SRLApiClient.Endpoints.RaceState
+    content.vb: Over = 5UI
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: SRLApiClient.Endpoints.RaceState
+  commentId: T:SRLApiClient.Endpoints.RaceState
+  parent: SRLApiClient.Endpoints
+  name: RaceState
+  nameWithType: RaceState
+  fullName: SRLApiClient.Endpoints.RaceState

@@ -61,7 +61,7 @@ namespace SRLApiClient.Extensions
     /// </summary>
     /// <param name="races">The collection to apply the filter on</param>
     /// <param name="raceId">The races id</param>
-    /// <returns>Returns the race or null if it wasn't found</returns>
+    /// <returns>Returns the race</returns>
     public static Race FilterById(this ReadOnlyCollection<Race> races, string raceId)
       => races.FirstOrDefault(r => r.Id.Equals(raceId, StringComparison.OrdinalIgnoreCase));
   }

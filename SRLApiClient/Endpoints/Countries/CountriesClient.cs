@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
+using System.Threading.Tasks;
 
 namespace SRLApiClient.Endpoints.Countries
 {
@@ -26,13 +27,35 @@ namespace SRLApiClient.Endpoints.Countries
     }
 
     /// <summary>
-    /// Gets the list of available countries on SRL
+    /// Gets the list of available countries synchronously
     /// </summary>
-    /// <returns>Returns the list of countries or null</returns>
+    /// <returns>Returns the list of countries</returns>
     public ReadOnlyCollection<string> Get()
     {
-      if (SrlClient.Get(BasePath, out Countries countries)) return countries.List.AsReadOnly();
-      return null;
+      try
+      {
+        return SrlClient.Get<Countries>(BasePath).List.AsReadOnly();
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
+    /// <summary>
+    /// Gets the list of available countries synchronously
+    /// </summary>
+    /// <returns>Returns the list of countries</returns>
+    public async Task<ReadOnlyCollection<string>> GetAsync()
+    {
+      try
+      {
+        return (await SrlClient.GetAsync<Countries>(BasePath).ConfigureAwait(false)).List.AsReadOnly();
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
     }
   }
 }

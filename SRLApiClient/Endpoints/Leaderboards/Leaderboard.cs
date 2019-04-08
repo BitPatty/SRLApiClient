@@ -18,7 +18,7 @@ namespace SRLApiClient.Endpoints.Leaderboards
     public Game Game { get; protected set; }
 
     /// <summary>
-    /// The count of ranked players
+    /// The number of ranked players
     /// </summary>
     [DataMember(Name = "leadersCount", IsRequired = true)]
     public int LeadersCount { get; protected set; }
@@ -27,7 +27,7 @@ namespace SRLApiClient.Endpoints.Leaderboards
     /// The list of ranked players
     /// </summary>
     [DataMember(Name = "leaders", IsRequired = true)]
-    protected List<Leader> _leaders { get; set; }
+    private List<Leader> _leaders { get; set; }
 
     /// <summary>
     /// The list of ranked players
@@ -35,7 +35,7 @@ namespace SRLApiClient.Endpoints.Leaderboards
     public ReadOnlyCollection<Leader> Leaders => _leaders.AsReadOnly();
 
     /// <summary>
-    /// The count of unranked players
+    /// The number of unranked players
     /// </summary>
     [DataMember(Name = "unrankedCount", IsRequired = true)]
     public int UnrankedCount { get; protected set; }
@@ -44,7 +44,7 @@ namespace SRLApiClient.Endpoints.Leaderboards
     /// The list of unranked players
     /// </summary>
     [DataMember(Name = "unranked", IsRequired = true)]
-    protected List<Leader> _unranked { get; set; }
+    private List<Leader> _unranked { get; set; }
 
     /// <summary>
     /// The list of unranked players
