@@ -1,0 +1,62 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  id: SRLApiClient.Endpoints
+  children:
+  - SRLApiClient.Endpoints.EntrantState
+  - SRLApiClient.Endpoints.RaceState
+  - SRLApiClient.Endpoints.SRLDataType
+  - SRLApiClient.Endpoints.SRLEndpoint
+  - SRLApiClient.Endpoints.SRLEndpoint.GameRules
+  - SRLApiClient.Endpoints.StreamApi
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.Endpoints.EntrantState
+  commentId: T:SRLApiClient.Endpoints.EntrantState
+  parent: SRLApiClient.Endpoints
+  name: EntrantState
+  nameWithType: EntrantState
+  fullName: SRLApiClient.Endpoints.EntrantState
+- uid: SRLApiClient.Endpoints.RaceState
+  commentId: T:SRLApiClient.Endpoints.RaceState
+  parent: SRLApiClient.Endpoints
+  name: RaceState
+  nameWithType: RaceState
+  fullName: SRLApiClient.Endpoints.RaceState
+- uid: SRLApiClient.Endpoints.StreamApi
+  commentId: T:SRLApiClient.Endpoints.StreamApi
+  parent: SRLApiClient.Endpoints
+  name: StreamApi
+  nameWithType: StreamApi
+  fullName: SRLApiClient.Endpoints.StreamApi
+- uid: SRLApiClient.Endpoints.SRLDataType
+  commentId: T:SRLApiClient.Endpoints.SRLDataType
+  parent: SRLApiClient.Endpoints
+  name: SRLDataType
+  nameWithType: SRLDataType
+  fullName: SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLEndpoint
+  commentId: T:SRLApiClient.Endpoints.SRLEndpoint
+  parent: SRLApiClient.Endpoints
+  name: SRLEndpoint
+  nameWithType: SRLEndpoint
+  fullName: SRLApiClient.Endpoints.SRLEndpoint
+- uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules
+  commentId: T:SRLApiClient.Endpoints.SRLEndpoint.GameRules
+  name: SRLEndpoint.GameRules
+  nameWithType: SRLEndpoint.GameRules
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints

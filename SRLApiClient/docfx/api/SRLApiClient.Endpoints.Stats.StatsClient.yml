@@ -1,0 +1,1072 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.Stats.StatsClient
+  commentId: T:SRLApiClient.Endpoints.Stats.StatsClient
+  id: StatsClient
+  parent: SRLApiClient.Endpoints.Stats
+  children:
+  - SRLApiClient.Endpoints.Stats.StatsClient.#ctor(SRLApiClient.SRLClient)
+  - SRLApiClient.Endpoints.Stats.StatsClient.GetGameStats(System.String)
+  - SRLApiClient.Endpoints.Stats.StatsClient.GetGameStatsAsync(System.String)
+  - SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStats
+  - SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStatsAsync
+  - SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats(System.String)
+  - SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats(System.String,System.String)
+  - SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync(System.String)
+  - SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: StatsClient
+  nameWithType: StatsClient
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient
+  type: Class
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: StatsClient
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 11
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nA client to perform requests on the /stat endpoint\n"
+  example: []
+  syntax:
+    content: 'public class StatsClient : SRLEndpoint'
+    content.vb: >-
+      Public Class StatsClient
+          Inherits SRLEndpoint
+  inheritance:
+  - System.Object
+  - SRLApiClient.Endpoints.SRLEndpoint
+  inheritedMembers:
+  - SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  - SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.#ctor(SRLApiClient.SRLClient)
+  commentId: M:SRLApiClient.Endpoints.Stats.StatsClient.#ctor(SRLApiClient.SRLClient)
+  id: '#ctor(SRLApiClient.SRLClient)'
+  parent: SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: StatsClient(SRLClient)
+  nameWithType: StatsClient.StatsClient(SRLClient)
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.StatsClient(SRLApiClient.SRLClient)
+  type: Constructor
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: .ctor
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 17
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nCreates a new client to perform requests on the /stat endpoint\n"
+  example: []
+  syntax:
+    content: public StatsClient(SRLClient baseClient)
+    parameters:
+    - id: baseClient
+      type: SRLApiClient.SRLClient
+      description: The <xref href="SRLApiClient.SRLClient" data-throw-if-not-resolved="false"></xref> used to perform requests
+    content.vb: Public Sub New(baseClient As SRLClient)
+  overload: SRLApiClient.Endpoints.Stats.StatsClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats(System.String)
+  commentId: M:SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats(System.String)
+  id: GetPlayerStats(System.String)
+  parent: SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerStats(String)
+  nameWithType: StatsClient.GetPlayerStats(String)
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetPlayerStats
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 31
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nGets the statistics for a player synchronously\n"
+  example: []
+  syntax:
+    content: public PlayerStats GetPlayerStats(string playerName)
+    parameters:
+    - id: playerName
+      type: System.String
+      description: The players name
+    return:
+      type: SRLApiClient.Endpoints.Stats.PlayerStats
+      description: Returns the players stats
+    content.vb: Public Function GetPlayerStats(playerName As String) As PlayerStats
+  overload: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync(System.String)
+  commentId: M:SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync(System.String)
+  id: GetPlayerStatsAsync(System.String)
+  parent: SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerStatsAsync(String)
+  nameWithType: StatsClient.GetPlayerStatsAsync(String)
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetPlayerStatsAsync
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 50
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nGets the statistics for a player asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<PlayerStats> GetPlayerStatsAsync(string playerName)
+    parameters:
+    - id: playerName
+      type: System.String
+      description: The players name
+    return:
+      type: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Stats.PlayerStats}
+      description: Returns the players stats
+    content.vb: Public Function GetPlayerStatsAsync(playerName As String) As Task(Of PlayerStats)
+  overload: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats(System.String,System.String)
+  commentId: M:SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats(System.String,System.String)
+  id: GetPlayerStats(System.String,System.String)
+  parent: SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerStats(String, String)
+  nameWithType: StatsClient.GetPlayerStats(String, String)
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetPlayerStats
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 70
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nGets the statistics for a player in the specified game synchronously\n"
+  example: []
+  syntax:
+    content: public PlayerStats GetPlayerStats(string playerName, string gameAbbreviation)
+    parameters:
+    - id: playerName
+      type: System.String
+      description: The players name
+    - id: gameAbbreviation
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: SRLApiClient.Endpoints.Stats.PlayerStats
+      description: Returns the players stats
+    content.vb: Public Function GetPlayerStats(playerName As String, gameAbbreviation As String) As PlayerStats
+  overload: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync(System.String,System.String)
+  commentId: M:SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync(System.String,System.String)
+  id: GetPlayerStatsAsync(System.String,System.String)
+  parent: SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: GetPlayerStatsAsync(String, String)
+  nameWithType: StatsClient.GetPlayerStatsAsync(String, String)
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync(System.String, System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetPlayerStatsAsync
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 91
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nGets the statistics for a player in the specified game asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<PlayerStats> GetPlayerStatsAsync(string playerName, string gameAbbreviation)
+    parameters:
+    - id: playerName
+      type: System.String
+      description: The players name
+    - id: gameAbbreviation
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Stats.PlayerStats}
+      description: Returns the players stats
+    content.vb: Public Function GetPlayerStatsAsync(playerName As String, gameAbbreviation As String) As Task(Of PlayerStats)
+  overload: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStats(System.String)
+  commentId: M:SRLApiClient.Endpoints.Stats.StatsClient.GetGameStats(System.String)
+  id: GetGameStats(System.String)
+  parent: SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: GetGameStats(String)
+  nameWithType: StatsClient.GetGameStats(String)
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStats(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetGameStats
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 118
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nGets the statistics for a single game synchronously\n"
+  example: []
+  syntax:
+    content: public GameStats GetGameStats(string gameAbbreviation)
+    parameters:
+    - id: gameAbbreviation
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: SRLApiClient.Endpoints.Stats.GameStats
+      description: Returns the games stats
+    content.vb: Public Function GetGameStats(gameAbbreviation As String) As GameStats
+  overload: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStats*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStatsAsync(System.String)
+  commentId: M:SRLApiClient.Endpoints.Stats.StatsClient.GetGameStatsAsync(System.String)
+  id: GetGameStatsAsync(System.String)
+  parent: SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: GetGameStatsAsync(String)
+  nameWithType: StatsClient.GetGameStatsAsync(String)
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStatsAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetGameStatsAsync
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 137
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nGets the statistics for a single game asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<GameStats> GetGameStatsAsync(string gameAbbreviation)
+    parameters:
+    - id: gameAbbreviation
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Stats.GameStats}
+      description: Returns the games stats
+    content.vb: Public Function GetGameStatsAsync(gameAbbreviation As String) As Task(Of GameStats)
+  overload: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStatsAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStats
+  commentId: M:SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStats
+  id: GetMonthlySRLStats
+  parent: SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: GetMonthlySRLStats()
+  nameWithType: StatsClient.GetMonthlySRLStats()
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStats()
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetMonthlySRLStats
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 162
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nGets the monthly statistics synchronously\n"
+  example: []
+  syntax:
+    content: public ReadOnlyCollection<SRLStats> GetMonthlySRLStats()
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Stats.SRLStats}
+      description: Returns SRLs monthly stats
+    content.vb: Public Function GetMonthlySRLStats As ReadOnlyCollection(Of SRLStats)
+  overload: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStats*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStatsAsync
+  commentId: M:SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStatsAsync
+  id: GetMonthlySRLStatsAsync
+  parent: SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: GetMonthlySRLStatsAsync()
+  nameWithType: StatsClient.GetMonthlySRLStatsAsync()
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStatsAsync()
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Stats/StatsClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetMonthlySRLStatsAsync
+    path: Endpoints/Stats/StatsClient.cs
+    startLine: 178
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Stats
+  summary: "\nGets the monthly statistics asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<ReadOnlyCollection<SRLStats>> GetMonthlySRLStatsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Stats.SRLStats}}
+      description: Returns SRLs monthly stats
+    content.vb: Public Function GetMonthlySRLStatsAsync As Task(Of ReadOnlyCollection(Of SRLStats))
+  overload: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStatsAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: SRLApiClient.Endpoints.Stats
+  commentId: N:SRLApiClient.Endpoints.Stats
+  name: SRLApiClient.Endpoints.Stats
+  nameWithType: SRLApiClient.Endpoints.Stats
+  fullName: SRLApiClient.Endpoints.Stats
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SRLApiClient.Endpoints.SRLEndpoint
+  commentId: T:SRLApiClient.Endpoints.SRLEndpoint
+  parent: SRLApiClient.Endpoints
+  name: SRLEndpoint
+  nameWithType: SRLEndpoint
+  fullName: SRLApiClient.Endpoints.SRLEndpoint
+- uid: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  name: BasePath
+  nameWithType: SRLEndpoint.BasePath
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+- uid: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  name: SrlClient
+  nameWithType: SRLEndpoint.SrlClient
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: SRLApiClient.SRLClient
+  commentId: T:SRLApiClient.SRLClient
+  parent: SRLApiClient
+  name: SRLClient
+  nameWithType: SRLClient
+  fullName: SRLApiClient.SRLClient
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.#ctor*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.StatsClient.#ctor
+  name: StatsClient
+  nameWithType: StatsClient.StatsClient
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.StatsClient
+- uid: SRLApiClient
+  commentId: N:SRLApiClient
+  name: SRLApiClient
+  nameWithType: SRLApiClient
+  fullName: SRLApiClient
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats
+  name: GetPlayerStats
+  nameWithType: StatsClient.GetPlayerStats
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStats
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats
+  commentId: T:SRLApiClient.Endpoints.Stats.PlayerStats
+  parent: SRLApiClient.Endpoints.Stats
+  name: PlayerStats
+  nameWithType: PlayerStats
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync
+  name: GetPlayerStatsAsync
+  nameWithType: StatsClient.GetPlayerStatsAsync
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetPlayerStatsAsync
+- uid: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Stats.PlayerStats}
+  commentId: T:System.Threading.Tasks.Task{SRLApiClient.Endpoints.Stats.PlayerStats}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PlayerStats>
+  nameWithType: Task<PlayerStats>
+  fullName: System.Threading.Tasks.Task<SRLApiClient.Endpoints.Stats.PlayerStats>
+  nameWithType.vb: Task(Of PlayerStats)
+  fullName.vb: System.Threading.Tasks.Task(Of SRLApiClient.Endpoints.Stats.PlayerStats)
+  name.vb: Task(Of PlayerStats)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Stats.PlayerStats
+    name: PlayerStats
+    nameWithType: PlayerStats
+    fullName: SRLApiClient.Endpoints.Stats.PlayerStats
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Stats.PlayerStats
+    name: PlayerStats
+    nameWithType: PlayerStats
+    fullName: SRLApiClient.Endpoints.Stats.PlayerStats
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStats*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.StatsClient.GetGameStats
+  name: GetGameStats
+  nameWithType: StatsClient.GetGameStats
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStats
+- uid: SRLApiClient.Endpoints.Stats.GameStats
+  commentId: T:SRLApiClient.Endpoints.Stats.GameStats
+  parent: SRLApiClient.Endpoints.Stats
+  name: GameStats
+  nameWithType: GameStats
+  fullName: SRLApiClient.Endpoints.Stats.GameStats
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStatsAsync*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.StatsClient.GetGameStatsAsync
+  name: GetGameStatsAsync
+  nameWithType: StatsClient.GetGameStatsAsync
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetGameStatsAsync
+- uid: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Stats.GameStats}
+  commentId: T:System.Threading.Tasks.Task{SRLApiClient.Endpoints.Stats.GameStats}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<GameStats>
+  nameWithType: Task<GameStats>
+  fullName: System.Threading.Tasks.Task<SRLApiClient.Endpoints.Stats.GameStats>
+  nameWithType.vb: Task(Of GameStats)
+  fullName.vb: System.Threading.Tasks.Task(Of SRLApiClient.Endpoints.Stats.GameStats)
+  name.vb: Task(Of GameStats)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Stats.GameStats
+    name: GameStats
+    nameWithType: GameStats
+    fullName: SRLApiClient.Endpoints.Stats.GameStats
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Stats.GameStats
+    name: GameStats
+    nameWithType: GameStats
+    fullName: SRLApiClient.Endpoints.Stats.GameStats
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStats*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStats
+  name: GetMonthlySRLStats
+  nameWithType: StatsClient.GetMonthlySRLStats
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStats
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Stats.SRLStats}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Stats.SRLStats}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  name: ReadOnlyCollection<SRLStats>
+  nameWithType: ReadOnlyCollection<SRLStats>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Stats.SRLStats>
+  nameWithType.vb: ReadOnlyCollection(Of SRLStats)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Stats.SRLStats)
+  name.vb: ReadOnlyCollection(Of SRLStats)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Stats.SRLStats
+    name: SRLStats
+    nameWithType: SRLStats
+    fullName: SRLApiClient.Endpoints.Stats.SRLStats
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Stats.SRLStats
+    name: SRLStats
+    nameWithType: SRLStats
+    fullName: SRLApiClient.Endpoints.Stats.SRLStats
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  nameWithType: ReadOnlyCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+- uid: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStatsAsync*
+  commentId: Overload:SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStatsAsync
+  name: GetMonthlySRLStatsAsync
+  nameWithType: StatsClient.GetMonthlySRLStatsAsync
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient.GetMonthlySRLStatsAsync
+- uid: System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Stats.SRLStats}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Stats.SRLStats}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ReadOnlyCollection<SRLStats>>
+  nameWithType: Task<ReadOnlyCollection<SRLStats>>
+  fullName: System.Threading.Tasks.Task<System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Stats.SRLStats>>
+  nameWithType.vb: Task(Of ReadOnlyCollection(Of SRLStats))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Stats.SRLStats))
+  name.vb: Task(Of ReadOnlyCollection(Of SRLStats))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Stats.SRLStats
+    name: SRLStats
+    nameWithType: SRLStats
+    fullName: SRLApiClient.Endpoints.Stats.SRLStats
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Stats.SRLStats
+    name: SRLStats
+    nameWithType: SRLStats
+    fullName: SRLApiClient.Endpoints.Stats.SRLStats
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )

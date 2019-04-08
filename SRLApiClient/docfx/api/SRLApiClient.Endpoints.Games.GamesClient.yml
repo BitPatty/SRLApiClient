@@ -1,0 +1,1070 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.Games.GamesClient
+  commentId: T:SRLApiClient.Endpoints.Games.GamesClient
+  id: GamesClient
+  parent: SRLApiClient.Endpoints.Games
+  children:
+  - SRLApiClient.Endpoints.Games.GamesClient.#ctor(SRLApiClient.SRLClient)
+  - SRLApiClient.Endpoints.Games.GamesClient.Get(System.String)
+  - SRLApiClient.Endpoints.Games.GamesClient.GetAsync(System.String)
+  - SRLApiClient.Endpoints.Games.GamesClient.GetRules(SRLApiClient.Endpoints.Games.Game)
+  - SRLApiClient.Endpoints.Games.GamesClient.GetRules(System.String)
+  - SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync(SRLApiClient.Endpoints.Games.Game)
+  - SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync(System.String)
+  - SRLApiClient.Endpoints.Games.GamesClient.Search(System.String)
+  - SRLApiClient.Endpoints.Games.GamesClient.SearchAsync(System.String)
+  langs:
+  - csharp
+  - vb
+  name: GamesClient
+  nameWithType: GamesClient
+  fullName: SRLApiClient.Endpoints.Games.GamesClient
+  type: Class
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GamesClient
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 11
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nA client to perform requests on the /games endpoint\n"
+  example: []
+  syntax:
+    content: 'public class GamesClient : SRLEndpoint'
+    content.vb: >-
+      Public Class GamesClient
+          Inherits SRLEndpoint
+  inheritance:
+  - System.Object
+  - SRLApiClient.Endpoints.SRLEndpoint
+  inheritedMembers:
+  - SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  - SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: SRLApiClient.Endpoints.Games.GamesClient.#ctor(SRLApiClient.SRLClient)
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.#ctor(SRLApiClient.SRLClient)
+  id: '#ctor(SRLApiClient.SRLClient)'
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: GamesClient(SRLClient)
+  nameWithType: GamesClient.GamesClient(SRLClient)
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GamesClient(SRLApiClient.SRLClient)
+  type: Constructor
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: .ctor
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 17
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nCreates a new client to perform requests on the /games endpoint\n"
+  example: []
+  syntax:
+    content: public GamesClient(SRLClient baseClient)
+    parameters:
+    - id: baseClient
+      type: SRLApiClient.SRLClient
+      description: The <xref href="SRLApiClient.SRLClient" data-throw-if-not-resolved="false"></xref> used to perform requests
+    content.vb: Public Sub New(baseClient As SRLClient)
+  overload: SRLApiClient.Endpoints.Games.GamesClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Games.GamesClient.Get(System.String)
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.Get(System.String)
+  id: Get(System.String)
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: Get(String)
+  nameWithType: GamesClient.Get(String)
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.Get(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Get
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 31
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nGets a game synchronously\n"
+  example: []
+  syntax:
+    content: public Game Get(string abbrev)
+    parameters:
+    - id: abbrev
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: SRLApiClient.Endpoints.Games.Game
+      description: Returns the game
+    content.vb: Public Function Get(abbrev As String) As Game
+  overload: SRLApiClient.Endpoints.Games.GamesClient.Get*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetAsync(System.String)
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.GetAsync(System.String)
+  id: GetAsync(System.String)
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(String)
+  nameWithType: GamesClient.GetAsync(String)
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetAsync
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 48
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nGets a game asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<Game> GetAsync(string abbrev)
+    parameters:
+    - id: abbrev
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Games.Game}
+      description: Returns the game
+    content.vb: Public Function GetAsync(abbrev As String) As Task(Of Game)
+  overload: SRLApiClient.Endpoints.Games.GamesClient.GetAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Games.GamesClient.Search(System.String)
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.Search(System.String)
+  id: Search(System.String)
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: Search(String)
+  nameWithType: GamesClient.Search(String)
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.Search(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Search
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 75
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nSearches for a game synchronously\n"
+  example: []
+  syntax:
+    content: public ReadOnlyCollection<Game> Search(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The games name or abbreviation to search for
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}
+      description: Returns a list of games matching the search query
+    content.vb: Public Function Search(name As String) As ReadOnlyCollection(Of Game)
+  overload: SRLApiClient.Endpoints.Games.GamesClient.Search*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Games.GamesClient.SearchAsync(System.String)
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.SearchAsync(System.String)
+  id: SearchAsync(System.String)
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: SearchAsync(String)
+  nameWithType: GamesClient.SearchAsync(String)
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.SearchAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: SearchAsync
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 94
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nSearches for a game asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<ReadOnlyCollection<Game>> SearchAsync(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The games name or abbreviation to search for
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}}
+      description: Returns a list of games matching the search query
+    content.vb: Public Function SearchAsync(name As String) As Task(Of ReadOnlyCollection(Of Game))
+  overload: SRLApiClient.Endpoints.Games.GamesClient.SearchAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetRules(SRLApiClient.Endpoints.Games.Game)
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.GetRules(SRLApiClient.Endpoints.Games.Game)
+  id: GetRules(SRLApiClient.Endpoints.Games.Game)
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: GetRules(Game)
+  nameWithType: GamesClient.GetRules(Game)
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetRules(SRLApiClient.Endpoints.Games.Game)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetRules
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 114
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nGets the rules for a game synchronously\n"
+  example: []
+  syntax:
+    content: public string GetRules(Game g)
+    parameters:
+    - id: g
+      type: SRLApiClient.Endpoints.Games.Game
+      description: The game
+    return:
+      type: System.String
+      description: Returns the rules string
+    content.vb: Public Function GetRules(g As Game) As String
+  overload: SRLApiClient.Endpoints.Games.GamesClient.GetRules*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetRules(System.String)
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.GetRules(System.String)
+  id: GetRules(System.String)
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: GetRules(String)
+  nameWithType: GamesClient.GetRules(String)
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetRules(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetRules
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 121
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nGets the rules for a game synchronously\n"
+  example: []
+  syntax:
+    content: public string GetRules(string gameAbbreviation)
+    parameters:
+    - id: gameAbbreviation
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: System.String
+      description: Returns the rules string
+    content.vb: Public Function GetRules(gameAbbreviation As String) As String
+  overload: SRLApiClient.Endpoints.Games.GamesClient.GetRules*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync(SRLApiClient.Endpoints.Games.Game)
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync(SRLApiClient.Endpoints.Games.Game)
+  id: GetRulesAsync(SRLApiClient.Endpoints.Games.Game)
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: GetRulesAsync(Game)
+  nameWithType: GamesClient.GetRulesAsync(Game)
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync(SRLApiClient.Endpoints.Games.Game)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetRulesAsync
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 140
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nGets the rules for a game asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<string> GetRulesAsync(Game g)
+    parameters:
+    - id: g
+      type: SRLApiClient.Endpoints.Games.Game
+      description: The game
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Returns the rules string
+    content.vb: Public Function GetRulesAsync(g As Game) As Task(Of String)
+  overload: SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync(System.String)
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync(System.String)
+  id: GetRulesAsync(System.String)
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: GetRulesAsync(String)
+  nameWithType: GamesClient.GetRulesAsync(String)
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetRulesAsync
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 147
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nGets the rules for a game asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<string> GetRulesAsync(string gameAbbreviation)
+    parameters:
+    - id: gameAbbreviation
+      type: System.String
+      description: The games abbreviation
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Returns the rules string
+    content.vb: Public Function GetRulesAsync(gameAbbreviation As String) As Task(Of String)
+  overload: SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: SRLApiClient.Endpoints.Games
+  commentId: N:SRLApiClient.Endpoints.Games
+  name: SRLApiClient.Endpoints.Games
+  nameWithType: SRLApiClient.Endpoints.Games
+  fullName: SRLApiClient.Endpoints.Games
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: SRLApiClient.Endpoints.SRLEndpoint
+  commentId: T:SRLApiClient.Endpoints.SRLEndpoint
+  parent: SRLApiClient.Endpoints
+  name: SRLEndpoint
+  nameWithType: SRLEndpoint
+  fullName: SRLApiClient.Endpoints.SRLEndpoint
+- uid: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.BasePath
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  name: BasePath
+  nameWithType: SRLEndpoint.BasePath
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.BasePath
+- uid: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+  parent: SRLApiClient.Endpoints.SRLEndpoint
+  name: SrlClient
+  nameWithType: SRLEndpoint.SrlClient
+  fullName: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: SRLApiClient.SRLClient
+  commentId: T:SRLApiClient.SRLClient
+  parent: SRLApiClient
+  name: SRLClient
+  nameWithType: SRLClient
+  fullName: SRLApiClient.SRLClient
+- uid: SRLApiClient.Endpoints.Games.GamesClient.#ctor*
+  commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.#ctor
+  name: GamesClient
+  nameWithType: GamesClient.GamesClient
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GamesClient
+- uid: SRLApiClient
+  commentId: N:SRLApiClient
+  name: SRLApiClient
+  nameWithType: SRLApiClient
+  fullName: SRLApiClient
+- uid: SRLApiClient.Endpoints.Games.GamesClient.Get*
+  commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.Get
+  name: Get
+  nameWithType: GamesClient.Get
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SRLApiClient.Endpoints.Games.Game
+  commentId: T:SRLApiClient.Endpoints.Games.Game
+  parent: SRLApiClient.Endpoints.Games
+  name: Game
+  nameWithType: Game
+  fullName: SRLApiClient.Endpoints.Games.Game
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetAsync*
+  commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.GetAsync
+  name: GetAsync
+  nameWithType: GamesClient.GetAsync
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetAsync
+- uid: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Games.Game}
+  commentId: T:System.Threading.Tasks.Task{SRLApiClient.Endpoints.Games.Game}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Game>
+  nameWithType: Task<Game>
+  fullName: System.Threading.Tasks.Task<SRLApiClient.Endpoints.Games.Game>
+  nameWithType.vb: Task(Of Game)
+  fullName.vb: System.Threading.Tasks.Task(Of SRLApiClient.Endpoints.Games.Game)
+  name.vb: Task(Of Game)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Games.Game
+    name: Game
+    nameWithType: Game
+    fullName: SRLApiClient.Endpoints.Games.Game
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Games.Game
+    name: Game
+    nameWithType: Game
+    fullName: SRLApiClient.Endpoints.Games.Game
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: SRLApiClient.Endpoints.Games.GamesClient.Search*
+  commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.Search
+  name: Search
+  nameWithType: GamesClient.Search
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.Search
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  name: ReadOnlyCollection<Game>
+  nameWithType: ReadOnlyCollection<Game>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Games.Game>
+  nameWithType.vb: ReadOnlyCollection(Of Game)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Games.Game)
+  name.vb: ReadOnlyCollection(Of Game)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Games.Game
+    name: Game
+    nameWithType: Game
+    fullName: SRLApiClient.Endpoints.Games.Game
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Games.Game
+    name: Game
+    nameWithType: Game
+    fullName: SRLApiClient.Endpoints.Games.Game
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  nameWithType: ReadOnlyCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+- uid: SRLApiClient.Endpoints.Games.GamesClient.SearchAsync*
+  commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.SearchAsync
+  name: SearchAsync
+  nameWithType: GamesClient.SearchAsync
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.SearchAsync
+- uid: System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<ReadOnlyCollection<Game>>
+  nameWithType: Task<ReadOnlyCollection<Game>>
+  fullName: System.Threading.Tasks.Task<System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Games.Game>>
+  nameWithType.vb: Task(Of ReadOnlyCollection(Of Game))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Games.Game))
+  name.vb: Task(Of ReadOnlyCollection(Of Game))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Games.Game
+    name: Game
+    nameWithType: Game
+    fullName: SRLApiClient.Endpoints.Games.Game
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Games.Game
+    name: Game
+    nameWithType: Game
+    fullName: SRLApiClient.Endpoints.Games.Game
+  - name: )
+    nameWithType: )
+    fullName: )
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetRules*
+  commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.GetRules
+  name: GetRules
+  nameWithType: GamesClient.GetRules
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetRules
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync*
+  commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync
+  name: GetRulesAsync
+  nameWithType: GamesClient.GetRulesAsync
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetRulesAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<String>
+  nameWithType: Task<String>
+  fullName: System.Threading.Tasks.Task<System.String>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of System.String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )

@@ -1,0 +1,48 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.Stats
+  commentId: N:SRLApiClient.Endpoints.Stats
+  id: SRLApiClient.Endpoints.Stats
+  children:
+  - SRLApiClient.Endpoints.Stats.GameStats
+  - SRLApiClient.Endpoints.Stats.PlayerStats
+  - SRLApiClient.Endpoints.Stats.SRLStats
+  - SRLApiClient.Endpoints.Stats.StatsClient
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient.Endpoints.Stats
+  nameWithType: SRLApiClient.Endpoints.Stats
+  fullName: SRLApiClient.Endpoints.Stats
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.Endpoints.Stats.GameStats
+  commentId: T:SRLApiClient.Endpoints.Stats.GameStats
+  parent: SRLApiClient.Endpoints.Stats
+  name: GameStats
+  nameWithType: GameStats
+  fullName: SRLApiClient.Endpoints.Stats.GameStats
+- uid: SRLApiClient.Endpoints.Stats.PlayerStats
+  commentId: T:SRLApiClient.Endpoints.Stats.PlayerStats
+  parent: SRLApiClient.Endpoints.Stats
+  name: PlayerStats
+  nameWithType: PlayerStats
+  fullName: SRLApiClient.Endpoints.Stats.PlayerStats
+- uid: SRLApiClient.Endpoints.Stats.SRLStats
+  commentId: T:SRLApiClient.Endpoints.Stats.SRLStats
+  name: SRLStats
+  nameWithType: SRLStats
+  fullName: SRLApiClient.Endpoints.Stats.SRLStats
+- uid: SRLApiClient.Endpoints.Stats.StatsClient
+  commentId: T:SRLApiClient.Endpoints.Stats.StatsClient
+  parent: SRLApiClient.Endpoints.Stats
+  name: StatsClient
+  nameWithType: StatsClient
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient
+- uid: SRLApiClient.Endpoints.Stats
+  commentId: N:SRLApiClient.Endpoints.Stats
+  name: SRLApiClient.Endpoints.Stats
+  nameWithType: SRLApiClient.Endpoints.Stats
+  fullName: SRLApiClient.Endpoints.Stats

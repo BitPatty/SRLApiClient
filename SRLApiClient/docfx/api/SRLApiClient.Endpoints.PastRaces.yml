@@ -1,0 +1,41 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.PastRaces
+  commentId: N:SRLApiClient.Endpoints.PastRaces
+  id: SRLApiClient.Endpoints.PastRaces
+  children:
+  - SRLApiClient.Endpoints.PastRaces.PastRace
+  - SRLApiClient.Endpoints.PastRaces.PastRacesClient
+  - SRLApiClient.Endpoints.PastRaces.Result
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient.Endpoints.PastRaces
+  nameWithType: SRLApiClient.Endpoints.PastRaces
+  fullName: SRLApiClient.Endpoints.PastRaces
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.Endpoints.PastRaces.PastRace
+  commentId: T:SRLApiClient.Endpoints.PastRaces.PastRace
+  parent: SRLApiClient.Endpoints.PastRaces
+  name: PastRace
+  nameWithType: PastRace
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRace
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient
+  commentId: T:SRLApiClient.Endpoints.PastRaces.PastRacesClient
+  parent: SRLApiClient.Endpoints.PastRaces
+  name: PastRacesClient
+  nameWithType: PastRacesClient
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient
+- uid: SRLApiClient.Endpoints.PastRaces.Result
+  commentId: T:SRLApiClient.Endpoints.PastRaces.Result
+  name: Result
+  nameWithType: Result
+  fullName: SRLApiClient.Endpoints.PastRaces.Result
+- uid: SRLApiClient.Endpoints.PastRaces
+  commentId: N:SRLApiClient.Endpoints.PastRaces
+  name: SRLApiClient.Endpoints.PastRaces
+  nameWithType: SRLApiClient.Endpoints.PastRaces
+  fullName: SRLApiClient.Endpoints.PastRaces

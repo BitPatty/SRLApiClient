@@ -30,4 +30,15 @@
     <DocumentationFile>bin\Release\SRLApiClient.XML</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="docfx.console" Version="2.41.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="echo &quot;Deleting docs folder&quot;&#xD;&#xA;RD /S /Q &quot;..\docs\&quot;" />
+  </Target>
+
 </Project>

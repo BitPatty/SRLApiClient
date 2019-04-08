@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.StreamApi
+  commentId: T:SRLApiClient.Endpoints.StreamApi
+  id: StreamApi
+  parent: SRLApiClient.Endpoints
+  children:
+  - SRLApiClient.Endpoints.StreamApi.Hitbox
+  - SRLApiClient.Endpoints.StreamApi.Twitch
+  - SRLApiClient.Endpoints.StreamApi.Unknown
+  langs:
+  - csharp
+  - vb
+  name: StreamApi
+  nameWithType: StreamApi
+  fullName: SRLApiClient.Endpoints.StreamApi
+  type: Enum
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: StreamApi
+    path: Endpoints/Enums.cs
+    startLine: 79
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nThe API used for fetching streams. The according\nchannel can usually be found in the &apos;Channel&apos; Property\n"
+  example: []
+  syntax:
+    content: public enum StreamApi
+    content.vb: Public Enum StreamApi
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: SRLApiClient.Endpoints.StreamApi.Unknown
+  commentId: F:SRLApiClient.Endpoints.StreamApi.Unknown
+  id: Unknown
+  parent: SRLApiClient.Endpoints.StreamApi
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: StreamApi.Unknown
+  fullName: SRLApiClient.Endpoints.StreamApi.Unknown
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Unknown
+    path: Endpoints/Enums.cs
+    startLine: 84
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nFallback value\n"
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: SRLApiClient.Endpoints.StreamApi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.StreamApi.Twitch
+  commentId: F:SRLApiClient.Endpoints.StreamApi.Twitch
+  id: Twitch
+  parent: SRLApiClient.Endpoints.StreamApi
+  langs:
+  - csharp
+  - vb
+  name: Twitch
+  nameWithType: StreamApi.Twitch
+  fullName: SRLApiClient.Endpoints.StreamApi.Twitch
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Twitch
+    path: Endpoints/Enums.cs
+    startLine: 89
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nTwitch API\n"
+  example: []
+  syntax:
+    content: Twitch = 1
+    return:
+      type: SRLApiClient.Endpoints.StreamApi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.Endpoints.StreamApi.Hitbox
+  commentId: F:SRLApiClient.Endpoints.StreamApi.Hitbox
+  id: Hitbox
+  parent: SRLApiClient.Endpoints.StreamApi
+  langs:
+  - csharp
+  - vb
+  name: Hitbox
+  nameWithType: StreamApi.Hitbox
+  fullName: SRLApiClient.Endpoints.StreamApi.Hitbox
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Enums.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Hitbox
+    path: Endpoints/Enums.cs
+    startLine: 94
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints
+  summary: "\nHitbox API\n"
+  example: []
+  syntax:
+    content: Hitbox = 2
+    return:
+      type: SRLApiClient.Endpoints.StreamApi
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: SRLApiClient.Endpoints.StreamApi
+  commentId: T:SRLApiClient.Endpoints.StreamApi
+  parent: SRLApiClient.Endpoints
+  name: StreamApi
+  nameWithType: StreamApi
+  fullName: SRLApiClient.Endpoints.StreamApi

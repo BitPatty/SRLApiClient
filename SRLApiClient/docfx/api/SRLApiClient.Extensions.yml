@@ -1,0 +1,34 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Extensions
+  commentId: N:SRLApiClient.Extensions
+  id: SRLApiClient.Extensions
+  children:
+  - SRLApiClient.Extensions.LeaderboardExtensions
+  - SRLApiClient.Extensions.RaceExtensions
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient.Extensions
+  nameWithType: SRLApiClient.Extensions
+  fullName: SRLApiClient.Extensions
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.Extensions.LeaderboardExtensions
+  commentId: T:SRLApiClient.Extensions.LeaderboardExtensions
+  parent: SRLApiClient.Extensions
+  name: LeaderboardExtensions
+  nameWithType: LeaderboardExtensions
+  fullName: SRLApiClient.Extensions.LeaderboardExtensions
+- uid: SRLApiClient.Extensions.RaceExtensions
+  commentId: T:SRLApiClient.Extensions.RaceExtensions
+  name: RaceExtensions
+  nameWithType: RaceExtensions
+  fullName: SRLApiClient.Extensions.RaceExtensions
+- uid: SRLApiClient.Extensions
+  commentId: N:SRLApiClient.Extensions
+  name: SRLApiClient.Extensions
+  nameWithType: SRLApiClient.Extensions
+  fullName: SRLApiClient.Extensions

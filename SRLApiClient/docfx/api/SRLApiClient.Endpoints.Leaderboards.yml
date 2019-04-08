@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Endpoints.Leaderboards
+  commentId: N:SRLApiClient.Endpoints.Leaderboards
+  id: SRLApiClient.Endpoints.Leaderboards
+  children:
+  - SRLApiClient.Endpoints.Leaderboards.Leader
+  - SRLApiClient.Endpoints.Leaderboards.Leaderboard
+  - SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient.Endpoints.Leaderboards
+  nameWithType: SRLApiClient.Endpoints.Leaderboards
+  fullName: SRLApiClient.Endpoints.Leaderboards
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.Endpoints.Leaderboards.Leader
+  commentId: T:SRLApiClient.Endpoints.Leaderboards.Leader
+  parent: SRLApiClient.Endpoints.Leaderboards
+  name: Leader
+  nameWithType: Leader
+  fullName: SRLApiClient.Endpoints.Leaderboards.Leader
+- uid: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+  commentId: T:SRLApiClient.Endpoints.Leaderboards.Leaderboard
+  parent: SRLApiClient.Endpoints.Leaderboards
+  name: Leaderboard
+  nameWithType: Leaderboard
+  fullName: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+- uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  commentId: T:SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  parent: SRLApiClient.Endpoints.Leaderboards
+  name: LeaderboardsClient
+  nameWithType: LeaderboardsClient
+  fullName: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+- uid: SRLApiClient.Endpoints.Leaderboards
+  commentId: N:SRLApiClient.Endpoints.Leaderboards
+  name: SRLApiClient.Endpoints.Leaderboards
+  nameWithType: SRLApiClient.Endpoints.Leaderboards
+  fullName: SRLApiClient.Endpoints.Leaderboards

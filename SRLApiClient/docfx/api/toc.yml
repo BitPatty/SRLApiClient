@@ -1,0 +1,93 @@
+### YamlMime:TableOfContent
+- uid: SRLApiClient
+  name: SRLApiClient
+  items:
+  - uid: SRLApiClient.SRLClient
+    name: SRLClient
+  - uid: SRLApiClient.SRLParseException
+    name: SRLParseException
+  - uid: SRLApiClient.SRLTimeoutException
+    name: SRLTimeoutException
+  - uid: SRLApiClient.SRLUser
+    name: SRLUser
+  - uid: SRLApiClient.UserRole
+    name: UserRole
+- uid: SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  items:
+  - uid: SRLApiClient.Endpoints.EntrantState
+    name: EntrantState
+  - uid: SRLApiClient.Endpoints.RaceState
+    name: RaceState
+  - uid: SRLApiClient.Endpoints.SRLDataType
+    name: SRLDataType
+  - uid: SRLApiClient.Endpoints.SRLEndpoint
+    name: SRLEndpoint
+  - uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules
+    name: SRLEndpoint.GameRules
+  - uid: SRLApiClient.Endpoints.StreamApi
+    name: StreamApi
+- uid: SRLApiClient.Endpoints.Countries
+  name: SRLApiClient.Endpoints.Countries
+  items:
+  - uid: SRLApiClient.Endpoints.Countries.CountriesClient
+    name: CountriesClient
+- uid: SRLApiClient.Endpoints.Games
+  name: SRLApiClient.Endpoints.Games
+  items:
+  - uid: SRLApiClient.Endpoints.Games.Game
+    name: Game
+  - uid: SRLApiClient.Endpoints.Games.GamesClient
+    name: GamesClient
+- uid: SRLApiClient.Endpoints.Leaderboards
+  name: SRLApiClient.Endpoints.Leaderboards
+  items:
+  - uid: SRLApiClient.Endpoints.Leaderboards.Leader
+    name: Leader
+  - uid: SRLApiClient.Endpoints.Leaderboards.Leaderboard
+    name: Leaderboard
+  - uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+    name: LeaderboardsClient
+- uid: SRLApiClient.Endpoints.PastRaces
+  name: SRLApiClient.Endpoints.PastRaces
+  items:
+  - uid: SRLApiClient.Endpoints.PastRaces.PastRace
+    name: PastRace
+  - uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient
+    name: PastRacesClient
+  - uid: SRLApiClient.Endpoints.PastRaces.Result
+    name: Result
+- uid: SRLApiClient.Endpoints.Players
+  name: SRLApiClient.Endpoints.Players
+  items:
+  - uid: SRLApiClient.Endpoints.Players.Player
+    name: Player
+  - uid: SRLApiClient.Endpoints.Players.PlayersClient
+    name: PlayersClient
+- uid: SRLApiClient.Endpoints.Races
+  name: SRLApiClient.Endpoints.Races
+  items:
+  - uid: SRLApiClient.Endpoints.Races.Entrant
+    name: Entrant
+  - uid: SRLApiClient.Endpoints.Races.Race
+    name: Race
+  - uid: SRLApiClient.Endpoints.Races.RacesClient
+    name: RacesClient
+- uid: SRLApiClient.Endpoints.Stats
+  name: SRLApiClient.Endpoints.Stats
+  items:
+  - uid: SRLApiClient.Endpoints.Stats.GameStats
+    name: GameStats
+  - uid: SRLApiClient.Endpoints.Stats.PlayerStats
+    name: PlayerStats
+  - uid: SRLApiClient.Endpoints.Stats.SRLStats
+    name: SRLStats
+  - uid: SRLApiClient.Endpoints.Stats.StatsClient
+    name: StatsClient
+- uid: SRLApiClient.Extensions
+  name: SRLApiClient.Extensions
+  items:
+  - uid: SRLApiClient.Extensions.LeaderboardExtensions
+    name: LeaderboardExtensions
+  - uid: SRLApiClient.Extensions.RaceExtensions
+    name: RaceExtensions

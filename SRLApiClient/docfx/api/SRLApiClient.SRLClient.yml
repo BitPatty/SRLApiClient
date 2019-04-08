@@ -1,0 +1,1964 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.SRLClient
+  commentId: T:SRLApiClient.SRLClient
+  id: SRLClient
+  parent: SRLApiClient
+  children:
+  - SRLApiClient.SRLClient.#ctor(System.String)
+  - SRLApiClient.SRLClient.Authenticate(System.String,System.String,System.Boolean)
+  - SRLApiClient.SRLClient.Countries
+  - SRLApiClient.SRLClient.DeSerialize``1(System.IO.Stream)
+  - SRLApiClient.SRLClient.Dispose
+  - SRLApiClient.SRLClient.Games
+  - SRLApiClient.SRLClient.Get``1(System.String)
+  - SRLApiClient.SRLClient.GetAsync``1(System.String)
+  - SRLApiClient.SRLClient.Host
+  - SRLApiClient.SRLClient.IsAuthenticated
+  - SRLApiClient.SRLClient.JsonSerialize(System.Collections.Generic.Dictionary{System.String,System.String})
+  - SRLApiClient.SRLClient.Leaderboards
+  - SRLApiClient.SRLClient.Logout
+  - SRLApiClient.SRLClient.PastRaces
+  - SRLApiClient.SRLClient.Players
+  - SRLApiClient.SRLClient.Post(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - SRLApiClient.SRLClient.PostAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - SRLApiClient.SRLClient.Put(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - SRLApiClient.SRLClient.PutAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  - SRLApiClient.SRLClient.Races
+  - SRLApiClient.SRLClient.ReAuthenticate
+  - SRLApiClient.SRLClient.RequestTimeout
+  - SRLApiClient.SRLClient.Stats
+  - SRLApiClient.SRLClient.SubmitPayloadAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Net.Http.HttpMethod)
+  - SRLApiClient.SRLClient.User
+  langs:
+  - csharp
+  - vb
+  name: SRLClient
+  nameWithType: SRLClient
+  fullName: SRLApiClient.SRLClient
+  type: Class
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: SRLClient
+    path: SRLClient.cs
+    startLine: 38
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nA client for interacting with the SpeedRunsLive API\n"
+  example: []
+  syntax:
+    content: 'public sealed class SRLClient : IDisposable'
+    content.vb: >-
+      Public NotInheritable Class SRLClient
+          Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - sealed
+  - class
+  modifiers.vb:
+  - Public
+  - NotInheritable
+  - Class
+- uid: SRLApiClient.SRLClient.Host
+  commentId: P:SRLApiClient.SRLClient.Host
+  id: Host
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Host
+  nameWithType: SRLClient.Host
+  fullName: SRLApiClient.SRLClient.Host
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Host
+    path: SRLClient.cs
+    startLine: 43
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nThe host used for requests\n"
+  example: []
+  syntax:
+    content: public string Host { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Host As String
+  overload: SRLApiClient.SRLClient.Host*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.User
+  commentId: P:SRLApiClient.SRLClient.User
+  id: User
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: SRLClient.User
+  fullName: SRLApiClient.SRLClient.User
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: User
+    path: SRLClient.cs
+    startLine: 52
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nThe user account associated with the client (if authenticated)\n"
+  example: []
+  syntax:
+    content: public SRLUser User { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.SRLUser
+    content.vb: Public ReadOnly Property User As SRLUser
+  overload: SRLApiClient.SRLClient.User*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.IsAuthenticated
+  commentId: P:SRLApiClient.SRLClient.IsAuthenticated
+  id: IsAuthenticated
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: IsAuthenticated
+  nameWithType: SRLClient.IsAuthenticated
+  fullName: SRLApiClient.SRLClient.IsAuthenticated
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: IsAuthenticated
+    path: SRLClient.cs
+    startLine: 59
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nTrue if client uses an authenticated account\n"
+  example: []
+  syntax:
+    content: public bool IsAuthenticated { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsAuthenticated As Boolean
+  overload: SRLApiClient.SRLClient.IsAuthenticated*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.Games
+  commentId: P:SRLApiClient.SRLClient.Games
+  id: Games
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Games
+  nameWithType: SRLClient.Games
+  fullName: SRLApiClient.SRLClient.Games
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Games
+    path: SRLClient.cs
+    startLine: 64
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nClient to perform request on the /games endpoint\n"
+  example: []
+  syntax:
+    content: public GamesClient Games { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.Endpoints.Games.GamesClient
+    content.vb: Public ReadOnly Property Games As GamesClient
+  overload: SRLApiClient.SRLClient.Games*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.Players
+  commentId: P:SRLApiClient.SRLClient.Players
+  id: Players
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Players
+  nameWithType: SRLClient.Players
+  fullName: SRLApiClient.SRLClient.Players
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Players
+    path: SRLClient.cs
+    startLine: 69
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nClient to perform request on the /players endpoint\n"
+  example: []
+  syntax:
+    content: public PlayersClient Players { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.Endpoints.Players.PlayersClient
+    content.vb: Public ReadOnly Property Players As PlayersClient
+  overload: SRLApiClient.SRLClient.Players*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.Leaderboards
+  commentId: P:SRLApiClient.SRLClient.Leaderboards
+  id: Leaderboards
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Leaderboards
+  nameWithType: SRLClient.Leaderboards
+  fullName: SRLApiClient.SRLClient.Leaderboards
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Leaderboards
+    path: SRLClient.cs
+    startLine: 74
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nClient to perform request on the /leaderboards endpoint\n"
+  example: []
+  syntax:
+    content: public LeaderboardsClient Leaderboards { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+    content.vb: Public ReadOnly Property Leaderboards As LeaderboardsClient
+  overload: SRLApiClient.SRLClient.Leaderboards*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.Races
+  commentId: P:SRLApiClient.SRLClient.Races
+  id: Races
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Races
+  nameWithType: SRLClient.Races
+  fullName: SRLApiClient.SRLClient.Races
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Races
+    path: SRLClient.cs
+    startLine: 79
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nClient to perform request on the /races endpoint\n"
+  example: []
+  syntax:
+    content: public RacesClient Races { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.Endpoints.Races.RacesClient
+    content.vb: Public ReadOnly Property Races As RacesClient
+  overload: SRLApiClient.SRLClient.Races*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.PastRaces
+  commentId: P:SRLApiClient.SRLClient.PastRaces
+  id: PastRaces
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: PastRaces
+  nameWithType: SRLClient.PastRaces
+  fullName: SRLApiClient.SRLClient.PastRaces
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: PastRaces
+    path: SRLClient.cs
+    startLine: 84
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nClient to perform request on the /pastraces endpoint\n"
+  example: []
+  syntax:
+    content: public PastRacesClient PastRaces { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.Endpoints.PastRaces.PastRacesClient
+    content.vb: Public ReadOnly Property PastRaces As PastRacesClient
+  overload: SRLApiClient.SRLClient.PastRaces*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.Countries
+  commentId: P:SRLApiClient.SRLClient.Countries
+  id: Countries
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Countries
+  nameWithType: SRLClient.Countries
+  fullName: SRLApiClient.SRLClient.Countries
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Countries
+    path: SRLClient.cs
+    startLine: 89
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nClient to perform request on the /country endpoint\n"
+  example: []
+  syntax:
+    content: public CountriesClient Countries { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.Endpoints.Countries.CountriesClient
+    content.vb: Public ReadOnly Property Countries As CountriesClient
+  overload: SRLApiClient.SRLClient.Countries*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.Stats
+  commentId: P:SRLApiClient.SRLClient.Stats
+  id: Stats
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Stats
+  nameWithType: SRLClient.Stats
+  fullName: SRLApiClient.SRLClient.Stats
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Stats
+    path: SRLClient.cs
+    startLine: 94
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nClient to perform request on the /stat endpoint\n"
+  example: []
+  syntax:
+    content: public StatsClient Stats { get; }
+    parameters: []
+    return:
+      type: SRLApiClient.Endpoints.Stats.StatsClient
+    content.vb: Public ReadOnly Property Stats As StatsClient
+  overload: SRLApiClient.SRLClient.Stats*
+  modifiers.csharp:
+  - public
+  - get
+  modifiers.vb:
+  - Public
+  - ReadOnly
+- uid: SRLApiClient.SRLClient.RequestTimeout
+  commentId: P:SRLApiClient.SRLClient.RequestTimeout
+  id: RequestTimeout
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: RequestTimeout
+  nameWithType: SRLClient.RequestTimeout
+  fullName: SRLApiClient.SRLClient.RequestTimeout
+  type: Property
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: RequestTimeout
+    path: SRLClient.cs
+    startLine: 101
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nThe timeout for Http Requests\n"
+  example: []
+  syntax:
+    content: public TimeSpan RequestTimeout { get; set; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public Property RequestTimeout As TimeSpan
+  overload: SRLApiClient.SRLClient.RequestTimeout*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.SRLClient.#ctor(System.String)
+  commentId: M:SRLApiClient.SRLClient.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: SRLClient(String)
+  nameWithType: SRLClient.SRLClient(String)
+  fullName: SRLApiClient.SRLClient.SRLClient(System.String)
+  type: Constructor
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: .ctor
+    path: SRLClient.cs
+    startLine: 116
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nCreates a new SRL Client\n"
+  example: []
+  syntax:
+    content: public SRLClient(string host = "speedrunslive.com")
+    parameters:
+    - id: host
+      type: System.String
+      description: The custom host
+    content.vb: Public Sub New(host As String = "speedrunslive.com")
+  overload: SRLApiClient.SRLClient.#ctor*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.SRLClient.Get``1(System.String)
+  commentId: M:SRLApiClient.SRLClient.Get``1(System.String)
+  id: Get``1(System.String)
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Get<T>(String)
+  nameWithType: SRLClient.Get<T>(String)
+  fullName: SRLApiClient.SRLClient.Get<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Get
+    path: SRLClient.cs
+    startLine: 153
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nPerforms a GET request on an endpoint\n"
+  example: []
+  syntax:
+    content: >-
+      public T Get<T>(string endpoint)
+          where T : SRLDataType
+    parameters:
+    - id: endpoint
+      type: System.String
+      description: The endpoint to perform the request on
+    typeParameters:
+    - id: T
+      description: The type to deserialize the response into
+    return:
+      type: '{T}'
+      description: Returns the parsed response
+    content.vb: Public Function Get(Of T As SRLDataType)(endpoint As String) As T
+  overload: SRLApiClient.SRLClient.Get*
+  exceptions:
+  - type: SRLApiClient.SRLParseException
+    commentId: T:SRLApiClient.SRLParseException
+  - type: SRLApiClient.SRLTimeoutException
+    commentId: T:SRLApiClient.SRLTimeoutException
+  nameWithType.vb: SRLClient.Get(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SRLApiClient.SRLClient.Get(Of T)(System.String)
+  name.vb: Get(Of T)(String)
+- uid: SRLApiClient.SRLClient.GetAsync``1(System.String)
+  commentId: M:SRLApiClient.SRLClient.GetAsync``1(System.String)
+  id: GetAsync``1(System.String)
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync<T>(String)
+  nameWithType: SRLClient.GetAsync<T>(String)
+  fullName: SRLApiClient.SRLClient.GetAsync<T>(System.String)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetAsync
+    path: SRLClient.cs
+    startLine: 163
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nPerforms an asynchronous GET request on an endpoint\n"
+  example: []
+  syntax:
+    content: >-
+      public Task<T> GetAsync<T>(string endpoint)
+          where T : SRLDataType
+    parameters:
+    - id: endpoint
+      type: System.String
+      description: The endpoint to perform the request on
+    typeParameters:
+    - id: T
+      description: The type to deserialize the response into
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+      description: Returns the parsed response
+    content.vb: Public Function GetAsync(Of T As SRLDataType)(endpoint As String) As Task(Of T)
+  overload: SRLApiClient.SRLClient.GetAsync*
+  exceptions:
+  - type: SRLApiClient.SRLParseException
+    commentId: T:SRLApiClient.SRLParseException
+  - type: SRLApiClient.SRLTimeoutException
+    commentId: T:SRLApiClient.SRLTimeoutException
+  nameWithType.vb: SRLClient.GetAsync(Of T)(String)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SRLApiClient.SRLClient.GetAsync(Of T)(System.String)
+  name.vb: GetAsync(Of T)(String)
+- uid: SRLApiClient.SRLClient.Put(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:SRLApiClient.SRLClient.Put(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Put(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Put(String, Dictionary<String, String>)
+  nameWithType: SRLClient.Put(String, Dictionary<String, String>)
+  fullName: SRLApiClient.SRLClient.Put(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Put
+    path: SRLClient.cs
+    startLine: 184
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nPerforms a PUT request on an endpoint\n"
+  example: []
+  syntax:
+    content: public bool Put(string endpoint, Dictionary<string, string> data)
+    parameters:
+    - id: endpoint
+      type: System.String
+      description: The endpoint to perform the request on
+    - id: data
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: The data to PUT
+    return:
+      type: System.Boolean
+      description: Returns true if the endpoint responds with HTTP 200
+    content.vb: Public Function Put(endpoint As String, data As Dictionary(Of String, String)) As Boolean
+  overload: SRLApiClient.SRLClient.Put*
+  nameWithType.vb: SRLClient.Put(String, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SRLApiClient.SRLClient.Put(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Put(String, Dictionary(Of String, String))
+- uid: SRLApiClient.SRLClient.PutAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:SRLApiClient.SRLClient.PutAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: PutAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: PutAsync(String, Dictionary<String, String>)
+  nameWithType: SRLClient.PutAsync(String, Dictionary<String, String>)
+  fullName: SRLApiClient.SRLClient.PutAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: PutAsync
+    path: SRLClient.cs
+    startLine: 192
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nPerforms an asynchronous PUT request on an endpoint\n"
+  example: []
+  syntax:
+    content: public Task<bool> PutAsync(string endpoint, Dictionary<string, string> data)
+    parameters:
+    - id: endpoint
+      type: System.String
+      description: The endpoint to perform the request on
+    - id: data
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: The data to PUT
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns true if the endpoint responds with HTTP 200
+    content.vb: Public Function PutAsync(endpoint As String, data As Dictionary(Of String, String)) As Task(Of Boolean)
+  overload: SRLApiClient.SRLClient.PutAsync*
+  nameWithType.vb: SRLClient.PutAsync(String, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SRLApiClient.SRLClient.PutAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PutAsync(String, Dictionary(Of String, String))
+- uid: SRLApiClient.SRLClient.Post(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:SRLApiClient.SRLClient.Post(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: Post(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Post(String, Dictionary<String, String>)
+  nameWithType: SRLClient.Post(String, Dictionary<String, String>)
+  fullName: SRLApiClient.SRLClient.Post(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Post
+    path: SRLClient.cs
+    startLine: 204
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nPerforms a POST request on an endpoint\n"
+  example: []
+  syntax:
+    content: public bool Post(string endpoint, Dictionary<string, string> data)
+    parameters:
+    - id: endpoint
+      type: System.String
+      description: The endpoint to perform the request on
+    - id: data
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: The data to POST
+    return:
+      type: System.Boolean
+      description: Returns true if the endpoint responds with HTTP 200
+    content.vb: Public Function Post(endpoint As String, data As Dictionary(Of String, String)) As Boolean
+  overload: SRLApiClient.SRLClient.Post*
+  nameWithType.vb: SRLClient.Post(String, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SRLApiClient.SRLClient.Post(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: Post(String, Dictionary(Of String, String))
+- uid: SRLApiClient.SRLClient.PostAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:SRLApiClient.SRLClient.PostAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  id: PostAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: PostAsync(String, Dictionary<String, String>)
+  nameWithType: SRLClient.PostAsync(String, Dictionary<String, String>)
+  fullName: SRLApiClient.SRLClient.PostAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: PostAsync
+    path: SRLClient.cs
+    startLine: 212
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nPerforms an asynchronous POST request on an endpoint\n"
+  example: []
+  syntax:
+    content: public Task<bool> PostAsync(string endpoint, Dictionary<string, string> data)
+    parameters:
+    - id: endpoint
+      type: System.String
+      description: The endpoint to perform the request on
+    - id: data
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: The data to POST
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns true if the endpoint responds with HTTP 200
+    content.vb: Public Function PostAsync(endpoint As String, data As Dictionary(Of String, String)) As Task(Of Boolean)
+  overload: SRLApiClient.SRLClient.PostAsync*
+  nameWithType.vb: SRLClient.PostAsync(String, Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SRLApiClient.SRLClient.PostAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: PostAsync(String, Dictionary(Of String, String))
+- uid: SRLApiClient.SRLClient.SubmitPayloadAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Net.Http.HttpMethod)
+  commentId: M:SRLApiClient.SRLClient.SubmitPayloadAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Net.Http.HttpMethod)
+  id: SubmitPayloadAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Net.Http.HttpMethod)
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: SubmitPayloadAsync(String, Dictionary<String, String>, HttpMethod)
+  nameWithType: SRLClient.SubmitPayloadAsync(String, Dictionary<String, String>, HttpMethod)
+  fullName: SRLApiClient.SRLClient.SubmitPayloadAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>, System.Net.Http.HttpMethod)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: SubmitPayloadAsync
+    path: SRLClient.cs
+    startLine: 225
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nSubmits the specified data to the specified endpoint\n"
+  example: []
+  syntax:
+    content: public Task<bool> SubmitPayloadAsync(string endpoint, Dictionary<string, string> data, HttpMethod method)
+    parameters:
+    - id: endpoint
+      type: System.String
+      description: The endpoint to perform the request on
+    - id: data
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: The payload
+    - id: method
+      type: System.Net.Http.HttpMethod
+      description: The method (POST/PUT)
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: Returns true if the endpoint responds with HTTP 200
+    content.vb: Public Function SubmitPayloadAsync(endpoint As String, data As Dictionary(Of String, String), method As HttpMethod) As Task(Of Boolean)
+  overload: SRLApiClient.SRLClient.SubmitPayloadAsync*
+  nameWithType.vb: SRLClient.SubmitPayloadAsync(String, Dictionary(Of String, String), HttpMethod)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SRLApiClient.SRLClient.SubmitPayloadAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String), System.Net.Http.HttpMethod)
+  name.vb: SubmitPayloadAsync(String, Dictionary(Of String, String), HttpMethod)
+- uid: SRLApiClient.SRLClient.DeSerialize``1(System.IO.Stream)
+  commentId: M:SRLApiClient.SRLClient.DeSerialize``1(System.IO.Stream)
+  id: DeSerialize``1(System.IO.Stream)
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: DeSerialize<T>(Stream)
+  nameWithType: SRLClient.DeSerialize<T>(Stream)
+  fullName: SRLApiClient.SRLClient.DeSerialize<T>(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: DeSerialize
+    path: SRLClient.cs
+    startLine: 259
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nDeserializes a response stream into an <xref href=\"SRLApiClient.Endpoints.SRLDataType\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: >-
+      public T DeSerialize<T>(Stream s)
+          where T : SRLDataType
+    parameters:
+    - id: s
+      type: System.IO.Stream
+      description: The stream to deserialize
+    typeParameters:
+    - id: T
+      description: The datatype to deserialized the stream into
+    return:
+      type: '{T}'
+      description: Returns the resulting object
+    content.vb: Public Function DeSerialize(Of T As SRLDataType)(s As Stream) As T
+  overload: SRLApiClient.SRLClient.DeSerialize*
+  nameWithType.vb: SRLClient.DeSerialize(Of T)(Stream)
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SRLApiClient.SRLClient.DeSerialize(Of T)(System.IO.Stream)
+  name.vb: DeSerialize(Of T)(Stream)
+- uid: SRLApiClient.SRLClient.JsonSerialize(System.Collections.Generic.Dictionary{System.String,System.String})
+  commentId: M:SRLApiClient.SRLClient.JsonSerialize(System.Collections.Generic.Dictionary{System.String,System.String})
+  id: JsonSerialize(System.Collections.Generic.Dictionary{System.String,System.String})
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: JsonSerialize(Dictionary<String, String>)
+  nameWithType: SRLClient.JsonSerialize(Dictionary<String, String>)
+  fullName: SRLApiClient.SRLClient.JsonSerialize(System.Collections.Generic.Dictionary<System.String, System.String>)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: JsonSerialize
+    path: SRLClient.cs
+    startLine: 270
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nSerializes the dictionary into a JSON body\n"
+  example: []
+  syntax:
+    content: public string JsonSerialize(Dictionary<string, string> dict)
+    parameters:
+    - id: dict
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: The dictionary to serialize
+    return:
+      type: System.String
+      description: Returns the JSON string
+    content.vb: Public Function JsonSerialize(dict As Dictionary(Of String, String)) As String
+  overload: SRLApiClient.SRLClient.JsonSerialize*
+  nameWithType.vb: SRLClient.JsonSerialize(Dictionary(Of String, String))
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+  fullName.vb: SRLApiClient.SRLClient.JsonSerialize(System.Collections.Generic.Dictionary(Of System.String, System.String))
+  name.vb: JsonSerialize(Dictionary(Of String, String))
+- uid: SRLApiClient.SRLClient.Logout
+  commentId: M:SRLApiClient.SRLClient.Logout
+  id: Logout
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Logout()
+  nameWithType: SRLClient.Logout()
+  fullName: SRLApiClient.SRLClient.Logout()
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Logout
+    path: SRLClient.cs
+    startLine: 310
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nDeletes the user information associated with the client\n"
+  example: []
+  syntax:
+    content: public void Logout()
+    content.vb: Public Sub Logout
+  overload: SRLApiClient.SRLClient.Logout*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.SRLClient.ReAuthenticate
+  commentId: M:SRLApiClient.SRLClient.ReAuthenticate
+  id: ReAuthenticate
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: ReAuthenticate()
+  nameWithType: SRLClient.ReAuthenticate()
+  fullName: SRLApiClient.SRLClient.ReAuthenticate()
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: ReAuthenticate
+    path: SRLClient.cs
+    startLine: 325
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nReauthenticate the client with the stored credentials\n"
+  example: []
+  syntax:
+    content: public bool ReAuthenticate()
+    return:
+      type: System.Boolean
+      description: Returns true if the authentication was successful
+    content.vb: Public Function ReAuthenticate As Boolean
+  overload: SRLApiClient.SRLClient.ReAuthenticate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.SRLClient.Authenticate(System.String,System.String,System.Boolean)
+  commentId: M:SRLApiClient.SRLClient.Authenticate(System.String,System.String,System.Boolean)
+  id: Authenticate(System.String,System.String,System.Boolean)
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Authenticate(String, String, Boolean)
+  nameWithType: SRLClient.Authenticate(String, String, Boolean)
+  fullName: SRLApiClient.SRLClient.Authenticate(System.String, System.String, System.Boolean)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Authenticate
+    path: SRLClient.cs
+    startLine: 334
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nAsssociate the client with a user account\n"
+  example: []
+  syntax:
+    content: public bool Authenticate(string username, string password, bool storeCredentials = false)
+    parameters:
+    - id: username
+      type: System.String
+      description: The SRL username
+    - id: password
+      type: System.String
+      description: The SRL password
+    - id: storeCredentials
+      type: System.Boolean
+      description: If true the password is stored in the client for <xref href="SRLApiClient.SRLClient.ReAuthenticate" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Boolean
+      description: Returns true if the authentication was successful
+    content.vb: Public Function Authenticate(username As String, password As String, storeCredentials As Boolean = False) As Boolean
+  overload: SRLApiClient.SRLClient.Authenticate*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.SRLClient.Dispose
+  commentId: M:SRLApiClient.SRLClient.Dispose
+  id: Dispose
+  parent: SRLApiClient.SRLClient
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SRLClient.Dispose()
+  fullName: SRLApiClient.SRLClient.Dispose()
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/SRLClient.cs
+      branch: v1
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Dispose
+    path: SRLClient.cs
+    startLine: 422
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient
+  summary: "\nReleases the unmanaged resources and disposes of the managed resources\nused by the <xref href=\"SRLApiClient.SRLClient\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose
+  overload: SRLApiClient.SRLClient.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: SRLApiClient
+  commentId: N:SRLApiClient
+  name: SRLApiClient
+  nameWithType: SRLApiClient
+  fullName: SRLApiClient
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  name: GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  name: GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  name: MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.Object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  name: ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SRLApiClient.SRLClient.Host*
+  commentId: Overload:SRLApiClient.SRLClient.Host
+  name: Host
+  nameWithType: SRLClient.Host
+  fullName: SRLApiClient.SRLClient.Host
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SRLApiClient.SRLClient.User*
+  commentId: Overload:SRLApiClient.SRLClient.User
+  name: User
+  nameWithType: SRLClient.User
+  fullName: SRLApiClient.SRLClient.User
+- uid: SRLApiClient.SRLUser
+  commentId: T:SRLApiClient.SRLUser
+  parent: SRLApiClient
+  name: SRLUser
+  nameWithType: SRLUser
+  fullName: SRLApiClient.SRLUser
+- uid: SRLApiClient.SRLClient.IsAuthenticated*
+  commentId: Overload:SRLApiClient.SRLClient.IsAuthenticated
+  name: IsAuthenticated
+  nameWithType: SRLClient.IsAuthenticated
+  fullName: SRLApiClient.SRLClient.IsAuthenticated
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: SRLApiClient.SRLClient.Games*
+  commentId: Overload:SRLApiClient.SRLClient.Games
+  name: Games
+  nameWithType: SRLClient.Games
+  fullName: SRLApiClient.SRLClient.Games
+- uid: SRLApiClient.Endpoints.Games.GamesClient
+  commentId: T:SRLApiClient.Endpoints.Games.GamesClient
+  parent: SRLApiClient.Endpoints.Games
+  name: GamesClient
+  nameWithType: GamesClient
+  fullName: SRLApiClient.Endpoints.Games.GamesClient
+- uid: SRLApiClient.Endpoints.Games
+  commentId: N:SRLApiClient.Endpoints.Games
+  name: SRLApiClient.Endpoints.Games
+  nameWithType: SRLApiClient.Endpoints.Games
+  fullName: SRLApiClient.Endpoints.Games
+- uid: SRLApiClient.SRLClient.Players*
+  commentId: Overload:SRLApiClient.SRLClient.Players
+  name: Players
+  nameWithType: SRLClient.Players
+  fullName: SRLApiClient.SRLClient.Players
+- uid: SRLApiClient.Endpoints.Players.PlayersClient
+  commentId: T:SRLApiClient.Endpoints.Players.PlayersClient
+  parent: SRLApiClient.Endpoints.Players
+  name: PlayersClient
+  nameWithType: PlayersClient
+  fullName: SRLApiClient.Endpoints.Players.PlayersClient
+- uid: SRLApiClient.Endpoints.Players
+  commentId: N:SRLApiClient.Endpoints.Players
+  name: SRLApiClient.Endpoints.Players
+  nameWithType: SRLApiClient.Endpoints.Players
+  fullName: SRLApiClient.Endpoints.Players
+- uid: SRLApiClient.SRLClient.Leaderboards*
+  commentId: Overload:SRLApiClient.SRLClient.Leaderboards
+  name: Leaderboards
+  nameWithType: SRLClient.Leaderboards
+  fullName: SRLApiClient.SRLClient.Leaderboards
+- uid: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  commentId: T:SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+  parent: SRLApiClient.Endpoints.Leaderboards
+  name: LeaderboardsClient
+  nameWithType: LeaderboardsClient
+  fullName: SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient
+- uid: SRLApiClient.Endpoints.Leaderboards
+  commentId: N:SRLApiClient.Endpoints.Leaderboards
+  name: SRLApiClient.Endpoints.Leaderboards
+  nameWithType: SRLApiClient.Endpoints.Leaderboards
+  fullName: SRLApiClient.Endpoints.Leaderboards
+- uid: SRLApiClient.SRLClient.Races*
+  commentId: Overload:SRLApiClient.SRLClient.Races
+  name: Races
+  nameWithType: SRLClient.Races
+  fullName: SRLApiClient.SRLClient.Races
+- uid: SRLApiClient.Endpoints.Races.RacesClient
+  commentId: T:SRLApiClient.Endpoints.Races.RacesClient
+  parent: SRLApiClient.Endpoints.Races
+  name: RacesClient
+  nameWithType: RacesClient
+  fullName: SRLApiClient.Endpoints.Races.RacesClient
+- uid: SRLApiClient.Endpoints.Races
+  commentId: N:SRLApiClient.Endpoints.Races
+  name: SRLApiClient.Endpoints.Races
+  nameWithType: SRLApiClient.Endpoints.Races
+  fullName: SRLApiClient.Endpoints.Races
+- uid: SRLApiClient.SRLClient.PastRaces*
+  commentId: Overload:SRLApiClient.SRLClient.PastRaces
+  name: PastRaces
+  nameWithType: SRLClient.PastRaces
+  fullName: SRLApiClient.SRLClient.PastRaces
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient
+  commentId: T:SRLApiClient.Endpoints.PastRaces.PastRacesClient
+  parent: SRLApiClient.Endpoints.PastRaces
+  name: PastRacesClient
+  nameWithType: PastRacesClient
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient
+- uid: SRLApiClient.Endpoints.PastRaces
+  commentId: N:SRLApiClient.Endpoints.PastRaces
+  name: SRLApiClient.Endpoints.PastRaces
+  nameWithType: SRLApiClient.Endpoints.PastRaces
+  fullName: SRLApiClient.Endpoints.PastRaces
+- uid: SRLApiClient.SRLClient.Countries*
+  commentId: Overload:SRLApiClient.SRLClient.Countries
+  name: Countries
+  nameWithType: SRLClient.Countries
+  fullName: SRLApiClient.SRLClient.Countries
+- uid: SRLApiClient.Endpoints.Countries.CountriesClient
+  commentId: T:SRLApiClient.Endpoints.Countries.CountriesClient
+  parent: SRLApiClient.Endpoints.Countries
+  name: CountriesClient
+  nameWithType: CountriesClient
+  fullName: SRLApiClient.Endpoints.Countries.CountriesClient
+- uid: SRLApiClient.Endpoints.Countries
+  commentId: N:SRLApiClient.Endpoints.Countries
+  name: SRLApiClient.Endpoints.Countries
+  nameWithType: SRLApiClient.Endpoints.Countries
+  fullName: SRLApiClient.Endpoints.Countries
+- uid: SRLApiClient.SRLClient.Stats*
+  commentId: Overload:SRLApiClient.SRLClient.Stats
+  name: Stats
+  nameWithType: SRLClient.Stats
+  fullName: SRLApiClient.SRLClient.Stats
+- uid: SRLApiClient.Endpoints.Stats.StatsClient
+  commentId: T:SRLApiClient.Endpoints.Stats.StatsClient
+  parent: SRLApiClient.Endpoints.Stats
+  name: StatsClient
+  nameWithType: StatsClient
+  fullName: SRLApiClient.Endpoints.Stats.StatsClient
+- uid: SRLApiClient.Endpoints.Stats
+  commentId: N:SRLApiClient.Endpoints.Stats
+  name: SRLApiClient.Endpoints.Stats
+  nameWithType: SRLApiClient.Endpoints.Stats
+  fullName: SRLApiClient.Endpoints.Stats
+- uid: SRLApiClient.SRLClient.RequestTimeout*
+  commentId: Overload:SRLApiClient.SRLClient.RequestTimeout
+  name: RequestTimeout
+  nameWithType: SRLClient.RequestTimeout
+  fullName: SRLApiClient.SRLClient.RequestTimeout
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: SRLApiClient.SRLClient.#ctor*
+  commentId: Overload:SRLApiClient.SRLClient.#ctor
+  name: SRLClient
+  nameWithType: SRLClient.SRLClient
+  fullName: SRLApiClient.SRLClient.SRLClient
+- uid: SRLApiClient.SRLParseException
+  commentId: T:SRLApiClient.SRLParseException
+  name: SRLParseException
+  nameWithType: SRLParseException
+  fullName: SRLApiClient.SRLParseException
+- uid: SRLApiClient.SRLTimeoutException
+  commentId: T:SRLApiClient.SRLTimeoutException
+  name: SRLTimeoutException
+  nameWithType: SRLTimeoutException
+  fullName: SRLApiClient.SRLTimeoutException
+- uid: SRLApiClient.SRLClient.Get*
+  commentId: Overload:SRLApiClient.SRLClient.Get
+  name: Get
+  nameWithType: SRLClient.Get
+  fullName: SRLApiClient.SRLClient.Get
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: SRLApiClient.SRLClient.GetAsync*
+  commentId: Overload:SRLApiClient.SRLClient.GetAsync
+  name: GetAsync
+  nameWithType: SRLClient.GetAsync
+  fullName: SRLApiClient.SRLClient.GetAsync
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: SRLApiClient.SRLClient.Put*
+  commentId: Overload:SRLApiClient.SRLClient.Put
+  name: Put
+  nameWithType: SRLClient.Put
+  fullName: SRLApiClient.SRLClient.Put
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  name: Dictionary<String, String>
+  nameWithType: Dictionary<String, String>
+  fullName: System.Collections.Generic.Dictionary<System.String, System.String>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, System.String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - uid: System.String
+    name: String
+    nameWithType: String
+    fullName: System.String
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    nameWithType: Dictionary
+    fullName: System.Collections.Generic.Dictionary
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TKey
+    nameWithType: TKey
+    fullName: TKey
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
+  - name: TValue
+    nameWithType: TValue
+    fullName: TValue
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+- uid: SRLApiClient.SRLClient.PutAsync*
+  commentId: Overload:SRLApiClient.SRLClient.PutAsync
+  name: PutAsync
+  nameWithType: SRLClient.PutAsync
+  fullName: SRLApiClient.SRLClient.PutAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<Boolean>
+  nameWithType: Task<Boolean>
+  fullName: System.Threading.Tasks.Task<System.Boolean>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of System.Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: System.Boolean
+    name: Boolean
+    nameWithType: Boolean
+    fullName: System.Boolean
+    isExternal: true
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SRLApiClient.SRLClient.Post*
+  commentId: Overload:SRLApiClient.SRLClient.Post
+  name: Post
+  nameWithType: SRLClient.Post
+  fullName: SRLApiClient.SRLClient.Post
+- uid: SRLApiClient.SRLClient.PostAsync*
+  commentId: Overload:SRLApiClient.SRLClient.PostAsync
+  name: PostAsync
+  nameWithType: SRLClient.PostAsync
+  fullName: SRLApiClient.SRLClient.PostAsync
+- uid: SRLApiClient.SRLClient.SubmitPayloadAsync*
+  commentId: Overload:SRLApiClient.SRLClient.SubmitPayloadAsync
+  name: SubmitPayloadAsync
+  nameWithType: SRLClient.SubmitPayloadAsync
+  fullName: SRLApiClient.SRLClient.SubmitPayloadAsync
+- uid: System.Net.Http.HttpMethod
+  commentId: T:System.Net.Http.HttpMethod
+  parent: System.Net.Http
+  isExternal: true
+  name: HttpMethod
+  nameWithType: HttpMethod
+  fullName: System.Net.Http.HttpMethod
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+- uid: SRLApiClient.Endpoints.SRLDataType
+  commentId: T:SRLApiClient.Endpoints.SRLDataType
+  parent: SRLApiClient.Endpoints
+  name: SRLDataType
+  nameWithType: SRLDataType
+  fullName: SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.SRLClient.DeSerialize*
+  commentId: Overload:SRLApiClient.SRLClient.DeSerialize
+  name: DeSerialize
+  nameWithType: SRLClient.DeSerialize
+  fullName: SRLApiClient.SRLClient.DeSerialize
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: SRLApiClient.Endpoints
+  commentId: N:SRLApiClient.Endpoints
+  name: SRLApiClient.Endpoints
+  nameWithType: SRLApiClient.Endpoints
+  fullName: SRLApiClient.Endpoints
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+- uid: SRLApiClient.SRLClient.JsonSerialize*
+  commentId: Overload:SRLApiClient.SRLClient.JsonSerialize
+  name: JsonSerialize
+  nameWithType: SRLClient.JsonSerialize
+  fullName: SRLApiClient.SRLClient.JsonSerialize
+- uid: SRLApiClient.SRLClient.Logout*
+  commentId: Overload:SRLApiClient.SRLClient.Logout
+  name: Logout
+  nameWithType: SRLClient.Logout
+  fullName: SRLApiClient.SRLClient.Logout
+- uid: SRLApiClient.SRLClient.ReAuthenticate*
+  commentId: Overload:SRLApiClient.SRLClient.ReAuthenticate
+  name: ReAuthenticate
+  nameWithType: SRLClient.ReAuthenticate
+  fullName: SRLApiClient.SRLClient.ReAuthenticate
+- uid: SRLApiClient.SRLClient.ReAuthenticate
+  commentId: M:SRLApiClient.SRLClient.ReAuthenticate
+  isExternal: true
+- uid: SRLApiClient.SRLClient.Authenticate*
+  commentId: Overload:SRLApiClient.SRLClient.Authenticate
+  name: Authenticate
+  nameWithType: SRLClient.Authenticate
+  fullName: SRLApiClient.SRLClient.Authenticate
+- uid: SRLApiClient.SRLClient
+  commentId: T:SRLApiClient.SRLClient
+  parent: SRLApiClient
+  name: SRLClient
+  nameWithType: SRLClient
+  fullName: SRLApiClient.SRLClient
+- uid: SRLApiClient.SRLClient.Dispose*
+  commentId: Overload:SRLApiClient.SRLClient.Dispose
+  name: Dispose
+  nameWithType: SRLClient.Dispose
+  fullName: SRLApiClient.SRLClient.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    nameWithType: IDisposable.Dispose
+    fullName: System.IDisposable.Dispose
+    isExternal: true
+  - name: (
+    nameWithType: (
+    fullName: (
+  - name: )
+    nameWithType: )
+    fullName: )
