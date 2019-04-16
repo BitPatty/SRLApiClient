@@ -2525,226 +2525,232 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException
   nameWithType: SRLTimeoutException.SRLTimeoutException
-- uid: SRLApiClient.SRLUser
+- uid: SRLApiClient.User
+  name: SRLApiClient.User
+  href: api/SRLApiClient.User.html
+  commentId: N:SRLApiClient.User
+  fullName: SRLApiClient.User
+  nameWithType: SRLApiClient.User
+- uid: SRLApiClient.User.SRLUser
   name: SRLUser
-  href: api/SRLApiClient.SRLUser.html
-  commentId: T:SRLApiClient.SRLUser
-  fullName: SRLApiClient.SRLUser
+  href: api/SRLApiClient.User.SRLUser.html
+  commentId: T:SRLApiClient.User.SRLUser
+  fullName: SRLApiClient.User.SRLUser
   nameWithType: SRLUser
-- uid: SRLApiClient.SRLUser.#ctor(SRLApiClient.SRLClient)
+- uid: SRLApiClient.User.SRLUser.#ctor(SRLApiClient.SRLClient)
   name: SRLUser(SRLClient)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser__ctor_SRLApiClient_SRLClient_
-  commentId: M:SRLApiClient.SRLUser.#ctor(SRLApiClient.SRLClient)
-  fullName: SRLApiClient.SRLUser.SRLUser(SRLApiClient.SRLClient)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser__ctor_SRLApiClient_SRLClient_
+  commentId: M:SRLApiClient.User.SRLUser.#ctor(SRLApiClient.SRLClient)
+  fullName: SRLApiClient.User.SRLUser.SRLUser(SRLApiClient.SRLClient)
   nameWithType: SRLUser.SRLUser(SRLClient)
-- uid: SRLApiClient.SRLUser.#ctor*
+- uid: SRLApiClient.User.SRLUser.#ctor*
   name: SRLUser
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser__ctor_
-  commentId: Overload:SRLApiClient.SRLUser.#ctor
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser__ctor_
+  commentId: Overload:SRLApiClient.User.SRLUser.#ctor
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SRLUser
+  fullName: SRLApiClient.User.SRLUser.SRLUser
   nameWithType: SRLUser.SRLUser
-- uid: SRLApiClient.SRLUser.Id
+- uid: SRLApiClient.User.SRLUser.Id
   name: Id
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Id
-  commentId: P:SRLApiClient.SRLUser.Id
-  fullName: SRLApiClient.SRLUser.Id
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Id
+  commentId: P:SRLApiClient.User.SRLUser.Id
+  fullName: SRLApiClient.User.SRLUser.Id
   nameWithType: SRLUser.Id
-- uid: SRLApiClient.SRLUser.Id*
+- uid: SRLApiClient.User.SRLUser.Id*
   name: Id
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Id_
-  commentId: Overload:SRLApiClient.SRLUser.Id
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Id_
+  commentId: Overload:SRLApiClient.User.SRLUser.Id
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Id
+  fullName: SRLApiClient.User.SRLUser.Id
   nameWithType: SRLUser.Id
-- uid: SRLApiClient.SRLUser.Name
+- uid: SRLApiClient.User.SRLUser.Name
   name: Name
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Name
-  commentId: P:SRLApiClient.SRLUser.Name
-  fullName: SRLApiClient.SRLUser.Name
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Name
+  commentId: P:SRLApiClient.User.SRLUser.Name
+  fullName: SRLApiClient.User.SRLUser.Name
   nameWithType: SRLUser.Name
-- uid: SRLApiClient.SRLUser.Name*
+- uid: SRLApiClient.User.SRLUser.Name*
   name: Name
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Name_
-  commentId: Overload:SRLApiClient.SRLUser.Name
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Name_
+  commentId: Overload:SRLApiClient.User.SRLUser.Name
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Name
+  fullName: SRLApiClient.User.SRLUser.Name
   nameWithType: SRLUser.Name
-- uid: SRLApiClient.SRLUser.Player
+- uid: SRLApiClient.User.SRLUser.Player
   name: Player
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Player
-  commentId: P:SRLApiClient.SRLUser.Player
-  fullName: SRLApiClient.SRLUser.Player
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Player
+  commentId: P:SRLApiClient.User.SRLUser.Player
+  fullName: SRLApiClient.User.SRLUser.Player
   nameWithType: SRLUser.Player
-- uid: SRLApiClient.SRLUser.Player*
+- uid: SRLApiClient.User.SRLUser.Player*
   name: Player
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Player_
-  commentId: Overload:SRLApiClient.SRLUser.Player
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Player_
+  commentId: Overload:SRLApiClient.User.SRLUser.Player
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Player
+  fullName: SRLApiClient.User.SRLUser.Player
   nameWithType: SRLUser.Player
-- uid: SRLApiClient.SRLUser.Role
+- uid: SRLApiClient.User.SRLUser.Role
   name: Role
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Role
-  commentId: P:SRLApiClient.SRLUser.Role
-  fullName: SRLApiClient.SRLUser.Role
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Role
+  commentId: P:SRLApiClient.User.SRLUser.Role
+  fullName: SRLApiClient.User.SRLUser.Role
   nameWithType: SRLUser.Role
-- uid: SRLApiClient.SRLUser.Role*
+- uid: SRLApiClient.User.SRLUser.Role*
   name: Role
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Role_
-  commentId: Overload:SRLApiClient.SRLUser.Role
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Role_
+  commentId: Overload:SRLApiClient.User.SRLUser.Role
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Role
+  fullName: SRLApiClient.User.SRLUser.Role
   nameWithType: SRLUser.Role
-- uid: SRLApiClient.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
+- uid: SRLApiClient.User.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
   name: SetApi(StreamApi)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetApi_SRLApiClient_Endpoints_StreamApi_
-  commentId: M:SRLApiClient.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
-  fullName: SRLApiClient.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetApi_SRLApiClient_Endpoints_StreamApi_
+  commentId: M:SRLApiClient.User.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
+  fullName: SRLApiClient.User.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
   nameWithType: SRLUser.SetApi(StreamApi)
-- uid: SRLApiClient.SRLUser.SetApi*
+- uid: SRLApiClient.User.SRLUser.SetApi*
   name: SetApi
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetApi_
-  commentId: Overload:SRLApiClient.SRLUser.SetApi
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetApi_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetApi
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetApi
+  fullName: SRLApiClient.User.SRLUser.SetApi
   nameWithType: SRLUser.SetApi
-- uid: SRLApiClient.SRLUser.SetCapitalization(System.String)
+- uid: SRLApiClient.User.SRLUser.SetCapitalization(System.String)
   name: SetCapitalization(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetCapitalization_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetCapitalization(System.String)
-  fullName: SRLApiClient.SRLUser.SetCapitalization(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetCapitalization_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetCapitalization(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetCapitalization(System.String)
   nameWithType: SRLUser.SetCapitalization(String)
-- uid: SRLApiClient.SRLUser.SetCapitalization*
+- uid: SRLApiClient.User.SRLUser.SetCapitalization*
   name: SetCapitalization
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetCapitalization_
-  commentId: Overload:SRLApiClient.SRLUser.SetCapitalization
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetCapitalization_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetCapitalization
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetCapitalization
+  fullName: SRLApiClient.User.SRLUser.SetCapitalization
   nameWithType: SRLUser.SetCapitalization
-- uid: SRLApiClient.SRLUser.SetChannel(System.String)
+- uid: SRLApiClient.User.SRLUser.SetChannel(System.String)
   name: SetChannel(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetChannel_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetChannel(System.String)
-  fullName: SRLApiClient.SRLUser.SetChannel(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetChannel_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetChannel(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetChannel(System.String)
   nameWithType: SRLUser.SetChannel(String)
-- uid: SRLApiClient.SRLUser.SetChannel*
+- uid: SRLApiClient.User.SRLUser.SetChannel*
   name: SetChannel
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetChannel_
-  commentId: Overload:SRLApiClient.SRLUser.SetChannel
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetChannel_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetChannel
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetChannel
+  fullName: SRLApiClient.User.SRLUser.SetChannel
   nameWithType: SRLUser.SetChannel
-- uid: SRLApiClient.SRLUser.SetCountry(System.String)
+- uid: SRLApiClient.User.SRLUser.SetCountry(System.String)
   name: SetCountry(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetCountry_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetCountry(System.String)
-  fullName: SRLApiClient.SRLUser.SetCountry(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetCountry_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetCountry(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetCountry(System.String)
   nameWithType: SRLUser.SetCountry(String)
-- uid: SRLApiClient.SRLUser.SetCountry*
+- uid: SRLApiClient.User.SRLUser.SetCountry*
   name: SetCountry
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetCountry_
-  commentId: Overload:SRLApiClient.SRLUser.SetCountry
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetCountry_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetCountry
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetCountry
+  fullName: SRLApiClient.User.SRLUser.SetCountry
   nameWithType: SRLUser.SetCountry
-- uid: SRLApiClient.SRLUser.SetTwitter(System.String)
+- uid: SRLApiClient.User.SRLUser.SetTwitter(System.String)
   name: SetTwitter(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetTwitter_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetTwitter(System.String)
-  fullName: SRLApiClient.SRLUser.SetTwitter(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetTwitter_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetTwitter(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetTwitter(System.String)
   nameWithType: SRLUser.SetTwitter(String)
-- uid: SRLApiClient.SRLUser.SetTwitter*
+- uid: SRLApiClient.User.SRLUser.SetTwitter*
   name: SetTwitter
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetTwitter_
-  commentId: Overload:SRLApiClient.SRLUser.SetTwitter
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetTwitter_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetTwitter
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetTwitter
+  fullName: SRLApiClient.User.SRLUser.SetTwitter
   nameWithType: SRLUser.SetTwitter
-- uid: SRLApiClient.SRLUser.SetYoutube(System.String)
+- uid: SRLApiClient.User.SRLUser.SetYoutube(System.String)
   name: SetYoutube(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetYoutube_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetYoutube(System.String)
-  fullName: SRLApiClient.SRLUser.SetYoutube(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetYoutube_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetYoutube(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetYoutube(System.String)
   nameWithType: SRLUser.SetYoutube(String)
-- uid: SRLApiClient.SRLUser.SetYoutube*
+- uid: SRLApiClient.User.SRLUser.SetYoutube*
   name: SetYoutube
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetYoutube_
-  commentId: Overload:SRLApiClient.SRLUser.SetYoutube
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetYoutube_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetYoutube
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetYoutube
+  fullName: SRLApiClient.User.SRLUser.SetYoutube
   nameWithType: SRLUser.SetYoutube
-- uid: SRLApiClient.SRLUser.Verify
+- uid: SRLApiClient.User.SRLUser.Verify
   name: Verify()
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Verify
-  commentId: M:SRLApiClient.SRLUser.Verify
-  fullName: SRLApiClient.SRLUser.Verify()
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Verify
+  commentId: M:SRLApiClient.User.SRLUser.Verify
+  fullName: SRLApiClient.User.SRLUser.Verify()
   nameWithType: SRLUser.Verify()
-- uid: SRLApiClient.SRLUser.Verify*
+- uid: SRLApiClient.User.SRLUser.Verify*
   name: Verify
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Verify_
-  commentId: Overload:SRLApiClient.SRLUser.Verify
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Verify_
+  commentId: Overload:SRLApiClient.User.SRLUser.Verify
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Verify
+  fullName: SRLApiClient.User.SRLUser.Verify
   nameWithType: SRLUser.Verify
-- uid: SRLApiClient.SRLUser.VerifyAsync
+- uid: SRLApiClient.User.SRLUser.VerifyAsync
   name: VerifyAsync()
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_VerifyAsync
-  commentId: M:SRLApiClient.SRLUser.VerifyAsync
-  fullName: SRLApiClient.SRLUser.VerifyAsync()
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_VerifyAsync
+  commentId: M:SRLApiClient.User.SRLUser.VerifyAsync
+  fullName: SRLApiClient.User.SRLUser.VerifyAsync()
   nameWithType: SRLUser.VerifyAsync()
-- uid: SRLApiClient.SRLUser.VerifyAsync*
+- uid: SRLApiClient.User.SRLUser.VerifyAsync*
   name: VerifyAsync
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_VerifyAsync_
-  commentId: Overload:SRLApiClient.SRLUser.VerifyAsync
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_VerifyAsync_
+  commentId: Overload:SRLApiClient.User.SRLUser.VerifyAsync
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.VerifyAsync
+  fullName: SRLApiClient.User.SRLUser.VerifyAsync
   nameWithType: SRLUser.VerifyAsync
-- uid: SRLApiClient.UserRole
+- uid: SRLApiClient.User.UserRole
   name: UserRole
-  href: api/SRLApiClient.UserRole.html
-  commentId: T:SRLApiClient.UserRole
-  fullName: SRLApiClient.UserRole
+  href: api/SRLApiClient.User.UserRole.html
+  commentId: T:SRLApiClient.User.UserRole
+  fullName: SRLApiClient.User.UserRole
   nameWithType: UserRole
-- uid: SRLApiClient.UserRole.Admin
+- uid: SRLApiClient.User.UserRole.Admin
   name: Admin
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Admin
-  commentId: F:SRLApiClient.UserRole.Admin
-  fullName: SRLApiClient.UserRole.Admin
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Admin
+  commentId: F:SRLApiClient.User.UserRole.Admin
+  fullName: SRLApiClient.User.UserRole.Admin
   nameWithType: UserRole.Admin
-- uid: SRLApiClient.UserRole.Anon
+- uid: SRLApiClient.User.UserRole.Anon
   name: Anon
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Anon
-  commentId: F:SRLApiClient.UserRole.Anon
-  fullName: SRLApiClient.UserRole.Anon
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Anon
+  commentId: F:SRLApiClient.User.UserRole.Anon
+  fullName: SRLApiClient.User.UserRole.Anon
   nameWithType: UserRole.Anon
-- uid: SRLApiClient.UserRole.Halfop
+- uid: SRLApiClient.User.UserRole.Halfop
   name: Halfop
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Halfop
-  commentId: F:SRLApiClient.UserRole.Halfop
-  fullName: SRLApiClient.UserRole.Halfop
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Halfop
+  commentId: F:SRLApiClient.User.UserRole.Halfop
+  fullName: SRLApiClient.User.UserRole.Halfop
   nameWithType: UserRole.Halfop
-- uid: SRLApiClient.UserRole.Op
+- uid: SRLApiClient.User.UserRole.Op
   name: Op
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Op
-  commentId: F:SRLApiClient.UserRole.Op
-  fullName: SRLApiClient.UserRole.Op
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Op
+  commentId: F:SRLApiClient.User.UserRole.Op
+  fullName: SRLApiClient.User.UserRole.Op
   nameWithType: UserRole.Op
-- uid: SRLApiClient.UserRole.Unknown
+- uid: SRLApiClient.User.UserRole.Unknown
   name: Unknown
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Unknown
-  commentId: F:SRLApiClient.UserRole.Unknown
-  fullName: SRLApiClient.UserRole.Unknown
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Unknown
+  commentId: F:SRLApiClient.User.UserRole.Unknown
+  fullName: SRLApiClient.User.UserRole.Unknown
   nameWithType: UserRole.Unknown
-- uid: SRLApiClient.UserRole.User
+- uid: SRLApiClient.User.UserRole.User
   name: User
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_User
-  commentId: F:SRLApiClient.UserRole.User
-  fullName: SRLApiClient.UserRole.User
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_User
+  commentId: F:SRLApiClient.User.UserRole.User
+  fullName: SRLApiClient.User.UserRole.User
   nameWithType: UserRole.User
-- uid: SRLApiClient.UserRole.Voice
+- uid: SRLApiClient.User.UserRole.Voice
   name: Voice
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Voice
-  commentId: F:SRLApiClient.UserRole.Voice
-  fullName: SRLApiClient.UserRole.Voice
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Voice
+  commentId: F:SRLApiClient.User.UserRole.Voice
+  fullName: SRLApiClient.User.UserRole.Voice
   nameWithType: UserRole.Voice

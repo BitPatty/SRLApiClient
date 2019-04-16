@@ -1,7 +1,7 @@
-﻿using SRLApiClient.Endpoints.Games;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
+using SRLApiClient.Endpoints.Games;
 
 namespace SRLApiClient.Endpoints.Leaderboards
 {

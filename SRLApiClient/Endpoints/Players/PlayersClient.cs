@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using SRLApiClient.User;
 
 namespace SRLApiClient.Endpoints.Players
 {

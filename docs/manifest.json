@@ -20,7 +20,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Countries.CountriesClient.html",
-          "hash": "8A3LasLMbsSlOBu/LbthvA=="
+          "hash": "eT3/QNzMcY5tu+wJsCAgMw=="
         }
       },
       "is_incremental": false,
@@ -44,7 +44,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.EntrantState.html",
-          "hash": "Wem1i89UNrbjqRs+UdcEgw=="
+          "hash": "SP7ICzoASp7lqN2HaIrlCA=="
         }
       },
       "is_incremental": false,
@@ -56,7 +56,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Games.Game.html",
-          "hash": "rWSPh0yg2YYh+uqi82iE7Q=="
+          "hash": "2taORHZBt5mR706zyd8PHA=="
         }
       },
       "is_incremental": false,
@@ -68,7 +68,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Games.GamesClient.html",
-          "hash": "1Uv8uJoLi4UsxMzsWQrNrw=="
+          "hash": "H0kmU4/WWCXgP9nF4lHFsw=="
         }
       },
       "is_incremental": false,
@@ -92,7 +92,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Leaderboards.Leader.html",
-          "hash": "PiQRtLq9MJOTGx1qTzcCRA=="
+          "hash": "qpG7O7G20KH7dTXuYJS3hw=="
         }
       },
       "is_incremental": false,
@@ -104,7 +104,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Leaderboards.Leaderboard.html",
-          "hash": "JwwIETeyVSs41C/J/Uzk2g=="
+          "hash": "UmtxXxI+IVK7aFAnLhJ4JQ=="
         }
       },
       "is_incremental": false,
@@ -116,7 +116,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Leaderboards.LeaderboardsClient.html",
-          "hash": "wr+fh41gYJxgmNnu14d83A=="
+          "hash": "6RI1EoewsqrCWZV5Z19ygQ=="
         }
       },
       "is_incremental": false,
@@ -140,7 +140,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.PastRaces.PastRace.html",
-          "hash": "po8U/NX6NpKUHoJB3uho1g=="
+          "hash": "TZqvi4KITqk4ZneXKBjwPQ=="
         }
       },
       "is_incremental": false,
@@ -152,7 +152,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html",
-          "hash": "4HZ6ti67oDLHodBXtixiYQ=="
+          "hash": "sDZZNQ3NuFzxxVTRS3+JWA=="
         }
       },
       "is_incremental": false,
@@ -164,7 +164,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.PastRaces.Result.html",
-          "hash": "KKLfOWbA2TIQhqSoO6sIwQ=="
+          "hash": "YChvzGu2/SnLvA87ycYgyg=="
         }
       },
       "is_incremental": false,
@@ -188,7 +188,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Players.Player.html",
-          "hash": "7FZ4X3O/nWQvliciAWPQqA=="
+          "hash": "X2EzkSW/82TR/jBS/w9LWw=="
         }
       },
       "is_incremental": false,
@@ -200,7 +200,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Players.PlayersClient.html",
-          "hash": "jxYmQPNXymcC4vQpHK2sZw=="
+          "hash": "3wCRYOzXdzezsgXU0lmlJQ=="
         }
       },
       "is_incremental": false,
@@ -224,7 +224,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.RaceState.html",
-          "hash": "yG2YPTFg3WrRfeuk/CSWNQ=="
+          "hash": "q/U+s0Eu1HH1eY8V6wRW8A=="
         }
       },
       "is_incremental": false,
@@ -236,7 +236,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Races.Entrant.html",
-          "hash": "fL3J+zQ6K4z60lHlVilB1w=="
+          "hash": "jMdBRv7NypQrr4DpG2fZag=="
         }
       },
       "is_incremental": false,
@@ -248,7 +248,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Races.Race.html",
-          "hash": "shRs5dowqxAOxL+n1PitoA=="
+          "hash": "z4WKXk69zkgI3xj7qBUIcQ=="
         }
       },
       "is_incremental": false,
@@ -260,7 +260,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Races.RacesClient.html",
-          "hash": "UVS/IrStWpYParx0DXazGg=="
+          "hash": "ZStwdFB3VVS2Dod+UwYzIA=="
         }
       },
       "is_incremental": false,
@@ -284,7 +284,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.SRLDataType.html",
-          "hash": "UM/ZtL2OnlzvCs4tU8qTvw=="
+          "hash": "GnhKQO3hvR2kMGSPFvnqag=="
         }
       },
       "is_incremental": false,
@@ -296,7 +296,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html",
-          "hash": "0Cjw8xb9iko/KaopquF0Aw=="
+          "hash": "pNhbHWzQ1ablUkSKjG1N2Q=="
         }
       },
       "is_incremental": false,
@@ -308,7 +308,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.SRLEndpoint.html",
-          "hash": "pOnjAk7uxtkkY8ncN0SKhQ=="
+          "hash": "JQyuYEf0ycWFMrsUnZEA+A=="
         }
       },
       "is_incremental": false,
@@ -320,7 +320,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Stats.GameStats.html",
-          "hash": "arFUgf/b11LBydDxD5QXKg=="
+          "hash": "v361Zj0O7/mN6qQYANn8ww=="
         }
       },
       "is_incremental": false,
@@ -332,7 +332,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Stats.PlayerStats.html",
-          "hash": "znbM62zXdl217PXswhD0fg=="
+          "hash": "79TgpY8kmZLXuAY4KEK4nQ=="
         }
       },
       "is_incremental": false,
@@ -344,7 +344,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Stats.SRLStats.html",
-          "hash": "4U3kmZuzDGxHun0rsTDm6w=="
+          "hash": "ZGqDn5KVuIrvAWmfll+jAw=="
         }
       },
       "is_incremental": false,
@@ -356,7 +356,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Stats.StatsClient.html",
-          "hash": "227xo+IWnZmG9xvlZk529Q=="
+          "hash": "dc/WsjY6vtiPhQJcqVrRHg=="
         }
       },
       "is_incremental": false,
@@ -380,7 +380,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.StreamApi.html",
-          "hash": "xJ1X0qICU9oWhaSVhQrOqg=="
+          "hash": "mevBMoFYv824enZ0h0QzYQ=="
         }
       },
       "is_incremental": false,
@@ -404,7 +404,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Extensions.LeaderboardExtensions.html",
-          "hash": "K03auZXmGWDWgndH6ouMOg=="
+          "hash": "DIo8kAWZLuKzYKXEQ8Sc/A=="
         }
       },
       "is_incremental": false,
@@ -416,7 +416,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Extensions.RaceExtensions.html",
-          "hash": "RgvY7XcrSp31GaXeUmLBFg=="
+          "hash": "96w9jQqlONpr2mwEDeo4WA=="
         }
       },
       "is_incremental": false,
@@ -440,7 +440,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.SRLClient.html",
-          "hash": "XzADEKJCTcREGleyKgZu+A=="
+          "hash": "7ULgTP9Uw3Lh43XzJxvScw=="
         }
       },
       "is_incremental": false,
@@ -452,7 +452,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.SRLParseException.html",
-          "hash": "qi/PoEUtuB7Tbzl4QDmABg=="
+          "hash": "YPnCZQcFEUI3FcLRrCxrXw=="
         }
       },
       "is_incremental": false,
@@ -464,7 +464,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.SRLTimeoutException.html",
-          "hash": "Ekj7gVDk705PO7YPZuy21w=="
+          "hash": "zx9LUH+Af4nRElZxMcnwCA=="
         }
       },
       "is_incremental": false,
@@ -472,11 +472,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docfx/api/SRLApiClient.SRLUser.yml",
+      "source_relative_path": "docfx/api/SRLApiClient.User.SRLUser.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SRLApiClient.SRLUser.html",
-          "hash": "X8gAD90piWAa1ukQ50LuhA=="
+          "relative_path": "api/SRLApiClient.User.SRLUser.html",
+          "hash": "1A9B0w2uaqVChZWr+fUj7g=="
         }
       },
       "is_incremental": false,
@@ -484,11 +484,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "docfx/api/SRLApiClient.UserRole.yml",
+      "source_relative_path": "docfx/api/SRLApiClient.User.UserRole.yml",
       "output": {
         ".html": {
-          "relative_path": "api/SRLApiClient.UserRole.html",
-          "hash": "X0XRoctmA7dQPk+w0Zjkig=="
+          "relative_path": "api/SRLApiClient.User.UserRole.html",
+          "hash": "y54WxnHZVFJzAJHr4xDwmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "docfx/api/SRLApiClient.User.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SRLApiClient.User.html",
+          "hash": "yTvIcY4nVb/YbUJxm40/WA=="
         }
       },
       "is_incremental": false,
@@ -500,7 +512,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.html",
-          "hash": "2mvUmMHvX/fa3b4Mp/flIw=="
+          "hash": "y5w88d755rUFmCeFYr+f8g=="
         }
       },
       "is_incremental": false,
@@ -512,7 +524,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "Vyl7FT7iA3VTsR1Vp2M3JA=="
+          "hash": "FFLSI91K2OQaOUKoUMC8vw=="
         }
       },
       "is_incremental": false,
@@ -570,12 +582,21 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": true,
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
         "incrementalPhase": "build",
         "total_file_count": 0,
-        "skipped_file_count": 0
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -583,31 +604,24 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 41,
-          "skipped_file_count": 10
-        },
         "ConceptualDocumentProcessor": {
-          "can_incremental": true,
+          "can_incremental": false,
           "incrementalPhase": "build",
           "total_file_count": 2,
-          "skipped_file_count": 2
+          "skipped_file_count": 0
         },
-        "TocDocumentProcessor": {
+        "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build",
-          "total_file_count": 0,
+          "total_file_count": 42,
           "skipped_file_count": 0
         }
       }
     },
     {
       "status": {
-        "can_incremental": true,
-        "details": "Can support incremental post processing.",
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
         "incrementalPhase": "postProcessing",
         "total_file_count": 0,
         "skipped_file_count": 0

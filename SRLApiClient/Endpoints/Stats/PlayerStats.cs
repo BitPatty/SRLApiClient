@@ -1,7 +1,4 @@
-﻿using SRLApiClient.Endpoints.Games;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace SRLApiClient.Endpoints.Stats
 {

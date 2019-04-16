@@ -1,0 +1,293 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.User.UserRole
+  commentId: T:SRLApiClient.User.UserRole
+  id: UserRole
+  parent: SRLApiClient.User
+  children:
+  - SRLApiClient.User.UserRole.Admin
+  - SRLApiClient.User.UserRole.Anon
+  - SRLApiClient.User.UserRole.Halfop
+  - SRLApiClient.User.UserRole.Op
+  - SRLApiClient.User.UserRole.Unknown
+  - SRLApiClient.User.UserRole.User
+  - SRLApiClient.User.UserRole.Voice
+  langs:
+  - csharp
+  - vb
+  name: UserRole
+  nameWithType: UserRole
+  fullName: SRLApiClient.User.UserRole
+  type: Enum
+  source:
+    remote:
+      path: SRLApiClient/User/UserRole.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: UserRole
+    path: User/UserRole.cs
+    startLine: 5
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.User
+  summary: "\nThe users permission level\n"
+  example: []
+  syntax:
+    content: public enum UserRole
+    content.vb: Public Enum UserRole
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: SRLApiClient.User.UserRole.Unknown
+  commentId: F:SRLApiClient.User.UserRole.Unknown
+  id: Unknown
+  parent: SRLApiClient.User.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: UserRole.Unknown
+  fullName: SRLApiClient.User.UserRole.Unknown
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/User/UserRole.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Unknown
+    path: User/UserRole.cs
+    startLine: 10
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.User
+  summary: "\nFallback value\n"
+  example: []
+  syntax:
+    content: Unknown = 0
+    return:
+      type: SRLApiClient.User.UserRole
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.User.UserRole.Anon
+  commentId: F:SRLApiClient.User.UserRole.Anon
+  id: Anon
+  parent: SRLApiClient.User.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Anon
+  nameWithType: UserRole.Anon
+  fullName: SRLApiClient.User.UserRole.Anon
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/User/UserRole.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Anon
+    path: User/UserRole.cs
+    startLine: 15
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.User
+  summary: "\nAnonymous permissions\n"
+  example: []
+  syntax:
+    content: Anon = 1
+    return:
+      type: SRLApiClient.User.UserRole
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.User.UserRole.User
+  commentId: F:SRLApiClient.User.UserRole.User
+  id: User
+  parent: SRLApiClient.User.UserRole
+  langs:
+  - csharp
+  - vb
+  name: User
+  nameWithType: UserRole.User
+  fullName: SRLApiClient.User.UserRole.User
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/User/UserRole.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: User
+    path: User/UserRole.cs
+    startLine: 20
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.User
+  summary: "\nUser permissions\n"
+  example: []
+  syntax:
+    content: User = 2
+    return:
+      type: SRLApiClient.User.UserRole
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.User.UserRole.Voice
+  commentId: F:SRLApiClient.User.UserRole.Voice
+  id: Voice
+  parent: SRLApiClient.User.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Voice
+  nameWithType: UserRole.Voice
+  fullName: SRLApiClient.User.UserRole.Voice
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/User/UserRole.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Voice
+    path: User/UserRole.cs
+    startLine: 25
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.User
+  summary: "\nVoice permissions\n"
+  example: []
+  syntax:
+    content: Voice = 3
+    return:
+      type: SRLApiClient.User.UserRole
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.User.UserRole.Halfop
+  commentId: F:SRLApiClient.User.UserRole.Halfop
+  id: Halfop
+  parent: SRLApiClient.User.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Halfop
+  nameWithType: UserRole.Halfop
+  fullName: SRLApiClient.User.UserRole.Halfop
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/User/UserRole.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Halfop
+    path: User/UserRole.cs
+    startLine: 30
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.User
+  summary: "\nHalf Operator permissions\n"
+  example: []
+  syntax:
+    content: Halfop = 4
+    return:
+      type: SRLApiClient.User.UserRole
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.User.UserRole.Op
+  commentId: F:SRLApiClient.User.UserRole.Op
+  id: Op
+  parent: SRLApiClient.User.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Op
+  nameWithType: UserRole.Op
+  fullName: SRLApiClient.User.UserRole.Op
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/User/UserRole.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Op
+    path: User/UserRole.cs
+    startLine: 35
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.User
+  summary: "\nOperator permissions\n"
+  example: []
+  syntax:
+    content: Op = 5
+    return:
+      type: SRLApiClient.User.UserRole
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: SRLApiClient.User.UserRole.Admin
+  commentId: F:SRLApiClient.User.UserRole.Admin
+  id: Admin
+  parent: SRLApiClient.User.UserRole
+  langs:
+  - csharp
+  - vb
+  name: Admin
+  nameWithType: UserRole.Admin
+  fullName: SRLApiClient.User.UserRole.Admin
+  type: Field
+  source:
+    remote:
+      path: SRLApiClient/User/UserRole.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Admin
+    path: User/UserRole.cs
+    startLine: 40
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.User
+  summary: "\nAdmin permissions\n"
+  example: []
+  syntax:
+    content: Admin = 6
+    return:
+      type: SRLApiClient.User.UserRole
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: SRLApiClient.User
+  commentId: N:SRLApiClient.User
+  name: SRLApiClient.User
+  nameWithType: SRLApiClient.User
+  fullName: SRLApiClient.User
+- uid: SRLApiClient.User.UserRole
+  commentId: T:SRLApiClient.User.UserRole
+  parent: SRLApiClient.User
+  name: UserRole
+  nameWithType: UserRole
+  fullName: SRLApiClient.User.UserRole

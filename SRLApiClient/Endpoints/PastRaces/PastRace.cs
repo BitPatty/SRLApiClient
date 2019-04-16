@@ -1,6 +1,6 @@
-﻿using SRLApiClient.Endpoints.Games;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
+using SRLApiClient.Endpoints.Games;
 
 namespace SRLApiClient.Endpoints.PastRaces
 {

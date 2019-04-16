@@ -8,10 +8,6 @@
     name: SRLParseException
   - uid: SRLApiClient.SRLTimeoutException
     name: SRLTimeoutException
-  - uid: SRLApiClient.SRLUser
-    name: SRLUser
-  - uid: SRLApiClient.UserRole
-    name: UserRole
 - uid: SRLApiClient.Endpoints
   name: SRLApiClient.Endpoints
   items:
@@ -91,3 +87,10 @@
     name: LeaderboardExtensions
   - uid: SRLApiClient.Extensions.RaceExtensions
     name: RaceExtensions
+- uid: SRLApiClient.User
+  name: SRLApiClient.User
+  items:
+  - uid: SRLApiClient.User.SRLUser
+    name: SRLUser
+  - uid: SRLApiClient.User.UserRole
+    name: UserRole

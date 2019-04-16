@@ -1,9 +1,9 @@
-﻿using SRLApiClient.Endpoints;
-using SRLApiClient.Endpoints.Players;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using SRLApiClient.Endpoints;
+using SRLApiClient.Endpoints.Players;
 
-namespace SRLApiClient
+namespace SRLApiClient.User
 {
   /// <summary>
   /// User account used for authenticated <see cref="SRLClient"/> requests
@@ -54,7 +54,7 @@ namespace SRLApiClient
     public async Task<bool> VerifyAsync()
     {
       Token t = await _srlClient.GetAsync<Token>("/token").ConfigureAwait(false);
-      if (t != null && t.Role > UserRole.Anon)
+      if (t?.Role > UserRole.Anon)
       {
         Player p = await _srlClient.GetAsync<Player>($"/players/{t.Name}").ConfigureAwait(false);
         if (p != null)
@@ -137,46 +137,5 @@ namespace SRLApiClient
         }
       }
     }
-  }
-
-  /// <summary>
-  /// The users permission level
-  /// </summary>
-  public enum UserRole
-  {
-    /// <summary>
-    /// Fallback value
-    /// </summary>
-    Unknown,
-
-    /// <summary>
-    /// Anonymous permissions
-    /// </summary>
-    Anon,
-
-    /// <summary>
-    /// User permissions
-    /// </summary>
-    User,
-
-    /// <summary>
-    /// Voice permissions
-    /// </summary>
-    Voice,
-
-    /// <summary>
-    /// Half Operator permissions
-    /// </summary>
-    Halfop,
-
-    /// <summary>
-    /// Operator permissions
-    /// </summary>
-    Op,
-
-    /// <summary>
-    /// Admin permissions
-    /// </summary>
-    Admin
   }
 }

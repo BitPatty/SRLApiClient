@@ -30,6 +30,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using SRLApiClient.Endpoints;
+using SRLApiClient.User;
 
 namespace SRLApiClient
 {
@@ -403,7 +404,7 @@ namespace SRLApiClient
             }
           }
         }
-        catch (HttpRequestException ex)
+        catch
         {
           throw;
         }

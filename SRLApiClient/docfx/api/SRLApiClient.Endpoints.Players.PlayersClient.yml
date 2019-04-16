@@ -21,11 +21,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PlayersClient
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -69,11 +69,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -105,11 +105,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 24
+    startLine: 25
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -144,11 +144,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -183,11 +183,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Search
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 68
+    startLine: 69
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -222,11 +222,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SearchAsync
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 87
+    startLine: 88
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -261,11 +261,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/PlayersClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Edit
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 114
+    startLine: 115
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players

@@ -25,11 +25,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PlayerStats
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 10
+    startLine: 7
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -90,11 +90,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Rank
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 16
+    startLine: 13
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -146,11 +146,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalRaces
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 22
+    startLine: 19
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -202,11 +202,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FirstRace
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 28
+    startLine: 25
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -258,11 +258,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FirstRaceDate
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 34
+    startLine: 31
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -314,11 +314,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalTimePlayed
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 40
+    startLine: 37
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -370,11 +370,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalFirstPlace
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 46
+    startLine: 43
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -426,11 +426,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalSecondPlace
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 52
+    startLine: 49
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -482,11 +482,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalThirdPlace
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 58
+    startLine: 55
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -538,11 +538,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalQuits
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 64
+    startLine: 61
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -594,11 +594,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/PlayerStats.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalDisqualifications
     path: Endpoints/Stats/PlayerStats.cs
-    startLine: 70
+    startLine: 67
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats

@@ -7,8 +7,6 @@ items:
   - SRLApiClient.SRLClient
   - SRLApiClient.SRLParseException
   - SRLApiClient.SRLTimeoutException
-  - SRLApiClient.SRLUser
-  - SRLApiClient.UserRole
   langs:
   - csharp
   - vb
@@ -35,18 +33,6 @@ references:
   name: SRLClient
   nameWithType: SRLClient
   fullName: SRLApiClient.SRLClient
-- uid: SRLApiClient.SRLUser
-  commentId: T:SRLApiClient.SRLUser
-  parent: SRLApiClient
-  name: SRLUser
-  nameWithType: SRLUser
-  fullName: SRLApiClient.SRLUser
-- uid: SRLApiClient.UserRole
-  commentId: T:SRLApiClient.UserRole
-  parent: SRLApiClient
-  name: UserRole
-  nameWithType: UserRole
-  fullName: SRLApiClient.UserRole
 - uid: SRLApiClient
   commentId: N:SRLApiClient
   name: SRLApiClient
