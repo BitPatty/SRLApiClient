@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/StreamApi.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StreamApi
     path: Endpoints/StreamApi.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/StreamApi.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unknown
     path: Endpoints/StreamApi.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/StreamApi.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Twitch
     path: Endpoints/StreamApi.cs
@@ -119,7 +119,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/StreamApi.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Hitbox
     path: Endpoints/StreamApi.cs

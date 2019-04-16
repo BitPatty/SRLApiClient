@@ -7,16 +7,11 @@ namespace Tests
 {
   public class LeaderboardExtensions
   {
-    internal SRLClient _client { get; set; }
-
-    [SetUp]
-    public void Setup()
-    {
-      _client = new SRLClient();
-    }
+    internal static SRLClient _client { get; set; } = new SRLClient(poolSize: 10);
 
     [Test]
     [Category("LeaderboardExtensions")]
+    [Parallelizable]
     public void ContainsPlayer()
     {
       Leaderboard board = _client.Leaderboards.Get("sms");
@@ -26,6 +21,7 @@ namespace Tests
 
     [Test]
     [Category("LeaderboardExtensions")]
+    [Parallelizable]
     public void FindPlayer()
     {
       Leaderboard board = _client.Leaderboards.Get("sms");

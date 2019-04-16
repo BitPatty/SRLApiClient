@@ -13,16 +13,11 @@ namespace Tests
 {
   public class EndpointsAsync
   {
-    internal SRLClient _client { get; set; }
-
-    [SetUp]
-    public void Setup()
-    {
-      _client = new SRLClient();
-    }
+    internal static SRLClient _client { get; set; } = new SRLClient(poolSize: 10);
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void Countries()
     {
       ReadOnlyCollection<string> countries = _client.Countries.GetAsync().Result;
@@ -31,6 +26,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void Games()
     {
       Game game = _client.Games.GetAsync("sms").Result;
@@ -39,6 +35,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void Games_Rules()
     {
       string rules = _client.Games.GetRulesAsync("sms").Result;
@@ -47,6 +44,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void Races_Active()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActiveAsync().Result;
@@ -56,6 +54,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void RacesAndPlayers()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActiveAsync().Result;
@@ -69,6 +68,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void PastRaces_Paginated()
     {
       ReadOnlyCollection<PastRace> pastRaces = _client.PastRaces.GetAsync().Result;
@@ -85,6 +85,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void PastRaces_GameFilter()
     {
       foreach (PastRace pr in _client.PastRaces.GetAsync(gameAbbreviation: "sms").Result)
@@ -93,6 +94,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void PastRacesAndPlayers()
     {
       PastRace pastRace = _client.PastRaces.GetAsync("239545").Result;
@@ -104,6 +106,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void Leaderboards()
     {
       Leaderboard leaderboard = _client.Leaderboards.GetAsync("sms").Result;
@@ -114,6 +117,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void Stats_SRL()
     {
       ReadOnlyCollection<SRLStats> stats = _client.Stats.GetMonthlySRLStatsAsync().Result;
@@ -123,6 +127,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void Stats_Game()
     {
       GameStats stats = _client.Stats.GetGameStatsAsync("sms").Result;
@@ -132,6 +137,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void Stats_Player()
     {
       PlayerStats stats = _client.Stats.GetPlayerStatsAsync("psychonauter").Result;
@@ -141,6 +147,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
+    [Parallelizable]
     public void Stats_PlayerAndGame()
     {
       PlayerStats stats = _client.Stats.GetPlayerStatsAsync("psychonauter", "ffx").Result;

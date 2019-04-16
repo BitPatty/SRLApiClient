@@ -5,7 +5,7 @@ items:
   id: SRLClient
   parent: SRLApiClient
   children:
-  - SRLApiClient.SRLClient.#ctor(System.String)
+  - SRLApiClient.SRLClient.#ctor(System.Int32,System.String)
   - SRLApiClient.SRLClient.Authenticate(System.String,System.String,System.Boolean)
   - SRLApiClient.SRLClient.Countries
   - SRLApiClient.SRLClient.DeSerialize``1(System.IO.Stream)
@@ -40,11 +40,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SRLClient
     path: SRLClient.cs
-    startLine: 40
+    startLine: 38
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -89,11 +89,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Host
     path: SRLClient.cs
-    startLine: 45
+    startLine: 43
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -126,11 +126,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: User
     path: SRLClient.cs
-    startLine: 54
+    startLine: 56
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -163,11 +163,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: IsAuthenticated
     path: SRLClient.cs
-    startLine: 61
+    startLine: 63
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -200,11 +200,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Games
     path: SRLClient.cs
-    startLine: 66
+    startLine: 68
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -237,11 +237,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Players
     path: SRLClient.cs
-    startLine: 71
+    startLine: 73
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -274,11 +274,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Leaderboards
     path: SRLClient.cs
-    startLine: 76
+    startLine: 78
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -311,11 +311,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Races
     path: SRLClient.cs
-    startLine: 81
+    startLine: 83
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -348,11 +348,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PastRaces
     path: SRLClient.cs
-    startLine: 86
+    startLine: 88
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -385,11 +385,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Countries
     path: SRLClient.cs
-    startLine: 91
+    startLine: 93
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -422,11 +422,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Stats
     path: SRLClient.cs
-    startLine: 96
+    startLine: 98
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -459,11 +459,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RequestTimeout
     path: SRLClient.cs
-    startLine: 103
+    startLine: 105
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -482,37 +482,40 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: SRLApiClient.SRLClient.#ctor(System.String)
-  commentId: M:SRLApiClient.SRLClient.#ctor(System.String)
-  id: '#ctor(System.String)'
+- uid: SRLApiClient.SRLClient.#ctor(System.Int32,System.String)
+  commentId: M:SRLApiClient.SRLClient.#ctor(System.Int32,System.String)
+  id: '#ctor(System.Int32,System.String)'
   parent: SRLApiClient.SRLClient
   langs:
   - csharp
   - vb
-  name: SRLClient(String)
-  nameWithType: SRLClient.SRLClient(String)
-  fullName: SRLApiClient.SRLClient.SRLClient(System.String)
+  name: SRLClient(Int32, String)
+  nameWithType: SRLClient.SRLClient(Int32, String)
+  fullName: SRLApiClient.SRLClient.SRLClient(System.Int32, System.String)
   type: Constructor
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: SRLClient.cs
-    startLine: 118
+    startLine: 116
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
-  summary: "\nCreates a new SRL Client\n"
+  summary: "\nInitializes a new SRL Client\n"
   example: []
   syntax:
-    content: public SRLClient(string host = "speedrunslive.com")
+    content: public SRLClient(int poolSize = 1, string host = "speedrunslive.com")
     parameters:
+    - id: poolSize
+      type: System.Int32
+      description: The HTTP client pool size
     - id: host
       type: System.String
       description: The custom host
-    content.vb: Public Sub New(host As String = "speedrunslive.com")
+    content.vb: Public Sub New(poolSize As Integer = 1, host As String = "speedrunslive.com")
   overload: SRLApiClient.SRLClient.#ctor*
   modifiers.csharp:
   - public
@@ -532,11 +535,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: SRLClient.cs
-    startLine: 155
+    startLine: 141
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -584,11 +587,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: SRLClient.cs
-    startLine: 165
+    startLine: 151
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -636,11 +639,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Put
     path: SRLClient.cs
-    startLine: 186
+    startLine: 172
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -681,11 +684,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PutAsync
     path: SRLClient.cs
-    startLine: 194
+    startLine: 180
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -726,11 +729,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Post
     path: SRLClient.cs
-    startLine: 206
+    startLine: 192
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -771,11 +774,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PostAsync
     path: SRLClient.cs
-    startLine: 214
+    startLine: 200
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -816,11 +819,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SubmitPayloadAsync
     path: SRLClient.cs
-    startLine: 227
+    startLine: 213
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -864,11 +867,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: DeSerialize
     path: SRLClient.cs
-    startLine: 261
+    startLine: 235
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -911,11 +914,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: JsonSerialize
     path: SRLClient.cs
-    startLine: 272
+    startLine: 246
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -953,11 +956,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Logout
     path: SRLClient.cs
-    startLine: 312
+    startLine: 280
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -985,11 +988,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: ReAuthenticate
     path: SRLClient.cs
-    startLine: 327
+    startLine: 293
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -1020,11 +1023,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Authenticate
     path: SRLClient.cs
-    startLine: 336
+    startLine: 302
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -1065,11 +1068,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Dispose
     path: SRLClient.cs
-    startLine: 424
+    startLine: 385
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -1559,6 +1562,13 @@ references:
   name: SRLClient
   nameWithType: SRLClient.SRLClient
   fullName: SRLApiClient.SRLClient.SRLClient
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: SRLApiClient.Exceptions.SRLParseException
   commentId: T:SRLApiClient.Exceptions.SRLParseException
   name: SRLParseException

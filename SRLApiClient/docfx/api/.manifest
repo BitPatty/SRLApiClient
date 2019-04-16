@@ -193,7 +193,7 @@
   "SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)": "SRLApiClient.Extensions.RaceExtensions.yml",
   "SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)": "SRLApiClient.Extensions.RaceExtensions.yml",
   "SRLApiClient.SRLClient": "SRLApiClient.SRLClient.yml",
-  "SRLApiClient.SRLClient.#ctor(System.String)": "SRLApiClient.SRLClient.yml",
+  "SRLApiClient.SRLClient.#ctor(System.Int32,System.String)": "SRLApiClient.SRLClient.yml",
   "SRLApiClient.SRLClient.Authenticate(System.String,System.String,System.Boolean)": "SRLApiClient.SRLClient.yml",
   "SRLApiClient.SRLClient.Countries": "SRLApiClient.SRLClient.yml",
   "SRLApiClient.SRLClient.DeSerialize``1(System.IO.Stream)": "SRLApiClient.SRLClient.yml",

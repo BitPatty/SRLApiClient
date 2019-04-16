@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/SRLData.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SRLData
     path: Endpoints/SRLData.cs
@@ -81,7 +81,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/SRLData.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Deserialized
     path: Endpoints/SRLData.cs

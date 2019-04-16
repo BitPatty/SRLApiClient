@@ -2082,12 +2082,12 @@ references:
   commentId: T:SRLApiClient.SRLClient
   fullName: SRLApiClient.SRLClient
   nameWithType: SRLClient
-- uid: SRLApiClient.SRLClient.#ctor(System.String)
-  name: SRLClient(String)
-  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient__ctor_System_String_
-  commentId: M:SRLApiClient.SRLClient.#ctor(System.String)
-  fullName: SRLApiClient.SRLClient.SRLClient(System.String)
-  nameWithType: SRLClient.SRLClient(String)
+- uid: SRLApiClient.SRLClient.#ctor(System.Int32,System.String)
+  name: SRLClient(Int32, String)
+  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient__ctor_System_Int32_System_String_
+  commentId: M:SRLApiClient.SRLClient.#ctor(System.Int32,System.String)
+  fullName: SRLApiClient.SRLClient.SRLClient(System.Int32, System.String)
+  nameWithType: SRLClient.SRLClient(Int32, String)
 - uid: SRLApiClient.SRLClient.#ctor*
   name: SRLClient
   href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient__ctor_

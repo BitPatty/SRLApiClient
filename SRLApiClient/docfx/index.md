@@ -27,6 +27,10 @@ _none_
 
 ## Changelog
 
+#### v1.0.0-rc1
+
+- Added an HTTP client pool to run multiple requests in parallel
+
 #### v0.10.0-beta2
 
 - Added paginated requests for past races

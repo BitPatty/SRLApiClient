@@ -22,11 +22,9 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Reflection;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using SRLApiClient.Endpoints;
@@ -48,6 +46,10 @@ namespace SRLApiClient
     private string _apiUrl => "http://api." + Host;
     private string _authUrl => "http://login." + Host + ":9000/login";
     private string _baseUrl => "http://" + Host;
+
+    private readonly HttpClientPool _clientPool;
+    private CookieContainer _cookieJar = new CookieContainer();
+    private readonly HttpClientHandler _clientHandler = new HttpClientHandler();
 
     /// <summary>
     /// The user account associated with the client (if authenticated)
@@ -107,34 +109,18 @@ namespace SRLApiClient
       set { _requestTimeout = (value < TimeSpan.FromMilliseconds(1000)) ? value : TimeSpan.FromMilliseconds(1000); }
     }
 
-    private CookieContainer _cookieJar = new CookieContainer();
-    private readonly HttpClientHandler _clientHandler = new HttpClientHandler();
-    private readonly HttpClient _client;
-    private readonly SemaphoreSlim _slim = new SemaphoreSlim(1, 1);
-
     /// <summary>
-    /// Creates a new SRL Client
+    /// Initializes a new SRL Client
     /// </summary>
+    /// <param name="poolSize">The HTTP client pool size</param>
     /// <param name="host">The custom host</param>
-    public SRLClient(string host = "speedrunslive.com")
+    public SRLClient(int poolSize = 1, string host = "speedrunslive.com")
     {
       if (String.IsNullOrWhiteSpace(host)) throw new ArgumentException(nameof(host), "Parameter cannot be empty");
 
       Host = host;
       _clientHandler.CookieContainer = _cookieJar;
-      _clientHandler.AllowAutoRedirect = false;
-
-      _client = new HttpClient(_clientHandler)
-      {
-        BaseAddress = new Uri(_baseUrl),
-        Timeout = _requestTimeout,
-      };
-
-      _client.DefaultRequestHeaders.Accept.Clear();
-      _client.DefaultRequestHeaders.Add("User-Agent", new List<string>() {
-        Assembly.GetCallingAssembly().GetName().Name + " " + Assembly.GetCallingAssembly().GetName().Version,
-        Assembly.GetExecutingAssembly().GetName().Name + " " + Assembly.GetExecutingAssembly().GetName().Version
-      });
+      _clientPool = new HttpClientPool(_clientHandler, poolSize, _baseUrl, RequestTimeout);
 
       Games = new Endpoints.Games.GamesClient(this);
       Players = new Endpoints.Players.PlayersClient(this);
@@ -228,28 +214,16 @@ namespace SRLApiClient
     public async Task<bool> SubmitPayloadAsync(string endpoint, Dictionary<string, string> data, HttpMethod method)
     {
       string payload = JsonSerialize(data);
-      await _slim.WaitAsync().ConfigureAwait(false);
 
-      try
+      using (HttpRequestMessage req = new HttpRequestMessage(method, String.Concat(_apiUrl, endpoint)) { Content = new StringContent(payload) })
       {
-        using (HttpRequestMessage req = new HttpRequestMessage(method, String.Concat(_apiUrl, endpoint)) { Content = new StringContent(payload) })
+        req.Headers.Accept.Clear();
+        req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+        using (HttpResponseMessage r = await _clientPool.SendAsync(req).ConfigureAwait(false))
         {
-          req.Headers.Accept.Clear();
-          req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-
-          using (HttpResponseMessage r = await _client.SendAsync(req, HttpCompletionOption.ResponseHeadersRead).ConfigureAwait(false))
-          {
-            return r.IsSuccessStatusCode;
-          }
+          return r.IsSuccessStatusCode;
         }
-      }
-      catch
-      {
-        throw;
-      }
-      finally
-      {
-        _slim.Release();
       }
     }
 
@@ -291,19 +265,13 @@ namespace SRLApiClient
     /// <exception cref="SRLTimeoutException" />
     private async Task<Stream> GetStreamAsync(string url)
     {
-      await _slim.WaitAsync().ConfigureAwait(false);
-
       try
       {
-        return await _client.GetStreamAsync(url).ConfigureAwait(false);
+        return await _clientPool.GetStreamAsync(url).ConfigureAwait(false);
       }
       catch (TaskCanceledException ex)
       {
         throw new SRLTimeoutException("Request exceeded the timeout limit", ex);
-      }
-      finally
-      {
-        _slim.Release();
       }
     }
 
@@ -312,13 +280,11 @@ namespace SRLApiClient
     /// </summary>
     public void Logout()
     {
-      _slim.Wait();
       _cookieJar = new CookieContainer();
       _clientHandler.CookieContainer = _cookieJar;
       _userName = null;
       _userPassword = null;
       User = null;
-      _slim.Release();
     }
 
     /// <summary>
@@ -341,7 +307,6 @@ namespace SRLApiClient
 
       if (IsAuthenticated) Logout();
 
-      _slim.Wait();
       _cookieJar = new CookieContainer();
       _clientHandler.CookieContainer = _cookieJar;
 
@@ -363,7 +328,7 @@ namespace SRLApiClient
 
         try
         {
-          using (HttpResponseMessage resp = _client.SendAsync(authRequest, HttpCompletionOption.ResponseHeadersRead).Result)
+          using (HttpResponseMessage resp = _clientPool.SendAsync(authRequest).Result)
           {
             if (resp.IsSuccessStatusCode || resp.StatusCode == HttpStatusCode.MovedPermanently)
             {
@@ -394,7 +359,7 @@ namespace SRLApiClient
               {
                 authCheckRequest.Headers.Accept.Clear();
                 authCheckRequest.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                using (HttpResponseMessage authCheckResponse = _client.SendAsync(authCheckRequest).Result)
+                using (HttpResponseMessage authCheckResponse = _clientPool.SendAsync(authCheckRequest).Result)
                 {
                   if (authCheckResponse.IsSuccessStatusCode)
                   {
@@ -409,10 +374,6 @@ namespace SRLApiClient
         {
           throw;
         }
-        finally
-        {
-          _slim.Release();
-        }
       }
 
       return User?.Verify() ?? false;
@@ -424,9 +385,8 @@ namespace SRLApiClient
     /// </summary>
     public void Dispose()
     {
-      _client?.Dispose();
       _clientHandler?.Dispose();
-      _slim?.Dispose();
+      _clientPool?.Dispose();
     }
   }
 }
