@@ -32,12 +32,6 @@ references:
   name: RaceState
   nameWithType: RaceState
   fullName: SRLApiClient.Endpoints.RaceState
-- uid: SRLApiClient.Endpoints.StreamApi
-  commentId: T:SRLApiClient.Endpoints.StreamApi
-  parent: SRLApiClient.Endpoints
-  name: StreamApi
-  nameWithType: StreamApi
-  fullName: SRLApiClient.Endpoints.StreamApi
 - uid: SRLApiClient.Endpoints.SRLDataType
   commentId: T:SRLApiClient.Endpoints.SRLDataType
   parent: SRLApiClient.Endpoints
@@ -55,6 +49,12 @@ references:
   name: SRLEndpoint.GameRules
   nameWithType: SRLEndpoint.GameRules
   fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules
+- uid: SRLApiClient.Endpoints.StreamApi
+  commentId: T:SRLApiClient.Endpoints.StreamApi
+  parent: SRLApiClient.Endpoints
+  name: StreamApi
+  nameWithType: StreamApi
+  fullName: SRLApiClient.Endpoints.StreamApi
 - uid: SRLApiClient.Endpoints
   commentId: N:SRLApiClient.Endpoints
   name: SRLApiClient.Endpoints

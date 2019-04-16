@@ -17,12 +17,12 @@ items:
   type: Enum
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/StreamApi.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StreamApi
-    path: Endpoints/Enums.cs
-    startLine: 79
+    path: Endpoints/StreamApi.cs
+    startLine: 6
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -50,12 +50,12 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/StreamApi.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unknown
-    path: Endpoints/Enums.cs
-    startLine: 84
+    path: Endpoints/StreamApi.cs
+    startLine: 11
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -84,12 +84,12 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/StreamApi.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Twitch
-    path: Endpoints/Enums.cs
-    startLine: 89
+    path: Endpoints/StreamApi.cs
+    startLine: 16
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -118,12 +118,12 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/StreamApi.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Hitbox
-    path: Endpoints/Enums.cs
-    startLine: 94
+    path: Endpoints/StreamApi.cs
+    startLine: 21
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints

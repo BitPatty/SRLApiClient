@@ -20,11 +20,11 @@ items:
   type: Enum
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/EntrantState.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: EntrantState
-    path: Endpoints/Enums.cs
+    path: Endpoints/EntrantState.cs
     startLine: 5
   assemblies:
   - SRLApiClient
@@ -53,11 +53,11 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/EntrantState.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unknown
-    path: Endpoints/Enums.cs
+    path: Endpoints/EntrantState.cs
     startLine: 10
   assemblies:
   - SRLApiClient
@@ -88,11 +88,11 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/EntrantState.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Entered
-    path: Endpoints/Enums.cs
+    path: Endpoints/EntrantState.cs
     startLine: 15
   assemblies:
   - SRLApiClient
@@ -123,11 +123,11 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/EntrantState.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Ready
-    path: Endpoints/Enums.cs
+    path: Endpoints/EntrantState.cs
     startLine: 20
   assemblies:
   - SRLApiClient
@@ -158,11 +158,11 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/EntrantState.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Done
-    path: Endpoints/Enums.cs
+    path: Endpoints/EntrantState.cs
     startLine: 25
   assemblies:
   - SRLApiClient
@@ -193,11 +193,11 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/EntrantState.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Forfeit
-    path: Endpoints/Enums.cs
+    path: Endpoints/EntrantState.cs
     startLine: 30
   assemblies:
   - SRLApiClient
@@ -228,11 +228,11 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
+      path: SRLApiClient/Endpoints/EntrantState.cs
       branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Disqualified
-    path: Endpoints/Enums.cs
+    path: Endpoints/EntrantState.cs
     startLine: 35
   assemblies:
   - SRLApiClient
