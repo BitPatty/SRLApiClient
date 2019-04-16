@@ -15,8 +15,6 @@
     name: SRLDataType
   - uid: SRLApiClient.Endpoints.SRLEndpoint
     name: SRLEndpoint
-  - uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules
-    name: SRLEndpoint.GameRules
   - uid: SRLApiClient.Endpoints.StreamApi
     name: StreamApi
 - uid: SRLApiClient.Endpoints.Countries

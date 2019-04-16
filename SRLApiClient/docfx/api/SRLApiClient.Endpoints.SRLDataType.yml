@@ -46,7 +46,6 @@ items:
   - SRLApiClient.Endpoints.Players.Player
   - SRLApiClient.Endpoints.Races.Entrant
   - SRLApiClient.Endpoints.Races.Race
-  - SRLApiClient.Endpoints.SRLEndpoint.GameRules
   - SRLApiClient.Endpoints.Stats.GameStats
   - SRLApiClient.Endpoints.Stats.PlayerStats
   - SRLApiClient.Endpoints.Stats.SRLStats

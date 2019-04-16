@@ -8,7 +8,6 @@ items:
   - SRLApiClient.Endpoints.RaceState
   - SRLApiClient.Endpoints.SRLDataType
   - SRLApiClient.Endpoints.SRLEndpoint
-  - SRLApiClient.Endpoints.SRLEndpoint.GameRules
   - SRLApiClient.Endpoints.StreamApi
   langs:
   - csharp
@@ -44,11 +43,6 @@ references:
   name: SRLEndpoint
   nameWithType: SRLEndpoint
   fullName: SRLApiClient.Endpoints.SRLEndpoint
-- uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  commentId: T:SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  name: SRLEndpoint.GameRules
-  nameWithType: SRLEndpoint.GameRules
-  fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules
 - uid: SRLApiClient.Endpoints.StreamApi
   commentId: T:SRLApiClient.Endpoints.StreamApi
   parent: SRLApiClient.Endpoints

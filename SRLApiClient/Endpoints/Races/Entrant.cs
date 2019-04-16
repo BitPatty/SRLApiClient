@@ -18,7 +18,7 @@ namespace SRLApiClient.Endpoints.Races
     /// The placement returned by srl. If the player hasn't finished yet the value will be > 9990
     /// </summary>
     [DataMember(Name = "place", IsRequired = true)]
-    protected int _place { get; set; }
+    private int _place { get; set; }
 
     /// <summary>
     /// The players rank (-1 if not finished)

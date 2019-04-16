@@ -806,19 +806,6 @@ references:
   commentId: T:SRLApiClient.Endpoints.Players.Player
   fullName: SRLApiClient.Endpoints.Players.Player
   nameWithType: Player
-- uid: SRLApiClient.Endpoints.Players.Player._api
-  name: _api
-  href: api/SRLApiClient.Endpoints.Players.Player.html#SRLApiClient_Endpoints_Players_Player__api
-  commentId: P:SRLApiClient.Endpoints.Players.Player._api
-  fullName: SRLApiClient.Endpoints.Players.Player._api
-  nameWithType: Player._api
-- uid: SRLApiClient.Endpoints.Players.Player._api*
-  name: _api
-  href: api/SRLApiClient.Endpoints.Players.Player.html#SRLApiClient_Endpoints_Players_Player__api_
-  commentId: Overload:SRLApiClient.Endpoints.Players.Player._api
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.Players.Player._api
-  nameWithType: Player._api
 - uid: SRLApiClient.Endpoints.Players.Player.Channel
   name: Channel
   href: api/SRLApiClient.Endpoints.Players.Player.html#SRLApiClient_Endpoints_Players_Player_Channel
@@ -1006,19 +993,6 @@ references:
   commentId: T:SRLApiClient.Endpoints.Races.Entrant
   fullName: SRLApiClient.Endpoints.Races.Entrant
   nameWithType: Entrant
-- uid: SRLApiClient.Endpoints.Races.Entrant._place
-  name: _place
-  href: api/SRLApiClient.Endpoints.Races.Entrant.html#SRLApiClient_Endpoints_Races_Entrant__place
-  commentId: P:SRLApiClient.Endpoints.Races.Entrant._place
-  fullName: SRLApiClient.Endpoints.Races.Entrant._place
-  nameWithType: Entrant._place
-- uid: SRLApiClient.Endpoints.Races.Entrant._place*
-  name: _place
-  href: api/SRLApiClient.Endpoints.Races.Entrant.html#SRLApiClient_Endpoints_Races_Entrant__place_
-  commentId: Overload:SRLApiClient.Endpoints.Races.Entrant._place
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.Races.Entrant._place
-  nameWithType: Entrant._place
 - uid: SRLApiClient.Endpoints.Races.Entrant.Name
   name: Name
   href: api/SRLApiClient.Endpoints.Races.Entrant.html#SRLApiClient_Endpoints_Races_Entrant_Name
@@ -1116,32 +1090,6 @@ references:
   commentId: T:SRLApiClient.Endpoints.Races.Race
   fullName: SRLApiClient.Endpoints.Races.Race
   nameWithType: Race
-- uid: SRLApiClient.Endpoints.Races.Race._entrants
-  name: _entrants
-  href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race__entrants
-  commentId: P:SRLApiClient.Endpoints.Races.Race._entrants
-  fullName: SRLApiClient.Endpoints.Races.Race._entrants
-  nameWithType: Race._entrants
-- uid: SRLApiClient.Endpoints.Races.Race._entrants*
-  name: _entrants
-  href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race__entrants_
-  commentId: Overload:SRLApiClient.Endpoints.Races.Race._entrants
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.Races.Race._entrants
-  nameWithType: Race._entrants
-- uid: SRLApiClient.Endpoints.Races.Race._state
-  name: _state
-  href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race__state
-  commentId: P:SRLApiClient.Endpoints.Races.Race._state
-  fullName: SRLApiClient.Endpoints.Races.Race._state
-  nameWithType: Race._state
-- uid: SRLApiClient.Endpoints.Races.Race._state*
-  name: _state
-  href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race__state_
-  commentId: Overload:SRLApiClient.Endpoints.Races.Race._state
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.Races.Race._state
-  nameWithType: Race._state
 - uid: SRLApiClient.Endpoints.Races.Race.Entrants
   name: Entrants
   href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race_Entrants
@@ -1439,25 +1387,6 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Endpoints.SRLEndpoint.BasePath
   nameWithType: SRLEndpoint.BasePath
-- uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  name: SRLEndpoint.GameRules
-  href: api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html
-  commentId: T:SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  nameWithType: SRLEndpoint.GameRules
-- uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  name: Rules
-  href: api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html#SRLApiClient_Endpoints_SRLEndpoint_GameRules_Rules
-  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  nameWithType: SRLEndpoint.GameRules.Rules
-- uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules*
-  name: Rules
-  href: api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html#SRLApiClient_Endpoints_SRLEndpoint_GameRules_Rules_
-  commentId: Overload:SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  nameWithType: SRLEndpoint.GameRules.Rules
 - uid: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
   name: SrlClient
   href: api/SRLApiClient.Endpoints.SRLEndpoint.html#SRLApiClient_Endpoints_SRLEndpoint_SrlClient

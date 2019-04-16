@@ -109,6 +109,19 @@ namespace SRLApiClient.Endpoints.Games
     }
 
     /// <summary>
+    /// Rules object
+    /// </summary>
+    [DataContract]
+    private sealed class GameRules : SRLDataType
+    {
+      /// <summary>
+      /// The games rules defined on SRL (HTML format)
+      /// </summary>
+      [DataMember(Name = "rules", IsRequired = true)]
+      public string Rules { get; private set; }
+    }
+
+    /// <summary>
     /// Gets the rules for a game synchronously
     /// </summary>
     /// <param name="g">The game</param>

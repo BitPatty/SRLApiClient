@@ -59,7 +59,7 @@ namespace SRLApiClient.Endpoints.Races
     /// The races current state
     /// </summary>
     [DataMember(Name = "state", IsRequired = true)]
-    protected int _state { get; set; }
+    private int _state { get; set; }
 
     /// <summary>
     /// The races current state text
@@ -83,7 +83,7 @@ namespace SRLApiClient.Endpoints.Races
     /// The list of race entrants
     /// </summary>
     [DataMember(Name = "entrants", IsRequired = true)]
-    protected Dictionary<string, Entrant> _entrants { get; set; }
+    private Dictionary<string, Entrant> _entrants { get; set; }
 
     /// <summary>
     /// The list of race entrants

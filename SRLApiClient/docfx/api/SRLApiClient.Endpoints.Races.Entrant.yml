@@ -5,7 +5,6 @@ items:
   id: Entrant
   parent: SRLApiClient.Endpoints.Races
   children:
-  - SRLApiClient.Endpoints.Races.Entrant._place
   - SRLApiClient.Endpoints.Races.Entrant.Name
   - SRLApiClient.Endpoints.Races.Entrant.Place
   - SRLApiClient.Endpoints.Races.Entrant.State
@@ -130,60 +129,6 @@ items:
   - Public
   - Get
   - Protected Set
-- uid: SRLApiClient.Endpoints.Races.Entrant._place
-  commentId: P:SRLApiClient.Endpoints.Races.Entrant._place
-  id: _place
-  parent: SRLApiClient.Endpoints.Races.Entrant
-  langs:
-  - csharp
-  - vb
-  name: _place
-  nameWithType: Entrant._place
-  fullName: SRLApiClient.Endpoints.Races.Entrant._place
-  type: Property
-  source:
-    remote:
-      path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: paginated-requests
-      repo: git@github.com:BitPatty/SRLApiClient.git
-    id: _place
-    path: Endpoints/Races/Entrant.cs
-    startLine: 19
-  assemblies:
-  - SRLApiClient
-  namespace: SRLApiClient.Endpoints.Races
-  summary: "\nThe placement returned by srl. If the player hasn&apos;t finished yet the value will be > 9990\n"
-  example: []
-  syntax:
-    content: >-
-      [DataMember(Name = "place", IsRequired = true)]
-
-      protected int _place { get; set; }
-    parameters: []
-    return:
-      type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="place", IsRequired:=True)>
-
-      Protected Property _place As Integer
-  overload: SRLApiClient.Endpoints.Races.Entrant._place*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: place
-    - name: IsRequired
-      type: System.Boolean
-      value: true
-  modifiers.csharp:
-  - protected
-  - get
-  - set
-  modifiers.vb:
-  - Protected
 - uid: SRLApiClient.Endpoints.Races.Entrant.Place
   commentId: P:SRLApiClient.Endpoints.Races.Entrant.Place
   id: Place
@@ -809,11 +754,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: SRLApiClient.Endpoints.Races.Entrant._place*
-  commentId: Overload:SRLApiClient.Endpoints.Races.Entrant._place
-  name: _place
-  nameWithType: Entrant._place
-  fullName: SRLApiClient.Endpoints.Races.Entrant._place
+- uid: SRLApiClient.Endpoints.Races.Entrant.Place*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Entrant.Place
+  name: Place
+  nameWithType: Entrant.Place
+  fullName: SRLApiClient.Endpoints.Races.Entrant.Place
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -821,11 +766,6 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: SRLApiClient.Endpoints.Races.Entrant.Place*
-  commentId: Overload:SRLApiClient.Endpoints.Races.Entrant.Place
-  name: Place
-  nameWithType: Entrant.Place
-  fullName: SRLApiClient.Endpoints.Races.Entrant.Place
 - uid: SRLApiClient.Endpoints.Races.Entrant.State
   commentId: P:SRLApiClient.Endpoints.Races.Entrant.State
   isExternal: true

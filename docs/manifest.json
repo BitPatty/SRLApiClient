@@ -47,7 +47,7 @@
           "hash": "VaxsNwXToAO8CMWeY5+6zQ=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -68,7 +68,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Games.GamesClient.html",
-          "hash": "KWsCwyk8eNJbR/5KO8Xk0w=="
+          "hash": "kEdX2VBNvAobuJ1ieAkeMA=="
         }
       },
       "is_incremental": true,
@@ -188,7 +188,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Players.Player.html",
-          "hash": "X2EzkSW/82TR/jBS/w9LWw=="
+          "hash": "RRr4FsBAPr3AyI1GUCY7fg=="
         }
       },
       "is_incremental": true,
@@ -227,7 +227,7 @@
           "hash": "EJtllBz2YIZB/uEAFRP8CA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -236,7 +236,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Races.Entrant.html",
-          "hash": "jMdBRv7NypQrr4DpG2fZag=="
+          "hash": "Fh6jyNfv2y0OAx/m9hQzPA=="
         }
       },
       "is_incremental": true,
@@ -248,7 +248,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.Races.Race.html",
-          "hash": "z4WKXk69zkgI3xj7qBUIcQ=="
+          "hash": "zo4BtKlVu9V0IUDpxwuMtA=="
         }
       },
       "is_incremental": true,
@@ -284,19 +284,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.SRLDataType.html",
-          "hash": "GnhKQO3hvR2kMGSPFvnqag=="
-        }
-      },
-      "is_incremental": true,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "docfx/api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html",
-          "hash": "pNhbHWzQ1ablUkSKjG1N2Q=="
+          "hash": "iKBP3G0AN32apuD/dLS1hg=="
         }
       },
       "is_incremental": true,
@@ -308,10 +296,10 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.SRLEndpoint.html",
-          "hash": "JQyuYEf0ycWFMrsUnZEA+A=="
+          "hash": "y1LWp68wp48LYSg5TdhExg=="
         }
       },
-      "is_incremental": true,
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -383,7 +371,7 @@
           "hash": "ih4r6OItfumEN9/UHnH+QA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -392,7 +380,7 @@
       "output": {
         ".html": {
           "relative_path": "api/SRLApiClient.Endpoints.html",
-          "hash": "6t6A8NYvOsVJBKw2SsJmtg=="
+          "hash": "q7919q3RV2XupxwEHOfLEA=="
         }
       },
       "is_incremental": true,
@@ -536,7 +524,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "t1dssvjs5GLIG6njcQWJMg=="
+          "hash": "6Yt/IMJGZSv96A7/flU7vw=="
         }
       },
       "is_incremental": false,
@@ -600,6 +588,13 @@
         "skipped_file_count": 0
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
         "ResourceDocumentProcessor": {
           "can_incremental": false,
           "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
@@ -607,24 +602,17 @@
           "total_file_count": 0,
           "skipped_file_count": 0
         },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 42,
+          "skipped_file_count": 41
+        },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 2,
           "skipped_file_count": 2
-        },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": true,
-          "incrementalPhase": "build",
-          "total_file_count": 43,
-          "skipped_file_count": 40
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
-          "incrementalPhase": "build",
-          "total_file_count": 0,
-          "skipped_file_count": 0
         }
       }
     },

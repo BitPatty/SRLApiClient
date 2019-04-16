@@ -42,7 +42,7 @@ namespace SRLApiClient.Endpoints.Players
     /// The streaming API used by srl
     /// </summary>
     [DataMember(Name = "api", IsRequired = false)]
-    protected string _api { get; set; }
+    private string _api { get; set; }
 
     /// <summary>
     /// The streaming API used by srl

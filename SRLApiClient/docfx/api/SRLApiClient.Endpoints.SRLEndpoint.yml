@@ -22,7 +22,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SRLEndpoint
     path: Endpoints/SRLEndpoint.cs
-    startLine: 7
+    startLine: 5
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -73,7 +73,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: BasePath
     path: Endpoints/SRLEndpoint.cs
-    startLine: 12
+    startLine: 10
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -112,7 +112,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SrlClient
     path: Endpoints/SRLEndpoint.cs
-    startLine: 17
+    startLine: 15
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -149,7 +149,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/SRLEndpoint.cs
-    startLine: 24
+    startLine: 22
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
