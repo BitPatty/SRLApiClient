@@ -13,16 +13,11 @@ namespace Tests
 {
   public class Endpoints
   {
-    internal SRLClient _client { get; set; }
-
-    [SetUp]
-    public void Setup()
-    {
-      _client = new SRLClient();
-    }
+    internal static SRLClient _client { get; set; } = new SRLClient(poolSize: 10);
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void Countries()
     {
       ReadOnlyCollection<string> countries = _client.Countries.Get();
@@ -31,6 +26,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void Games()
     {
       Game game = _client.Games.Get("sms");
@@ -39,6 +35,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void Games_Rules()
     {
       string rules = _client.Games.GetRules("sms");
@@ -47,6 +44,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void Races_Active()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -56,6 +54,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void RacesAndPlayers()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -68,6 +67,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void PastRaces_Paginated()
     {
       ReadOnlyCollection<PastRace> pastRaces = _client.PastRaces.Get();
@@ -84,6 +84,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void PastRaces_GameFilter()
     {
       foreach (PastRace pr in _client.PastRaces.Get(gameAbbreviation: "sms"))
@@ -92,6 +93,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void PastRacesAndPlayers()
     {
       PastRace pastRace = _client.PastRaces.Get("239545");
@@ -103,6 +105,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void Leaderboards()
     {
       Leaderboard leaderboard = _client.Leaderboards.Get("sms");
@@ -113,6 +116,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void Stats_SRL()
     {
       ReadOnlyCollection<SRLStats> stats = _client.Stats.GetMonthlySRLStats();
@@ -122,6 +126,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void Stats_Game()
     {
       GameStats stats = _client.Stats.GetGameStats("sms");
@@ -131,6 +136,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void Stats_Player()
     {
       PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter");
@@ -140,6 +146,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    [Parallelizable]
     public void Stats_PlayerAndGame()
     {
       PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter", "ffx");

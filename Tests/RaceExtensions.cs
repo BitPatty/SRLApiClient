@@ -10,16 +10,11 @@ namespace Tests
 {
   public class RaceExtensions
   {
-    internal SRLClient _client { get; set; }
-
-    [SetUp]
-    public void Setup()
-    {
-      _client = new SRLClient();
-    }
+    internal static SRLClient _client { get; set; } = new SRLClient(poolSize: 10);
 
     [Test]
     [Category("RaceExtensions")]
+    [Parallelizable]
     public void FilterByEntrant()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -34,6 +29,7 @@ namespace Tests
 
     [Test]
     [Category("RaceExtensions")]
+    [Parallelizable]
     public void FilterByGame()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -48,6 +44,7 @@ namespace Tests
 
     [Test]
     [Category("RaceExtensions")]
+    [Parallelizable]
     public void FilterById()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -62,6 +59,7 @@ namespace Tests
 
     [Test]
     [Category("RaceExtensions")]
+    [Parallelizable]
     public void FilterByState()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -76,6 +74,7 @@ namespace Tests
 
     [Test]
     [Category("RaceExtensions")]
+    [Parallelizable]
     public void FilterByMinState()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
@@ -90,6 +89,7 @@ namespace Tests
 
     [Test]
     [Category("RaceExtensions")]
+    [Parallelizable]
     public void FilterByMaxState()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();

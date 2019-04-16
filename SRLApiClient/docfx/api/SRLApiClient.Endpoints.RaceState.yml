@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/RaceState.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RaceState
     path: Endpoints/RaceState.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/RaceState.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unknown
     path: Endpoints/RaceState.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/RaceState.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: EntryOpen
     path: Endpoints/RaceState.cs
@@ -124,7 +124,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/RaceState.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: EntryClosed
     path: Endpoints/RaceState.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/RaceState.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: InProgress
     path: Endpoints/RaceState.cs
@@ -194,7 +194,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/RaceState.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Finished
     path: Endpoints/RaceState.cs
@@ -229,7 +229,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/RaceState.cs
-      branch: paginated-requests
+      branch: client-pool
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Over
     path: Endpoints/RaceState.cs
