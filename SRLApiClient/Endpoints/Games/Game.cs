@@ -5,8 +5,8 @@ namespace SRLApiClient.Endpoints.Games
   /// <summary>
   /// Game object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Game : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Game : SRLData
   {
     /// <summary>
     /// The games id

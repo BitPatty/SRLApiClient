@@ -5,8 +5,8 @@ namespace SRLApiClient.Endpoints.Stats
   /// <summary>
   /// PlayerStats object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class PlayerStats : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class PlayerStats : SRLData
   {
     /// <summary>
     /// The players rank on the games associated leaderboard (if queried)

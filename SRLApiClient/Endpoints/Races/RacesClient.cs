@@ -52,7 +52,7 @@ namespace SRLApiClient.Endpoints.Races
     }
 
     [DataContract]
-    private sealed class ActiveRaces : SRLDataType
+    private sealed class ActiveRaces : SRLData
     {
       [DataMember(Name = "count", IsRequired = true)]
       public int Count { get; private set; }

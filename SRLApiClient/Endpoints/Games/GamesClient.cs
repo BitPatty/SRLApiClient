@@ -18,8 +18,8 @@ namespace SRLApiClient.Endpoints.Games
     /// <param name="baseClient">The <see cref="SRLClient"/> used to perform requests</param>
     public GamesClient(SRLClient baseClient) : base("/games", baseClient) { }
 
-    [DataContract, KnownType(typeof(SRLDataType))]
-    private sealed class Games : SRLDataType
+    [DataContract, KnownType(typeof(SRLData))]
+    private sealed class Games : SRLData
     {
       [DataMember(Name = "games", IsRequired = true)]
       public List<Game> _games { get; private set; }
@@ -60,7 +60,7 @@ namespace SRLApiClient.Endpoints.Games
     }
 
     [DataContract]
-    private sealed class GameSearch : SRLDataType
+    private sealed class GameSearch : SRLData
     {
       [DataMember(Name = "count", IsRequired = true)]
       public int Count { get; private set; }
@@ -112,7 +112,7 @@ namespace SRLApiClient.Endpoints.Games
     /// Rules object
     /// </summary>
     [DataContract]
-    private sealed class GameRules : SRLDataType
+    private sealed class GameRules : SRLData
     {
       /// <summary>
       /// The games rules defined on SRL (HTML format)

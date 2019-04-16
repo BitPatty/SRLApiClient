@@ -17,8 +17,8 @@ namespace SRLApiClient.Endpoints.Countries
     /// <param name="baseClient">The <see cref="SRLClient"/> used to perform requests</param>
     public CountriesClient(SRLClient baseClient) : base("/country", baseClient) { }
 
-    [DataContract, KnownType(typeof(SRLDataType))]
-    private sealed class Countries : SRLDataType
+    [DataContract, KnownType(typeof(SRLData))]
+    private sealed class Countries : SRLData
     {
       [DataMember(Name = "count", IsRequired = true)]
       public int Count { get; private set; }

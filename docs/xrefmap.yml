@@ -1336,25 +1336,25 @@ references:
   commentId: F:SRLApiClient.Endpoints.RaceState.Unknown
   fullName: SRLApiClient.Endpoints.RaceState.Unknown
   nameWithType: RaceState.Unknown
-- uid: SRLApiClient.Endpoints.SRLDataType
-  name: SRLDataType
-  href: api/SRLApiClient.Endpoints.SRLDataType.html
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
-  nameWithType: SRLDataType
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
+- uid: SRLApiClient.Endpoints.SRLData
+  name: SRLData
+  href: api/SRLApiClient.Endpoints.SRLData.html
+  commentId: T:SRLApiClient.Endpoints.SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
+  nameWithType: SRLData
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized
   name: Deserialized
-  href: api/SRLApiClient.Endpoints.SRLDataType.html#SRLApiClient_Endpoints_SRLDataType_Deserialized
-  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
-  nameWithType: SRLDataType.Deserialized
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized*
+  href: api/SRLApiClient.Endpoints.SRLData.html#SRLApiClient_Endpoints_SRLData_Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLData.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
+  nameWithType: SRLData.Deserialized
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized*
   name: Deserialized
-  href: api/SRLApiClient.Endpoints.SRLDataType.html#SRLApiClient_Endpoints_SRLDataType_Deserialized_
-  commentId: Overload:SRLApiClient.Endpoints.SRLDataType.Deserialized
+  href: api/SRLApiClient.Endpoints.SRLData.html#SRLApiClient_Endpoints_SRLData_Deserialized_
+  commentId: Overload:SRLApiClient.Endpoints.SRLData.Deserialized
   isSpec: "True"
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
-  nameWithType: SRLDataType.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
+  nameWithType: SRLData.Deserialized
 - uid: SRLApiClient.Endpoints.SRLEndpoint
   name: SRLEndpoint
   href: api/SRLApiClient.Endpoints.SRLEndpoint.html

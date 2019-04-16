@@ -5,8 +5,8 @@ namespace SRLApiClient.Endpoints.Races
   /// <summary>
   /// Entrant object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Entrant : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Entrant : SRLData
   {
     /// <summary>
     /// The players name

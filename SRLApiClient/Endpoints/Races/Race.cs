@@ -9,8 +9,8 @@ namespace SRLApiClient.Endpoints.Races
   /// <summary>
   /// Race object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Race : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Race : SRLData
   {
     /// <summary>
     /// The race id

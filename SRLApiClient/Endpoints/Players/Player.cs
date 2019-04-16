@@ -5,8 +5,8 @@ namespace SRLApiClient.Endpoints.Players
   /// <summary>
   /// Player object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Player : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Player : SRLData
   {
     /// <summary>
     /// The players id

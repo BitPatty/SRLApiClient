@@ -111,8 +111,8 @@ namespace SRLApiClient.User
     /// <returns>Returns true on success</returns>
     public bool SetCountry(string s) => new PlayersClient(_srlClient).Edit(Name, country: s);
 
-    [DataContract, KnownType(typeof(SRLDataType))]
-    private class Token : SRLDataType
+    [DataContract, KnownType(typeof(SRLData))]
+    private class Token : SRLData
     {
       [DataMember(Name = "user", IsRequired = true)]
       public string Name { get; private set; }

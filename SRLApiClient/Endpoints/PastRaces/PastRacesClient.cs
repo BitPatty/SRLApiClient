@@ -58,7 +58,7 @@ namespace SRLApiClient.Endpoints.PastRaces
     }
 
     [DataContract]
-    private sealed class PastRacesCollection : SRLDataType
+    private sealed class PastRacesCollection : SRLData
     {
       [DataMember(Name = "count", IsRequired = true)]
       public int Count { get; private set; }

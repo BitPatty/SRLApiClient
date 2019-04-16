@@ -54,7 +54,7 @@ namespace SRLApiClient.Endpoints.Players
     }
 
     [DataContract]
-    private sealed class PlayerSearch : SRLDataType
+    private sealed class PlayerSearch : SRLData
     {
       [DataMember(Name = "count", IsRequired = true)]
       public int Count { get; private set; }

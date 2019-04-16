@@ -11,8 +11,8 @@
     name: EntrantState
   - uid: SRLApiClient.Endpoints.RaceState
     name: RaceState
-  - uid: SRLApiClient.Endpoints.SRLDataType
-    name: SRLDataType
+  - uid: SRLApiClient.Endpoints.SRLData
+    name: SRLData
   - uid: SRLApiClient.Endpoints.SRLEndpoint
     name: SRLEndpoint
   - uid: SRLApiClient.Endpoints.StreamApi

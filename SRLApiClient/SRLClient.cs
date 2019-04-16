@@ -153,7 +153,7 @@ namespace SRLApiClient
     /// <returns>Returns the parsed response</returns>
     /// <exception cref="SRLParseException" />
     /// <exception cref="SRLTimeoutException" />
-    public T Get<T>(string endpoint) where T : SRLDataType => GetAsync<T>(endpoint).Result;
+    public T Get<T>(string endpoint) where T : SRLData => GetAsync<T>(endpoint).Result;
 
     /// <summary>
     /// Performs an asynchronous GET request on an endpoint
@@ -163,7 +163,7 @@ namespace SRLApiClient
     /// <returns>Returns the parsed response</returns>
     /// <exception cref="SRLParseException" />
     /// <exception cref="SRLTimeoutException" />
-    public async Task<T> GetAsync<T>(string endpoint) where T : SRLDataType
+    public async Task<T> GetAsync<T>(string endpoint) where T : SRLData
     {
       using (Stream responseStream = await GetStreamAsync($"{_apiUrl}/{endpoint.ToLower().TrimStart('/')}").ConfigureAwait(false))
       {
@@ -254,12 +254,12 @@ namespace SRLApiClient
     }
 
     /// <summary>
-    /// Deserializes a response stream into an <see cref="SRLDataType"/>
+    /// Deserializes a response stream into an <see cref="SRLData"/>
     /// </summary>
     /// <typeparam name="T">The datatype to deserialized the stream into</typeparam>
     /// <param name="s">The stream to deserialize</param>
     /// <returns>Returns the resulting object</returns>
-    public T DeSerialize<T>(Stream s) where T : SRLDataType
+    public T DeSerialize<T>(Stream s) where T : SRLData
     {
       DataContractJsonSerializer serializer = new DataContractJsonSerializer(typeof(T), new DataContractJsonSerializerSettings { UseSimpleDictionaryFormat = true });
       return serializer.ReadObject(s) as T;

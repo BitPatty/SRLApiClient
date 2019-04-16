@@ -8,8 +8,8 @@ namespace SRLApiClient.Endpoints.Leaderboards
   /// <summary>
   /// Leaderboard object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Leaderboard : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Leaderboard : SRLData
   {
     /// <summary>
     /// The game associated with the leaderboard

@@ -6,7 +6,7 @@ items:
   children:
   - SRLApiClient.Endpoints.EntrantState
   - SRLApiClient.Endpoints.RaceState
-  - SRLApiClient.Endpoints.SRLDataType
+  - SRLApiClient.Endpoints.SRLData
   - SRLApiClient.Endpoints.SRLEndpoint
   - SRLApiClient.Endpoints.StreamApi
   langs:
@@ -31,12 +31,12 @@ references:
   name: RaceState
   nameWithType: RaceState
   fullName: SRLApiClient.Endpoints.RaceState
-- uid: SRLApiClient.Endpoints.SRLDataType
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLData
+  commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
-  name: SRLDataType
-  nameWithType: SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
+  name: SRLData
+  nameWithType: SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
 - uid: SRLApiClient.Endpoints.SRLEndpoint
   commentId: T:SRLApiClient.Endpoints.SRLEndpoint
   parent: SRLApiClient.Endpoints

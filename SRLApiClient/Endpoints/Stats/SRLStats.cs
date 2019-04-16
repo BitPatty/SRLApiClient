@@ -5,8 +5,8 @@ namespace SRLApiClient.Endpoints.Stats
   /// <summary>
   /// Monthly SRL Stats
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public sealed class SRLStats : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public sealed class SRLStats : SRLData
   {
     /// <summary>
     /// The month of the year of the associated stats

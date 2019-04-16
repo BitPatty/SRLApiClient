@@ -7,8 +7,8 @@ namespace SRLApiClient.Endpoints.PastRaces
   /// <summary>
   /// PastRace object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class PastRace : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class PastRace : SRLData
   {
     /// <summary>
     /// The race id

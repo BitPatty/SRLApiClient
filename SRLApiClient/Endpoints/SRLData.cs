@@ -9,7 +9,7 @@ namespace SRLApiClient.Endpoints
   /// Base class for objects returned by the SRL API
   /// </summary>
   [DataContract]
-  public class SRLDataType
+  public class SRLData
   {
     /// <summary>
     /// The timestamp of when the endpoint was deserialized

@@ -545,7 +545,7 @@ items:
   syntax:
     content: >-
       public T Get<T>(string endpoint)
-          where T : SRLDataType
+          where T : SRLData
     parameters:
     - id: endpoint
       type: System.String
@@ -556,7 +556,7 @@ items:
     return:
       type: '{T}'
       description: Returns the parsed response
-    content.vb: Public Function Get(Of T As SRLDataType)(endpoint As String) As T
+    content.vb: Public Function Get(Of T As SRLData)(endpoint As String) As T
   overload: SRLApiClient.SRLClient.Get*
   exceptions:
   - type: SRLApiClient.Exceptions.SRLParseException
@@ -597,7 +597,7 @@ items:
   syntax:
     content: >-
       public Task<T> GetAsync<T>(string endpoint)
-          where T : SRLDataType
+          where T : SRLData
     parameters:
     - id: endpoint
       type: System.String
@@ -608,7 +608,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{{T}}
       description: Returns the parsed response
-    content.vb: Public Function GetAsync(Of T As SRLDataType)(endpoint As String) As Task(Of T)
+    content.vb: Public Function GetAsync(Of T As SRLData)(endpoint As String) As Task(Of T)
   overload: SRLApiClient.SRLClient.GetAsync*
   exceptions:
   - type: SRLApiClient.Exceptions.SRLParseException
@@ -872,12 +872,12 @@ items:
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
-  summary: "\nDeserializes a response stream into an <xref href=\"SRLApiClient.Endpoints.SRLDataType\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  summary: "\nDeserializes a response stream into an <xref href=\"SRLApiClient.Endpoints.SRLData\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
   syntax:
     content: >-
       public T DeSerialize<T>(Stream s)
-          where T : SRLDataType
+          where T : SRLData
     parameters:
     - id: s
       type: System.IO.Stream
@@ -888,7 +888,7 @@ items:
     return:
       type: '{T}'
       description: Returns the resulting object
-    content.vb: Public Function DeSerialize(Of T As SRLDataType)(s As Stream) As T
+    content.vb: Public Function DeSerialize(Of T As SRLData)(s As Stream) As T
   overload: SRLApiClient.SRLClient.DeSerialize*
   nameWithType.vb: SRLClient.DeSerialize(Of T)(Stream)
   modifiers.csharp:
@@ -1873,12 +1873,12 @@ references:
   name: System.Net.Http
   nameWithType: System.Net.Http
   fullName: System.Net.Http
-- uid: SRLApiClient.Endpoints.SRLDataType
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLData
+  commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
-  name: SRLDataType
-  nameWithType: SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
+  name: SRLData
+  nameWithType: SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
 - uid: SRLApiClient.SRLClient.DeSerialize*
   commentId: Overload:SRLApiClient.SRLClient.DeSerialize
   name: DeSerialize
