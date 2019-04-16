@@ -4,10 +4,6 @@
   items:
   - uid: SRLApiClient.SRLClient
     name: SRLClient
-  - uid: SRLApiClient.SRLParseException
-    name: SRLParseException
-  - uid: SRLApiClient.SRLTimeoutException
-    name: SRLTimeoutException
 - uid: SRLApiClient.Endpoints
   name: SRLApiClient.Endpoints
   items:
@@ -80,6 +76,13 @@
     name: SRLStats
   - uid: SRLApiClient.Endpoints.Stats.StatsClient
     name: StatsClient
+- uid: SRLApiClient.Exceptions
+  name: SRLApiClient.Exceptions
+  items:
+  - uid: SRLApiClient.Exceptions.SRLParseException
+    name: SRLParseException
+  - uid: SRLApiClient.Exceptions.SRLTimeoutException
+    name: SRLTimeoutException
 - uid: SRLApiClient.Extensions
   name: SRLApiClient.Extensions
   items:

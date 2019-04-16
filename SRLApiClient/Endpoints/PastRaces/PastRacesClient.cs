@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using SRLApiClient.Exceptions;
 
 namespace SRLApiClient.Endpoints.PastRaces
 {

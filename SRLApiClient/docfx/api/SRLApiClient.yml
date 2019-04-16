@@ -5,8 +5,6 @@ items:
   id: SRLApiClient
   children:
   - SRLApiClient.SRLClient
-  - SRLApiClient.SRLParseException
-  - SRLApiClient.SRLTimeoutException
   langs:
   - csharp
   - vb
@@ -17,16 +15,6 @@ items:
   assemblies:
   - SRLApiClient
 references:
-- uid: SRLApiClient.SRLTimeoutException
-  commentId: T:SRLApiClient.SRLTimeoutException
-  name: SRLTimeoutException
-  nameWithType: SRLTimeoutException
-  fullName: SRLApiClient.SRLTimeoutException
-- uid: SRLApiClient.SRLParseException
-  commentId: T:SRLApiClient.SRLParseException
-  name: SRLParseException
-  nameWithType: SRLParseException
-  fullName: SRLApiClient.SRLParseException
 - uid: SRLApiClient.SRLClient
   commentId: T:SRLApiClient.SRLClient
   parent: SRLApiClient

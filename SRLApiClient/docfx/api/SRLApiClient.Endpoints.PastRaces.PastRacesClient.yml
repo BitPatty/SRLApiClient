@@ -26,7 +26,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PastRacesClient
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 12
+    startLine: 13
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -74,7 +74,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 18
+    startLine: 19
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -110,7 +110,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 25
+    startLine: 26
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -149,7 +149,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -188,7 +188,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayer
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 73
+    startLine: 74
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -227,7 +227,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayer
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 93
+    startLine: 94
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -269,7 +269,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayerAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 113
+    startLine: 114
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -308,7 +308,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayerAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 133
+    startLine: 134
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces

@@ -1,4 +1,5 @@
 ﻿using System.Threading.Tasks;
+using SRLApiClient.Exceptions;
 
 namespace SRLApiClient.Endpoints.Leaderboards
 {

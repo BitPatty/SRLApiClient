@@ -30,6 +30,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Web;
 using SRLApiClient.Endpoints;
+using SRLApiClient.Exceptions;
 using SRLApiClient.User;
 
 namespace SRLApiClient

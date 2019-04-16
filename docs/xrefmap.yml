@@ -1953,6 +1953,86 @@ references:
   commentId: F:SRLApiClient.Endpoints.StreamApi.Unknown
   fullName: SRLApiClient.Endpoints.StreamApi.Unknown
   nameWithType: StreamApi.Unknown
+- uid: SRLApiClient.Exceptions
+  name: SRLApiClient.Exceptions
+  href: api/SRLApiClient.Exceptions.html
+  commentId: N:SRLApiClient.Exceptions
+  fullName: SRLApiClient.Exceptions
+  nameWithType: SRLApiClient.Exceptions
+- uid: SRLApiClient.Exceptions.SRLParseException
+  name: SRLParseException
+  href: api/SRLApiClient.Exceptions.SRLParseException.html
+  commentId: T:SRLApiClient.Exceptions.SRLParseException
+  fullName: SRLApiClient.Exceptions.SRLParseException
+  nameWithType: SRLParseException
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor
+  name: SRLParseException()
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException()
+  nameWithType: SRLParseException.SRLParseException()
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: SRLParseException(SerializationInfo, StreamingContext)
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: SRLParseException.SRLParseException(SerializationInfo, StreamingContext)
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.String)
+  name: SRLParseException(String)
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_System_String_
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.String)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.String)
+  nameWithType: SRLParseException.SRLParseException(String)
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,System.Exception)
+  name: SRLParseException(String, Exception)
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_System_String_System_Exception_
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,System.Exception)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.String, System.Exception)
+  nameWithType: SRLParseException.SRLParseException(String, Exception)
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor*
+  name: SRLParseException
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_
+  commentId: Overload:SRLApiClient.Exceptions.SRLParseException.#ctor
+  isSpec: "True"
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException
+  nameWithType: SRLParseException.SRLParseException
+- uid: SRLApiClient.Exceptions.SRLTimeoutException
+  name: SRLTimeoutException
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html
+  commentId: T:SRLApiClient.Exceptions.SRLTimeoutException
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException
+  nameWithType: SRLTimeoutException
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor
+  name: SRLTimeoutException()
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException()
+  nameWithType: SRLTimeoutException.SRLTimeoutException()
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: SRLTimeoutException(SerializationInfo, StreamingContext)
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: SRLTimeoutException.SRLTimeoutException(SerializationInfo, StreamingContext)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String)
+  name: SRLTimeoutException(String)
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_System_String_
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.String)
+  nameWithType: SRLTimeoutException.SRLTimeoutException(String)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,System.Exception)
+  name: SRLTimeoutException(String, Exception)
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_System_String_System_Exception_
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,System.Exception)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.String, System.Exception)
+  nameWithType: SRLTimeoutException.SRLTimeoutException(String, Exception)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor*
+  name: SRLTimeoutException
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_
+  commentId: Overload:SRLApiClient.Exceptions.SRLTimeoutException.#ctor
+  isSpec: "True"
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException
+  nameWithType: SRLTimeoutException.SRLTimeoutException
 - uid: SRLApiClient.Extensions
   name: SRLApiClient.Extensions
   href: api/SRLApiClient.Extensions.html
@@ -2451,80 +2531,6 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLClient.User
   nameWithType: SRLClient.User
-- uid: SRLApiClient.SRLParseException
-  name: SRLParseException
-  href: api/SRLApiClient.SRLParseException.html
-  commentId: T:SRLApiClient.SRLParseException
-  fullName: SRLApiClient.SRLParseException
-  nameWithType: SRLParseException
-- uid: SRLApiClient.SRLParseException.#ctor
-  name: SRLParseException()
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor
-  commentId: M:SRLApiClient.SRLParseException.#ctor
-  fullName: SRLApiClient.SRLParseException.SRLParseException()
-  nameWithType: SRLParseException.SRLParseException()
-- uid: SRLApiClient.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  name: SRLParseException(SerializationInfo, StreamingContext)
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  commentId: M:SRLApiClient.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  fullName: SRLApiClient.SRLParseException.SRLParseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  nameWithType: SRLParseException.SRLParseException(SerializationInfo, StreamingContext)
-- uid: SRLApiClient.SRLParseException.#ctor(System.String)
-  name: SRLParseException(String)
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor_System_String_
-  commentId: M:SRLApiClient.SRLParseException.#ctor(System.String)
-  fullName: SRLApiClient.SRLParseException.SRLParseException(System.String)
-  nameWithType: SRLParseException.SRLParseException(String)
-- uid: SRLApiClient.SRLParseException.#ctor(System.String,System.Exception)
-  name: SRLParseException(String, Exception)
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor_System_String_System_Exception_
-  commentId: M:SRLApiClient.SRLParseException.#ctor(System.String,System.Exception)
-  fullName: SRLApiClient.SRLParseException.SRLParseException(System.String, System.Exception)
-  nameWithType: SRLParseException.SRLParseException(String, Exception)
-- uid: SRLApiClient.SRLParseException.#ctor*
-  name: SRLParseException
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor_
-  commentId: Overload:SRLApiClient.SRLParseException.#ctor
-  isSpec: "True"
-  fullName: SRLApiClient.SRLParseException.SRLParseException
-  nameWithType: SRLParseException.SRLParseException
-- uid: SRLApiClient.SRLTimeoutException
-  name: SRLTimeoutException
-  href: api/SRLApiClient.SRLTimeoutException.html
-  commentId: T:SRLApiClient.SRLTimeoutException
-  fullName: SRLApiClient.SRLTimeoutException
-  nameWithType: SRLTimeoutException
-- uid: SRLApiClient.SRLTimeoutException.#ctor
-  name: SRLTimeoutException()
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor
-  commentId: M:SRLApiClient.SRLTimeoutException.#ctor
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException()
-  nameWithType: SRLTimeoutException.SRLTimeoutException()
-- uid: SRLApiClient.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  name: SRLTimeoutException(SerializationInfo, StreamingContext)
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  commentId: M:SRLApiClient.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  nameWithType: SRLTimeoutException.SRLTimeoutException(SerializationInfo, StreamingContext)
-- uid: SRLApiClient.SRLTimeoutException.#ctor(System.String)
-  name: SRLTimeoutException(String)
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor_System_String_
-  commentId: M:SRLApiClient.SRLTimeoutException.#ctor(System.String)
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException(System.String)
-  nameWithType: SRLTimeoutException.SRLTimeoutException(String)
-- uid: SRLApiClient.SRLTimeoutException.#ctor(System.String,System.Exception)
-  name: SRLTimeoutException(String, Exception)
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor_System_String_System_Exception_
-  commentId: M:SRLApiClient.SRLTimeoutException.#ctor(System.String,System.Exception)
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException(System.String, System.Exception)
-  nameWithType: SRLTimeoutException.SRLTimeoutException(String, Exception)
-- uid: SRLApiClient.SRLTimeoutException.#ctor*
-  name: SRLTimeoutException
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor_
-  commentId: Overload:SRLApiClient.SRLTimeoutException.#ctor
-  isSpec: "True"
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException
-  nameWithType: SRLTimeoutException.SRLTimeoutException
 - uid: SRLApiClient.User
   name: SRLApiClient.User
   href: api/SRLApiClient.User.html

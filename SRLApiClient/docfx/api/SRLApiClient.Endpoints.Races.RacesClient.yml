@@ -25,7 +25,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RacesClient
     path: Endpoints/Races/RacesClient.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Races
@@ -73,7 +73,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Races/RacesClient.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Races
@@ -109,7 +109,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/Races/RacesClient.cs
-    startLine: 23
+    startLine: 24
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Races
@@ -148,7 +148,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Races/RacesClient.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Races
@@ -187,7 +187,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetActive
     path: Endpoints/Races/RacesClient.cs
-    startLine: 66
+    startLine: 67
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Races
@@ -222,7 +222,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetActiveAsync
     path: Endpoints/Races/RacesClient.cs
-    startLine: 82
+    startLine: 83
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Races
@@ -257,7 +257,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: this[]
     path: Endpoints/Races/RacesClient.cs
-    startLine: 99
+    startLine: 100
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Races

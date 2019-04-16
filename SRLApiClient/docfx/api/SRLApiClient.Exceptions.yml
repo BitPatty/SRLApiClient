@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.Exceptions
+  commentId: N:SRLApiClient.Exceptions
+  id: SRLApiClient.Exceptions
+  children:
+  - SRLApiClient.Exceptions.SRLParseException
+  - SRLApiClient.Exceptions.SRLTimeoutException
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient.Exceptions
+  nameWithType: SRLApiClient.Exceptions
+  fullName: SRLApiClient.Exceptions
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.Exceptions.SRLParseException
+  commentId: T:SRLApiClient.Exceptions.SRLParseException
+  name: SRLParseException
+  nameWithType: SRLParseException
+  fullName: SRLApiClient.Exceptions.SRLParseException
+- uid: SRLApiClient.Exceptions.SRLTimeoutException
+  commentId: T:SRLApiClient.Exceptions.SRLTimeoutException
+  name: SRLTimeoutException
+  nameWithType: SRLTimeoutException
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException

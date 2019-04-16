@@ -22,7 +22,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: CountriesClient
     path: Endpoints/Countries/CountriesClient.cs
-    startLine: 10
+    startLine: 11
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Countries
@@ -70,7 +70,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Countries/CountriesClient.cs
-    startLine: 16
+    startLine: 17
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Countries
@@ -106,7 +106,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/Countries/CountriesClient.cs
-    startLine: 32
+    startLine: 33
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Countries
@@ -141,7 +141,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Countries/CountriesClient.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Countries

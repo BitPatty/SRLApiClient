@@ -22,7 +22,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: LeaderboardsClient
     path: Endpoints/Leaderboards/LeaderboardsClient.cs
-    startLine: 7
+    startLine: 8
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Leaderboards
@@ -70,7 +70,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Leaderboards/LeaderboardsClient.cs
-    startLine: 13
+    startLine: 14
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Leaderboards
@@ -106,7 +106,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/Leaderboards/LeaderboardsClient.cs
-    startLine: 20
+    startLine: 21
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Leaderboards
@@ -145,7 +145,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Leaderboards/LeaderboardsClient.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Leaderboards

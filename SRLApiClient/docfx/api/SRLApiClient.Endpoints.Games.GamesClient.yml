@@ -28,7 +28,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GamesClient
     path: Endpoints/Games/GamesClient.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -76,7 +76,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Games/GamesClient.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -112,7 +112,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/Games/GamesClient.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -151,7 +151,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Games/GamesClient.cs
-    startLine: 48
+    startLine: 49
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -190,7 +190,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Search
     path: Endpoints/Games/GamesClient.cs
-    startLine: 75
+    startLine: 76
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -229,7 +229,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SearchAsync
     path: Endpoints/Games/GamesClient.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -268,7 +268,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRules
     path: Endpoints/Games/GamesClient.cs
-    startLine: 114
+    startLine: 115
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -307,7 +307,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRules
     path: Endpoints/Games/GamesClient.cs
-    startLine: 121
+    startLine: 122
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -346,7 +346,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRulesAsync
     path: Endpoints/Games/GamesClient.cs
-    startLine: 140
+    startLine: 141
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -385,7 +385,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRulesAsync
     path: Endpoints/Games/GamesClient.cs
-    startLine: 147
+    startLine: 148
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
