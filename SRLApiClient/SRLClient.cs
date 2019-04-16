@@ -405,7 +405,7 @@ namespace SRLApiClient
         }
         catch (HttpRequestException ex)
         {
-          Console.WriteLine(ex.Message);
+          throw;
         }
         finally
         {
