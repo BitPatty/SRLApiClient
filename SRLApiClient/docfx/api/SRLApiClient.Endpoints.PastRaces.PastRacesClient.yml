@@ -6,7 +6,9 @@ items:
   parent: SRLApiClient.Endpoints.PastRaces
   children:
   - SRLApiClient.Endpoints.PastRaces.PastRacesClient.#ctor(SRLApiClient.SRLClient)
+  - SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.Int32,System.Int32)
   - SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String)
+  - SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.Int32,System.Int32)
   - SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String)
   - SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String)
   - SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String,System.String)
@@ -92,6 +94,90 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.Int32,System.Int32)
+  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.Int32,System.Int32)
+  id: Get(System.Int32,System.Int32)
+  parent: SRLApiClient.Endpoints.PastRaces.PastRacesClient
+  langs:
+  - csharp
+  - vb
+  name: Get(Int32, Int32)
+  nameWithType: PastRacesClient.Get(Int32, Int32)
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: Get
+    path: Endpoints/PastRaces/PastRacesClient.cs
+    startLine: 37
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nGets a collection of past races synchronously\n"
+  example: []
+  syntax:
+    content: public ReadOnlyCollection<PastRace> Get(int page = 1, int pageSize = 20)
+    parameters:
+    - id: page
+      type: System.Int32
+      description: The page number
+    - id: pageSize
+      type: System.Int32
+      description: The page size
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.PastRaces.PastRace}
+      description: Returns the race collection
+    content.vb: Public Function Get(page As Integer = 1, pageSize As Integer = 20) As ReadOnlyCollection(Of PastRace)
+  overload: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.Int32,System.Int32)
+  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.Int32,System.Int32)
+  id: GetAsync(System.Int32,System.Int32)
+  parent: SRLApiClient.Endpoints.PastRaces.PastRacesClient
+  langs:
+  - csharp
+  - vb
+  name: GetAsync(Int32, Int32)
+  nameWithType: PastRacesClient.GetAsync(Int32, Int32)
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.Int32, System.Int32)
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/PastRaces/PastRacesClient.cs
+      branch: paginated-requests
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetAsync
+    path: Endpoints/PastRaces/PastRacesClient.cs
+    startLine: 58
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.PastRaces
+  summary: "\nGets a collection of past races asynchronously\n"
+  example: []
+  syntax:
+    content: public Task<ReadOnlyCollection<PastRace>> GetAsync(int page = 1, int pageSize = 20)
+    parameters:
+    - id: page
+      type: System.Int32
+      description: The page number
+    - id: pageSize
+      type: System.Int32
+      description: The page size
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.PastRaces.PastRace}}
+      description: Returns the race collection
+    content.vb: Public Function GetAsync(page As Integer = 1, pageSize As Integer = 20) As Task(Of ReadOnlyCollection(Of PastRace))
+  overload: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String)
   commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String)
   id: Get(System.String)
@@ -110,7 +196,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 26
+    startLine: 78
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -149,7 +235,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 45
+    startLine: 97
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -188,7 +274,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayer
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 74
+    startLine: 116
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -227,7 +313,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayer
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 94
+    startLine: 136
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -269,7 +355,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayerAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 114
+    startLine: 156
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -308,7 +394,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetByPlayerAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 134
+    startLine: 176
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -674,116 +760,13 @@ references:
   name: Get
   nameWithType: PastRacesClient.Get
   fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get
-- uid: System.String
-  commentId: T:System.String
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
-- uid: SRLApiClient.Endpoints.PastRaces.PastRace
-  commentId: T:SRLApiClient.Endpoints.PastRaces.PastRace
-  parent: SRLApiClient.Endpoints.PastRaces
-  name: PastRace
-  nameWithType: PastRace
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRace
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync*
-  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync
-  name: GetAsync
-  nameWithType: PastRacesClient.GetAsync
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync
-- uid: System.Threading.Tasks.Task{SRLApiClient.Endpoints.PastRaces.PastRace}
-  commentId: T:System.Threading.Tasks.Task{SRLApiClient.Endpoints.PastRaces.PastRace}
-  parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
-  name: Task<PastRace>
-  nameWithType: Task<PastRace>
-  fullName: System.Threading.Tasks.Task<SRLApiClient.Endpoints.PastRaces.PastRace>
-  nameWithType.vb: Task(Of PastRace)
-  fullName.vb: System.Threading.Tasks.Task(Of SRLApiClient.Endpoints.PastRaces.PastRace)
-  name.vb: Task(Of PastRace)
-  spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    nameWithType: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: SRLApiClient.Endpoints.PastRaces.PastRace
-    name: PastRace
-    nameWithType: PastRace
-    fullName: SRLApiClient.Endpoints.PastRaces.PastRace
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    nameWithType: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: SRLApiClient.Endpoints.PastRaces.PastRace
-    name: PastRace
-    nameWithType: PastRace
-    fullName: SRLApiClient.Endpoints.PastRaces.PastRace
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Threading.Tasks.Task`1
-  commentId: T:System.Threading.Tasks.Task`1
-  isExternal: true
-  name: Task<TResult>
-  nameWithType: Task<TResult>
-  fullName: System.Threading.Tasks.Task<TResult>
-  nameWithType.vb: Task(Of TResult)
-  fullName.vb: System.Threading.Tasks.Task(Of TResult)
-  name.vb: Task(Of TResult)
-  spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    nameWithType: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Threading.Tasks.Task`1
-    name: Task
-    nameWithType: Task
-    fullName: System.Threading.Tasks.Task
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer*
-  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer
-  name: GetByPlayer
-  nameWithType: PastRacesClient.GetByPlayer
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
 - uid: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.PastRaces.PastRace}
   commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.PastRaces.PastRace}
   parent: System.Collections.ObjectModel
@@ -871,11 +854,11 @@ references:
   name: System.Collections.ObjectModel
   nameWithType: System.Collections.ObjectModel
   fullName: System.Collections.ObjectModel
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync*
-  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync
-  name: GetByPlayerAsync
-  nameWithType: PastRacesClient.GetByPlayerAsync
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync
+  name: GetAsync
+  nameWithType: PastRacesClient.GetAsync
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync
 - uid: System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.PastRaces.PastRace}}
   commentId: T:System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.PastRaces.PastRace}}
   parent: System.Threading.Tasks
@@ -940,3 +923,113 @@ references:
   - name: )
     nameWithType: )
     fullName: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: TResult
+    nameWithType: TResult
+    fullName: TResult
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: SRLApiClient.Endpoints.PastRaces.PastRace
+  commentId: T:SRLApiClient.Endpoints.PastRaces.PastRace
+  parent: SRLApiClient.Endpoints.PastRaces
+  name: PastRace
+  nameWithType: PastRace
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRace
+- uid: System.Threading.Tasks.Task{SRLApiClient.Endpoints.PastRaces.PastRace}
+  commentId: T:System.Threading.Tasks.Task{SRLApiClient.Endpoints.PastRaces.PastRace}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<PastRace>
+  nameWithType: Task<PastRace>
+  fullName: System.Threading.Tasks.Task<SRLApiClient.Endpoints.PastRaces.PastRace>
+  nameWithType.vb: Task(Of PastRace)
+  fullName.vb: System.Threading.Tasks.Task(Of SRLApiClient.Endpoints.PastRaces.PastRace)
+  name.vb: Task(Of PastRace)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.PastRaces.PastRace
+    name: PastRace
+    nameWithType: PastRace
+    fullName: SRLApiClient.Endpoints.PastRaces.PastRace
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    nameWithType: Task
+    fullName: System.Threading.Tasks.Task
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.PastRaces.PastRace
+    name: PastRace
+    nameWithType: PastRace
+    fullName: SRLApiClient.Endpoints.PastRaces.PastRace
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer
+  name: GetByPlayer
+  nameWithType: PastRacesClient.GetByPlayer
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync*
+  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync
+  name: GetByPlayerAsync
+  nameWithType: PastRacesClient.GetByPlayerAsync
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync

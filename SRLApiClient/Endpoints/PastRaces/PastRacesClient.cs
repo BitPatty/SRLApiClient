@@ -19,6 +19,58 @@ namespace SRLApiClient.Endpoints.PastRaces
     /// <param name="baseClient">The <see cref="SRLClient"/> used to perform requests</param>
     public PastRacesClient(SRLClient baseClient) : base("/pastraces", baseClient) { }
 
+    [DataContract]
+    private sealed class PastRacesCollection : SRLData
+    {
+      [DataMember(Name = "count", IsRequired = true)]
+      public int Count { get; private set; }
+
+      [DataMember(Name = "pastraces", IsRequired = true)]
+      public List<PastRace> Races { get; private set; }
+    }
+
+    /// <summary>
+    /// Gets a collection of past races synchronously
+    /// </summary>
+    /// <param name="page">The page number</param>
+    /// <param name="pageSize">The page size</param>
+    /// <returns>Returns the race collection</returns>
+    public ReadOnlyCollection<PastRace> Get(int page = 1, int pageSize = 20)
+    {
+      if (page < 1) throw new ArgumentException(nameof(page), "Parameter must be 1 or greater");
+      if (pageSize < 1) throw new ArgumentException(nameof(pageSize), "Parameter must be 1 or greater");
+
+      try
+      {
+        return SrlClient.Get<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}")?.Races?.AsReadOnly();
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
+    /// <summary>
+    /// Gets a collection of past races asynchronously
+    /// </summary>
+    /// <param name="page">The page number</param>
+    /// <param name="pageSize">The page size</param>
+    /// <returns>Returns the race collection</returns>
+    public async Task<ReadOnlyCollection<PastRace>> GetAsync(int page = 1, int pageSize = 20)
+    {
+      if (page < 1) throw new ArgumentException(nameof(page), "Parameter must be 1 or greater");
+      if (pageSize < 1) throw new ArgumentException(nameof(pageSize), "Parameter must be 1 or greater");
+
+      try
+      {
+        return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}"))?.Races?.AsReadOnly();
+      }
+      catch (SRLParseException)
+      {
+        return null;
+      }
+    }
+
     /// <summary>
     /// Gets a single past race synchronously
     /// </summary>
@@ -55,16 +107,6 @@ namespace SRLApiClient.Endpoints.PastRaces
       {
         return null;
       }
-    }
-
-    [DataContract]
-    private sealed class PastRacesCollection : SRLData
-    {
-      [DataMember(Name = "count", IsRequired = true)]
-      public int Count { get; private set; }
-
-      [DataMember(Name = "pastraces", IsRequired = true)]
-      public List<PastRace> Races { get; private set; }
     }
 
     /// <summary>

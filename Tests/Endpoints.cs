@@ -68,6 +68,22 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
+    public void PastRaces()
+    {
+      ReadOnlyCollection<PastRace> pastRaces = _client.PastRaces.Get();
+      Assert.AreEqual(pastRaces.Count, 20);
+
+      ReadOnlyCollection<PastRace> pastRacesAlt = _client.PastRaces.Get(pageSize: 10);
+      Assert.AreEqual(pastRacesAlt?.Count, 10);
+
+      ReadOnlyCollection<PastRace> pastRacesPage2 = _client.PastRaces.Get(page: 2);
+
+      Assert.IsNotNull(pastRacesAlt.FirstOrDefault(p => p.Id == pastRaces.FirstOrDefault()?.Id));
+      Assert.IsNull(pastRacesPage2.FirstOrDefault(p => p.Id == pastRaces.FirstOrDefault()?.Id));
+    }
+
+    [Test]
+    [Category("Endpoints")]
     public void PastRacesAndPlayers()
     {
       PastRace pastRace = _client.PastRaces.Get("239545");

@@ -165,7 +165,7 @@ namespace SRLApiClient
     /// <exception cref="SRLTimeoutException" />
     public async Task<T> GetAsync<T>(string endpoint) where T : SRLData
     {
-      using (Stream responseStream = await GetStreamAsync($"{_apiUrl}/{endpoint.ToLower().TrimStart('/')}").ConfigureAwait(false))
+      using (Stream responseStream = await GetStreamAsync($"{_apiUrl}/{endpoint.TrimStart('/')}").ConfigureAwait(false))
       {
         try
         {
