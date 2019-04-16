@@ -5,8 +5,8 @@ namespace SRLApiClient.Endpoints.Players
   /// <summary>
   /// Player object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Player : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Player : SRLData
   {
     /// <summary>
     /// The players id
@@ -42,7 +42,7 @@ namespace SRLApiClient.Endpoints.Players
     /// The streaming API used by srl
     /// </summary>
     [DataMember(Name = "api", IsRequired = false)]
-    protected string _api { get; set; }
+    private string _api { get; set; }
 
     /// <summary>
     /// The streaming API used by srl

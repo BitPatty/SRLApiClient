@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using SRLApiClient.Exceptions;
+using SRLApiClient.User;
 
 namespace SRLApiClient.Endpoints.Players
 {
@@ -52,7 +54,7 @@ namespace SRLApiClient.Endpoints.Players
     }
 
     [DataContract]
-    private sealed class PlayerSearch : SRLDataType
+    private sealed class PlayerSearch : SRLData
     {
       [DataMember(Name = "count", IsRequired = true)]
       public int Count { get; private set; }

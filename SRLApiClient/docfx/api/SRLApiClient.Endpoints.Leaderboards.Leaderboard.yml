@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Leaderboard
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -34,21 +34,21 @@ items:
     content: >-
       [DataContract]
 
-      [KnownType(typeof(SRLDataType))]
+      [KnownType(typeof(SRLData))]
 
-      public class Leaderboard : SRLDataType
+      public class Leaderboard : SRLData
     content.vb: >-
       <DataContract>
 
-      <KnownType(GetType(SRLDataType))>
+      <KnownType(GetType(SRLData))>
 
       Public Class Leaderboard
-          Inherits SRLDataType
+          Inherits SRLData
   inheritance:
   - System.Object
-  - SRLApiClient.Endpoints.SRLDataType
+  - SRLApiClient.Endpoints.SRLData
   inheritedMembers:
-  - SRLApiClient.Endpoints.SRLDataType.Deserialized
+  - SRLApiClient.Endpoints.SRLData.Deserialized
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -67,7 +67,7 @@ items:
     ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
     arguments:
     - type: System.Type
-      value: SRLApiClient.Endpoints.SRLDataType
+      value: SRLApiClient.Endpoints.SRLData
   modifiers.csharp:
   - public
   - class
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Game
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: LeadersCount
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -200,7 +200,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Leaders
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: UnrankedCount
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -293,7 +293,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unranked
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -329,18 +329,18 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: SRLApiClient.Endpoints.SRLDataType
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLData
+  commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
-  name: SRLDataType
-  nameWithType: SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
-  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
-  parent: SRLApiClient.Endpoints.SRLDataType
+  name: SRLData
+  nameWithType: SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLData.Deserialized
+  parent: SRLApiClient.Endpoints.SRLData
   name: Deserialized
-  nameWithType: SRLDataType.Deserialized
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
+  nameWithType: SRLData.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object

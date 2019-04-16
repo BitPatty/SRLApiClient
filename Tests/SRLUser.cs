@@ -1,7 +1,6 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using SRLApiClient;
-using SRLApiClient.Endpoints.Players;
-using System;
 
 namespace Tests
 {

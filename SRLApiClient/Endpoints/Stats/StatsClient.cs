@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using SRLApiClient.Exceptions;
 
 namespace SRLApiClient.Endpoints.Stats
 {
@@ -17,8 +18,8 @@ namespace SRLApiClient.Endpoints.Stats
     /// <param name="baseClient">The <see cref="SRLClient"/> used to perform requests</param>
     public StatsClient(SRLClient baseClient) : base("/stat", baseClient) { }
 
-    [DataContract, KnownType(typeof(SRLDataType))]
-    private sealed class PlayerEndpoint : SRLDataType
+    [DataContract, KnownType(typeof(SRLData))]
+    private sealed class PlayerEndpoint : SRLData
     {
       [DataMember(Name = "stats", IsRequired = true)]
       public PlayerStats Stats { get; private set; }
@@ -104,8 +105,8 @@ namespace SRLApiClient.Endpoints.Stats
       }
     }
 
-    [DataContract, KnownType(typeof(SRLDataType))]
-    private sealed class GameEndpoint : SRLDataType
+    [DataContract, KnownType(typeof(SRLData))]
+    private sealed class GameEndpoint : SRLData
     {
       [DataMember(Name = "stats", IsRequired = true)]
       public GameStats Stats { get; private set; }
@@ -149,8 +150,8 @@ namespace SRLApiClient.Endpoints.Stats
       }
     }
 
-    [DataContract, KnownType(typeof(SRLDataType))]
-    private sealed class MonthlyStats : SRLDataType
+    [DataContract, KnownType(typeof(SRLData))]
+    private sealed class MonthlyStats : SRLData
     {
       [DataMember(Name = "monthlyStats", IsRequired = true)]
       public List<SRLStats> Stats { get; private set; }

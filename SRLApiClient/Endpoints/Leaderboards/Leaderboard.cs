@@ -1,15 +1,15 @@
-﻿using SRLApiClient.Endpoints.Games;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
+using SRLApiClient.Endpoints.Games;
 
 namespace SRLApiClient.Endpoints.Leaderboards
 {
   /// <summary>
   /// Leaderboard object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Leaderboard : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Leaderboard : SRLData
   {
     /// <summary>
     /// The game associated with the leaderboard

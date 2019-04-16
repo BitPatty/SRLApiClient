@@ -1,6 +1,4 @@
-﻿using System.Runtime.Serialization;
-
-namespace SRLApiClient.Endpoints
+﻿namespace SRLApiClient.Endpoints
 {
   /// <summary>
   /// Base class for SRL endpoint clients
@@ -26,19 +24,6 @@ namespace SRLApiClient.Endpoints
     {
       SrlClient = client;
       BasePath = path;
-    }
-
-    /// <summary>
-    /// Rules object
-    /// </summary>
-    [DataContract]
-    protected sealed class GameRules : SRLDataType
-    {
-      /// <summary>
-      /// The games rules defined on SRL (HTML format)
-      /// </summary>
-      [DataMember(Name = "rules", IsRequired = true)]
-      public string Rules { get; private set; }
     }
   }
 }

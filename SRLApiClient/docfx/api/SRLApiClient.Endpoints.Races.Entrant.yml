@@ -5,7 +5,6 @@ items:
   id: Entrant
   parent: SRLApiClient.Endpoints.Races
   children:
-  - SRLApiClient.Endpoints.Races.Entrant._place
   - SRLApiClient.Endpoints.Races.Entrant.Name
   - SRLApiClient.Endpoints.Races.Entrant.Place
   - SRLApiClient.Endpoints.Races.Entrant.State
@@ -23,7 +22,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Entrant
     path: Endpoints/Races/Entrant.cs
@@ -37,21 +36,21 @@ items:
     content: >-
       [DataContract]
 
-      [KnownType(typeof(SRLDataType))]
+      [KnownType(typeof(SRLData))]
 
-      public class Entrant : SRLDataType
+      public class Entrant : SRLData
     content.vb: >-
       <DataContract>
 
-      <KnownType(GetType(SRLDataType))>
+      <KnownType(GetType(SRLData))>
 
       Public Class Entrant
-          Inherits SRLDataType
+          Inherits SRLData
   inheritance:
   - System.Object
-  - SRLApiClient.Endpoints.SRLDataType
+  - SRLApiClient.Endpoints.SRLData
   inheritedMembers:
-  - SRLApiClient.Endpoints.SRLDataType.Deserialized
+  - SRLApiClient.Endpoints.SRLData.Deserialized
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -67,7 +66,7 @@ items:
     ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
     arguments:
     - type: System.Type
-      value: SRLApiClient.Endpoints.SRLDataType
+      value: SRLApiClient.Endpoints.SRLData
   modifiers.csharp:
   - public
   - class
@@ -88,7 +87,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Name
     path: Endpoints/Races/Entrant.cs
@@ -130,60 +129,6 @@ items:
   - Public
   - Get
   - Protected Set
-- uid: SRLApiClient.Endpoints.Races.Entrant._place
-  commentId: P:SRLApiClient.Endpoints.Races.Entrant._place
-  id: _place
-  parent: SRLApiClient.Endpoints.Races.Entrant
-  langs:
-  - csharp
-  - vb
-  name: _place
-  nameWithType: Entrant._place
-  fullName: SRLApiClient.Endpoints.Races.Entrant._place
-  type: Property
-  source:
-    remote:
-      path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: master
-      repo: git@github.com:BitPatty/SRLApiClient.git
-    id: _place
-    path: Endpoints/Races/Entrant.cs
-    startLine: 19
-  assemblies:
-  - SRLApiClient
-  namespace: SRLApiClient.Endpoints.Races
-  summary: "\nThe placement returned by srl. If the player hasn&apos;t finished yet the value will be > 9990\n"
-  example: []
-  syntax:
-    content: >-
-      [DataMember(Name = "place", IsRequired = true)]
-
-      protected int _place { get; set; }
-    parameters: []
-    return:
-      type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="place", IsRequired:=True)>
-
-      Protected Property _place As Integer
-  overload: SRLApiClient.Endpoints.Races.Entrant._place*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: place
-    - name: IsRequired
-      type: System.Boolean
-      value: true
-  modifiers.csharp:
-  - protected
-  - get
-  - set
-  modifiers.vb:
-  - Protected
 - uid: SRLApiClient.Endpoints.Races.Entrant.Place
   commentId: P:SRLApiClient.Endpoints.Races.Entrant.Place
   id: Place
@@ -198,7 +143,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Place
     path: Endpoints/Races/Entrant.cs
@@ -235,7 +180,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Time
     path: Endpoints/Races/Entrant.cs
@@ -291,7 +236,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: State
     path: Endpoints/Races/Entrant.cs
@@ -328,7 +273,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StateText
     path: Endpoints/Races/Entrant.cs
@@ -384,7 +329,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Twitch
     path: Endpoints/Races/Entrant.cs
@@ -440,7 +385,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TrueSkill
     path: Endpoints/Races/Entrant.cs
@@ -495,18 +440,18 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: SRLApiClient.Endpoints.SRLDataType
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLData
+  commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
-  name: SRLDataType
-  nameWithType: SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
-  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
-  parent: SRLApiClient.Endpoints.SRLDataType
+  name: SRLData
+  nameWithType: SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLData.Deserialized
+  parent: SRLApiClient.Endpoints.SRLData
   name: Deserialized
-  nameWithType: SRLDataType.Deserialized
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
+  nameWithType: SRLData.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -809,11 +754,11 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: SRLApiClient.Endpoints.Races.Entrant._place*
-  commentId: Overload:SRLApiClient.Endpoints.Races.Entrant._place
-  name: _place
-  nameWithType: Entrant._place
-  fullName: SRLApiClient.Endpoints.Races.Entrant._place
+- uid: SRLApiClient.Endpoints.Races.Entrant.Place*
+  commentId: Overload:SRLApiClient.Endpoints.Races.Entrant.Place
+  name: Place
+  nameWithType: Entrant.Place
+  fullName: SRLApiClient.Endpoints.Races.Entrant.Place
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -821,11 +766,6 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: SRLApiClient.Endpoints.Races.Entrant.Place*
-  commentId: Overload:SRLApiClient.Endpoints.Races.Entrant.Place
-  name: Place
-  nameWithType: Entrant.Place
-  fullName: SRLApiClient.Endpoints.Races.Entrant.Place
 - uid: SRLApiClient.Endpoints.Races.Entrant.State
   commentId: P:SRLApiClient.Endpoints.Races.Entrant.State
   isExternal: true

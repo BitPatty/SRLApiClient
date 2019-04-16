@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/LeaderboardExtensions.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: LeaderboardExtensions
     path: Extensions/LeaderboardExtensions.cs
@@ -62,7 +62,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/LeaderboardExtensions.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: ContainsPlayer
     path: Extensions/LeaderboardExtensions.cs
@@ -110,7 +110,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Extensions/LeaderboardExtensions.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FindPlayer
     path: Extensions/LeaderboardExtensions.cs

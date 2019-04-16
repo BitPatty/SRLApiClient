@@ -5,8 +5,8 @@ namespace SRLApiClient.Endpoints.Stats
   /// <summary>
   /// GameStats object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class GameStats : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class GameStats : SRLData
   {
     /// <summary>
     /// The games total race count

@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class SRLEndpoint.GameRules
+    <title>Enum UserRole
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class SRLEndpoint.GameRules
+    <meta name="title" content="Enum UserRole
    ">
     <meta name="generator" content="docfx 2.41.0.0">
     
@@ -68,88 +68,67 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="SRLApiClient.Endpoints.SRLEndpoint.GameRules">
+            <article class="content wrap" id="_content" data-uid="SRLApiClient.User.UserRole">
   
   
-  <h1 id="SRLApiClient_Endpoints_SRLEndpoint_GameRules" data-uid="SRLApiClient.Endpoints.SRLEndpoint.GameRules" class="text-break">Class SRLEndpoint.GameRules
+  <h1 id="SRLApiClient_User_UserRole" data-uid="SRLApiClient.User.UserRole" class="text-break">Enum UserRole
   </h1>
-  <div class="markdown level0 summary"><p>Rules object</p>
+  <div class="markdown level0 summary"><p>The users permission level</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><a class="xref" href="SRLApiClient.Endpoints.SRLDataType.html">SRLDataType</a></div>
-    <div class="level2"><span class="xref">SRLEndpoint.GameRules</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="SRLApiClient.Endpoints.SRLDataType.html#SRLApiClient_Endpoints_SRLDataType_Deserialized">SRLDataType.Deserialized</a>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="SRLApiClient.Endpoints.html">SRLApiClient.Endpoints</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SRLApiClient.User.html">SRLApiClient.User</a></h6>
   <h6><strong>Assembly</strong>: SRLApiClient.dll</h6>
-  <h5 id="SRLApiClient_Endpoints_SRLEndpoint_GameRules_syntax">Syntax</h5>
+  <h5 id="SRLApiClient_User_UserRole_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataContract]
-protected sealed class GameRules : SRLDataType</code></pre>
+    <pre><code class="lang-csharp hljs">public enum UserRole</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="fields">Fields
   </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/BitPatty/SRLApiClient/new/master/apiSpec/new?filename=SRLApiClient_Endpoints_SRLEndpoint_GameRules_Rules.md&amp;value=---%0Auid%3A%20SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/BitPatty/SRLApiClient/blob/master/SRLApiClient/Endpoints/SRLEndpoint.cs/#L40">View Source</a>
-  </span>
-  <a id="SRLApiClient_Endpoints_SRLEndpoint_GameRules_Rules_" data-uid="SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules*"></a>
-  <h4 id="SRLApiClient_Endpoints_SRLEndpoint_GameRules_Rules" data-uid="SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules">Rules</h4>
-  <div class="markdown level1 summary"><p>The games rules defined on SRL (HTML format)</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;rules&quot;, IsRequired = true)]
-public string Rules { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
-    </thead>
+    <thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td id="SRLApiClient_User_UserRole_Admin">Admin</td>
+        <td><p>Admin permissions</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SRLApiClient_User_UserRole_Anon">Anon</td>
+        <td><p>Anonymous permissions</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SRLApiClient_User_UserRole_Halfop">Halfop</td>
+        <td><p>Half Operator permissions</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SRLApiClient_User_UserRole_Op">Op</td>
+        <td><p>Operator permissions</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SRLApiClient_User_UserRole_Unknown">Unknown</td>
+        <td><p>Fallback value</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SRLApiClient_User_UserRole_User">User</td>
+        <td><p>User permissions</p>
+</td>
+      </tr>
+      <tr>
+        <td id="SRLApiClient_User_UserRole_Voice">Voice</td>
+        <td><p>Voice permissions</p>
+</td>
       </tr>
     </tbody>
-  </table>
+  </thead></thead></table>
 </article>
           </div>
           
@@ -158,10 +137,10 @@ public string Rules { get; }</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/BitPatty/SRLApiClient/new/master/apiSpec/new?filename=SRLApiClient_Endpoints_SRLEndpoint_GameRules.md&amp;value=---%0Auid%3A%20SRLApiClient.Endpoints.SRLEndpoint.GameRules%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/BitPatty/SRLApiClient/new/paginated-requests/apiSpec/new?filename=SRLApiClient_User_UserRole.md&amp;value=---%0Auid%3A%20SRLApiClient.User.UserRole%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/BitPatty/SRLApiClient/blob/master/SRLApiClient/Endpoints/SRLEndpoint.cs/#L34" class="contribution-link">View Source</a>
+                    <a href="https://github.com/BitPatty/SRLApiClient/blob/paginated-requests/SRLApiClient/User/UserRole.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

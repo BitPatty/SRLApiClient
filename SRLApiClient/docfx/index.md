@@ -27,6 +27,10 @@ _none_
 
 ## Changelog
 
+#### v0.10.0-beta2
+
+- Added paginated requests for past races
+
 #### v0.10.0-beta
 
 - Added asynchronous methods

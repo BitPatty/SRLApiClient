@@ -5,8 +5,8 @@ namespace SRLApiClient.Endpoints.PastRaces
   /// <summary>
   /// Result object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Result : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Result : SRLData
   {
     /// <summary>
     /// The race id associated with the result

@@ -20,12 +20,12 @@ items:
   type: Enum
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
-      branch: master
+      path: SRLApiClient/Endpoints/RaceState.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RaceState
-    path: Endpoints/Enums.cs
-    startLine: 41
+    path: Endpoints/RaceState.cs
+    startLine: 5
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -53,12 +53,12 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
-      branch: master
+      path: SRLApiClient/Endpoints/RaceState.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unknown
-    path: Endpoints/Enums.cs
-    startLine: 46
+    path: Endpoints/RaceState.cs
+    startLine: 10
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -88,12 +88,12 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
-      branch: master
+      path: SRLApiClient/Endpoints/RaceState.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: EntryOpen
-    path: Endpoints/Enums.cs
-    startLine: 51
+    path: Endpoints/RaceState.cs
+    startLine: 15
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -123,12 +123,12 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
-      branch: master
+      path: SRLApiClient/Endpoints/RaceState.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: EntryClosed
-    path: Endpoints/Enums.cs
-    startLine: 57
+    path: Endpoints/RaceState.cs
+    startLine: 21
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -158,12 +158,12 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
-      branch: master
+      path: SRLApiClient/Endpoints/RaceState.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: InProgress
-    path: Endpoints/Enums.cs
-    startLine: 62
+    path: Endpoints/RaceState.cs
+    startLine: 26
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -193,12 +193,12 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
-      branch: master
+      path: SRLApiClient/Endpoints/RaceState.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Finished
-    path: Endpoints/Enums.cs
-    startLine: 67
+    path: Endpoints/RaceState.cs
+    startLine: 31
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints
@@ -228,12 +228,12 @@ items:
   type: Field
   source:
     remote:
-      path: SRLApiClient/Endpoints/Enums.cs
-      branch: master
+      path: SRLApiClient/Endpoints/RaceState.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Over
-    path: Endpoints/Enums.cs
-    startLine: 72
+    path: Endpoints/RaceState.cs
+    startLine: 36
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints

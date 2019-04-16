@@ -1,0 +1,35 @@
+### YamlMime:ManagedReference
+items:
+- uid: SRLApiClient.User
+  commentId: N:SRLApiClient.User
+  id: SRLApiClient.User
+  children:
+  - SRLApiClient.User.SRLUser
+  - SRLApiClient.User.UserRole
+  langs:
+  - csharp
+  - vb
+  name: SRLApiClient.User
+  nameWithType: SRLApiClient.User
+  fullName: SRLApiClient.User
+  type: Namespace
+  assemblies:
+  - SRLApiClient
+references:
+- uid: SRLApiClient.User.SRLUser
+  commentId: T:SRLApiClient.User.SRLUser
+  parent: SRLApiClient.User
+  name: SRLUser
+  nameWithType: SRLUser
+  fullName: SRLApiClient.User.SRLUser
+- uid: SRLApiClient.User.UserRole
+  commentId: T:SRLApiClient.User.UserRole
+  parent: SRLApiClient.User
+  name: UserRole
+  nameWithType: UserRole
+  fullName: SRLApiClient.User.UserRole
+- uid: SRLApiClient.User
+  commentId: N:SRLApiClient.User
+  name: SRLApiClient.User
+  nameWithType: SRLApiClient.User
+  fullName: SRLApiClient.User

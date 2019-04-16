@@ -5,8 +5,6 @@ items:
   id: Race
   parent: SRLApiClient.Endpoints.Races
   children:
-  - SRLApiClient.Endpoints.Races.Race._entrants
-  - SRLApiClient.Endpoints.Races.Race._state
   - SRLApiClient.Endpoints.Races.Race.Entrants
   - SRLApiClient.Endpoints.Races.Race.FileName
   - SRLApiClient.Endpoints.Races.Race.Game
@@ -26,7 +24,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Race
     path: Endpoints/Races/Race.cs
@@ -40,21 +38,21 @@ items:
     content: >-
       [DataContract]
 
-      [KnownType(typeof(SRLDataType))]
+      [KnownType(typeof(SRLData))]
 
-      public class Race : SRLDataType
+      public class Race : SRLData
     content.vb: >-
       <DataContract>
 
-      <KnownType(GetType(SRLDataType))>
+      <KnownType(GetType(SRLData))>
 
       Public Class Race
-          Inherits SRLDataType
+          Inherits SRLData
   inheritance:
   - System.Object
-  - SRLApiClient.Endpoints.SRLDataType
+  - SRLApiClient.Endpoints.SRLData
   inheritedMembers:
-  - SRLApiClient.Endpoints.SRLDataType.Deserialized
+  - SRLApiClient.Endpoints.SRLData.Deserialized
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -70,7 +68,7 @@ items:
     ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
     arguments:
     - type: System.Type
-      value: SRLApiClient.Endpoints.SRLDataType
+      value: SRLApiClient.Endpoints.SRLData
   modifiers.csharp:
   - public
   - class
@@ -91,7 +89,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Id
     path: Endpoints/Races/Race.cs
@@ -147,7 +145,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Game
     path: Endpoints/Races/Race.cs
@@ -203,7 +201,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Goal
     path: Endpoints/Races/Race.cs
@@ -259,7 +257,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Time
     path: Endpoints/Races/Race.cs
@@ -315,7 +313,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: State
     path: Endpoints/Races/Race.cs
@@ -338,60 +336,6 @@ items:
   modifiers.vb:
   - Public
   - ReadOnly
-- uid: SRLApiClient.Endpoints.Races.Race._state
-  commentId: P:SRLApiClient.Endpoints.Races.Race._state
-  id: _state
-  parent: SRLApiClient.Endpoints.Races.Race
-  langs:
-  - csharp
-  - vb
-  name: _state
-  nameWithType: Race._state
-  fullName: SRLApiClient.Endpoints.Races.Race._state
-  type: Property
-  source:
-    remote:
-      path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
-      repo: git@github.com:BitPatty/SRLApiClient.git
-    id: _state
-    path: Endpoints/Races/Race.cs
-    startLine: 60
-  assemblies:
-  - SRLApiClient
-  namespace: SRLApiClient.Endpoints.Races
-  summary: "\nThe races current state\n"
-  example: []
-  syntax:
-    content: >-
-      [DataMember(Name = "state", IsRequired = true)]
-
-      protected int _state { get; set; }
-    parameters: []
-    return:
-      type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="state", IsRequired:=True)>
-
-      Protected Property _state As Integer
-  overload: SRLApiClient.Endpoints.Races.Race._state*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: state
-    - name: IsRequired
-      type: System.Boolean
-      value: true
-  modifiers.csharp:
-  - protected
-  - get
-  - set
-  modifiers.vb:
-  - Protected
 - uid: SRLApiClient.Endpoints.Races.Race.StateText
   commentId: P:SRLApiClient.Endpoints.Races.Race.StateText
   id: StateText
@@ -406,7 +350,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StateText
     path: Endpoints/Races/Race.cs
@@ -462,7 +406,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FileName
     path: Endpoints/Races/Race.cs
@@ -518,7 +462,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: NumEntrants
     path: Endpoints/Races/Race.cs
@@ -560,60 +504,6 @@ items:
   - Public
   - Get
   - Protected Set
-- uid: SRLApiClient.Endpoints.Races.Race._entrants
-  commentId: P:SRLApiClient.Endpoints.Races.Race._entrants
-  id: _entrants
-  parent: SRLApiClient.Endpoints.Races.Race
-  langs:
-  - csharp
-  - vb
-  name: _entrants
-  nameWithType: Race._entrants
-  fullName: SRLApiClient.Endpoints.Races.Race._entrants
-  type: Property
-  source:
-    remote:
-      path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
-      repo: git@github.com:BitPatty/SRLApiClient.git
-    id: _entrants
-    path: Endpoints/Races/Race.cs
-    startLine: 84
-  assemblies:
-  - SRLApiClient
-  namespace: SRLApiClient.Endpoints.Races
-  summary: "\nThe list of race entrants\n"
-  example: []
-  syntax:
-    content: >-
-      [DataMember(Name = "entrants", IsRequired = true)]
-
-      protected Dictionary<string, Entrant> _entrants { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.Dictionary{System.String,SRLApiClient.Endpoints.Races.Entrant}
-    content.vb: >-
-      <DataMember(Name:="entrants", IsRequired:=True)>
-
-      Protected Property _entrants As Dictionary(Of String, Entrant)
-  overload: SRLApiClient.Endpoints.Races.Race._entrants*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: entrants
-    - name: IsRequired
-      type: System.Boolean
-      value: true
-  modifiers.csharp:
-  - protected
-  - get
-  - set
-  modifiers.vb:
-  - Protected
 - uid: SRLApiClient.Endpoints.Races.Race.Entrants
   commentId: P:SRLApiClient.Endpoints.Races.Race.Entrants
   id: Entrants
@@ -628,7 +518,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Entrants
     path: Endpoints/Races/Race.cs
@@ -664,18 +554,18 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: SRLApiClient.Endpoints.SRLDataType
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLData
+  commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
-  name: SRLDataType
-  nameWithType: SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
-  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
-  parent: SRLApiClient.Endpoints.SRLDataType
+  name: SRLData
+  nameWithType: SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLData.Deserialized
+  parent: SRLApiClient.Endpoints.SRLData
   name: Deserialized
-  nameWithType: SRLDataType.Deserialized
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
+  nameWithType: SRLData.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -1022,11 +912,6 @@ references:
   name: RaceState
   nameWithType: RaceState
   fullName: SRLApiClient.Endpoints.RaceState
-- uid: SRLApiClient.Endpoints.Races.Race._state*
-  commentId: Overload:SRLApiClient.Endpoints.Races.Race._state
-  name: _state
-  nameWithType: Race._state
-  fullName: SRLApiClient.Endpoints.Races.Race._state
 - uid: SRLApiClient.Endpoints.Races.Race.StateText*
   commentId: Overload:SRLApiClient.Endpoints.Races.Race.StateText
   name: StateText
@@ -1042,126 +927,6 @@ references:
   name: NumEntrants
   nameWithType: Race.NumEntrants
   fullName: SRLApiClient.Endpoints.Races.Race.NumEntrants
-- uid: SRLApiClient.Endpoints.Races.Race._entrants*
-  commentId: Overload:SRLApiClient.Endpoints.Races.Race._entrants
-  name: _entrants
-  nameWithType: Race._entrants
-  fullName: SRLApiClient.Endpoints.Races.Race._entrants
-- uid: System.Collections.Generic.Dictionary{System.String,SRLApiClient.Endpoints.Races.Entrant}
-  commentId: T:System.Collections.Generic.Dictionary{System.String,SRLApiClient.Endpoints.Races.Entrant}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.Dictionary`2
-  name: Dictionary<String, Entrant>
-  nameWithType: Dictionary<String, Entrant>
-  fullName: System.Collections.Generic.Dictionary<System.String, SRLApiClient.Endpoints.Races.Entrant>
-  nameWithType.vb: Dictionary(Of String, Entrant)
-  fullName.vb: System.Collections.Generic.Dictionary(Of System.String, SRLApiClient.Endpoints.Races.Entrant)
-  name.vb: Dictionary(Of String, Entrant)
-  spec.csharp:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: SRLApiClient.Endpoints.Races.Entrant
-    name: Entrant
-    nameWithType: Entrant
-    fullName: SRLApiClient.Endpoints.Races.Entrant
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: System.String
-    name: String
-    nameWithType: String
-    fullName: System.String
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: SRLApiClient.Endpoints.Races.Entrant
-    name: Entrant
-    nameWithType: Entrant
-    fullName: SRLApiClient.Endpoints.Races.Entrant
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic.Dictionary`2
-  commentId: T:System.Collections.Generic.Dictionary`2
-  isExternal: true
-  name: Dictionary<TKey, TValue>
-  nameWithType: Dictionary<TKey, TValue>
-  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
-  nameWithType.vb: Dictionary(Of TKey, TValue)
-  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
-  name.vb: Dictionary(Of TKey, TValue)
-  spec.csharp:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: TKey
-    nameWithType: TKey
-    fullName: TKey
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TValue
-    nameWithType: TValue
-    fullName: TValue
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.Dictionary`2
-    name: Dictionary
-    nameWithType: Dictionary
-    fullName: System.Collections.Generic.Dictionary
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: TKey
-    nameWithType: TKey
-    fullName: TKey
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - name: TValue
-    nameWithType: TValue
-    fullName: TValue
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
 - uid: SRLApiClient.Endpoints.Races.Race.Entrants*
   commentId: Overload:SRLApiClient.Endpoints.Races.Race.Entrants
   name: Entrants

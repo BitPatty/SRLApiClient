@@ -1,25 +1,25 @@
 ### YamlMime:ManagedReference
 items:
-- uid: SRLApiClient.Endpoints.SRLDataType
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
-  id: SRLDataType
+- uid: SRLApiClient.Endpoints.SRLData
+  commentId: T:SRLApiClient.Endpoints.SRLData
+  id: SRLData
   parent: SRLApiClient.Endpoints
   children:
-  - SRLApiClient.Endpoints.SRLDataType.Deserialized
+  - SRLApiClient.Endpoints.SRLData.Deserialized
   langs:
   - csharp
   - vb
-  name: SRLDataType
-  nameWithType: SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
+  name: SRLData
+  nameWithType: SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
   type: Class
   source:
     remote:
-      path: SRLApiClient/Endpoints/SRLDataType.cs
-      branch: master
+      path: SRLApiClient/Endpoints/SRLData.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
-    id: SRLDataType
-    path: Endpoints/SRLDataType.cs
+    id: SRLData
+    path: Endpoints/SRLData.cs
     startLine: 10
   assemblies:
   - SRLApiClient
@@ -30,11 +30,11 @@ items:
     content: >-
       [DataContract]
 
-      public class SRLDataType
+      public class SRLData
     content.vb: >-
       <DataContract>
 
-      Public Class SRLDataType
+      Public Class SRLData
   inheritance:
   - System.Object
   derivedClasses:
@@ -46,7 +46,6 @@ items:
   - SRLApiClient.Endpoints.Players.Player
   - SRLApiClient.Endpoints.Races.Entrant
   - SRLApiClient.Endpoints.Races.Race
-  - SRLApiClient.Endpoints.SRLEndpoint.GameRules
   - SRLApiClient.Endpoints.Stats.GameStats
   - SRLApiClient.Endpoints.Stats.PlayerStats
   - SRLApiClient.Endpoints.Stats.SRLStats
@@ -68,24 +67,24 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
-  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLData.Deserialized
   id: Deserialized
-  parent: SRLApiClient.Endpoints.SRLDataType
+  parent: SRLApiClient.Endpoints.SRLData
   langs:
   - csharp
   - vb
   name: Deserialized
-  nameWithType: SRLDataType.Deserialized
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
+  nameWithType: SRLData.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
   type: Property
   source:
     remote:
-      path: SRLApiClient/Endpoints/SRLDataType.cs
-      branch: master
+      path: SRLApiClient/Endpoints/SRLData.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Deserialized
-    path: Endpoints/SRLDataType.cs
+    path: Endpoints/SRLData.cs
     startLine: 16
   assemblies:
   - SRLApiClient
@@ -98,7 +97,7 @@ items:
     return:
       type: System.DateTime
     content.vb: Public ReadOnly Property Deserialized As Date
-  overload: SRLApiClient.Endpoints.SRLDataType.Deserialized*
+  overload: SRLApiClient.Endpoints.SRLData.Deserialized*
   modifiers.csharp:
   - public
   - get
@@ -403,11 +402,11 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized*
-  commentId: Overload:SRLApiClient.Endpoints.SRLDataType.Deserialized
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized*
+  commentId: Overload:SRLApiClient.Endpoints.SRLData.Deserialized
   name: Deserialized
-  nameWithType: SRLDataType.Deserialized
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
+  nameWithType: SRLData.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
 - uid: System.DateTime
   commentId: T:System.DateTime
   parent: System

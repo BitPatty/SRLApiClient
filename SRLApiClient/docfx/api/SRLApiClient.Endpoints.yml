@@ -6,9 +6,8 @@ items:
   children:
   - SRLApiClient.Endpoints.EntrantState
   - SRLApiClient.Endpoints.RaceState
-  - SRLApiClient.Endpoints.SRLDataType
+  - SRLApiClient.Endpoints.SRLData
   - SRLApiClient.Endpoints.SRLEndpoint
-  - SRLApiClient.Endpoints.SRLEndpoint.GameRules
   - SRLApiClient.Endpoints.StreamApi
   langs:
   - csharp
@@ -32,29 +31,24 @@ references:
   name: RaceState
   nameWithType: RaceState
   fullName: SRLApiClient.Endpoints.RaceState
-- uid: SRLApiClient.Endpoints.StreamApi
-  commentId: T:SRLApiClient.Endpoints.StreamApi
+- uid: SRLApiClient.Endpoints.SRLData
+  commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
-  name: StreamApi
-  nameWithType: StreamApi
-  fullName: SRLApiClient.Endpoints.StreamApi
-- uid: SRLApiClient.Endpoints.SRLDataType
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
-  parent: SRLApiClient.Endpoints
-  name: SRLDataType
-  nameWithType: SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
+  name: SRLData
+  nameWithType: SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
 - uid: SRLApiClient.Endpoints.SRLEndpoint
   commentId: T:SRLApiClient.Endpoints.SRLEndpoint
   parent: SRLApiClient.Endpoints
   name: SRLEndpoint
   nameWithType: SRLEndpoint
   fullName: SRLApiClient.Endpoints.SRLEndpoint
-- uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  commentId: T:SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  name: SRLEndpoint.GameRules
-  nameWithType: SRLEndpoint.GameRules
-  fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules
+- uid: SRLApiClient.Endpoints.StreamApi
+  commentId: T:SRLApiClient.Endpoints.StreamApi
+  parent: SRLApiClient.Endpoints
+  name: StreamApi
+  nameWithType: StreamApi
+  fullName: SRLApiClient.Endpoints.StreamApi
 - uid: SRLApiClient.Endpoints
   commentId: N:SRLApiClient.Endpoints
   name: SRLApiClient.Endpoints

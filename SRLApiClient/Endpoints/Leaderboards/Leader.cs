@@ -5,8 +5,8 @@ namespace SRLApiClient.Endpoints.Leaderboards
   /// <summary>
   /// Leader object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Leader : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Leader : SRLData
   {
     /// <summary>
     /// The players name

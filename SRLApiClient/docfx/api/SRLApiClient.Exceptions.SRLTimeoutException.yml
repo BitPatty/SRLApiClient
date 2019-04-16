@@ -1,36 +1,36 @@
 ### YamlMime:ManagedReference
 items:
-- uid: SRLApiClient.SRLParseException
-  commentId: T:SRLApiClient.SRLParseException
-  id: SRLParseException
-  parent: SRLApiClient
+- uid: SRLApiClient.Exceptions.SRLTimeoutException
+  commentId: T:SRLApiClient.Exceptions.SRLTimeoutException
+  id: SRLTimeoutException
+  parent: SRLApiClient.Exceptions
   children:
-  - SRLApiClient.SRLParseException.#ctor
-  - SRLApiClient.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  - SRLApiClient.SRLParseException.#ctor(System.String)
-  - SRLApiClient.SRLParseException.#ctor(System.String,System.Exception)
+  - SRLApiClient.Exceptions.SRLTimeoutException.#ctor
+  - SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String)
+  - SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,System.Exception)
   langs:
   - csharp
   - vb
-  name: SRLParseException
-  nameWithType: SRLParseException
-  fullName: SRLApiClient.SRLParseException
+  name: SRLTimeoutException
+  nameWithType: SRLTimeoutException
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException
   type: Class
   source:
     remote:
-      path: SRLApiClient/Exceptions.cs
-      branch: master
+      path: SRLApiClient/Exceptions/SRLTimeoutException.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
-    id: SRLParseException
-    path: Exceptions.cs
-    startLine: 16
+    id: SRLTimeoutException
+    path: Exceptions/SRLTimeoutException.cs
+    startLine: 7
   assemblies:
   - SRLApiClient
-  namespace: SRLApiClient
+  namespace: SRLApiClient.Exceptions
   syntax:
-    content: 'public class SRLParseException : Exception, ISerializable'
+    content: 'public class SRLTimeoutException : Exception, ISerializable'
     content.vb: >-
-      Public Class SRLParseException
+      Public Class SRLTimeoutException
           Inherits Exception
           Implements ISerializable
   inheritance:
@@ -63,145 +63,145 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: SRLApiClient.SRLParseException.#ctor
-  commentId: M:SRLApiClient.SRLParseException.#ctor
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor
   id: '#ctor'
-  parent: SRLApiClient.SRLParseException
+  parent: SRLApiClient.Exceptions.SRLTimeoutException
   langs:
   - csharp
   - vb
-  name: SRLParseException()
-  nameWithType: SRLParseException.SRLParseException()
-  fullName: SRLApiClient.SRLParseException.SRLParseException()
+  name: SRLTimeoutException()
+  nameWithType: SRLTimeoutException.SRLTimeoutException()
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException()
   type: Constructor
   source:
     remote:
-      path: SRLApiClient/Exceptions.cs
-      branch: master
+      path: SRLApiClient/Exceptions/SRLTimeoutException.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
-    path: Exceptions.cs
-    startLine: 18
+    path: Exceptions/SRLTimeoutException.cs
+    startLine: 9
   assemblies:
   - SRLApiClient
-  namespace: SRLApiClient
+  namespace: SRLApiClient.Exceptions
   syntax:
-    content: public SRLParseException()
+    content: public SRLTimeoutException()
     content.vb: Public Sub New
-  overload: SRLApiClient.SRLParseException.#ctor*
+  overload: SRLApiClient.Exceptions.SRLTimeoutException.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: SRLApiClient.SRLParseException.#ctor(System.String)
-  commentId: M:SRLApiClient.SRLParseException.#ctor(System.String)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String)
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String)
   id: '#ctor(System.String)'
-  parent: SRLApiClient.SRLParseException
+  parent: SRLApiClient.Exceptions.SRLTimeoutException
   langs:
   - csharp
   - vb
-  name: SRLParseException(String)
-  nameWithType: SRLParseException.SRLParseException(String)
-  fullName: SRLApiClient.SRLParseException.SRLParseException(System.String)
+  name: SRLTimeoutException(String)
+  nameWithType: SRLTimeoutException.SRLTimeoutException(String)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.String)
   type: Constructor
   source:
     remote:
-      path: SRLApiClient/Exceptions.cs
-      branch: master
+      path: SRLApiClient/Exceptions/SRLTimeoutException.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
-    path: Exceptions.cs
-    startLine: 19
+    path: Exceptions/SRLTimeoutException.cs
+    startLine: 10
   assemblies:
   - SRLApiClient
-  namespace: SRLApiClient
+  namespace: SRLApiClient.Exceptions
   syntax:
-    content: public SRLParseException(string message)
+    content: public SRLTimeoutException(string message)
     parameters:
     - id: message
       type: System.String
     content.vb: Public Sub New(message As String)
-  overload: SRLApiClient.SRLParseException.#ctor*
+  overload: SRLApiClient.Exceptions.SRLTimeoutException.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: SRLApiClient.SRLParseException.#ctor(System.String,System.Exception)
-  commentId: M:SRLApiClient.SRLParseException.#ctor(System.String,System.Exception)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,System.Exception)
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,System.Exception)
   id: '#ctor(System.String,System.Exception)'
-  parent: SRLApiClient.SRLParseException
+  parent: SRLApiClient.Exceptions.SRLTimeoutException
   langs:
   - csharp
   - vb
-  name: SRLParseException(String, Exception)
-  nameWithType: SRLParseException.SRLParseException(String, Exception)
-  fullName: SRLApiClient.SRLParseException.SRLParseException(System.String, System.Exception)
+  name: SRLTimeoutException(String, Exception)
+  nameWithType: SRLTimeoutException.SRLTimeoutException(String, Exception)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.String, System.Exception)
   type: Constructor
   source:
     remote:
-      path: SRLApiClient/Exceptions.cs
-      branch: master
+      path: SRLApiClient/Exceptions/SRLTimeoutException.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
-    path: Exceptions.cs
-    startLine: 20
+    path: Exceptions/SRLTimeoutException.cs
+    startLine: 11
   assemblies:
   - SRLApiClient
-  namespace: SRLApiClient
+  namespace: SRLApiClient.Exceptions
   syntax:
-    content: public SRLParseException(string message, Exception inner)
+    content: public SRLTimeoutException(string message, Exception inner)
     parameters:
     - id: message
       type: System.String
     - id: inner
       type: System.Exception
     content.vb: Public Sub New(message As String, inner As Exception)
-  overload: SRLApiClient.SRLParseException.#ctor*
+  overload: SRLApiClient.Exceptions.SRLTimeoutException.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: SRLApiClient.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  commentId: M:SRLApiClient.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
   id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
-  parent: SRLApiClient.SRLParseException
+  parent: SRLApiClient.Exceptions.SRLTimeoutException
   langs:
   - csharp
   - vb
-  name: SRLParseException(SerializationInfo, StreamingContext)
-  nameWithType: SRLParseException.SRLParseException(SerializationInfo, StreamingContext)
-  fullName: SRLApiClient.SRLParseException.SRLParseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  name: SRLTimeoutException(SerializationInfo, StreamingContext)
+  nameWithType: SRLTimeoutException.SRLTimeoutException(SerializationInfo, StreamingContext)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
   type: Constructor
   source:
     remote:
-      path: SRLApiClient/Exceptions.cs
-      branch: master
+      path: SRLApiClient/Exceptions/SRLTimeoutException.cs
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
-    path: Exceptions.cs
-    startLine: 21
+    path: Exceptions/SRLTimeoutException.cs
+    startLine: 12
   assemblies:
   - SRLApiClient
-  namespace: SRLApiClient
+  namespace: SRLApiClient.Exceptions
   syntax:
-    content: protected SRLParseException(SerializationInfo info, StreamingContext context)
+    content: protected SRLTimeoutException(SerializationInfo info, StreamingContext context)
     parameters:
     - id: info
       type: System.Runtime.Serialization.SerializationInfo
     - id: context
       type: System.Runtime.Serialization.StreamingContext
     content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
-  overload: SRLApiClient.SRLParseException.#ctor*
+  overload: SRLApiClient.Exceptions.SRLTimeoutException.#ctor*
   modifiers.csharp:
   - protected
   modifiers.vb:
   - Protected
 references:
-- uid: SRLApiClient
-  commentId: N:SRLApiClient
-  name: SRLApiClient
-  nameWithType: SRLApiClient
-  fullName: SRLApiClient
+- uid: SRLApiClient.Exceptions
+  commentId: N:SRLApiClient.Exceptions
+  name: SRLApiClient.Exceptions
+  nameWithType: SRLApiClient.Exceptions
+  fullName: SRLApiClient.Exceptions
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -665,11 +665,11 @@ references:
   name: System.Runtime.Serialization
   nameWithType: System.Runtime.Serialization
   fullName: System.Runtime.Serialization
-- uid: SRLApiClient.SRLParseException.#ctor*
-  commentId: Overload:SRLApiClient.SRLParseException.#ctor
-  name: SRLParseException
-  nameWithType: SRLParseException.SRLParseException
-  fullName: SRLApiClient.SRLParseException.SRLParseException
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor*
+  commentId: Overload:SRLApiClient.Exceptions.SRLTimeoutException.#ctor
+  name: SRLTimeoutException
+  nameWithType: SRLTimeoutException.SRLTimeoutException
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException
 - uid: System.String
   commentId: T:System.String
   parent: System

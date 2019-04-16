@@ -24,11 +24,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StatsClient
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 11
+    startLine: 12
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -72,11 +72,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 17
+    startLine: 18
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -108,11 +108,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStats
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 31
+    startLine: 32
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -147,11 +147,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStatsAsync
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 50
+    startLine: 51
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -186,11 +186,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStats
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -228,11 +228,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStatsAsync
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 91
+    startLine: 92
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -270,11 +270,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetGameStats
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 118
+    startLine: 119
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -309,11 +309,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetGameStatsAsync
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 137
+    startLine: 138
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -348,11 +348,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetMonthlySRLStats
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 162
+    startLine: 163
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -383,11 +383,11 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/StatsClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetMonthlySRLStatsAsync
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 178
+    startLine: 179
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats

@@ -1,16 +1,16 @@
-﻿using SRLApiClient.Endpoints.Games;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Runtime.Serialization;
 using System.Linq;
+using System.Runtime.Serialization;
+using SRLApiClient.Endpoints.Games;
 
 namespace SRLApiClient.Endpoints.Races
 {
   /// <summary>
   /// Race object
   /// </summary>
-  [DataContract, KnownType(typeof(SRLDataType))]
-  public class Race : SRLDataType
+  [DataContract, KnownType(typeof(SRLData))]
+  public class Race : SRLData
   {
     /// <summary>
     /// The race id
@@ -59,7 +59,7 @@ namespace SRLApiClient.Endpoints.Races
     /// The races current state
     /// </summary>
     [DataMember(Name = "state", IsRequired = true)]
-    protected int _state { get; set; }
+    private int _state { get; set; }
 
     /// <summary>
     /// The races current state text
@@ -83,7 +83,7 @@ namespace SRLApiClient.Endpoints.Races
     /// The list of race entrants
     /// </summary>
     [DataMember(Name = "entrants", IsRequired = true)]
-    protected Dictionary<string, Entrant> _entrants { get; set; }
+    private Dictionary<string, Entrant> _entrants { get; set; }
 
     /// <summary>
     /// The list of race entrants

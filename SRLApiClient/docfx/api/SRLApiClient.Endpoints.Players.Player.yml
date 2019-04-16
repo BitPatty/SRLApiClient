@@ -5,7 +5,6 @@ items:
   id: Player
   parent: SRLApiClient.Endpoints.Players
   children:
-  - SRLApiClient.Endpoints.Players.Player._api
   - SRLApiClient.Endpoints.Players.Player.Channel
   - SRLApiClient.Endpoints.Players.Player.Country
   - SRLApiClient.Endpoints.Players.Player.Id
@@ -23,7 +22,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Player
     path: Endpoints/Players/Player.cs
@@ -37,21 +36,21 @@ items:
     content: >-
       [DataContract]
 
-      [KnownType(typeof(SRLDataType))]
+      [KnownType(typeof(SRLData))]
 
-      public class Player : SRLDataType
+      public class Player : SRLData
     content.vb: >-
       <DataContract>
 
-      <KnownType(GetType(SRLDataType))>
+      <KnownType(GetType(SRLData))>
 
       Public Class Player
-          Inherits SRLDataType
+          Inherits SRLData
   inheritance:
   - System.Object
-  - SRLApiClient.Endpoints.SRLDataType
+  - SRLApiClient.Endpoints.SRLData
   inheritedMembers:
-  - SRLApiClient.Endpoints.SRLDataType.Deserialized
+  - SRLApiClient.Endpoints.SRLData.Deserialized
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -67,7 +66,7 @@ items:
     ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
     arguments:
     - type: System.Type
-      value: SRLApiClient.Endpoints.SRLDataType
+      value: SRLApiClient.Endpoints.SRLData
   modifiers.csharp:
   - public
   - class
@@ -88,7 +87,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Id
     path: Endpoints/Players/Player.cs
@@ -144,7 +143,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Name
     path: Endpoints/Players/Player.cs
@@ -200,7 +199,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Channel
     path: Endpoints/Players/Player.cs
@@ -256,7 +255,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Twitter
     path: Endpoints/Players/Player.cs
@@ -312,7 +311,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Youtube
     path: Endpoints/Players/Player.cs
@@ -354,60 +353,6 @@ items:
   - Public
   - Get
   - Protected Set
-- uid: SRLApiClient.Endpoints.Players.Player._api
-  commentId: P:SRLApiClient.Endpoints.Players.Player._api
-  id: _api
-  parent: SRLApiClient.Endpoints.Players.Player
-  langs:
-  - csharp
-  - vb
-  name: _api
-  nameWithType: Player._api
-  fullName: SRLApiClient.Endpoints.Players.Player._api
-  type: Property
-  source:
-    remote:
-      path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: master
-      repo: git@github.com:BitPatty/SRLApiClient.git
-    id: _api
-    path: Endpoints/Players/Player.cs
-    startLine: 43
-  assemblies:
-  - SRLApiClient
-  namespace: SRLApiClient.Endpoints.Players
-  summary: "\nThe streaming API used by srl\n"
-  example: []
-  syntax:
-    content: >-
-      [DataMember(Name = "api", IsRequired = false)]
-
-      protected string _api { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: >-
-      <DataMember(Name:="api", IsRequired:=False)>
-
-      Protected Property _api As String
-  overload: SRLApiClient.Endpoints.Players.Player._api*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: api
-    - name: IsRequired
-      type: System.Boolean
-      value: false
-  modifiers.csharp:
-  - protected
-  - get
-  - set
-  modifiers.vb:
-  - Protected
 - uid: SRLApiClient.Endpoints.Players.Player.StreamApi
   commentId: P:SRLApiClient.Endpoints.Players.Player.StreamApi
   id: StreamApi
@@ -422,7 +367,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StreamApi
     path: Endpoints/Players/Player.cs
@@ -459,7 +404,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Players/Player.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Country
     path: Endpoints/Players/Player.cs
@@ -514,18 +459,18 @@ references:
   name: Object
   nameWithType: Object
   fullName: System.Object
-- uid: SRLApiClient.Endpoints.SRLDataType
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLData
+  commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
-  name: SRLDataType
-  nameWithType: SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
-  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
-  parent: SRLApiClient.Endpoints.SRLDataType
+  name: SRLData
+  nameWithType: SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLData.Deserialized
+  parent: SRLApiClient.Endpoints.SRLData
   name: Deserialized
-  nameWithType: SRLDataType.Deserialized
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
+  nameWithType: SRLData.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -855,11 +800,6 @@ references:
   name: Youtube
   nameWithType: Player.Youtube
   fullName: SRLApiClient.Endpoints.Players.Player.Youtube
-- uid: SRLApiClient.Endpoints.Players.Player._api*
-  commentId: Overload:SRLApiClient.Endpoints.Players.Player._api
-  name: _api
-  nameWithType: Player._api
-  fullName: SRLApiClient.Endpoints.Players.Player._api
 - uid: SRLApiClient.Endpoints.Players.Player.StreamApi*
   commentId: Overload:SRLApiClient.Endpoints.Players.Player.StreamApi
   name: StreamApi

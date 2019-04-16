@@ -4,19 +4,20 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <FileVersion>0.10.0.0</FileVersion>
-    <Version>0.10.0-beta</Version>
+    <Version>0.10.0-beta3</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
     <Authors>Matteias Collet (BitPatty) &lt;matteias.collet@bluewin.ch&gt;</Authors>
-    <Description>API Wrapper for the SpeedRunsLive API</Description>
+    <Description>API Wrapper around the SpeedRunsLive API</Description>
     <RepositoryUrl>https://github.com/BitPatty/SRLApiClient</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageProjectUrl>https://github.com/BitPatty/SRLApiClient</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/BitPatty/SRLApiClient/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageReleaseNotes>API Wrapper for the SpeedRunsLive API</PackageReleaseNotes>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE</PackageLicenseUrl>
+    <PackageReleaseNotes>For the changelog and documentation visit https://srlclient.zint.ch/</PackageReleaseNotes>
     <PackageTags>speedrunslive</PackageTags>
-    <Copyright>2018 Matteias Collet</Copyright>
+    <Copyright>2018-2019 Matteias Collet</Copyright>
     <Company></Company>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -31,7 +32,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="docfx.console" Version="2.41.0" Condition="'$(OS)' == 'Windows_NT'">
+    <PackageReference Include="docfx.console" Version="2.41.0" Condition="'$(OS)' == 'Windows_NT' And '$(Configuration)|$(Platform)'=='Release|AnyCPU'">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
@@ -42,7 +43,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Condition="'$(OS)' == 'Windows_NT'" Command="echo &quot;Removing docs folder&quot;&#xD;&#xA;RD /S /Q &quot;../docs&quot;&#xD;&#xA;echo &quot;Docs folder removed&quot;" />
+    <Exec Condition="'$(OS)' == 'Windows_NT' And '$(Configuration)|$(Platform)'=='Release|AnyCPU'" Command="echo &quot;Removing docs folder&quot;&#xD;&#xA;RD /S /Q &quot;../docs&quot;&#xD;&#xA;echo &quot;Docs folder removed&quot;" />
     <Exec Condition="'$(OS)' == 'Unix'" Command="echo &quot;Skipping docs generation!&quot;" />
     <Exec Condition="'$(OS)' == 'OSX'" Command="echo &quot;Skipping docs generation!&quot;" />
   </Target>

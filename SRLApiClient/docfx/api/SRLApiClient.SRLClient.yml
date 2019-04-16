@@ -40,11 +40,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SRLClient
     path: SRLClient.cs
-    startLine: 38
+    startLine: 40
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -89,11 +89,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Host
     path: SRLClient.cs
-    startLine: 43
+    startLine: 45
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -126,11 +126,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: User
     path: SRLClient.cs
-    startLine: 52
+    startLine: 54
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -140,7 +140,7 @@ items:
     content: public SRLUser User { get; }
     parameters: []
     return:
-      type: SRLApiClient.SRLUser
+      type: SRLApiClient.User.SRLUser
     content.vb: Public ReadOnly Property User As SRLUser
   overload: SRLApiClient.SRLClient.User*
   modifiers.csharp:
@@ -163,11 +163,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: IsAuthenticated
     path: SRLClient.cs
-    startLine: 59
+    startLine: 61
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -200,11 +200,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Games
     path: SRLClient.cs
-    startLine: 64
+    startLine: 66
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -237,11 +237,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Players
     path: SRLClient.cs
-    startLine: 69
+    startLine: 71
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -274,11 +274,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Leaderboards
     path: SRLClient.cs
-    startLine: 74
+    startLine: 76
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -311,11 +311,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Races
     path: SRLClient.cs
-    startLine: 79
+    startLine: 81
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -348,11 +348,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PastRaces
     path: SRLClient.cs
-    startLine: 84
+    startLine: 86
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -385,11 +385,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Countries
     path: SRLClient.cs
-    startLine: 89
+    startLine: 91
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -422,11 +422,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Stats
     path: SRLClient.cs
-    startLine: 94
+    startLine: 96
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -459,11 +459,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RequestTimeout
     path: SRLClient.cs
-    startLine: 101
+    startLine: 103
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -496,11 +496,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: SRLClient.cs
-    startLine: 116
+    startLine: 118
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -532,11 +532,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: SRLClient.cs
-    startLine: 153
+    startLine: 155
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -545,7 +545,7 @@ items:
   syntax:
     content: >-
       public T Get<T>(string endpoint)
-          where T : SRLDataType
+          where T : SRLData
     parameters:
     - id: endpoint
       type: System.String
@@ -556,13 +556,13 @@ items:
     return:
       type: '{T}'
       description: Returns the parsed response
-    content.vb: Public Function Get(Of T As SRLDataType)(endpoint As String) As T
+    content.vb: Public Function Get(Of T As SRLData)(endpoint As String) As T
   overload: SRLApiClient.SRLClient.Get*
   exceptions:
-  - type: SRLApiClient.SRLParseException
-    commentId: T:SRLApiClient.SRLParseException
-  - type: SRLApiClient.SRLTimeoutException
-    commentId: T:SRLApiClient.SRLTimeoutException
+  - type: SRLApiClient.Exceptions.SRLParseException
+    commentId: T:SRLApiClient.Exceptions.SRLParseException
+  - type: SRLApiClient.Exceptions.SRLTimeoutException
+    commentId: T:SRLApiClient.Exceptions.SRLTimeoutException
   nameWithType.vb: SRLClient.Get(Of T)(String)
   modifiers.csharp:
   - public
@@ -584,11 +584,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: SRLClient.cs
-    startLine: 163
+    startLine: 165
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -597,7 +597,7 @@ items:
   syntax:
     content: >-
       public Task<T> GetAsync<T>(string endpoint)
-          where T : SRLDataType
+          where T : SRLData
     parameters:
     - id: endpoint
       type: System.String
@@ -608,13 +608,13 @@ items:
     return:
       type: System.Threading.Tasks.Task{{T}}
       description: Returns the parsed response
-    content.vb: Public Function GetAsync(Of T As SRLDataType)(endpoint As String) As Task(Of T)
+    content.vb: Public Function GetAsync(Of T As SRLData)(endpoint As String) As Task(Of T)
   overload: SRLApiClient.SRLClient.GetAsync*
   exceptions:
-  - type: SRLApiClient.SRLParseException
-    commentId: T:SRLApiClient.SRLParseException
-  - type: SRLApiClient.SRLTimeoutException
-    commentId: T:SRLApiClient.SRLTimeoutException
+  - type: SRLApiClient.Exceptions.SRLParseException
+    commentId: T:SRLApiClient.Exceptions.SRLParseException
+  - type: SRLApiClient.Exceptions.SRLTimeoutException
+    commentId: T:SRLApiClient.Exceptions.SRLTimeoutException
   nameWithType.vb: SRLClient.GetAsync(Of T)(String)
   modifiers.csharp:
   - public
@@ -636,11 +636,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Put
     path: SRLClient.cs
-    startLine: 184
+    startLine: 186
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -681,11 +681,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PutAsync
     path: SRLClient.cs
-    startLine: 192
+    startLine: 194
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -726,11 +726,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Post
     path: SRLClient.cs
-    startLine: 204
+    startLine: 206
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -771,11 +771,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PostAsync
     path: SRLClient.cs
-    startLine: 212
+    startLine: 214
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -816,11 +816,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SubmitPayloadAsync
     path: SRLClient.cs
-    startLine: 225
+    startLine: 227
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -864,20 +864,20 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: DeSerialize
     path: SRLClient.cs
-    startLine: 259
+    startLine: 261
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
-  summary: "\nDeserializes a response stream into an <xref href=\"SRLApiClient.Endpoints.SRLDataType\" data-throw-if-not-resolved=\"false\"></xref>\n"
+  summary: "\nDeserializes a response stream into an <xref href=\"SRLApiClient.Endpoints.SRLData\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
   syntax:
     content: >-
       public T DeSerialize<T>(Stream s)
-          where T : SRLDataType
+          where T : SRLData
     parameters:
     - id: s
       type: System.IO.Stream
@@ -888,7 +888,7 @@ items:
     return:
       type: '{T}'
       description: Returns the resulting object
-    content.vb: Public Function DeSerialize(Of T As SRLDataType)(s As Stream) As T
+    content.vb: Public Function DeSerialize(Of T As SRLData)(s As Stream) As T
   overload: SRLApiClient.SRLClient.DeSerialize*
   nameWithType.vb: SRLClient.DeSerialize(Of T)(Stream)
   modifiers.csharp:
@@ -911,11 +911,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: JsonSerialize
     path: SRLClient.cs
-    startLine: 270
+    startLine: 272
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -953,11 +953,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Logout
     path: SRLClient.cs
-    startLine: 310
+    startLine: 312
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -985,11 +985,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: ReAuthenticate
     path: SRLClient.cs
-    startLine: 325
+    startLine: 327
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -1020,11 +1020,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Authenticate
     path: SRLClient.cs
-    startLine: 334
+    startLine: 336
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -1065,11 +1065,11 @@ items:
   source:
     remote:
       path: SRLApiClient/SRLClient.cs
-      branch: master
+      branch: paginated-requests
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Dispose
     path: SRLClient.cs
-    startLine: 422
+    startLine: 424
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -1407,12 +1407,17 @@ references:
   name: User
   nameWithType: SRLClient.User
   fullName: SRLApiClient.SRLClient.User
-- uid: SRLApiClient.SRLUser
-  commentId: T:SRLApiClient.SRLUser
-  parent: SRLApiClient
+- uid: SRLApiClient.User.SRLUser
+  commentId: T:SRLApiClient.User.SRLUser
+  parent: SRLApiClient.User
   name: SRLUser
   nameWithType: SRLUser
-  fullName: SRLApiClient.SRLUser
+  fullName: SRLApiClient.User.SRLUser
+- uid: SRLApiClient.User
+  commentId: N:SRLApiClient.User
+  name: SRLApiClient.User
+  nameWithType: SRLApiClient.User
+  fullName: SRLApiClient.User
 - uid: SRLApiClient.SRLClient.IsAuthenticated*
   commentId: Overload:SRLApiClient.SRLClient.IsAuthenticated
   name: IsAuthenticated
@@ -1554,16 +1559,16 @@ references:
   name: SRLClient
   nameWithType: SRLClient.SRLClient
   fullName: SRLApiClient.SRLClient.SRLClient
-- uid: SRLApiClient.SRLParseException
-  commentId: T:SRLApiClient.SRLParseException
+- uid: SRLApiClient.Exceptions.SRLParseException
+  commentId: T:SRLApiClient.Exceptions.SRLParseException
   name: SRLParseException
   nameWithType: SRLParseException
-  fullName: SRLApiClient.SRLParseException
-- uid: SRLApiClient.SRLTimeoutException
-  commentId: T:SRLApiClient.SRLTimeoutException
+  fullName: SRLApiClient.Exceptions.SRLParseException
+- uid: SRLApiClient.Exceptions.SRLTimeoutException
+  commentId: T:SRLApiClient.Exceptions.SRLTimeoutException
   name: SRLTimeoutException
   nameWithType: SRLTimeoutException
-  fullName: SRLApiClient.SRLTimeoutException
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException
 - uid: SRLApiClient.SRLClient.Get*
   commentId: Overload:SRLApiClient.SRLClient.Get
   name: Get
@@ -1868,12 +1873,12 @@ references:
   name: System.Net.Http
   nameWithType: System.Net.Http
   fullName: System.Net.Http
-- uid: SRLApiClient.Endpoints.SRLDataType
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
+- uid: SRLApiClient.Endpoints.SRLData
+  commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
-  name: SRLDataType
-  nameWithType: SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
+  name: SRLData
+  nameWithType: SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
 - uid: SRLApiClient.SRLClient.DeSerialize*
   commentId: Overload:SRLApiClient.SRLClient.DeSerialize
   name: DeSerialize

@@ -587,6 +587,12 @@ references:
   commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String)
   fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String)
   nameWithType: PastRacesClient.Get(String)
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String,System.String,System.Int32,System.Int32)
+  name: Get(String, String, Int32, Int32)
+  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_Get_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String,System.String,System.Int32,System.Int32)
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String, System.String, System.Int32, System.Int32)
+  nameWithType: PastRacesClient.Get(String, String, Int32, Int32)
 - uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get*
   name: Get
   href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_Get_
@@ -600,6 +606,12 @@ references:
   commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String)
   fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String)
   nameWithType: PastRacesClient.GetAsync(String)
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String,System.String,System.Int32,System.Int32)
+  name: GetAsync(String, String, Int32, Int32)
+  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetAsync_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String,System.String,System.Int32,System.Int32)
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String, System.String, System.Int32, System.Int32)
+  nameWithType: PastRacesClient.GetAsync(String, String, Int32, Int32)
 - uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync*
   name: GetAsync
   href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetAsync_
@@ -607,44 +619,6 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync
   nameWithType: PastRacesClient.GetAsync
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String)
-  name: GetByPlayer(String)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayer_System_String_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String)
-  nameWithType: PastRacesClient.GetByPlayer(String)
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String,System.String)
-  name: GetByPlayer(String, String)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayer_System_String_System_String_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String,System.String)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String, System.String)
-  nameWithType: PastRacesClient.GetByPlayer(String, String)
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer*
-  name: GetByPlayer
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayer_
-  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer
-  nameWithType: PastRacesClient.GetByPlayer
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String)
-  name: GetByPlayerAsync(String)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayerAsync_System_String_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String)
-  nameWithType: PastRacesClient.GetByPlayerAsync(String)
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String,System.String)
-  name: GetByPlayerAsync(String, String)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayerAsync_System_String_System_String_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String,System.String)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String, System.String)
-  nameWithType: PastRacesClient.GetByPlayerAsync(String, String)
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync*
-  name: GetByPlayerAsync
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayerAsync_
-  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync
-  nameWithType: PastRacesClient.GetByPlayerAsync
 - uid: SRLApiClient.Endpoints.PastRaces.Result
   name: Result
   href: api/SRLApiClient.Endpoints.PastRaces.Result.html
@@ -806,19 +780,6 @@ references:
   commentId: T:SRLApiClient.Endpoints.Players.Player
   fullName: SRLApiClient.Endpoints.Players.Player
   nameWithType: Player
-- uid: SRLApiClient.Endpoints.Players.Player._api
-  name: _api
-  href: api/SRLApiClient.Endpoints.Players.Player.html#SRLApiClient_Endpoints_Players_Player__api
-  commentId: P:SRLApiClient.Endpoints.Players.Player._api
-  fullName: SRLApiClient.Endpoints.Players.Player._api
-  nameWithType: Player._api
-- uid: SRLApiClient.Endpoints.Players.Player._api*
-  name: _api
-  href: api/SRLApiClient.Endpoints.Players.Player.html#SRLApiClient_Endpoints_Players_Player__api_
-  commentId: Overload:SRLApiClient.Endpoints.Players.Player._api
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.Players.Player._api
-  nameWithType: Player._api
 - uid: SRLApiClient.Endpoints.Players.Player.Channel
   name: Channel
   href: api/SRLApiClient.Endpoints.Players.Player.html#SRLApiClient_Endpoints_Players_Player_Channel
@@ -1006,19 +967,6 @@ references:
   commentId: T:SRLApiClient.Endpoints.Races.Entrant
   fullName: SRLApiClient.Endpoints.Races.Entrant
   nameWithType: Entrant
-- uid: SRLApiClient.Endpoints.Races.Entrant._place
-  name: _place
-  href: api/SRLApiClient.Endpoints.Races.Entrant.html#SRLApiClient_Endpoints_Races_Entrant__place
-  commentId: P:SRLApiClient.Endpoints.Races.Entrant._place
-  fullName: SRLApiClient.Endpoints.Races.Entrant._place
-  nameWithType: Entrant._place
-- uid: SRLApiClient.Endpoints.Races.Entrant._place*
-  name: _place
-  href: api/SRLApiClient.Endpoints.Races.Entrant.html#SRLApiClient_Endpoints_Races_Entrant__place_
-  commentId: Overload:SRLApiClient.Endpoints.Races.Entrant._place
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.Races.Entrant._place
-  nameWithType: Entrant._place
 - uid: SRLApiClient.Endpoints.Races.Entrant.Name
   name: Name
   href: api/SRLApiClient.Endpoints.Races.Entrant.html#SRLApiClient_Endpoints_Races_Entrant_Name
@@ -1116,32 +1064,6 @@ references:
   commentId: T:SRLApiClient.Endpoints.Races.Race
   fullName: SRLApiClient.Endpoints.Races.Race
   nameWithType: Race
-- uid: SRLApiClient.Endpoints.Races.Race._entrants
-  name: _entrants
-  href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race__entrants
-  commentId: P:SRLApiClient.Endpoints.Races.Race._entrants
-  fullName: SRLApiClient.Endpoints.Races.Race._entrants
-  nameWithType: Race._entrants
-- uid: SRLApiClient.Endpoints.Races.Race._entrants*
-  name: _entrants
-  href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race__entrants_
-  commentId: Overload:SRLApiClient.Endpoints.Races.Race._entrants
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.Races.Race._entrants
-  nameWithType: Race._entrants
-- uid: SRLApiClient.Endpoints.Races.Race._state
-  name: _state
-  href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race__state
-  commentId: P:SRLApiClient.Endpoints.Races.Race._state
-  fullName: SRLApiClient.Endpoints.Races.Race._state
-  nameWithType: Race._state
-- uid: SRLApiClient.Endpoints.Races.Race._state*
-  name: _state
-  href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race__state_
-  commentId: Overload:SRLApiClient.Endpoints.Races.Race._state
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.Races.Race._state
-  nameWithType: Race._state
 - uid: SRLApiClient.Endpoints.Races.Race.Entrants
   name: Entrants
   href: api/SRLApiClient.Endpoints.Races.Race.html#SRLApiClient_Endpoints_Races_Race_Entrants
@@ -1388,25 +1310,25 @@ references:
   commentId: F:SRLApiClient.Endpoints.RaceState.Unknown
   fullName: SRLApiClient.Endpoints.RaceState.Unknown
   nameWithType: RaceState.Unknown
-- uid: SRLApiClient.Endpoints.SRLDataType
-  name: SRLDataType
-  href: api/SRLApiClient.Endpoints.SRLDataType.html
-  commentId: T:SRLApiClient.Endpoints.SRLDataType
-  fullName: SRLApiClient.Endpoints.SRLDataType
-  nameWithType: SRLDataType
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized
+- uid: SRLApiClient.Endpoints.SRLData
+  name: SRLData
+  href: api/SRLApiClient.Endpoints.SRLData.html
+  commentId: T:SRLApiClient.Endpoints.SRLData
+  fullName: SRLApiClient.Endpoints.SRLData
+  nameWithType: SRLData
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized
   name: Deserialized
-  href: api/SRLApiClient.Endpoints.SRLDataType.html#SRLApiClient_Endpoints_SRLDataType_Deserialized
-  commentId: P:SRLApiClient.Endpoints.SRLDataType.Deserialized
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
-  nameWithType: SRLDataType.Deserialized
-- uid: SRLApiClient.Endpoints.SRLDataType.Deserialized*
+  href: api/SRLApiClient.Endpoints.SRLData.html#SRLApiClient_Endpoints_SRLData_Deserialized
+  commentId: P:SRLApiClient.Endpoints.SRLData.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
+  nameWithType: SRLData.Deserialized
+- uid: SRLApiClient.Endpoints.SRLData.Deserialized*
   name: Deserialized
-  href: api/SRLApiClient.Endpoints.SRLDataType.html#SRLApiClient_Endpoints_SRLDataType_Deserialized_
-  commentId: Overload:SRLApiClient.Endpoints.SRLDataType.Deserialized
+  href: api/SRLApiClient.Endpoints.SRLData.html#SRLApiClient_Endpoints_SRLData_Deserialized_
+  commentId: Overload:SRLApiClient.Endpoints.SRLData.Deserialized
   isSpec: "True"
-  fullName: SRLApiClient.Endpoints.SRLDataType.Deserialized
-  nameWithType: SRLDataType.Deserialized
+  fullName: SRLApiClient.Endpoints.SRLData.Deserialized
+  nameWithType: SRLData.Deserialized
 - uid: SRLApiClient.Endpoints.SRLEndpoint
   name: SRLEndpoint
   href: api/SRLApiClient.Endpoints.SRLEndpoint.html
@@ -1439,25 +1361,6 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Endpoints.SRLEndpoint.BasePath
   nameWithType: SRLEndpoint.BasePath
-- uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  name: SRLEndpoint.GameRules
-  href: api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html
-  commentId: T:SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules
-  nameWithType: SRLEndpoint.GameRules
-- uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  name: Rules
-  href: api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html#SRLApiClient_Endpoints_SRLEndpoint_GameRules_Rules
-  commentId: P:SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  nameWithType: SRLEndpoint.GameRules.Rules
-- uid: SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules*
-  name: Rules
-  href: api/SRLApiClient.Endpoints.SRLEndpoint.GameRules.html#SRLApiClient_Endpoints_SRLEndpoint_GameRules_Rules_
-  commentId: Overload:SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.SRLEndpoint.GameRules.Rules
-  nameWithType: SRLEndpoint.GameRules.Rules
 - uid: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
   name: SrlClient
   href: api/SRLApiClient.Endpoints.SRLEndpoint.html#SRLApiClient_Endpoints_SRLEndpoint_SrlClient
@@ -1953,6 +1856,86 @@ references:
   commentId: F:SRLApiClient.Endpoints.StreamApi.Unknown
   fullName: SRLApiClient.Endpoints.StreamApi.Unknown
   nameWithType: StreamApi.Unknown
+- uid: SRLApiClient.Exceptions
+  name: SRLApiClient.Exceptions
+  href: api/SRLApiClient.Exceptions.html
+  commentId: N:SRLApiClient.Exceptions
+  fullName: SRLApiClient.Exceptions
+  nameWithType: SRLApiClient.Exceptions
+- uid: SRLApiClient.Exceptions.SRLParseException
+  name: SRLParseException
+  href: api/SRLApiClient.Exceptions.SRLParseException.html
+  commentId: T:SRLApiClient.Exceptions.SRLParseException
+  fullName: SRLApiClient.Exceptions.SRLParseException
+  nameWithType: SRLParseException
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor
+  name: SRLParseException()
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException()
+  nameWithType: SRLParseException.SRLParseException()
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: SRLParseException(SerializationInfo, StreamingContext)
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: SRLParseException.SRLParseException(SerializationInfo, StreamingContext)
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.String)
+  name: SRLParseException(String)
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_System_String_
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.String)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.String)
+  nameWithType: SRLParseException.SRLParseException(String)
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,System.Exception)
+  name: SRLParseException(String, Exception)
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_System_String_System_Exception_
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,System.Exception)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.String, System.Exception)
+  nameWithType: SRLParseException.SRLParseException(String, Exception)
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor*
+  name: SRLParseException
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_
+  commentId: Overload:SRLApiClient.Exceptions.SRLParseException.#ctor
+  isSpec: "True"
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException
+  nameWithType: SRLParseException.SRLParseException
+- uid: SRLApiClient.Exceptions.SRLTimeoutException
+  name: SRLTimeoutException
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html
+  commentId: T:SRLApiClient.Exceptions.SRLTimeoutException
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException
+  nameWithType: SRLTimeoutException
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor
+  name: SRLTimeoutException()
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException()
+  nameWithType: SRLTimeoutException.SRLTimeoutException()
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  name: SRLTimeoutException(SerializationInfo, StreamingContext)
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  nameWithType: SRLTimeoutException.SRLTimeoutException(SerializationInfo, StreamingContext)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String)
+  name: SRLTimeoutException(String)
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_System_String_
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.String)
+  nameWithType: SRLTimeoutException.SRLTimeoutException(String)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,System.Exception)
+  name: SRLTimeoutException(String, Exception)
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_System_String_System_Exception_
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,System.Exception)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.String, System.Exception)
+  nameWithType: SRLTimeoutException.SRLTimeoutException(String, Exception)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor*
+  name: SRLTimeoutException
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_
+  commentId: Overload:SRLApiClient.Exceptions.SRLTimeoutException.#ctor
+  isSpec: "True"
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException
+  nameWithType: SRLTimeoutException.SRLTimeoutException
 - uid: SRLApiClient.Extensions
   name: SRLApiClient.Extensions
   href: api/SRLApiClient.Extensions.html
@@ -2451,300 +2434,232 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLClient.User
   nameWithType: SRLClient.User
-- uid: SRLApiClient.SRLParseException
-  name: SRLParseException
-  href: api/SRLApiClient.SRLParseException.html
-  commentId: T:SRLApiClient.SRLParseException
-  fullName: SRLApiClient.SRLParseException
-  nameWithType: SRLParseException
-- uid: SRLApiClient.SRLParseException.#ctor
-  name: SRLParseException()
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor
-  commentId: M:SRLApiClient.SRLParseException.#ctor
-  fullName: SRLApiClient.SRLParseException.SRLParseException()
-  nameWithType: SRLParseException.SRLParseException()
-- uid: SRLApiClient.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  name: SRLParseException(SerializationInfo, StreamingContext)
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  commentId: M:SRLApiClient.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  fullName: SRLApiClient.SRLParseException.SRLParseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  nameWithType: SRLParseException.SRLParseException(SerializationInfo, StreamingContext)
-- uid: SRLApiClient.SRLParseException.#ctor(System.String)
-  name: SRLParseException(String)
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor_System_String_
-  commentId: M:SRLApiClient.SRLParseException.#ctor(System.String)
-  fullName: SRLApiClient.SRLParseException.SRLParseException(System.String)
-  nameWithType: SRLParseException.SRLParseException(String)
-- uid: SRLApiClient.SRLParseException.#ctor(System.String,System.Exception)
-  name: SRLParseException(String, Exception)
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor_System_String_System_Exception_
-  commentId: M:SRLApiClient.SRLParseException.#ctor(System.String,System.Exception)
-  fullName: SRLApiClient.SRLParseException.SRLParseException(System.String, System.Exception)
-  nameWithType: SRLParseException.SRLParseException(String, Exception)
-- uid: SRLApiClient.SRLParseException.#ctor*
-  name: SRLParseException
-  href: api/SRLApiClient.SRLParseException.html#SRLApiClient_SRLParseException__ctor_
-  commentId: Overload:SRLApiClient.SRLParseException.#ctor
-  isSpec: "True"
-  fullName: SRLApiClient.SRLParseException.SRLParseException
-  nameWithType: SRLParseException.SRLParseException
-- uid: SRLApiClient.SRLTimeoutException
-  name: SRLTimeoutException
-  href: api/SRLApiClient.SRLTimeoutException.html
-  commentId: T:SRLApiClient.SRLTimeoutException
-  fullName: SRLApiClient.SRLTimeoutException
-  nameWithType: SRLTimeoutException
-- uid: SRLApiClient.SRLTimeoutException.#ctor
-  name: SRLTimeoutException()
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor
-  commentId: M:SRLApiClient.SRLTimeoutException.#ctor
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException()
-  nameWithType: SRLTimeoutException.SRLTimeoutException()
-- uid: SRLApiClient.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  name: SRLTimeoutException(SerializationInfo, StreamingContext)
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  commentId: M:SRLApiClient.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  nameWithType: SRLTimeoutException.SRLTimeoutException(SerializationInfo, StreamingContext)
-- uid: SRLApiClient.SRLTimeoutException.#ctor(System.String)
-  name: SRLTimeoutException(String)
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor_System_String_
-  commentId: M:SRLApiClient.SRLTimeoutException.#ctor(System.String)
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException(System.String)
-  nameWithType: SRLTimeoutException.SRLTimeoutException(String)
-- uid: SRLApiClient.SRLTimeoutException.#ctor(System.String,System.Exception)
-  name: SRLTimeoutException(String, Exception)
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor_System_String_System_Exception_
-  commentId: M:SRLApiClient.SRLTimeoutException.#ctor(System.String,System.Exception)
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException(System.String, System.Exception)
-  nameWithType: SRLTimeoutException.SRLTimeoutException(String, Exception)
-- uid: SRLApiClient.SRLTimeoutException.#ctor*
-  name: SRLTimeoutException
-  href: api/SRLApiClient.SRLTimeoutException.html#SRLApiClient_SRLTimeoutException__ctor_
-  commentId: Overload:SRLApiClient.SRLTimeoutException.#ctor
-  isSpec: "True"
-  fullName: SRLApiClient.SRLTimeoutException.SRLTimeoutException
-  nameWithType: SRLTimeoutException.SRLTimeoutException
-- uid: SRLApiClient.SRLUser
+- uid: SRLApiClient.User
+  name: SRLApiClient.User
+  href: api/SRLApiClient.User.html
+  commentId: N:SRLApiClient.User
+  fullName: SRLApiClient.User
+  nameWithType: SRLApiClient.User
+- uid: SRLApiClient.User.SRLUser
   name: SRLUser
-  href: api/SRLApiClient.SRLUser.html
-  commentId: T:SRLApiClient.SRLUser
-  fullName: SRLApiClient.SRLUser
+  href: api/SRLApiClient.User.SRLUser.html
+  commentId: T:SRLApiClient.User.SRLUser
+  fullName: SRLApiClient.User.SRLUser
   nameWithType: SRLUser
-- uid: SRLApiClient.SRLUser.#ctor(SRLApiClient.SRLClient)
+- uid: SRLApiClient.User.SRLUser.#ctor(SRLApiClient.SRLClient)
   name: SRLUser(SRLClient)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser__ctor_SRLApiClient_SRLClient_
-  commentId: M:SRLApiClient.SRLUser.#ctor(SRLApiClient.SRLClient)
-  fullName: SRLApiClient.SRLUser.SRLUser(SRLApiClient.SRLClient)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser__ctor_SRLApiClient_SRLClient_
+  commentId: M:SRLApiClient.User.SRLUser.#ctor(SRLApiClient.SRLClient)
+  fullName: SRLApiClient.User.SRLUser.SRLUser(SRLApiClient.SRLClient)
   nameWithType: SRLUser.SRLUser(SRLClient)
-- uid: SRLApiClient.SRLUser.#ctor*
+- uid: SRLApiClient.User.SRLUser.#ctor*
   name: SRLUser
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser__ctor_
-  commentId: Overload:SRLApiClient.SRLUser.#ctor
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser__ctor_
+  commentId: Overload:SRLApiClient.User.SRLUser.#ctor
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SRLUser
+  fullName: SRLApiClient.User.SRLUser.SRLUser
   nameWithType: SRLUser.SRLUser
-- uid: SRLApiClient.SRLUser.Id
+- uid: SRLApiClient.User.SRLUser.Id
   name: Id
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Id
-  commentId: P:SRLApiClient.SRLUser.Id
-  fullName: SRLApiClient.SRLUser.Id
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Id
+  commentId: P:SRLApiClient.User.SRLUser.Id
+  fullName: SRLApiClient.User.SRLUser.Id
   nameWithType: SRLUser.Id
-- uid: SRLApiClient.SRLUser.Id*
+- uid: SRLApiClient.User.SRLUser.Id*
   name: Id
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Id_
-  commentId: Overload:SRLApiClient.SRLUser.Id
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Id_
+  commentId: Overload:SRLApiClient.User.SRLUser.Id
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Id
+  fullName: SRLApiClient.User.SRLUser.Id
   nameWithType: SRLUser.Id
-- uid: SRLApiClient.SRLUser.Name
+- uid: SRLApiClient.User.SRLUser.Name
   name: Name
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Name
-  commentId: P:SRLApiClient.SRLUser.Name
-  fullName: SRLApiClient.SRLUser.Name
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Name
+  commentId: P:SRLApiClient.User.SRLUser.Name
+  fullName: SRLApiClient.User.SRLUser.Name
   nameWithType: SRLUser.Name
-- uid: SRLApiClient.SRLUser.Name*
+- uid: SRLApiClient.User.SRLUser.Name*
   name: Name
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Name_
-  commentId: Overload:SRLApiClient.SRLUser.Name
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Name_
+  commentId: Overload:SRLApiClient.User.SRLUser.Name
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Name
+  fullName: SRLApiClient.User.SRLUser.Name
   nameWithType: SRLUser.Name
-- uid: SRLApiClient.SRLUser.Player
+- uid: SRLApiClient.User.SRLUser.Player
   name: Player
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Player
-  commentId: P:SRLApiClient.SRLUser.Player
-  fullName: SRLApiClient.SRLUser.Player
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Player
+  commentId: P:SRLApiClient.User.SRLUser.Player
+  fullName: SRLApiClient.User.SRLUser.Player
   nameWithType: SRLUser.Player
-- uid: SRLApiClient.SRLUser.Player*
+- uid: SRLApiClient.User.SRLUser.Player*
   name: Player
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Player_
-  commentId: Overload:SRLApiClient.SRLUser.Player
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Player_
+  commentId: Overload:SRLApiClient.User.SRLUser.Player
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Player
+  fullName: SRLApiClient.User.SRLUser.Player
   nameWithType: SRLUser.Player
-- uid: SRLApiClient.SRLUser.Role
+- uid: SRLApiClient.User.SRLUser.Role
   name: Role
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Role
-  commentId: P:SRLApiClient.SRLUser.Role
-  fullName: SRLApiClient.SRLUser.Role
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Role
+  commentId: P:SRLApiClient.User.SRLUser.Role
+  fullName: SRLApiClient.User.SRLUser.Role
   nameWithType: SRLUser.Role
-- uid: SRLApiClient.SRLUser.Role*
+- uid: SRLApiClient.User.SRLUser.Role*
   name: Role
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Role_
-  commentId: Overload:SRLApiClient.SRLUser.Role
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Role_
+  commentId: Overload:SRLApiClient.User.SRLUser.Role
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Role
+  fullName: SRLApiClient.User.SRLUser.Role
   nameWithType: SRLUser.Role
-- uid: SRLApiClient.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
+- uid: SRLApiClient.User.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
   name: SetApi(StreamApi)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetApi_SRLApiClient_Endpoints_StreamApi_
-  commentId: M:SRLApiClient.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
-  fullName: SRLApiClient.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetApi_SRLApiClient_Endpoints_StreamApi_
+  commentId: M:SRLApiClient.User.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
+  fullName: SRLApiClient.User.SRLUser.SetApi(SRLApiClient.Endpoints.StreamApi)
   nameWithType: SRLUser.SetApi(StreamApi)
-- uid: SRLApiClient.SRLUser.SetApi*
+- uid: SRLApiClient.User.SRLUser.SetApi*
   name: SetApi
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetApi_
-  commentId: Overload:SRLApiClient.SRLUser.SetApi
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetApi_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetApi
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetApi
+  fullName: SRLApiClient.User.SRLUser.SetApi
   nameWithType: SRLUser.SetApi
-- uid: SRLApiClient.SRLUser.SetCapitalization(System.String)
+- uid: SRLApiClient.User.SRLUser.SetCapitalization(System.String)
   name: SetCapitalization(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetCapitalization_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetCapitalization(System.String)
-  fullName: SRLApiClient.SRLUser.SetCapitalization(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetCapitalization_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetCapitalization(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetCapitalization(System.String)
   nameWithType: SRLUser.SetCapitalization(String)
-- uid: SRLApiClient.SRLUser.SetCapitalization*
+- uid: SRLApiClient.User.SRLUser.SetCapitalization*
   name: SetCapitalization
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetCapitalization_
-  commentId: Overload:SRLApiClient.SRLUser.SetCapitalization
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetCapitalization_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetCapitalization
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetCapitalization
+  fullName: SRLApiClient.User.SRLUser.SetCapitalization
   nameWithType: SRLUser.SetCapitalization
-- uid: SRLApiClient.SRLUser.SetChannel(System.String)
+- uid: SRLApiClient.User.SRLUser.SetChannel(System.String)
   name: SetChannel(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetChannel_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetChannel(System.String)
-  fullName: SRLApiClient.SRLUser.SetChannel(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetChannel_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetChannel(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetChannel(System.String)
   nameWithType: SRLUser.SetChannel(String)
-- uid: SRLApiClient.SRLUser.SetChannel*
+- uid: SRLApiClient.User.SRLUser.SetChannel*
   name: SetChannel
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetChannel_
-  commentId: Overload:SRLApiClient.SRLUser.SetChannel
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetChannel_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetChannel
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetChannel
+  fullName: SRLApiClient.User.SRLUser.SetChannel
   nameWithType: SRLUser.SetChannel
-- uid: SRLApiClient.SRLUser.SetCountry(System.String)
+- uid: SRLApiClient.User.SRLUser.SetCountry(System.String)
   name: SetCountry(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetCountry_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetCountry(System.String)
-  fullName: SRLApiClient.SRLUser.SetCountry(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetCountry_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetCountry(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetCountry(System.String)
   nameWithType: SRLUser.SetCountry(String)
-- uid: SRLApiClient.SRLUser.SetCountry*
+- uid: SRLApiClient.User.SRLUser.SetCountry*
   name: SetCountry
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetCountry_
-  commentId: Overload:SRLApiClient.SRLUser.SetCountry
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetCountry_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetCountry
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetCountry
+  fullName: SRLApiClient.User.SRLUser.SetCountry
   nameWithType: SRLUser.SetCountry
-- uid: SRLApiClient.SRLUser.SetTwitter(System.String)
+- uid: SRLApiClient.User.SRLUser.SetTwitter(System.String)
   name: SetTwitter(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetTwitter_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetTwitter(System.String)
-  fullName: SRLApiClient.SRLUser.SetTwitter(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetTwitter_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetTwitter(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetTwitter(System.String)
   nameWithType: SRLUser.SetTwitter(String)
-- uid: SRLApiClient.SRLUser.SetTwitter*
+- uid: SRLApiClient.User.SRLUser.SetTwitter*
   name: SetTwitter
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetTwitter_
-  commentId: Overload:SRLApiClient.SRLUser.SetTwitter
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetTwitter_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetTwitter
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetTwitter
+  fullName: SRLApiClient.User.SRLUser.SetTwitter
   nameWithType: SRLUser.SetTwitter
-- uid: SRLApiClient.SRLUser.SetYoutube(System.String)
+- uid: SRLApiClient.User.SRLUser.SetYoutube(System.String)
   name: SetYoutube(String)
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetYoutube_System_String_
-  commentId: M:SRLApiClient.SRLUser.SetYoutube(System.String)
-  fullName: SRLApiClient.SRLUser.SetYoutube(System.String)
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetYoutube_System_String_
+  commentId: M:SRLApiClient.User.SRLUser.SetYoutube(System.String)
+  fullName: SRLApiClient.User.SRLUser.SetYoutube(System.String)
   nameWithType: SRLUser.SetYoutube(String)
-- uid: SRLApiClient.SRLUser.SetYoutube*
+- uid: SRLApiClient.User.SRLUser.SetYoutube*
   name: SetYoutube
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_SetYoutube_
-  commentId: Overload:SRLApiClient.SRLUser.SetYoutube
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_SetYoutube_
+  commentId: Overload:SRLApiClient.User.SRLUser.SetYoutube
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.SetYoutube
+  fullName: SRLApiClient.User.SRLUser.SetYoutube
   nameWithType: SRLUser.SetYoutube
-- uid: SRLApiClient.SRLUser.Verify
+- uid: SRLApiClient.User.SRLUser.Verify
   name: Verify()
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Verify
-  commentId: M:SRLApiClient.SRLUser.Verify
-  fullName: SRLApiClient.SRLUser.Verify()
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Verify
+  commentId: M:SRLApiClient.User.SRLUser.Verify
+  fullName: SRLApiClient.User.SRLUser.Verify()
   nameWithType: SRLUser.Verify()
-- uid: SRLApiClient.SRLUser.Verify*
+- uid: SRLApiClient.User.SRLUser.Verify*
   name: Verify
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_Verify_
-  commentId: Overload:SRLApiClient.SRLUser.Verify
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_Verify_
+  commentId: Overload:SRLApiClient.User.SRLUser.Verify
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.Verify
+  fullName: SRLApiClient.User.SRLUser.Verify
   nameWithType: SRLUser.Verify
-- uid: SRLApiClient.SRLUser.VerifyAsync
+- uid: SRLApiClient.User.SRLUser.VerifyAsync
   name: VerifyAsync()
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_VerifyAsync
-  commentId: M:SRLApiClient.SRLUser.VerifyAsync
-  fullName: SRLApiClient.SRLUser.VerifyAsync()
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_VerifyAsync
+  commentId: M:SRLApiClient.User.SRLUser.VerifyAsync
+  fullName: SRLApiClient.User.SRLUser.VerifyAsync()
   nameWithType: SRLUser.VerifyAsync()
-- uid: SRLApiClient.SRLUser.VerifyAsync*
+- uid: SRLApiClient.User.SRLUser.VerifyAsync*
   name: VerifyAsync
-  href: api/SRLApiClient.SRLUser.html#SRLApiClient_SRLUser_VerifyAsync_
-  commentId: Overload:SRLApiClient.SRLUser.VerifyAsync
+  href: api/SRLApiClient.User.SRLUser.html#SRLApiClient_User_SRLUser_VerifyAsync_
+  commentId: Overload:SRLApiClient.User.SRLUser.VerifyAsync
   isSpec: "True"
-  fullName: SRLApiClient.SRLUser.VerifyAsync
+  fullName: SRLApiClient.User.SRLUser.VerifyAsync
   nameWithType: SRLUser.VerifyAsync
-- uid: SRLApiClient.UserRole
+- uid: SRLApiClient.User.UserRole
   name: UserRole
-  href: api/SRLApiClient.UserRole.html
-  commentId: T:SRLApiClient.UserRole
-  fullName: SRLApiClient.UserRole
+  href: api/SRLApiClient.User.UserRole.html
+  commentId: T:SRLApiClient.User.UserRole
+  fullName: SRLApiClient.User.UserRole
   nameWithType: UserRole
-- uid: SRLApiClient.UserRole.Admin
+- uid: SRLApiClient.User.UserRole.Admin
   name: Admin
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Admin
-  commentId: F:SRLApiClient.UserRole.Admin
-  fullName: SRLApiClient.UserRole.Admin
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Admin
+  commentId: F:SRLApiClient.User.UserRole.Admin
+  fullName: SRLApiClient.User.UserRole.Admin
   nameWithType: UserRole.Admin
-- uid: SRLApiClient.UserRole.Anon
+- uid: SRLApiClient.User.UserRole.Anon
   name: Anon
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Anon
-  commentId: F:SRLApiClient.UserRole.Anon
-  fullName: SRLApiClient.UserRole.Anon
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Anon
+  commentId: F:SRLApiClient.User.UserRole.Anon
+  fullName: SRLApiClient.User.UserRole.Anon
   nameWithType: UserRole.Anon
-- uid: SRLApiClient.UserRole.Halfop
+- uid: SRLApiClient.User.UserRole.Halfop
   name: Halfop
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Halfop
-  commentId: F:SRLApiClient.UserRole.Halfop
-  fullName: SRLApiClient.UserRole.Halfop
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Halfop
+  commentId: F:SRLApiClient.User.UserRole.Halfop
+  fullName: SRLApiClient.User.UserRole.Halfop
   nameWithType: UserRole.Halfop
-- uid: SRLApiClient.UserRole.Op
+- uid: SRLApiClient.User.UserRole.Op
   name: Op
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Op
-  commentId: F:SRLApiClient.UserRole.Op
-  fullName: SRLApiClient.UserRole.Op
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Op
+  commentId: F:SRLApiClient.User.UserRole.Op
+  fullName: SRLApiClient.User.UserRole.Op
   nameWithType: UserRole.Op
-- uid: SRLApiClient.UserRole.Unknown
+- uid: SRLApiClient.User.UserRole.Unknown
   name: Unknown
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Unknown
-  commentId: F:SRLApiClient.UserRole.Unknown
-  fullName: SRLApiClient.UserRole.Unknown
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Unknown
+  commentId: F:SRLApiClient.User.UserRole.Unknown
+  fullName: SRLApiClient.User.UserRole.Unknown
   nameWithType: UserRole.Unknown
-- uid: SRLApiClient.UserRole.User
+- uid: SRLApiClient.User.UserRole.User
   name: User
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_User
-  commentId: F:SRLApiClient.UserRole.User
-  fullName: SRLApiClient.UserRole.User
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_User
+  commentId: F:SRLApiClient.User.UserRole.User
+  fullName: SRLApiClient.User.UserRole.User
   nameWithType: UserRole.User
-- uid: SRLApiClient.UserRole.Voice
+- uid: SRLApiClient.User.UserRole.Voice
   name: Voice
-  href: api/SRLApiClient.UserRole.html#SRLApiClient_UserRole_Voice
-  commentId: F:SRLApiClient.UserRole.Voice
-  fullName: SRLApiClient.UserRole.Voice
+  href: api/SRLApiClient.User.UserRole.html#SRLApiClient_User_UserRole_Voice
+  commentId: F:SRLApiClient.User.UserRole.Voice
+  fullName: SRLApiClient.User.UserRole.Voice
   nameWithType: UserRole.Voice

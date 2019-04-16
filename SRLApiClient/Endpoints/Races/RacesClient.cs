@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Net.Http;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
+using SRLApiClient.Exceptions;
 
 namespace SRLApiClient.Endpoints.Races
 {
@@ -53,7 +52,7 @@ namespace SRLApiClient.Endpoints.Races
     }
 
     [DataContract]
-    private sealed class ActiveRaces : SRLDataType
+    private sealed class ActiveRaces : SRLData
     {
       [DataMember(Name = "count", IsRequired = true)]
       public int Count { get; private set; }

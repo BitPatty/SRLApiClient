@@ -39,7 +39,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
-    public void GameRules()
+    public void Games_Rules()
     {
       string rules = _client.Games.GetRules("sms");
       Assert.IsNotEmpty(rules);
@@ -47,7 +47,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
-    public void Races()
+    public void Races_Active()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActive();
       Race race = _client.Races.Get(races[0].Id);
@@ -64,6 +64,30 @@ namespace Tests
       Assert.IsNotNull(tRace);
       Player tPlayer = _client.Players.Get(tRace.Entrants[0].Name);
       Assert.AreEqual(tRace.Entrants[0].Twitch, tPlayer.Channel);
+    }
+
+    [Test]
+    [Category("Endpoints")]
+    public void PastRaces_Paginated()
+    {
+      ReadOnlyCollection<PastRace> pastRaces = _client.PastRaces.Get();
+      Assert.AreEqual(pastRaces.Count, 20);
+
+      ReadOnlyCollection<PastRace> pastRacesAlt = _client.PastRaces.Get(pageSize: 10);
+      Assert.AreEqual(pastRacesAlt?.Count, 10);
+
+      ReadOnlyCollection<PastRace> pastRacesPage2 = _client.PastRaces.Get(page: 2);
+
+      Assert.IsNotNull(pastRacesAlt.FirstOrDefault(p => p.Id == pastRaces.FirstOrDefault()?.Id));
+      Assert.IsNull(pastRacesPage2.FirstOrDefault(p => p.Id == pastRaces.FirstOrDefault()?.Id));
+    }
+
+    [Test]
+    [Category("Endpoints")]
+    public void PastRaces_GameFilter()
+    {
+      foreach (PastRace pr in _client.PastRaces.Get(gameAbbreviation: "sms"))
+        Assert.AreEqual(pr.Game.Abbreviation, "sms");
     }
 
     [Test]
@@ -89,7 +113,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
-    public void MonthlySRLStats()
+    public void Stats_SRL()
     {
       ReadOnlyCollection<SRLStats> stats = _client.Stats.GetMonthlySRLStats();
       Assert.IsNotNull(stats);
@@ -98,7 +122,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
-    public void GameStats()
+    public void Stats_Game()
     {
       GameStats stats = _client.Stats.GetGameStats("sms");
       Assert.IsNotNull(stats);
@@ -107,7 +131,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
-    public void PlayerStats()
+    public void Stats_Player()
     {
       PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter");
       Assert.IsNotNull(stats);
@@ -116,7 +140,7 @@ namespace Tests
 
     [Test]
     [Category("Endpoints")]
-    public void PlayerGameStats()
+    public void Stats_PlayerAndGame()
     {
       PlayerStats stats = _client.Stats.GetPlayerStats("psychonauter", "ffx");
       Assert.IsNotNull(stats);
