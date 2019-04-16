@@ -39,7 +39,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
-    public void GameRules()
+    public void Games_Rules()
     {
       string rules = _client.Games.GetRulesAsync("sms").Result;
       Assert.IsNotEmpty(rules);
@@ -47,7 +47,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
-    public void Races()
+    public void Races_Active()
     {
       ReadOnlyCollection<Race> races = _client.Races.GetActiveAsync().Result;
       Race race = _client.Races.Get(races[0].Id);
@@ -69,7 +69,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
-    public void PastRaces()
+    public void PastRaces_Paginated()
     {
       ReadOnlyCollection<PastRace> pastRaces = _client.PastRaces.GetAsync().Result;
       Assert.AreEqual(pastRaces.Count, 20);
@@ -81,6 +81,14 @@ namespace Tests
 
       Assert.IsNotNull(pastRacesAlt.FirstOrDefault(p => p.Id == pastRaces.FirstOrDefault()?.Id));
       Assert.IsNull(pastRacesPage2.FirstOrDefault(p => p.Id == pastRaces.FirstOrDefault()?.Id));
+    }
+
+    [Test]
+    [Category("EndpointsAsync")]
+    public void PastRaces_GameFilter()
+    {
+      foreach (PastRace pr in _client.PastRaces.GetAsync(gameAbbreviation: "sms").Result)
+        Assert.AreEqual(pr.Game.Abbreviation, "sms");
     }
 
     [Test]
@@ -106,7 +114,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
-    public void MonthlySRLStats()
+    public void Stats_SRL()
     {
       ReadOnlyCollection<SRLStats> stats = _client.Stats.GetMonthlySRLStatsAsync().Result;
       Assert.IsNotNull(stats);
@@ -115,7 +123,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
-    public void GameStats()
+    public void Stats_Game()
     {
       GameStats stats = _client.Stats.GetGameStatsAsync("sms").Result;
       Assert.IsNotNull(stats);
@@ -124,7 +132,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
-    public void PlayerStats()
+    public void Stats_Player()
     {
       PlayerStats stats = _client.Stats.GetPlayerStatsAsync("psychonauter").Result;
       Assert.IsNotNull(stats);
@@ -133,7 +141,7 @@ namespace Tests
 
     [Test]
     [Category("EndpointsAsync")]
-    public void PlayerGameStats()
+    public void Stats_PlayerAndGame()
     {
       PlayerStats stats = _client.Stats.GetPlayerStatsAsync("psychonauter", "ffx").Result;
       Assert.IsNotNull(stats);

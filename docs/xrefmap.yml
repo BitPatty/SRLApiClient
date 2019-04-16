@@ -581,18 +581,18 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.PastRacesClient
   nameWithType: PastRacesClient.PastRacesClient
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.Int32,System.Int32)
-  name: Get(Int32, Int32)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_Get_System_Int32_System_Int32_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.Int32,System.Int32)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.Int32, System.Int32)
-  nameWithType: PastRacesClient.Get(Int32, Int32)
 - uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String)
   name: Get(String)
   href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_Get_System_String_
   commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String)
   fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String)
   nameWithType: PastRacesClient.Get(String)
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String,System.String,System.Int32,System.Int32)
+  name: Get(String, String, Int32, Int32)
+  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_Get_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String,System.String,System.Int32,System.Int32)
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get(System.String, System.String, System.Int32, System.Int32)
+  nameWithType: PastRacesClient.Get(String, String, Int32, Int32)
 - uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get*
   name: Get
   href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_Get_
@@ -600,18 +600,18 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.Get
   nameWithType: PastRacesClient.Get
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.Int32,System.Int32)
-  name: GetAsync(Int32, Int32)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetAsync_System_Int32_System_Int32_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.Int32,System.Int32)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.Int32, System.Int32)
-  nameWithType: PastRacesClient.GetAsync(Int32, Int32)
 - uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String)
   name: GetAsync(String)
   href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetAsync_System_String_
   commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String)
   fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String)
   nameWithType: PastRacesClient.GetAsync(String)
+- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String,System.String,System.Int32,System.Int32)
+  name: GetAsync(String, String, Int32, Int32)
+  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetAsync_System_String_System_String_System_Int32_System_Int32_
+  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String,System.String,System.Int32,System.Int32)
+  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync(System.String, System.String, System.Int32, System.Int32)
+  nameWithType: PastRacesClient.GetAsync(String, String, Int32, Int32)
 - uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync*
   name: GetAsync
   href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetAsync_
@@ -619,44 +619,6 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetAsync
   nameWithType: PastRacesClient.GetAsync
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String)
-  name: GetByPlayer(String)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayer_System_String_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String)
-  nameWithType: PastRacesClient.GetByPlayer(String)
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String,System.String)
-  name: GetByPlayer(String, String)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayer_System_String_System_String_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String,System.String)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer(System.String, System.String)
-  nameWithType: PastRacesClient.GetByPlayer(String, String)
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer*
-  name: GetByPlayer
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayer_
-  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayer
-  nameWithType: PastRacesClient.GetByPlayer
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String)
-  name: GetByPlayerAsync(String)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayerAsync_System_String_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String)
-  nameWithType: PastRacesClient.GetByPlayerAsync(String)
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String,System.String)
-  name: GetByPlayerAsync(String, String)
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayerAsync_System_String_System_String_
-  commentId: M:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String,System.String)
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync(System.String, System.String)
-  nameWithType: PastRacesClient.GetByPlayerAsync(String, String)
-- uid: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync*
-  name: GetByPlayerAsync
-  href: api/SRLApiClient.Endpoints.PastRaces.PastRacesClient.html#SRLApiClient_Endpoints_PastRaces_PastRacesClient_GetByPlayerAsync_
-  commentId: Overload:SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync
-  isSpec: "True"
-  fullName: SRLApiClient.Endpoints.PastRaces.PastRacesClient.GetByPlayerAsync
-  nameWithType: PastRacesClient.GetByPlayerAsync
 - uid: SRLApiClient.Endpoints.PastRaces.Result
   name: Result
   href: api/SRLApiClient.Endpoints.PastRaces.Result.html

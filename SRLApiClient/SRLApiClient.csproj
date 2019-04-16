@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyVersion>0.10.0.0</AssemblyVersion>
     <FileVersion>0.10.0.0</FileVersion>
-    <Version>0.10.0-beta2</Version>
+    <Version>0.10.0-beta3</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
     <Authors>Matteias Collet (BitPatty) &lt;matteias.collet@bluewin.ch&gt;</Authors>
@@ -32,7 +32,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="docfx.console" Version="2.41.0" Condition="'$(OS)' == 'Windows_NT'">
+    <PackageReference Include="docfx.console" Version="2.41.0" Condition="'$(OS)' == 'Windows_NT' And '$(Configuration)|$(Platform)'=='Release|AnyCPU'">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
@@ -43,7 +43,7 @@
   </ItemGroup>
 
   <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
-    <Exec Condition="'$(OS)' == 'Windows_NT'" Command="echo &quot;Removing docs folder&quot;&#xD;&#xA;RD /S /Q &quot;../docs&quot;&#xD;&#xA;echo &quot;Docs folder removed&quot;" />
+    <Exec Condition="'$(OS)' == 'Windows_NT' And '$(Configuration)|$(Platform)'=='Release|AnyCPU'" Command="echo &quot;Removing docs folder&quot;&#xD;&#xA;RD /S /Q &quot;../docs&quot;&#xD;&#xA;echo &quot;Docs folder removed&quot;" />
     <Exec Condition="'$(OS)' == 'Unix'" Command="echo &quot;Skipping docs generation!&quot;" />
     <Exec Condition="'$(OS)' == 'OSX'" Command="echo &quot;Skipping docs generation!&quot;" />
   </Target>

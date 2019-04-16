@@ -32,17 +32,22 @@ namespace SRLApiClient.Endpoints.PastRaces
     /// <summary>
     /// Gets a collection of past races synchronously
     /// </summary>
+    /// <param name="playerName">The players name</param>
+    /// <param name="gameAbbreviation">The games abbreviation</param>
     /// <param name="page">The page number</param>
     /// <param name="pageSize">The page size</param>
     /// <returns>Returns the race collection</returns>
-    public ReadOnlyCollection<PastRace> Get(int page = 1, int pageSize = 20)
+    public ReadOnlyCollection<PastRace> Get(string playerName = null, string gameAbbreviation = null, int page = 1, int pageSize = 20)
     {
       if (page < 1) throw new ArgumentException(nameof(page), "Parameter must be 1 or greater");
       if (pageSize < 1) throw new ArgumentException(nameof(pageSize), "Parameter must be 1 or greater");
 
       try
       {
-        return SrlClient.Get<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}")?.Races?.AsReadOnly();
+        string playerFilter = !String.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
+        string gameFilter = !String.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
+
+        return SrlClient.Get<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}{playerFilter}{gameFilter}")?.Races?.AsReadOnly();
       }
       catch (SRLParseException)
       {
@@ -53,17 +58,22 @@ namespace SRLApiClient.Endpoints.PastRaces
     /// <summary>
     /// Gets a collection of past races asynchronously
     /// </summary>
+    /// <param name="playerName">The players name</param>
+    /// <param name="gameAbbreviation">The games abbreviation</param>
     /// <param name="page">The page number</param>
     /// <param name="pageSize">The page size</param>
     /// <returns>Returns the race collection</returns>
-    public async Task<ReadOnlyCollection<PastRace>> GetAsync(int page = 1, int pageSize = 20)
+    public async Task<ReadOnlyCollection<PastRace>> GetAsync(string playerName = null, string gameAbbreviation = null, int page = 1, int pageSize = 20)
     {
       if (page < 1) throw new ArgumentException(nameof(page), "Parameter must be 1 or greater");
       if (pageSize < 1) throw new ArgumentException(nameof(pageSize), "Parameter must be 1 or greater");
 
       try
       {
-        return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}"))?.Races?.AsReadOnly();
+        string playerFilter = !String.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
+        string gameFilter = !String.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
+
+        return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}{playerFilter}{gameFilter}").ConfigureAwait(false))?.Races?.AsReadOnly();
       }
       catch (SRLParseException)
       {
@@ -102,86 +112,6 @@ namespace SRLApiClient.Endpoints.PastRaces
       try
       {
         return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}/{raceId.ToLower()}").ConfigureAwait(false))?.Races?.FirstOrDefault();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
-
-    /// <summary>
-    /// Gets all past races from a player synchronously
-    /// </summary>
-    /// <param name="playerName">The players name</param>
-    /// <returns>Returns a list of past races</returns>
-    public ReadOnlyCollection<PastRace> GetByPlayer(string playerName)
-    {
-      if (String.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
-
-      try
-      {
-        return SrlClient.Get<PastRacesCollection>($"{BasePath}?player={playerName}")?.Races.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
-
-    /// <summary>
-    /// Gets all past races from a player in the specified game synchronously
-    /// </summary>
-    /// <param name="playerName">The players name</param>
-    /// <param name="gameAbbreviation">The game</param>
-    /// <returns>Returns a list of past races</returns>
-    public ReadOnlyCollection<PastRace> GetByPlayer(string playerName, string gameAbbreviation)
-    {
-      if (String.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
-      if (String.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
-
-      try
-      {
-        return SrlClient.Get<PastRacesCollection>($"{BasePath}?player={playerName}&game={gameAbbreviation.ToLower()}")?.Races.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
-
-    /// <summary>
-    /// Gets all past races from a player asynchronously
-    /// </summary>
-    /// <param name="playerName">The players name</param>
-    /// <returns>Returns a list of past races</returns>
-    public async Task<ReadOnlyCollection<PastRace>> GetByPlayerAsync(string playerName)
-    {
-      if (String.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
-
-      try
-      {
-        return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}?player={playerName}").ConfigureAwait(false))?.Races.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
-
-    /// <summary>
-    /// Gets all past races from a player in the specified game asynchronously
-    /// </summary>
-    /// <param name="playerName">The players name</param>
-    /// <param name="gameAbbreviation">The game</param>
-    /// <returns>Returns a list of past races</returns>
-    public async Task<ReadOnlyCollection<PastRace>> GetByPlayerAsync(string playerName, string gameAbbreviation)
-    {
-      if (String.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
-      if (String.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
-
-      try
-      {
-        return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}?player={playerName}&game={gameAbbreviation.ToLower()}").ConfigureAwait(false))?.Races.AsReadOnly();
       }
       catch (SRLParseException)
       {
