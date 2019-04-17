@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Leaderboard
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -88,7 +88,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Game
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -144,7 +144,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: LeadersCount
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -200,7 +200,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Leaders
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -237,7 +237,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: UnrankedCount
     path: Endpoints/Leaderboards/Leaderboard.cs
@@ -293,7 +293,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Leaderboards/Leaderboard.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unranked
     path: Endpoints/Leaderboards/Leaderboard.cs

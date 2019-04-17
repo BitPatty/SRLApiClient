@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SRLStats
     path: Endpoints/Stats/SRLStats.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Month
     path: Endpoints/Stats/SRLStats.cs
@@ -145,7 +145,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Year
     path: Endpoints/Stats/SRLStats.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalRaces
     path: Endpoints/Stats/SRLStats.cs
@@ -253,7 +253,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalPlayers
     path: Endpoints/Stats/SRLStats.cs
@@ -307,7 +307,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalGames
     path: Endpoints/Stats/SRLStats.cs
@@ -361,7 +361,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: LargestRaceId
     path: Endpoints/Stats/SRLStats.cs
@@ -415,7 +415,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: LargestRaceSize
     path: Endpoints/Stats/SRLStats.cs
@@ -469,7 +469,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalTimeRaced
     path: Endpoints/Stats/SRLStats.cs
@@ -523,7 +523,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Stats/SRLStats.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TotalTimePlayed
     path: Endpoints/Stats/SRLStats.cs

@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Entrant
     path: Endpoints/Races/Entrant.cs
@@ -87,7 +87,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Name
     path: Endpoints/Races/Entrant.cs
@@ -143,7 +143,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Place
     path: Endpoints/Races/Entrant.cs
@@ -180,7 +180,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Time
     path: Endpoints/Races/Entrant.cs
@@ -236,7 +236,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: State
     path: Endpoints/Races/Entrant.cs
@@ -273,7 +273,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StateText
     path: Endpoints/Races/Entrant.cs
@@ -329,7 +329,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Twitch
     path: Endpoints/Races/Entrant.cs
@@ -385,7 +385,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Entrant.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: TrueSkill
     path: Endpoints/Races/Entrant.cs

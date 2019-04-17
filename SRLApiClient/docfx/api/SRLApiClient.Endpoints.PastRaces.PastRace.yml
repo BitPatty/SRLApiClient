@@ -22,7 +22,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRace.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PastRace
     path: Endpoints/PastRaces/PastRace.cs
@@ -87,7 +87,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRace.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Id
     path: Endpoints/PastRaces/PastRace.cs
@@ -143,7 +143,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRace.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Game
     path: Endpoints/PastRaces/PastRace.cs
@@ -199,7 +199,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRace.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Goal
     path: Endpoints/PastRaces/PastRace.cs
@@ -255,7 +255,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRace.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Date
     path: Endpoints/PastRaces/PastRace.cs
@@ -311,7 +311,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRace.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: NumEntrants
     path: Endpoints/PastRaces/PastRace.cs
@@ -367,7 +367,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRace.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Results
     path: Endpoints/PastRaces/PastRace.cs
@@ -423,7 +423,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/PastRaces/PastRace.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: RankedResults
     path: Endpoints/PastRaces/PastRace.cs

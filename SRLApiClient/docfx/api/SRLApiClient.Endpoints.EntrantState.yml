@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/EntrantState.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: EntrantState
     path: Endpoints/EntrantState.cs
@@ -54,7 +54,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/EntrantState.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Unknown
     path: Endpoints/EntrantState.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/EntrantState.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Entered
     path: Endpoints/EntrantState.cs
@@ -124,7 +124,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/EntrantState.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Ready
     path: Endpoints/EntrantState.cs
@@ -159,7 +159,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/EntrantState.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Done
     path: Endpoints/EntrantState.cs
@@ -194,7 +194,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/EntrantState.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Forfeit
     path: Endpoints/EntrantState.cs
@@ -229,7 +229,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/EntrantState.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Disqualified
     path: Endpoints/EntrantState.cs

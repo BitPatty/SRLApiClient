@@ -24,7 +24,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Race
     path: Endpoints/Races/Race.cs
@@ -89,7 +89,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Id
     path: Endpoints/Races/Race.cs
@@ -145,7 +145,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Game
     path: Endpoints/Races/Race.cs
@@ -201,7 +201,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Goal
     path: Endpoints/Races/Race.cs
@@ -257,7 +257,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Time
     path: Endpoints/Races/Race.cs
@@ -313,7 +313,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: State
     path: Endpoints/Races/Race.cs
@@ -350,7 +350,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: StateText
     path: Endpoints/Races/Race.cs
@@ -406,7 +406,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: FileName
     path: Endpoints/Races/Race.cs
@@ -462,7 +462,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: NumEntrants
     path: Endpoints/Races/Race.cs
@@ -518,7 +518,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Races/Race.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Entrants
     path: Endpoints/Races/Race.cs

@@ -28,7 +28,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SRLUser
     path: User/SRLUser.cs
@@ -71,7 +71,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Id
     path: User/SRLUser.cs
@@ -108,7 +108,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Name
     path: User/SRLUser.cs
@@ -145,7 +145,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Role
     path: User/SRLUser.cs
@@ -182,7 +182,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Player
     path: User/SRLUser.cs
@@ -219,7 +219,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: User/SRLUser.cs
@@ -255,7 +255,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Verify
     path: User/SRLUser.cs
@@ -290,7 +290,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: VerifyAsync
     path: User/SRLUser.cs
@@ -325,7 +325,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetChannel
     path: User/SRLUser.cs
@@ -364,7 +364,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetTwitter
     path: User/SRLUser.cs
@@ -403,7 +403,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetYoutube
     path: User/SRLUser.cs
@@ -442,7 +442,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetCapitalization
     path: User/SRLUser.cs
@@ -481,7 +481,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetApi
     path: User/SRLUser.cs
@@ -520,7 +520,7 @@ items:
   source:
     remote:
       path: SRLApiClient/User/SRLUser.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SetCountry
     path: User/SRLUser.cs

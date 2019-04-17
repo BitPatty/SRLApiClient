@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/Game.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Game
     path: Endpoints/Games/Game.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/Game.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Id
     path: Endpoints/Games/Game.cs
@@ -141,7 +141,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/Game.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Name
     path: Endpoints/Games/Game.cs
@@ -197,7 +197,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/Game.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Abbreviation
     path: Endpoints/Games/Game.cs
@@ -253,7 +253,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/Game.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Popularity
     path: Endpoints/Games/Game.cs
@@ -309,7 +309,7 @@ items:
   source:
     remote:
       path: SRLApiClient/Endpoints/Games/Game.cs
-      branch: client-pool
+      branch: master
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PopularityRank
     path: Endpoints/Games/Game.cs
