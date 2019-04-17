@@ -1,6 +1,6 @@
 ﻿# SRL API Client
 
-[![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient) [![NuGet Pre-Release](https://img.shields.io/nuget/vpre/SRLApiClient.svg?label=nuget%20pre-release)](https://www.nuget.org/packages/SRLApiClient) ![Nuget](https://img.shields.io/nuget/dt/SRLApiClient.svg) [![Build Status](https://dev.azure.com/collet0724/BitPatty/_apis/build/status/BitPatty.SRLApiClient?branchName=master)](https://dev.azure.com/collet0724/BitPatty/_build/latest?definitionId=2&branchName=master) [![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
+[![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient) [![NuGet Pre-Release](https://img.shields.io/nuget/vpre/SRLApiClient.svg?label=nuget%20pre-release)](https://www.nuget.org/packages/SRLApiClient) ![Nuget](https://img.shields.io/nuget/dt/SRLApiClient.svg) [![Build Status](https://dev.azure.com/bitpatty/SRLApiClient/_apis/build/status/BitPatty.SRLApiClient?branchName=master)](https://dev.azure.com/bitpatty/SRLApiClient/_build/latest?definitionId=2&branchName=master) [![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
 
 This repository contains a compact, asynchronous .Net Standard 2.0 wrapper around the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
 
