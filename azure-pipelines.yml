@@ -1,0 +1,45 @@
+trigger:
+  branches:
+    include:
+      - azure-pipelines
+
+strategy:
+  matrix:
+    linux:
+      imageName: 'ubuntu-16.04'
+    mac:
+      imageName: 'macos-10.14'
+    windows:
+      imageName: 'win1803'
+
+pool:
+  vmImage: $(imageName)
+
+variables:
+  - group: SRLApiClient.Build
+
+steps:
+- task: DotNetCoreInstaller@0
+  inputs:
+    version: '2.2.203'
+- task: DotNetCoreCLI@2
+  displayName: 'Build SRLApiClient'
+  inputs:
+    command: build
+    projects: 'SRLApiClient/SRLApiClient.csproj'
+    arguments: '-c $(BuildConfiguration)'
+- task: DotNetCoreCLI@2
+  displayName: 'Build Tests'
+  inputs:
+    command: build
+    projects: 'Tests/Tests.csproj'
+    arguments: '-c $(BuildConfiguration)'
+- task: DotNetCoreCLI@2
+  displayName: 'Run Tests'
+  env:
+    SRLUsername: '$(SRLUsername)'
+    SRLPassword: '$(SRLPassword)'
+  inputs:
+    command: test
+    projects: 'Tests/Tests.csproj'
+    arguments: '-c $(BuildConfiguration) --no-build'
