@@ -16,9 +16,6 @@ pool:
   vmImage: $(imageName)
 
 steps:
-- task: DotNetCoreInstaller@0
-  inputs:
-    version: '2.2'
 - task: DotNetCoreCLI@2
   displayName: 'Dotnet Version'
   inputs:
