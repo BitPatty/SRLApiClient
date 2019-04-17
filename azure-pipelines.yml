@@ -47,11 +47,11 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copying Artifacts'
   inputs:
-    Contents: './SRLApiClient/bin/Release'
+    Contents: '**/bin/Release/**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact'
+  displayName: 'Publish Artifacts'
   inputs:
    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-   ArtifactName: 'SRLApiClientArtifacts'
+   ArtifactName: 'SRLApiClientArtifact'
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
