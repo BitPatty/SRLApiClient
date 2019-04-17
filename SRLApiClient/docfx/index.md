@@ -27,7 +27,7 @@ _none_
 
 ## Changelog
 
-#### v1.0.0-rc2
+#### v1.0.0-rc3
 
 - Change build runtime to .NET Core SDK 2.2.106
 
