@@ -29,6 +29,10 @@ _none_
 
 #### v1.0.0-rc2
 
+- Change build runtime to .NET Core SDK 2.2.106
+
+#### v1.0.0-rc2
+
 - Fix Timeout not updating when changed
 
 #### v1.0.0-rc1

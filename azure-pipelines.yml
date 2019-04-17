@@ -20,9 +20,9 @@ variables:
 
 steps:
 - task: DotNetCoreInstaller@0
-  displayName: 'Install .NET Core 2.2.203'
+  displayName: 'Install .NET Core 2.2.106'
   inputs:
-    version: '2.2.203'
+    version: '2.2.106'
 - task: DotNetCoreCLI@2
   displayName: 'Build SRLApiClient'
   inputs:
@@ -45,7 +45,7 @@ steps:
     projects: 'Tests/Tests.csproj'
     arguments: '-c $(BuildConfiguration) --no-build'
 - task: CopyFiles@2
-  displayName: 'Copying Artifacts'
+  displayName: 'Copy Artifacts'
   inputs:
     Contents: '**/bin/Release/**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
