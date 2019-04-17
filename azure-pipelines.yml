@@ -44,3 +44,9 @@ steps:
     command: test
     projects: 'Tests/Tests.csproj'
     arguments: '-c $(BuildConfiguration) --no-build'
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact'
+  inputs:
+   PathtoPublish: '$(build.artifactstagingdirectory)'
+   TargetPath: './SRLApiClient/bin/Release'
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
