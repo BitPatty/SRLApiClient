@@ -44,8 +44,14 @@ steps:
     command: test
     projects: 'Tests/Tests.csproj'
     arguments: '-c $(BuildConfiguration) --no-build'
+- task: CopyFiles@2
+  displayName: 'Copying Artifacts'
+  inputs:
+    Contents: './SRLApiClient/bin/Release'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact'
   inputs:
-   PathtoPublish: './SRLApiClient/bin/Release'
+   PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+   ArtifactName: 'SRLApiClientArtifacts'
   condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
