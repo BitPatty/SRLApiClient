@@ -24,6 +24,11 @@ namespace SRLApiClient
       _clientPoolSemaphore = new SemaphoreSlim(_clientPool.Count);
     }
 
+    public void SetRequestTimeout(TimeSpan timespan)
+    {
+      _clientPool?.ForEach(c => c?.SetTimeout(timespan));
+    }
+
     public async Task<HttpResponseMessage> SendAsync(HttpRequestMessage requestMessage)
     {
       await _clientPoolSemaphore.WaitAsync().ConfigureAwait(false);
@@ -100,6 +105,11 @@ namespace SRLApiClient
 
         _client.DefaultRequestHeaders.Accept.Clear();
         _client.DefaultRequestHeaders.UserAgent.Add(productInfo);
+      }
+
+      public void SetTimeout(TimeSpan timeout)
+      {
+        _client.Timeout = timeout;
       }
 
       public bool TryAquire()

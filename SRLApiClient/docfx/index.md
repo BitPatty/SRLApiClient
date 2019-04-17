@@ -27,6 +27,10 @@ _none_
 
 ## Changelog
 
+#### v1.0.0-rc2
+
+- Fix Timeout not updating when changed
+
 #### v1.0.0-rc1
 
 - Added an HTTP client pool to run multiple requests in parallel

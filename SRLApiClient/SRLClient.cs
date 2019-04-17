@@ -106,7 +106,11 @@ namespace SRLApiClient
     public TimeSpan RequestTimeout
     {
       get => _requestTimeout;
-      set { _requestTimeout = (value < TimeSpan.FromMilliseconds(1000)) ? value : TimeSpan.FromMilliseconds(1000); }
+      set
+      {
+        _requestTimeout = (value < TimeSpan.FromMilliseconds(1000)) ? value : TimeSpan.FromMilliseconds(1000);
+        _clientPool?.SetRequestTimeout(_requestTimeout);
+      }
     }
 
     /// <summary>

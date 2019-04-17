@@ -14,7 +14,7 @@ Install-Package SRLApiClient
 
 ---
 
-## Features (v1.0.0-rc1)
+## Features (v1.0.0-rc2)
 
 The client supports synchronous and asynchronous GET requests on the following endpoints:
 - Countries

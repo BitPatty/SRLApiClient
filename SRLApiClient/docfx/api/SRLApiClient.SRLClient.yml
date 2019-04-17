@@ -500,7 +500,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: SRLClient.cs
-    startLine: 116
+    startLine: 120
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -539,7 +539,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: SRLClient.cs
-    startLine: 141
+    startLine: 145
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -591,7 +591,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: SRLClient.cs
-    startLine: 151
+    startLine: 155
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -643,7 +643,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Put
     path: SRLClient.cs
-    startLine: 172
+    startLine: 176
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -688,7 +688,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PutAsync
     path: SRLClient.cs
-    startLine: 180
+    startLine: 184
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -733,7 +733,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Post
     path: SRLClient.cs
-    startLine: 192
+    startLine: 196
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -778,7 +778,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PostAsync
     path: SRLClient.cs
-    startLine: 200
+    startLine: 204
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -823,7 +823,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SubmitPayloadAsync
     path: SRLClient.cs
-    startLine: 213
+    startLine: 217
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -871,7 +871,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: DeSerialize
     path: SRLClient.cs
-    startLine: 235
+    startLine: 239
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -918,7 +918,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: JsonSerialize
     path: SRLClient.cs
-    startLine: 246
+    startLine: 250
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -960,7 +960,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Logout
     path: SRLClient.cs
-    startLine: 280
+    startLine: 284
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -992,7 +992,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: ReAuthenticate
     path: SRLClient.cs
-    startLine: 293
+    startLine: 297
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -1027,7 +1027,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Authenticate
     path: SRLClient.cs
-    startLine: 302
+    startLine: 306
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
@@ -1072,7 +1072,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Dispose
     path: SRLClient.cs
-    startLine: 385
+    startLine: 389
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient
