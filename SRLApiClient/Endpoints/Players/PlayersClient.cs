@@ -24,34 +24,15 @@ namespace SRLApiClient.Endpoints.Players
     /// </summary>
     /// <param name="name">The players name</param>
     /// <returns>Returns the player</returns>
-    public Player Get(string name)
-    {
-      try
-      {
-        return SrlClient.Get<Player>($"{ BasePath}/{name.ToLower()}");
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+    public Player Get(string name) 
+      => SrlClient.Get<Player>($"{ BasePath}/{name.ToLower()}");
 
     /// <summary>
     /// Gets a single player asynchronously
     /// </summary>
     /// <param name="name">The players name</param>
     /// <returns>Returns the player</returns>
-    public async Task<Player> GetAsync(string name)
-    {
-      try
-      {
-        return await SrlClient.GetAsync<Player>($"{ BasePath}/{name.ToLower()}").ConfigureAwait(false);
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+    public async Task<Player> GetAsync(string name) => await SrlClient.GetAsync<Player>($"{ BasePath}/{name.ToLower()}").ConfigureAwait(false);
 
     [DataContract]
     private sealed class PlayerSearch : SRLData
@@ -71,15 +52,7 @@ namespace SRLApiClient.Endpoints.Players
     public ReadOnlyCollection<Player> Search(string name)
     {
       if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
-
-      try
-      {
-        return SrlClient.Get<PlayerSearch>($"{BasePath}?search={name.ToLower()}")?.Players?.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return SrlClient.Get<PlayerSearch>($"{BasePath}?search={name.ToLower()}")?.Players?.AsReadOnly();
     }
 
     /// <summary>
@@ -90,15 +63,7 @@ namespace SRLApiClient.Endpoints.Players
     public async Task<ReadOnlyCollection<Player>> SearchAsync(string name)
     {
       if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
-
-      try
-      {
-        return (await SrlClient.GetAsync<PlayerSearch>($"{BasePath}?search={name.ToLower()}").ConfigureAwait(false))?.Players?.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return (await SrlClient.GetAsync<PlayerSearch>($"{BasePath}?search={name.ToLower()}").ConfigureAwait(false))?.Players?.AsReadOnly();
     }
 
     /// <summary>

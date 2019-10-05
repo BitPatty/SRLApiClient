@@ -33,15 +33,7 @@ namespace SRLApiClient.Endpoints.Stats
     public PlayerStats GetPlayerStats(string playerName)
     {
       if (string.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
-
-      try
-      {
-        return SrlClient.Get<PlayerEndpoint>($"{BasePath}?player={playerName}")?.Stats;
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return SrlClient.Get<PlayerEndpoint>($"{BasePath}?player={playerName}")?.Stats;
     }
 
     /// <summary>
@@ -52,15 +44,7 @@ namespace SRLApiClient.Endpoints.Stats
     public async Task<PlayerStats> GetPlayerStatsAsync(string playerName)
     {
       if (string.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
-
-      try
-      {
-        return (await SrlClient.GetAsync<PlayerEndpoint>($"{BasePath}?player={playerName}").ConfigureAwait(false))?.Stats;
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return (await SrlClient.GetAsync<PlayerEndpoint>($"{BasePath}?player={playerName}").ConfigureAwait(false))?.Stats;
     }
 
     /// <summary>
@@ -73,15 +57,7 @@ namespace SRLApiClient.Endpoints.Stats
     {
       if (string.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
       if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
-
-      try
-      {
-        return SrlClient.Get<PlayerEndpoint>($"{BasePath}?player={playerName}&game={gameAbbreviation}")?.Stats;
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return SrlClient.Get<PlayerEndpoint>($"{BasePath}?player={playerName}&game={gameAbbreviation}")?.Stats;
     }
 
     /// <summary>
@@ -94,15 +70,7 @@ namespace SRLApiClient.Endpoints.Stats
     {
       if (string.IsNullOrWhiteSpace(playerName)) throw new ArgumentException(nameof(playerName), "Parameter can't be empty");
       if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
-
-      try
-      {
-        return (await SrlClient.GetAsync<PlayerEndpoint>($"{BasePath}?player={playerName}&game={gameAbbreviation}").ConfigureAwait(false))?.Stats;
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return (await SrlClient.GetAsync<PlayerEndpoint>($"{BasePath}?player={playerName}&game={gameAbbreviation}").ConfigureAwait(false))?.Stats;
     }
 
     [DataContract, KnownType(typeof(SRLData))]
@@ -120,15 +88,7 @@ namespace SRLApiClient.Endpoints.Stats
     public GameStats GetGameStats(string gameAbbreviation)
     {
       if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
-
-      try
-      {
-        return SrlClient.Get<GameEndpoint>($"{BasePath}?game={gameAbbreviation}")?.Stats;
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return SrlClient.Get<GameEndpoint>($"{BasePath}?game={gameAbbreviation}")?.Stats;
     }
 
     /// <summary>
@@ -139,15 +99,7 @@ namespace SRLApiClient.Endpoints.Stats
     public async Task<GameStats> GetGameStatsAsync(string gameAbbreviation)
     {
       if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
-
-      try
-      {
-        return (await SrlClient.GetAsync<GameEndpoint>($"{BasePath}?game={gameAbbreviation}").ConfigureAwait(false))?.Stats;
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return (await SrlClient.GetAsync<GameEndpoint>($"{BasePath}?game={gameAbbreviation}").ConfigureAwait(false))?.Stats;
     }
 
     [DataContract, KnownType(typeof(SRLData))]
@@ -162,31 +114,13 @@ namespace SRLApiClient.Endpoints.Stats
     /// </summary>
     /// <returns>Returns SRLs monthly stats</returns>
     public ReadOnlyCollection<SRLStats> GetMonthlySRLStats()
-    {
-      try
-      {
-        return SrlClient.Get<MonthlyStats>($"{BasePath}/monthly")?.Stats?.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+      => SrlClient.Get<MonthlyStats>($"{BasePath}/monthly")?.Stats?.AsReadOnly();
 
     /// <summary>
     /// Gets the monthly statistics asynchronously
     /// </summary>
     /// <returns>Returns SRLs monthly stats</returns>
     public async Task<ReadOnlyCollection<SRLStats>> GetMonthlySRLStatsAsync()
-    {
-      try
-      {
-        return (await SrlClient.GetAsync<MonthlyStats>($"{BasePath}/monthly").ConfigureAwait(false))?.Stats?.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+      => (await SrlClient.GetAsync<MonthlyStats>($"{BasePath}/monthly").ConfigureAwait(false))?.Stats?.AsReadOnly();
   }
 }

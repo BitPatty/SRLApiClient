@@ -30,37 +30,26 @@ namespace SRLApiClient.Endpoints.Games
     /// </summary>
     /// <param name="abbrev">The games abbreviation</param>
     /// <returns>Returns the game</returns>
-    public Game Get(string abbrev)
-    {
-      try
-      {
-        return SrlClient.Get<Game>($"{BasePath}/{abbrev.ToLower()}");
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+    public Game Get(string abbrev) 
+      => SrlClient.Get<Game>($"{BasePath}/{abbrev.ToLower()}");
+
+    /// <summary>
+    /// Performs a bulk request on the games endpoint
+    /// </summary>
+    /// <returns>Returns the list of available games</returns>
+    public ReadOnlyCollection<Game> GetAll() 
+      => SrlClient.Get<GameCollection>(BasePath)?.Games.AsReadOnly();
 
     /// <summary>
     /// Gets a game asynchronously
     /// </summary>
     /// <param name="abbrev">The games abbreviation</param>
     /// <returns>Returns the game</returns>
-    public async Task<Game> GetAsync(string abbrev)
-    {
-      try
-      {
-        return await SrlClient.GetAsync<Game>($"{BasePath}/{abbrev.ToLower()}").ConfigureAwait(false);
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+    public async Task<Game> GetAsync(string abbrev) 
+      => await SrlClient.GetAsync<Game>($"{BasePath}/{abbrev.ToLower()}").ConfigureAwait(false);
 
     [DataContract]
-    private sealed class GameSearch : SRLData
+    private sealed class GameCollection : SRLData
     {
       [DataMember(Name = "count", IsRequired = true)]
       public int Count { get; private set; }
@@ -77,15 +66,8 @@ namespace SRLApiClient.Endpoints.Games
     public ReadOnlyCollection<Game> Search(string name)
     {
       if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
-      try
-      {
-        GameSearch gs = SrlClient.Get<GameSearch>($"{BasePath}?search={name.ToLower()}");
-        return gs.Games.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      GameCollection gs = SrlClient.Get<GameCollection>($"{BasePath}?search={name.ToLower()}");
+      return gs?.Games?.AsReadOnly();
     }
 
     /// <summary>
@@ -96,16 +78,8 @@ namespace SRLApiClient.Endpoints.Games
     public async Task<ReadOnlyCollection<Game>> SearchAsync(string name)
     {
       if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
-
-      try
-      {
-        GameSearch gs = await SrlClient.GetAsync<GameSearch>($"{BasePath}?search={name.ToLower()}").ConfigureAwait(false);
-        return gs.Games.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      GameCollection gs = await SrlClient.GetAsync<GameCollection>($"{BasePath}?search={name.ToLower()}").ConfigureAwait(false);
+      return gs?.Games?.AsReadOnly();
     }
 
     /// <summary>
@@ -126,7 +100,8 @@ namespace SRLApiClient.Endpoints.Games
     /// </summary>
     /// <param name="g">The game</param>
     /// <returns>Returns the rules string</returns>
-    public string GetRules(Game g) => GetRules(g?.Abbreviation);
+    public string GetRules(Game g) 
+      => GetRules(g?.Abbreviation);
 
     /// <summary>
     /// Gets the rules for a game synchronously
@@ -136,15 +111,7 @@ namespace SRLApiClient.Endpoints.Games
     public string GetRules(string gameAbbreviation)
     {
       if (String.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
-
-      try
-      {
-        return SrlClient.Get<GameRules>($"/rules/{gameAbbreviation}").Rules;
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return SrlClient.Get<GameRules>($"/rules/{gameAbbreviation}")?.Rules;
     }
 
     /// <summary>
@@ -152,7 +119,8 @@ namespace SRLApiClient.Endpoints.Games
     /// </summary>
     /// <param name="g">The game</param>
     /// <returns>Returns the rules string</returns>
-    public async Task<string> GetRulesAsync(Game g) => await GetRulesAsync(g?.Abbreviation).ConfigureAwait(false);
+    public async Task<string> GetRulesAsync(Game g) 
+      => await GetRulesAsync(g?.Abbreviation).ConfigureAwait(false);
 
     /// <summary>
     /// Gets the rules for a game asynchronously
@@ -162,15 +130,7 @@ namespace SRLApiClient.Endpoints.Games
     public async Task<string> GetRulesAsync(string gameAbbreviation)
     {
       if (String.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
-
-      try
-      {
-        return (await SrlClient.GetAsync<GameRules>($"/rules/{gameAbbreviation}").ConfigureAwait(false)).Rules;
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return (await SrlClient.GetAsync<GameRules>($"/rules/{gameAbbreviation}").ConfigureAwait(false))?.Rules;
     }
   }
 }

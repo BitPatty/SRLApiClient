@@ -20,16 +20,8 @@ namespace SRLApiClient.Endpoints.Leaderboards
     /// <param name="abbrev">The games abbreviation</param>
     /// <returns>Returns the leaderboard</returns>
     public Leaderboard Get(string abbrev)
-    {
-      try
-      {
-        return SrlClient.Get<Leaderboard>($"{BasePath}/{abbrev.ToLower()}");
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+      => SrlClient.Get<Leaderboard>($"{BasePath}/{abbrev.ToLower()}");
+
 
     /// <summary>
     /// Gets a single leaderboard asynchronously
@@ -37,15 +29,7 @@ namespace SRLApiClient.Endpoints.Leaderboards
     /// <param name="abbrev">The games abbreviation</param>
     /// <returns>Returns the leaderboard</returns>
     public async Task<Leaderboard> GetAsync(string abbrev)
-    {
-      try
-      {
-        return await SrlClient.GetAsync<Leaderboard>($"{BasePath}/{abbrev.ToLower()}").ConfigureAwait(false);
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+      => await SrlClient.GetAsync<Leaderboard>($"{BasePath}/{abbrev.ToLower()}").ConfigureAwait(false);
+
   }
 }

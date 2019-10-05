@@ -23,16 +23,7 @@ namespace SRLApiClient.Endpoints.Races
     /// <param name="raceId">The races id</param>
     /// <returns>Returns the <see cref="Race"/></returns>
     public Race Get(string raceId)
-    {
-      try
-      {
-        return SrlClient.Get<Race>($"{BasePath}/{raceId.ToLower()}");
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+      => SrlClient.Get<Race>($"{BasePath}/{raceId.ToLower()}");
 
     /// <summary>
     /// Gets a single race asynchronously
@@ -40,16 +31,7 @@ namespace SRLApiClient.Endpoints.Races
     /// <param name="raceId">The races id</param>
     /// <returns>Returns the <see cref="Race"/></returns>
     public async Task<Race> GetAsync(string raceId)
-    {
-      try
-      {
-        return await SrlClient.GetAsync<Race>($"{BasePath}/{raceId.ToLower()}").ConfigureAwait(false);
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+      => await SrlClient.GetAsync<Race>($"{BasePath}/{raceId.ToLower()}").ConfigureAwait(false);
 
     [DataContract]
     private sealed class ActiveRaces : SRLData
@@ -66,32 +48,14 @@ namespace SRLApiClient.Endpoints.Races
     /// </summary>
     /// <returns>Returns a list of active races</returns>
     public ReadOnlyCollection<Race> GetActive()
-    {
-      try
-      {
-        return SrlClient.Get<ActiveRaces>(BasePath)?.Races?.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+      => SrlClient.Get<ActiveRaces>(BasePath)?.Races?.AsReadOnly();
 
     /// <summary>
     /// Gets the currently active races asynchronously
     /// </summary>
     /// <returns>Returns a list of active races</returns>
     public async Task<ReadOnlyCollection<Race>> GetActiveAsync()
-    {
-      try
-      {
-        return (await SrlClient.GetAsync<ActiveRaces>(BasePath).ConfigureAwait(false))?.Races?.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
-    }
+      => (await SrlClient.GetAsync<ActiveRaces>(BasePath).ConfigureAwait(false))?.Races?.AsReadOnly();
 
     /// <summary>
     /// Gets a single race

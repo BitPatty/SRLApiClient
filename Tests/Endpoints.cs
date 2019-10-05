@@ -36,6 +36,15 @@ namespace Tests
     [Test]
     [Category("Endpoints")]
     [Parallelizable]
+    public void Games_Bulk()
+    {
+      ReadOnlyCollection<Game> games = _client.Games.GetAll();
+      Assert.GreaterOrEqual(games.Count, 5300);
+    }
+
+    [Test]
+    [Category("Endpoints")]
+    [Parallelizable]
     public void Games_Rules()
     {
       string rules = _client.Games.GetRules("sms");

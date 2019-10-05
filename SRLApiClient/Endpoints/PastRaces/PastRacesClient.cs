@@ -42,17 +42,10 @@ namespace SRLApiClient.Endpoints.PastRaces
       if (page < 1) throw new ArgumentException(nameof(page), "Parameter must be 1 or greater");
       if (pageSize < 1) throw new ArgumentException(nameof(pageSize), "Parameter must be 1 or greater");
 
-      try
-      {
-        string playerFilter = !String.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
-        string gameFilter = !String.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
+      string playerFilter = !String.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
+      string gameFilter = !String.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
 
-        return SrlClient.Get<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}{playerFilter}{gameFilter}")?.Races?.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return SrlClient.Get<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}{playerFilter}{gameFilter}")?.Races?.AsReadOnly();
     }
 
     /// <summary>
@@ -68,17 +61,10 @@ namespace SRLApiClient.Endpoints.PastRaces
       if (page < 1) throw new ArgumentException(nameof(page), "Parameter must be 1 or greater");
       if (pageSize < 1) throw new ArgumentException(nameof(pageSize), "Parameter must be 1 or greater");
 
-      try
-      {
-        string playerFilter = !String.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
-        string gameFilter = !String.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
+      string playerFilter = !String.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
+      string gameFilter = !String.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
 
-        return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}{playerFilter}{gameFilter}").ConfigureAwait(false))?.Races?.AsReadOnly();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}{playerFilter}{gameFilter}").ConfigureAwait(false))?.Races?.AsReadOnly();
     }
 
     /// <summary>
@@ -89,15 +75,7 @@ namespace SRLApiClient.Endpoints.PastRaces
     public PastRace Get(string raceId)
     {
       if (String.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
-
-      try
-      {
-        return SrlClient.Get<PastRacesCollection>($"{BasePath}/{raceId.ToLower()}")?.Races?.FirstOrDefault();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return SrlClient.Get<PastRacesCollection>($"{BasePath}/{raceId.ToLower()}")?.Races?.FirstOrDefault();
     }
 
     /// <summary>
@@ -108,15 +86,7 @@ namespace SRLApiClient.Endpoints.PastRaces
     public async Task<PastRace> GetAsync(string raceId)
     {
       if (String.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
-
-      try
-      {
-        return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}/{raceId.ToLower()}").ConfigureAwait(false))?.Races?.FirstOrDefault();
-      }
-      catch (SRLParseException)
-      {
-        return null;
-      }
+      return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}/{raceId.ToLower()}").ConfigureAwait(false))?.Races?.FirstOrDefault();
     }
   }
 }
