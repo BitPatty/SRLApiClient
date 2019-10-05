@@ -27,6 +27,10 @@ _none_
 
 ## Changelog
 
+#### v1.1.1
+
+- Ensured proper disposal of semaphores in the HTTP client pool
+
 #### v1.1.0
 
 - Less lenient exception handling - if the client fails to parse a response, the `SRLParseException` is no longer caught automatically
@@ -38,11 +42,11 @@ _none_
 
 #### v1.0.0-rc3
 
-- Change build runtime to .NET Core SDK 2.2.106
+- Changed build runtime to .NET Core SDK 2.2.106
 
 #### v1.0.0-rc2
 
-- Fix Timeout not updating when changed
+- Fixex Timeout not updating when changed
 
 #### v1.0.0-rc1
 
