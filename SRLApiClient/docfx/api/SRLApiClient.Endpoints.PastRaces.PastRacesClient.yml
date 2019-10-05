@@ -156,7 +156,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 65
+    startLine: 58
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -204,7 +204,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 88
+    startLine: 74
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces
@@ -243,7 +243,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/PastRaces/PastRacesClient.cs
-    startLine: 107
+    startLine: 85
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.PastRaces

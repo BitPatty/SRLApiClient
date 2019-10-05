@@ -27,6 +27,11 @@ _none_
 
 ## Changelog
 
+#### v1.1.0
+
+- Less lenient exception handling - if the client fails to parse a response, the `SRLParseException` is no longer caught automatically
+- Added `GetAll()` as bulk request to the `Games` endpoint
+
 #### v1.0.0
 
 - Initial Release

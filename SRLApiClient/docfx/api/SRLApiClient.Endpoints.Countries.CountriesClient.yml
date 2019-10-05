@@ -141,7 +141,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Countries/CountriesClient.cs
-    startLine: 49
+    startLine: 40
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Countries

@@ -215,6 +215,19 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Endpoints.Games.GamesClient.Get
   nameWithType: GamesClient.Get
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetAll
+  name: GetAll()
+  href: api/SRLApiClient.Endpoints.Games.GamesClient.html#SRLApiClient_Endpoints_Games_GamesClient_GetAll
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.GetAll
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetAll()
+  nameWithType: GamesClient.GetAll()
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetAll*
+  name: GetAll
+  href: api/SRLApiClient.Endpoints.Games.GamesClient.html#SRLApiClient_Endpoints_Games_GamesClient_GetAll_
+  commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.GetAll
+  isSpec: "True"
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetAll
+  nameWithType: GamesClient.GetAll
 - uid: SRLApiClient.Endpoints.Games.GamesClient.GetAsync(System.String)
   name: GetAsync(String)
   href: api/SRLApiClient.Endpoints.Games.GamesClient.html#SRLApiClient_Endpoints_Games_GamesClient_GetAsync_System_String_

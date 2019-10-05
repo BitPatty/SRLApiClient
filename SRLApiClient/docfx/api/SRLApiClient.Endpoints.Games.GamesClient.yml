@@ -7,6 +7,7 @@ items:
   children:
   - SRLApiClient.Endpoints.Games.GamesClient.#ctor(SRLApiClient.SRLClient)
   - SRLApiClient.Endpoints.Games.GamesClient.Get(System.String)
+  - SRLApiClient.Endpoints.Games.GamesClient.GetAll
   - SRLApiClient.Endpoints.Games.GamesClient.GetAsync(System.String)
   - SRLApiClient.Endpoints.Games.GamesClient.GetRules(SRLApiClient.Endpoints.Games.Game)
   - SRLApiClient.Endpoints.Games.GamesClient.GetRules(System.String)
@@ -133,6 +134,41 @@ items:
   - public
   modifiers.vb:
   - Public
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetAll
+  commentId: M:SRLApiClient.Endpoints.Games.GamesClient.GetAll
+  id: GetAll
+  parent: SRLApiClient.Endpoints.Games.GamesClient
+  langs:
+  - csharp
+  - vb
+  name: GetAll()
+  nameWithType: GamesClient.GetAll()
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetAll()
+  type: Method
+  source:
+    remote:
+      path: SRLApiClient/Endpoints/Games/GamesClient.cs
+      branch: master
+      repo: git@github.com:BitPatty/SRLApiClient.git
+    id: GetAll
+    path: Endpoints/Games/GamesClient.cs
+    startLine: 39
+  assemblies:
+  - SRLApiClient
+  namespace: SRLApiClient.Endpoints.Games
+  summary: "\nPerforms a bulk request on the games endpoint\n"
+  example: []
+  syntax:
+    content: public ReadOnlyCollection<Game> GetAll()
+    return:
+      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}
+      description: Returns the list of available games
+    content.vb: Public Function GetAll As ReadOnlyCollection(Of Game)
+  overload: SRLApiClient.Endpoints.Games.GamesClient.GetAll*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
 - uid: SRLApiClient.Endpoints.Games.GamesClient.GetAsync(System.String)
   commentId: M:SRLApiClient.Endpoints.Games.GamesClient.GetAsync(System.String)
   id: GetAsync(System.String)
@@ -151,7 +187,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Games/GamesClient.cs
-    startLine: 49
+    startLine: 47
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -190,7 +226,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Search
     path: Endpoints/Games/GamesClient.cs
-    startLine: 76
+    startLine: 65
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -229,7 +265,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SearchAsync
     path: Endpoints/Games/GamesClient.cs
-    startLine: 95
+    startLine: 77
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -268,7 +304,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRules
     path: Endpoints/Games/GamesClient.cs
-    startLine: 128
+    startLine: 102
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -307,7 +343,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRules
     path: Endpoints/Games/GamesClient.cs
-    startLine: 135
+    startLine: 110
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -346,7 +382,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRulesAsync
     path: Endpoints/Games/GamesClient.cs
-    startLine: 154
+    startLine: 121
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -385,7 +421,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetRulesAsync
     path: Endpoints/Games/GamesClient.cs
-    startLine: 161
+    startLine: 129
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Games
@@ -761,6 +797,98 @@ references:
   name: Game
   nameWithType: Game
   fullName: SRLApiClient.Endpoints.Games.Game
+- uid: SRLApiClient.Endpoints.Games.GamesClient.GetAll*
+  commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.GetAll
+  name: GetAll
+  nameWithType: GamesClient.GetAll
+  fullName: SRLApiClient.Endpoints.Games.GamesClient.GetAll
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  name: ReadOnlyCollection<Game>
+  nameWithType: ReadOnlyCollection<Game>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Games.Game>
+  nameWithType.vb: ReadOnlyCollection(Of Game)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Games.Game)
+  name.vb: ReadOnlyCollection(Of Game)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - uid: SRLApiClient.Endpoints.Games.Game
+    name: Game
+    nameWithType: Game
+    fullName: SRLApiClient.Endpoints.Games.Game
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - uid: SRLApiClient.Endpoints.Games.Game
+    name: Game
+    nameWithType: Game
+    fullName: SRLApiClient.Endpoints.Games.Game
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: true
+  name: ReadOnlyCollection<T>
+  nameWithType: ReadOnlyCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    nameWithType: ReadOnlyCollection
+    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
 - uid: SRLApiClient.Endpoints.Games.GamesClient.GetAsync*
   commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.GetAsync
   name: GetAsync
@@ -858,93 +986,6 @@ references:
   name: Search
   nameWithType: GamesClient.Search
   fullName: SRLApiClient.Endpoints.Games.GamesClient.Search
-- uid: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}
-  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Games.Game}
-  parent: System.Collections.ObjectModel
-  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
-  name: ReadOnlyCollection<Game>
-  nameWithType: ReadOnlyCollection<Game>
-  fullName: System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Games.Game>
-  nameWithType.vb: ReadOnlyCollection(Of Game)
-  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Games.Game)
-  name.vb: ReadOnlyCollection(Of Game)
-  spec.csharp:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-    name: ReadOnlyCollection
-    nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - uid: SRLApiClient.Endpoints.Games.Game
-    name: Game
-    nameWithType: Game
-    fullName: SRLApiClient.Endpoints.Games.Game
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-    name: ReadOnlyCollection
-    nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - uid: SRLApiClient.Endpoints.Games.Game
-    name: Game
-    nameWithType: Game
-    fullName: SRLApiClient.Endpoints.Games.Game
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
-  isExternal: true
-  name: ReadOnlyCollection<T>
-  nameWithType: ReadOnlyCollection<T>
-  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
-  nameWithType.vb: ReadOnlyCollection(Of T)
-  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
-  name.vb: ReadOnlyCollection(Of T)
-  spec.csharp:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-    name: ReadOnlyCollection
-    nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
-  - name: <
-    nameWithType: <
-    fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: '>'
-    nameWithType: '>'
-    fullName: '>'
-  spec.vb:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-    name: ReadOnlyCollection
-    nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
-    isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Collections.ObjectModel
-  commentId: N:System.Collections.ObjectModel
-  isExternal: true
-  name: System.Collections.ObjectModel
-  nameWithType: System.Collections.ObjectModel
-  fullName: System.Collections.ObjectModel
 - uid: SRLApiClient.Endpoints.Games.GamesClient.SearchAsync*
   commentId: Overload:SRLApiClient.Endpoints.Games.GamesClient.SearchAsync
   name: SearchAsync

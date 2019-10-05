@@ -23,6 +23,7 @@
   "SRLApiClient.Endpoints.Games.GamesClient": "SRLApiClient.Endpoints.Games.GamesClient.yml",
   "SRLApiClient.Endpoints.Games.GamesClient.#ctor(SRLApiClient.SRLClient)": "SRLApiClient.Endpoints.Games.GamesClient.yml",
   "SRLApiClient.Endpoints.Games.GamesClient.Get(System.String)": "SRLApiClient.Endpoints.Games.GamesClient.yml",
+  "SRLApiClient.Endpoints.Games.GamesClient.GetAll": "SRLApiClient.Endpoints.Games.GamesClient.yml",
   "SRLApiClient.Endpoints.Games.GamesClient.GetAsync(System.String)": "SRLApiClient.Endpoints.Games.GamesClient.yml",
   "SRLApiClient.Endpoints.Games.GamesClient.GetRules(SRLApiClient.Endpoints.Games.Game)": "SRLApiClient.Endpoints.Games.GamesClient.yml",
   "SRLApiClient.Endpoints.Games.GamesClient.GetRules(System.String)": "SRLApiClient.Endpoints.Games.GamesClient.yml",

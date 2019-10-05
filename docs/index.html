@@ -77,6 +77,11 @@ Install-Package SRLApiClient
 <h3 id="dependencies">Dependencies</h3>
 <p><em>none</em></p>
 <h2 id="changelog">Changelog</h2>
+<h4 id="v110">v1.1.0</h4>
+<ul>
+<li>Less lenient exception handling - if the client fails to parse a response, the <code>SRLParseException</code> is no longer caught automatically</li>
+<li>Added <code>GetAll()</code> as bulk request to the <code>Games</code> endpoint</li>
+</ul>
 <h4 id="v100">v1.0.0</h4>
 <ul>
 <li>Initial Release</li>

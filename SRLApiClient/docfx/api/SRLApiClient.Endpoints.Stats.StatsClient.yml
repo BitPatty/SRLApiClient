@@ -151,7 +151,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStatsAsync
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 51
+    startLine: 43
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -190,7 +190,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStats
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 71
+    startLine: 55
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -232,7 +232,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetPlayerStatsAsync
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 92
+    startLine: 68
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -274,7 +274,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetGameStats
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 119
+    startLine: 87
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -313,7 +313,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetGameStatsAsync
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 138
+    startLine: 98
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -352,7 +352,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetMonthlySRLStats
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 163
+    startLine: 115
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
@@ -387,7 +387,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetMonthlySRLStatsAsync
     path: Endpoints/Stats/StatsClient.cs
-    startLine: 179
+    startLine: 122
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Stats
