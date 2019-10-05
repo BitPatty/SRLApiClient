@@ -80,9 +80,19 @@ namespace SRLApiClient
     {
       _clientPool.ForEach(c =>
       {
-        c?.Dispose();
-        c = null;
+        try
+        {
+          c?.Dispose();
+          c = null;
+        }
+        catch (ObjectDisposedException) { }
       });
+
+      try
+      {
+        _clientPoolSemaphore?.Dispose();
+      }
+      catch (ObjectDisposedException) { }
     }
 
     private sealed class PoolClient : IDisposable
@@ -168,8 +178,24 @@ namespace SRLApiClient
 
       public void Dispose()
       {
-        _client?.Dispose();
-        _client = null;
+        try
+        {
+          _client?.Dispose();
+          _client = null;
+        }
+        catch (ObjectDisposedException) { }
+
+        try
+        {
+          _reqSemaphore?.Dispose();
+        }
+        catch (ObjectDisposedException) { }
+
+        try
+        {
+          _semaSemaphore?.Dispose();
+        }
+        catch (ObjectDisposedException) { }
       }
     }
   }
