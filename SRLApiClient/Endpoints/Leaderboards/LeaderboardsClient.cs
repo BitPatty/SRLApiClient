@@ -22,7 +22,6 @@ namespace SRLApiClient.Endpoints.Leaderboards
     public Leaderboard Get(string abbrev)
       => SrlClient.Get<Leaderboard>($"{BasePath}/{abbrev.ToLower()}");
 
-
     /// <summary>
     /// Gets a single leaderboard asynchronously
     /// </summary>
@@ -30,6 +29,5 @@ namespace SRLApiClient.Endpoints.Leaderboards
     /// <returns>Returns the leaderboard</returns>
     public async Task<Leaderboard> GetAsync(string abbrev)
       => await SrlClient.GetAsync<Leaderboard>($"{BasePath}/{abbrev.ToLower()}").ConfigureAwait(false);
-
   }
 }

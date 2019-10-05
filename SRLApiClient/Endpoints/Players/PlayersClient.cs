@@ -24,7 +24,7 @@ namespace SRLApiClient.Endpoints.Players
     /// </summary>
     /// <param name="name">The players name</param>
     /// <returns>Returns the player</returns>
-    public Player Get(string name) 
+    public Player Get(string name)
       => SrlClient.Get<Player>($"{ BasePath}/{name.ToLower()}");
 
     /// <summary>

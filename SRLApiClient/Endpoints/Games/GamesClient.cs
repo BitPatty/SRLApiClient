@@ -30,14 +30,14 @@ namespace SRLApiClient.Endpoints.Games
     /// </summary>
     /// <param name="abbrev">The games abbreviation</param>
     /// <returns>Returns the game</returns>
-    public Game Get(string abbrev) 
+    public Game Get(string abbrev)
       => SrlClient.Get<Game>($"{BasePath}/{abbrev.ToLower()}");
 
     /// <summary>
     /// Performs a bulk request on the games endpoint
     /// </summary>
     /// <returns>Returns the list of available games</returns>
-    public ReadOnlyCollection<Game> GetAll() 
+    public ReadOnlyCollection<Game> GetAll()
       => SrlClient.Get<GameCollection>(BasePath)?.Games.AsReadOnly();
 
     /// <summary>
@@ -45,7 +45,7 @@ namespace SRLApiClient.Endpoints.Games
     /// </summary>
     /// <param name="abbrev">The games abbreviation</param>
     /// <returns>Returns the game</returns>
-    public async Task<Game> GetAsync(string abbrev) 
+    public async Task<Game> GetAsync(string abbrev)
       => await SrlClient.GetAsync<Game>($"{BasePath}/{abbrev.ToLower()}").ConfigureAwait(false);
 
     [DataContract]
@@ -100,7 +100,7 @@ namespace SRLApiClient.Endpoints.Games
     /// </summary>
     /// <param name="g">The game</param>
     /// <returns>Returns the rules string</returns>
-    public string GetRules(Game g) 
+    public string GetRules(Game g)
       => GetRules(g?.Abbreviation);
 
     /// <summary>
@@ -119,7 +119,7 @@ namespace SRLApiClient.Endpoints.Games
     /// </summary>
     /// <param name="g">The game</param>
     /// <returns>Returns the rules string</returns>
-    public async Task<string> GetRulesAsync(Game g) 
+    public async Task<string> GetRulesAsync(Game g)
       => await GetRulesAsync(g?.Abbreviation).ConfigureAwait(false);
 
     /// <summary>

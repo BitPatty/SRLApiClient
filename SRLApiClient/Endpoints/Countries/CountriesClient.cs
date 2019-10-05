@@ -31,14 +31,14 @@ namespace SRLApiClient.Endpoints.Countries
     /// Gets the list of available countries synchronously
     /// </summary>
     /// <returns>Returns the list of countries</returns>
-    public ReadOnlyCollection<string> Get() 
+    public ReadOnlyCollection<string> Get()
       => SrlClient.Get<Countries>(BasePath).List.AsReadOnly();
 
     /// <summary>
     /// Gets the list of available countries synchronously
     /// </summary>
     /// <returns>Returns the list of countries</returns>
-    public async Task<ReadOnlyCollection<string>> GetAsync() 
+    public async Task<ReadOnlyCollection<string>> GetAsync()
       => (await SrlClient.GetAsync<Countries>(BasePath).ConfigureAwait(false)).List.AsReadOnly();
   }
 }
