@@ -3,6 +3,8 @@ trigger:
     include:
       - master
 
+pr: none
+
 strategy:
   matrix:
     linux:
@@ -10,28 +12,32 @@ strategy:
     mac:
       imageName: 'macos-10.14'
     windows:
-      imageName: 'win1803'
+      imageName: 'windows-latest'
 
 pool:
   vmImage: $(imageName)
 
 variables:
-  - group: SRLApiClient.Build
+  - group: 'SRLApiClient.Build'
+  - name: 'dotnetSdkVersion'
+    value: '3.0.100-preview3-010431'
 
 steps:
 - task: DotNetCoreInstaller@0
-  displayName: 'Install .NET Core 2.2.106'
+  displayName: 'Install .NET Core $(dotnetSdkVersion)'
   inputs:
-    version: '2.2.106'
+    version: '$(dotnetSdkVersion)'
 - task: DotNetCoreCLI@2
   displayName: 'Build SRLApiClient'
   inputs:
+    version: '$(dotnetSdkVersion)'
     command: build
     projects: 'SRLApiClient/SRLApiClient.csproj'
     arguments: '-c $(BuildConfiguration)'
 - task: DotNetCoreCLI@2
   displayName: 'Build Tests'
   inputs:
+    version: '$(dotnetSdkVersion)'
     command: build
     projects: 'Tests/Tests.csproj'
     arguments: '-c $(BuildConfiguration)'
@@ -41,6 +47,7 @@ steps:
     SRLUsername: '$(SRLUsername)'
     SRLPassword: '$(SRLPassword)'
   inputs:
+    version: '$(dotnetSdkVersion)'
     command: test
     projects: 'Tests/Tests.csproj'
     arguments: '-c $(BuildConfiguration) --no-build'

@@ -27,6 +27,10 @@ _none_
 
 ## Changelog
 
+#### v1.2
+
+- Update target framework to .NET Standard 2.1
+
 #### v1.1.1
 
 - Ensured proper disposal of semaphores in the HTTP client pool
