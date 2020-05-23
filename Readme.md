@@ -2,7 +2,7 @@
 
 [![NuGet](https://img.shields.io/nuget/v/SRLApiClient.svg)](https://www.nuget.org/packages/SRLApiClient) [![NuGet Pre-Release](https://img.shields.io/nuget/vpre/SRLApiClient.svg?label=nuget%20pre-release)](https://www.nuget.org/packages/SRLApiClient) ![Nuget](https://img.shields.io/nuget/dt/SRLApiClient.svg) [![Build Status](https://dev.azure.com/bitpatty/SRLApiClient/_apis/build/status/BitPatty.SRLApiClient?branchName=master)](https://dev.azure.com/bitpatty/SRLApiClient/_build/latest?definitionId=2&branchName=master) [![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/BitPatty/SRLApiClient/master/LICENSE)
 
-This repository contains a compact, asynchronous .Net Standard 2.0 wrapper around the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
+This repository contains a compact, asynchronous .Net Standard 2.1 wrapper around the [SpeedRunsLive](http://speedrunslive.com) API. The client is available via [NuGet](https://www.nuget.org/packages/SRLApiClient).
 
 ```bash
 #.Net
@@ -27,7 +27,7 @@ The client supports synchronous and asynchronous GET requests on the following e
 
 Authentication via HTTP is supported to update user profiles. POST/PUT requests on other endpoints are not possible, since users are missing the required privileges.
 
-The client also supports a user defined number of HTTP clients. Requests are parallelized automatically. Using a pool size of > 10 is not recommended.
+The client also supports a user defined number of HTTP clients. Using a pool size of > 10 is not recommended.
 
 <p align="center">
   <img src="https://i.imgur.com/PwlkNML.png" />
@@ -37,7 +37,7 @@ The client also supports a user defined number of HTTP clients. Requests are par
 
 ## Requirements
 
-The SRL API Client supports any platform that implements [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support).
+The SRL API Client supports any platform that implements [.NET Standard 2.1](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support).
 
 ### Dependencies
 
@@ -54,8 +54,8 @@ You can visit [srlclient.zint.ch](https://srlclient.zint.ch) for the autogenerat
 ## License
 
 ```
-SRLApiClient - A .NET Standard 2.0 wrapper around the SpeedRunsLive API
-Copyright (C) 2018-2019  Matteias Collet
+SRLApiClient - A .NET Standard wrapper around the SpeedRunsLive API
+Copyright (C) 2018-2020  Matteias Collet
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as published
