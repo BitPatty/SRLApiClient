@@ -29,10 +29,6 @@ Authentication via HTTP is supported to update user profiles. POST/PUT requests 
 
 The client also supports a user defined number of HTTP clients. Using a pool size of > 10 is not recommended.
 
-<p align="center">
-  <img src="https://i.imgur.com/PwlkNML.png" />
-</p>
-
 ---
 
 ## Requirements
