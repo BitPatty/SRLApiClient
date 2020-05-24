@@ -13,8 +13,6 @@ namespace Tests
 {
   public class Endpoints : BaseTest
   {
-    internal static SRLClient _client { get; set; } = new SRLClient();
-
     [Test]
     [Category(nameof(Endpoints))]
     [Parallelizable]
