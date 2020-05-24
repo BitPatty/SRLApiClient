@@ -31,17 +31,8 @@ items:
   summary: "\nLeaderboard object\n"
   example: []
   syntax:
-    content: >-
-      [DataContract]
-
-      [KnownType(typeof(SRLData))]
-
-      public class Leaderboard : SRLData
+    content: 'public class Leaderboard : SRLData'
     content.vb: >-
-      <DataContract>
-
-      <KnownType(GetType(SRLData))>
-
       Public Class Leaderboard
           Inherits SRLData
   inheritance:
@@ -49,25 +40,9 @@ items:
   - SRLApiClient.Endpoints.SRLData
   inheritedMembers:
   - SRLApiClient.Endpoints.SRLData.Deserialized
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   extensionMethods:
   - SRLApiClient.Endpoints.Leaderboards.Leaderboard.SRLApiClient.Extensions.LeaderboardExtensions.ContainsPlayer(System.String)
   - SRLApiClient.Endpoints.Leaderboards.Leaderboard.SRLApiClient.Extensions.LeaderboardExtensions.FindPlayer(System.String)
-  attributes:
-  - type: System.Runtime.Serialization.DataContractAttribute
-    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
-    arguments: []
-  - type: System.Runtime.Serialization.KnownTypeAttribute
-    ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
-    arguments:
-    - type: System.Type
-      value: SRLApiClient.Endpoints.SRLData
   modifiers.csharp:
   - public
   - class
@@ -99,29 +74,12 @@ items:
   summary: "\nThe game associated with the leaderboard\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "game", IsRequired = true)]
-
-      public Game Game { get; protected set; }
+    content: public Game Game { get; protected set; }
     parameters: []
     return:
       type: SRLApiClient.Endpoints.Games.Game
-    content.vb: >-
-      <DataMember(Name:="game", IsRequired:=True)>
-
-      Public Property Game As Game
+    content.vb: Public Property Game As Game
   overload: SRLApiClient.Endpoints.Leaderboards.Leaderboard.Game*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: game
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -155,29 +113,12 @@ items:
   summary: "\nThe number of ranked players\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "leadersCount", IsRequired = true)]
-
-      public int LeadersCount { get; protected set; }
+    content: public int LeadersCount { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="leadersCount", IsRequired:=True)>
-
-      Public Property LeadersCount As Integer
+    content.vb: Public Property LeadersCount As Integer
   overload: SRLApiClient.Endpoints.Leaderboards.Leaderboard.LeadersCount*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: leadersCount
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -214,7 +155,7 @@ items:
     content: public ReadOnlyCollection<Leader> Leaders { get; }
     parameters: []
     return:
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Leaderboards.Leader}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Leaderboards.Leader}
     content.vb: Public ReadOnly Property Leaders As ReadOnlyCollection(Of Leader)
   overload: SRLApiClient.Endpoints.Leaderboards.Leaderboard.Leaders*
   modifiers.csharp:
@@ -248,29 +189,12 @@ items:
   summary: "\nThe number of unranked players\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "unrankedCount", IsRequired = true)]
-
-      public int UnrankedCount { get; protected set; }
+    content: public int UnrankedCount { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="unrankedCount", IsRequired:=True)>
-
-      Public Property UnrankedCount As Integer
+    content.vb: Public Property UnrankedCount As Integer
   overload: SRLApiClient.Endpoints.Leaderboards.Leaderboard.UnrankedCount*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: unrankedCount
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -307,7 +231,7 @@ items:
     content: public ReadOnlyCollection<Leader> Unranked { get; }
     parameters: []
     return:
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Leaderboards.Leader}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Leaderboards.Leader}
     content.vb: Public ReadOnly Property Unranked As ReadOnlyCollection(Of Leader)
   overload: SRLApiClient.Endpoints.Leaderboards.Leaderboard.Unranked*
   modifiers.csharp:
@@ -322,13 +246,6 @@ references:
   name: SRLApiClient.Endpoints.Leaderboards
   nameWithType: SRLApiClient.Endpoints.Leaderboards
   fullName: SRLApiClient.Endpoints.Leaderboards
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
 - uid: SRLApiClient.Endpoints.SRLData
   commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
@@ -341,285 +258,6 @@ references:
   name: Deserialized
   nameWithType: SRLData.Deserialized
   fullName: SRLApiClient.Endpoints.SRLData.Deserialized
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: SRLApiClient.Endpoints.Leaderboards.Leaderboard.SRLApiClient.Extensions.LeaderboardExtensions.ContainsPlayer(System.String)
   commentId: M:SRLApiClient.Extensions.LeaderboardExtensions.ContainsPlayer(SRLApiClient.Endpoints.Leaderboards.Leaderboard,System.String)
   parent: SRLApiClient.Extensions.LeaderboardExtensions
@@ -698,12 +336,6 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: SRLApiClient.Endpoints
   commentId: N:SRLApiClient.Endpoints
   name: SRLApiClient.Endpoints
@@ -846,8 +478,6 @@ references:
   nameWithType: Leaderboard.LeadersCount
   fullName: SRLApiClient.Endpoints.Leaderboards.Leaderboard.LeadersCount
 - uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
   isExternal: true
   name: Int32
   nameWithType: Int32
@@ -857,21 +487,20 @@ references:
   name: Leaders
   nameWithType: Leaderboard.Leaders
   fullName: SRLApiClient.Endpoints.Leaderboards.Leaderboard.Leaders
-- uid: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Leaderboards.Leader}
-  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Leaderboards.Leader}
-  parent: System.Collections.ObjectModel
-  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+- uid: ReadOnlyCollection{SRLApiClient.Endpoints.Leaderboards.Leader}
+  commentId: '!:ReadOnlyCollection{SRLApiClient.Endpoints.Leaderboards.Leader}'
+  definition: ReadOnlyCollection`1
   name: ReadOnlyCollection<Leader>
   nameWithType: ReadOnlyCollection<Leader>
-  fullName: System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Leaderboards.Leader>
+  fullName: ReadOnlyCollection<SRLApiClient.Endpoints.Leaderboards.Leader>
   nameWithType.vb: ReadOnlyCollection(Of Leader)
-  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Leaderboards.Leader)
+  fullName.vb: ReadOnlyCollection(Of SRLApiClient.Endpoints.Leaderboards.Leader)
   name.vb: ReadOnlyCollection(Of Leader)
   spec.csharp:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: <
     nameWithType: <
@@ -884,10 +513,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -899,51 +528,44 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+- uid: ReadOnlyCollection`1
   isExternal: true
-  name: ReadOnlyCollection<T>
-  nameWithType: ReadOnlyCollection<T>
-  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
-  nameWithType.vb: ReadOnlyCollection(Of T)
-  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
-  name.vb: ReadOnlyCollection(Of T)
+  name: ReadOnlyCollection<>
+  nameWithType: ReadOnlyCollection<>
+  fullName: ReadOnlyCollection<>
+  nameWithType.vb: ReadOnlyCollection(Of )
+  fullName.vb: ReadOnlyCollection(Of )
+  name.vb: ReadOnlyCollection(Of )
   spec.csharp:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.ObjectModel
-  commentId: N:System.Collections.ObjectModel
-  isExternal: true
-  name: System.Collections.ObjectModel
-  nameWithType: System.Collections.ObjectModel
-  fullName: System.Collections.ObjectModel
 - uid: SRLApiClient.Endpoints.Leaderboards.Leaderboard.UnrankedCount*
   commentId: Overload:SRLApiClient.Endpoints.Leaderboards.Leaderboard.UnrankedCount
   name: UnrankedCount

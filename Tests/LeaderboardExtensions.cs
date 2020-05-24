@@ -1,16 +1,13 @@
 ﻿using NUnit.Framework;
-using SRLApiClient;
 using SRLApiClient.Endpoints.Leaderboards;
 using SRLApiClient.Extensions;
 
 namespace Tests
 {
-  public class LeaderboardExtensions
+  public class LeaderboardExtensions : BaseTest
   {
-    internal static SRLClient _client { get; set; } = new SRLClient(poolSize: 10);
-
     [Test]
-    [Category("LeaderboardExtensions")]
+    [Category(nameof(LeaderboardExtensions))]
     [Parallelizable]
     public void ContainsPlayer()
     {
@@ -20,7 +17,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("LeaderboardExtensions")]
+    [Category(nameof(LeaderboardExtensions))]
     [Parallelizable]
     public void FindPlayer()
     {

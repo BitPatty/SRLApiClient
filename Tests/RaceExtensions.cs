@@ -1,19 +1,16 @@
 ﻿using System.Collections.ObjectModel;
 using System.Linq;
 using NUnit.Framework;
-using SRLApiClient;
 using SRLApiClient.Endpoints;
 using SRLApiClient.Endpoints.Races;
 using SRLApiClient.Extensions;
 
 namespace Tests
 {
-  public class RaceExtensions
+  public class RaceExtensions : BaseTest
   {
-    internal static SRLClient _client { get; set; } = new SRLClient(poolSize: 10);
-
     [Test]
-    [Category("RaceExtensions")]
+    [Category(nameof(RaceExtensions))]
     [Parallelizable]
     public void FilterByEntrant()
     {
@@ -28,7 +25,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("RaceExtensions")]
+    [Category(nameof(RaceExtensions))]
     [Parallelizable]
     public void FilterByGame()
     {
@@ -43,7 +40,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("RaceExtensions")]
+    [Category(nameof(RaceExtensions))]
     [Parallelizable]
     public void FilterById()
     {
@@ -58,7 +55,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("RaceExtensions")]
+    [Category(nameof(RaceExtensions))]
     [Parallelizable]
     public void FilterByState()
     {
@@ -73,7 +70,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("RaceExtensions")]
+    [Category(nameof(RaceExtensions))]
     [Parallelizable]
     public void FilterByMinState()
     {
@@ -88,7 +85,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("RaceExtensions")]
+    [Category(nameof(RaceExtensions))]
     [Parallelizable]
     public void FilterByMaxState()
     {

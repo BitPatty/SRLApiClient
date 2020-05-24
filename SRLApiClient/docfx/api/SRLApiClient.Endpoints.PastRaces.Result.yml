@@ -37,17 +37,8 @@ items:
   summary: "\nResult object\n"
   example: []
   syntax:
-    content: >-
-      [DataContract]
-
-      [KnownType(typeof(SRLData))]
-
-      public class Result : SRLData
+    content: 'public class Result : SRLData'
     content.vb: >-
-      <DataContract>
-
-      <KnownType(GetType(SRLData))>
-
       Public Class Result
           Inherits SRLData
   inheritance:
@@ -55,22 +46,6 @@ items:
   - SRLApiClient.Endpoints.SRLData
   inheritedMembers:
   - SRLApiClient.Endpoints.SRLData.Deserialized
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
-  attributes:
-  - type: System.Runtime.Serialization.DataContractAttribute
-    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
-    arguments: []
-  - type: System.Runtime.Serialization.KnownTypeAttribute
-    ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
-    arguments:
-    - type: System.Type
-      value: SRLApiClient.Endpoints.SRLData
   modifiers.csharp:
   - public
   - class
@@ -102,29 +77,12 @@ items:
   summary: "\nThe race id associated with the result\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "race", IsRequired = true)]
-
-      public int Race { get; protected set; }
+    content: public int Race { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="race", IsRequired:=True)>
-
-      Public Property Race As Integer
+    content.vb: Public Property Race As Integer
   overload: SRLApiClient.Endpoints.PastRaces.Result.Race*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: race
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -158,29 +116,12 @@ items:
   summary: "\nThe players placement in the race\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "place", IsRequired = true)]
-
-      public int Place { get; protected set; }
+    content: public int Place { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="place", IsRequired:=True)>
-
-      Public Property Place As Integer
+    content.vb: Public Property Place As Integer
   overload: SRLApiClient.Endpoints.PastRaces.Result.Place*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: place
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -214,29 +155,12 @@ items:
   summary: "\nThe players name\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "player", IsRequired = true)]
-
-      public string PlayerName { get; protected set; }
+    content: public string PlayerName { get; protected set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <DataMember(Name:="player", IsRequired:=True)>
-
-      Public Property PlayerName As String
+    content.vb: Public Property PlayerName As String
   overload: SRLApiClient.Endpoints.PastRaces.Result.PlayerName*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: player
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -270,29 +194,12 @@ items:
   summary: "\nThe players final time in seconds\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "time", IsRequired = true)]
-
-      public int Time { get; protected set; }
+    content: public int Time { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="time", IsRequired:=True)>
-
-      Public Property Time As Integer
+    content.vb: Public Property Time As Integer
   overload: SRLApiClient.Endpoints.PastRaces.Result.Time*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: time
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -326,29 +233,12 @@ items:
   summary: "\nThe players comment on the result\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "message", IsRequired = true)]
-
-      public string Comment { get; protected set; }
+    content: public string Comment { get; protected set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <DataMember(Name:="message", IsRequired:=True)>
-
-      Public Property Comment As String
+    content.vb: Public Property Comment As String
   overload: SRLApiClient.Endpoints.PastRaces.Result.Comment*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: message
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -382,29 +272,12 @@ items:
   summary: "\nThe players old trueskill\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "oldtrueskill", IsRequired = true)]
-
-      public int OldTrueSkill { get; protected set; }
+    content: public int OldTrueSkill { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="oldtrueskill", IsRequired:=True)>
-
-      Public Property OldTrueSkill As Integer
+    content.vb: Public Property OldTrueSkill As Integer
   overload: SRLApiClient.Endpoints.PastRaces.Result.OldTrueSkill*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: oldtrueskill
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -438,29 +311,12 @@ items:
   summary: "\nThe players new trueskill\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "newtrueskill", IsRequired = true)]
-
-      public int NewTrueSkill { get; protected set; }
+    content: public int NewTrueSkill { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="newtrueskill", IsRequired:=True)>
-
-      Public Property NewTrueSkill As Integer
+    content.vb: Public Property NewTrueSkill As Integer
   overload: SRLApiClient.Endpoints.PastRaces.Result.NewTrueSkill*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: newtrueskill
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -494,29 +350,12 @@ items:
   summary: "\nThe players trueskill change\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "trueskillchange", IsRequired = true)]
-
-      public int TrueSkillChange { get; protected set; }
+    content: public int TrueSkillChange { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="trueskillchange", IsRequired:=True)>
-
-      Public Property TrueSkillChange As Integer
+    content.vb: Public Property TrueSkillChange As Integer
   overload: SRLApiClient.Endpoints.PastRaces.Result.TrueSkillChange*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: trueskillchange
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -550,29 +389,12 @@ items:
   summary: "\nThe players old trueskill (seasons only)\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "oldseasontrueskill", IsRequired = true)]
-
-      public int OldSeasonTrueSkill { get; protected set; }
+    content: public int OldSeasonTrueSkill { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="oldseasontrueskill", IsRequired:=True)>
-
-      Public Property OldSeasonTrueSkill As Integer
+    content.vb: Public Property OldSeasonTrueSkill As Integer
   overload: SRLApiClient.Endpoints.PastRaces.Result.OldSeasonTrueSkill*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: oldseasontrueskill
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -606,29 +428,12 @@ items:
   summary: "\nThe players new trueskill (seasons only)\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "newseasontrueskill", IsRequired = true)]
-
-      public int NewSeasonTrueSkill { get; protected set; }
+    content: public int NewSeasonTrueSkill { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="newseasontrueskill", IsRequired:=True)>
-
-      Public Property NewSeasonTrueSkill As Integer
+    content.vb: Public Property NewSeasonTrueSkill As Integer
   overload: SRLApiClient.Endpoints.PastRaces.Result.NewSeasonTrueSkill*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: newseasontrueskill
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -662,29 +467,12 @@ items:
   summary: "\nThe players trueskill change (seasons only)\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "seasontrueskillchange", IsRequired = true)]
-
-      public int SeasonTrueSkillChange { get; protected set; }
+    content: public int SeasonTrueSkillChange { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="seasontrueskillchange", IsRequired:=True)>
-
-      Public Property SeasonTrueSkillChange As Integer
+    content.vb: Public Property SeasonTrueSkillChange As Integer
   overload: SRLApiClient.Endpoints.PastRaces.Result.SeasonTrueSkillChange*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: seasontrueskillchange
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -699,13 +487,6 @@ references:
   name: SRLApiClient.Endpoints.PastRaces
   nameWithType: SRLApiClient.Endpoints.PastRaces
   fullName: SRLApiClient.Endpoints.PastRaces
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
 - uid: SRLApiClient.Endpoints.SRLData
   commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
@@ -718,291 +499,6 @@ references:
   name: Deserialized
   nameWithType: SRLData.Deserialized
   fullName: SRLApiClient.Endpoints.SRLData.Deserialized
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: SRLApiClient.Endpoints
   commentId: N:SRLApiClient.Endpoints
   name: SRLApiClient.Endpoints
@@ -1014,8 +510,6 @@ references:
   nameWithType: Result.Race
   fullName: SRLApiClient.Endpoints.PastRaces.Result.Race
 - uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
   isExternal: true
   name: Int32
   nameWithType: Int32
@@ -1031,8 +525,6 @@ references:
   nameWithType: Result.PlayerName
   fullName: SRLApiClient.Endpoints.PastRaces.Result.PlayerName
 - uid: System.String
-  commentId: T:System.String
-  parent: System
   isExternal: true
   name: String
   nameWithType: String

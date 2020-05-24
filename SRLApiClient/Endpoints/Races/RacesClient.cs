@@ -2,7 +2,6 @@
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
-using SRLApiClient.Exceptions;
 
 namespace SRLApiClient.Endpoints.Races
 {

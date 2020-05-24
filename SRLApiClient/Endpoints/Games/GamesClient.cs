@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
-using SRLApiClient.Exceptions;
 
 namespace SRLApiClient.Endpoints.Games
 {
@@ -65,7 +64,7 @@ namespace SRLApiClient.Endpoints.Games
     /// <returns>Returns a list of games matching the search query</returns>
     public ReadOnlyCollection<Game> Search(string name)
     {
-      if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
       GameCollection gs = SrlClient.Get<GameCollection>($"{BasePath}?search={name.ToLower()}");
       return gs?.Games?.AsReadOnly();
     }
@@ -77,7 +76,7 @@ namespace SRLApiClient.Endpoints.Games
     /// <returns>Returns a list of games matching the search query</returns>
     public async Task<ReadOnlyCollection<Game>> SearchAsync(string name)
     {
-      if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
       GameCollection gs = await SrlClient.GetAsync<GameCollection>($"{BasePath}?search={name.ToLower()}").ConfigureAwait(false);
       return gs?.Games?.AsReadOnly();
     }
@@ -110,7 +109,7 @@ namespace SRLApiClient.Endpoints.Games
     /// <returns>Returns the rules string</returns>
     public string GetRules(string gameAbbreviation)
     {
-      if (String.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
       return SrlClient.Get<GameRules>($"/rules/{gameAbbreviation}")?.Rules;
     }
 
@@ -129,7 +128,7 @@ namespace SRLApiClient.Endpoints.Games
     /// <returns>Returns the rules string</returns>
     public async Task<string> GetRulesAsync(string gameAbbreviation)
     {
-      if (String.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(gameAbbreviation)) throw new ArgumentException(nameof(gameAbbreviation), "Parameter can't be empty");
       return (await SrlClient.GetAsync<GameRules>($"/rules/{gameAbbreviation}").ConfigureAwait(false))?.Rules;
     }
   }

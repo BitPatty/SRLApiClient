@@ -27,8 +27,6 @@ The client supports synchronous and asynchronous GET requests on the following e
 
 Authentication via HTTP is supported to update user profiles. POST/PUT requests on other endpoints are not possible, since users are missing the required privileges.
 
-The client also supports a user defined number of HTTP clients. Using a pool size of > 10 is not recommended.
-
 ---
 
 ## Requirements

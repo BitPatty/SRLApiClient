@@ -29,17 +29,8 @@ items:
   summary: "\nLeader object\n"
   example: []
   syntax:
-    content: >-
-      [DataContract]
-
-      [KnownType(typeof(SRLData))]
-
-      public class Leader : SRLData
+    content: 'public class Leader : SRLData'
     content.vb: >-
-      <DataContract>
-
-      <KnownType(GetType(SRLData))>
-
       Public Class Leader
           Inherits SRLData
   inheritance:
@@ -47,22 +38,6 @@ items:
   - SRLApiClient.Endpoints.SRLData
   inheritedMembers:
   - SRLApiClient.Endpoints.SRLData.Deserialized
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
-  attributes:
-  - type: System.Runtime.Serialization.DataContractAttribute
-    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
-    arguments: []
-  - type: System.Runtime.Serialization.KnownTypeAttribute
-    ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
-    arguments:
-    - type: System.Type
-      value: SRLApiClient.Endpoints.SRLData
   modifiers.csharp:
   - public
   - class
@@ -94,29 +69,12 @@ items:
   summary: "\nThe players name\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "name", IsRequired = true)]
-
-      public string Name { get; protected set; }
+    content: public string Name { get; protected set; }
     parameters: []
     return:
       type: System.String
-    content.vb: >-
-      <DataMember(Name:="name", IsRequired:=True)>
-
-      Public Property Name As String
+    content.vb: Public Property Name As String
   overload: SRLApiClient.Endpoints.Leaderboards.Leader.Name*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: name
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -150,29 +108,12 @@ items:
   summary: "\nThe players trueskill level on the associated <xref href=\"SRLApiClient.Endpoints.Leaderboards.Leaderboard\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "trueskill", IsRequired = true)]
-
-      public float TrueSkill { get; protected set; }
+    content: public float TrueSkill { get; protected set; }
     parameters: []
     return:
       type: System.Single
-    content.vb: >-
-      <DataMember(Name:="trueskill", IsRequired:=True)>
-
-      Public Property TrueSkill As Single
+    content.vb: Public Property TrueSkill As Single
   overload: SRLApiClient.Endpoints.Leaderboards.Leader.TrueSkill*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: trueskill
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -206,29 +147,12 @@ items:
   summary: "\nThe players rank on the associated <xref href=\"SRLApiClient.Endpoints.Leaderboards.Leaderboard\" data-throw-if-not-resolved=\"false\"></xref>\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "rank", IsRequired = true)]
-
-      public int Rank { get; protected set; }
+    content: public int Rank { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="rank", IsRequired:=True)>
-
-      Public Property Rank As Integer
+    content.vb: Public Property Rank As Integer
   overload: SRLApiClient.Endpoints.Leaderboards.Leader.Rank*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: rank
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -243,13 +167,6 @@ references:
   name: SRLApiClient.Endpoints.Leaderboards
   nameWithType: SRLApiClient.Endpoints.Leaderboards
   fullName: SRLApiClient.Endpoints.Leaderboards
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
 - uid: SRLApiClient.Endpoints.SRLData
   commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
@@ -262,291 +179,6 @@ references:
   name: Deserialized
   nameWithType: SRLData.Deserialized
   fullName: SRLApiClient.Endpoints.SRLData.Deserialized
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: SRLApiClient.Endpoints
   commentId: N:SRLApiClient.Endpoints
   name: SRLApiClient.Endpoints
@@ -558,8 +190,6 @@ references:
   nameWithType: Leader.Name
   fullName: SRLApiClient.Endpoints.Leaderboards.Leader.Name
 - uid: System.String
-  commentId: T:System.String
-  parent: System
   isExternal: true
   name: String
   nameWithType: String
@@ -576,8 +206,7 @@ references:
   nameWithType: Leader.TrueSkill
   fullName: SRLApiClient.Endpoints.Leaderboards.Leader.TrueSkill
 - uid: System.Single
-  commentId: T:System.Single
-  parent: System
+  commentId: '!:System.Single'
   isExternal: true
   name: Single
   nameWithType: Single
@@ -588,8 +217,6 @@ references:
   nameWithType: Leader.Rank
   fullName: SRLApiClient.Endpoints.Leaderboards.Leader.Rank
 - uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
   isExternal: true
   name: Int32
   nameWithType: Int32

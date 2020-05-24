@@ -29,8 +29,8 @@ items:
   summary: "\nThe API used for fetching streams. The according\nchannel can usually be found in the &apos;Channel&apos; Property\n"
   example: []
   syntax:
-    content: public enum StreamApi
-    content.vb: Public Enum StreamApi
+    content: 'public enum StreamApi : int'
+    content.vb: Public Enum StreamApi As Integer
   modifiers.csharp:
   - public
   - enum

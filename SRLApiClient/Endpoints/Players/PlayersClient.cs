@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
-using SRLApiClient.Exceptions;
 using SRLApiClient.User;
 
 namespace SRLApiClient.Endpoints.Players
@@ -51,7 +50,7 @@ namespace SRLApiClient.Endpoints.Players
     /// <returns>List of players matching the queried name</returns>
     public ReadOnlyCollection<Player> Search(string name)
     {
-      if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
       return SrlClient.Get<PlayerSearch>($"{BasePath}?search={name.ToLower()}")?.Players?.AsReadOnly();
     }
 
@@ -62,7 +61,7 @@ namespace SRLApiClient.Endpoints.Players
     /// <returns>List of players matching the queried name</returns>
     public async Task<ReadOnlyCollection<Player>> SearchAsync(string name)
     {
-      if (String.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(name)) throw new ArgumentException(nameof(name), "Parameter can't be empty");
       return (await SrlClient.GetAsync<PlayerSearch>($"{BasePath}?search={name.ToLower()}").ConfigureAwait(false))?.Players?.AsReadOnly();
     }
 

@@ -25,7 +25,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: PlayersClient
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 13
+    startLine: 12
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -42,13 +42,6 @@ items:
   inheritedMembers:
   - SRLApiClient.Endpoints.SRLEndpoint.BasePath
   - SRLApiClient.Endpoints.SRLEndpoint.SrlClient
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   modifiers.csharp:
   - public
   - class
@@ -73,7 +66,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 19
+    startLine: 18
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -109,7 +102,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Get
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -148,7 +141,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: GetAsync
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 34
+    startLine: 33
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -161,7 +154,7 @@ items:
       type: System.String
       description: The players name
     return:
-      type: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Players.Player}
+      type: Task{SRLApiClient.Endpoints.Players.Player}
       description: Returns the player
     content.vb: Public Function GetAsync(name As String) As Task(Of Player)
   overload: SRLApiClient.Endpoints.Players.PlayersClient.GetAsync*
@@ -187,7 +180,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Search
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 51
+    startLine: 50
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -200,7 +193,7 @@ items:
       type: System.String
       description: The players name
     return:
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}
       description: List of players matching the queried name
     content.vb: Public Function Search(name As String) As ReadOnlyCollection(Of Player)
   overload: SRLApiClient.Endpoints.Players.PlayersClient.Search*
@@ -226,7 +219,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: SearchAsync
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 62
+    startLine: 61
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -239,7 +232,7 @@ items:
       type: System.String
       description: The players name
     return:
-      type: System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}}
+      type: Task{ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}}
       description: List of players matching the queried name
     content.vb: Public Function SearchAsync(name As String) As Task(Of ReadOnlyCollection(Of Player))
   overload: SRLApiClient.Endpoints.Players.PlayersClient.SearchAsync*
@@ -265,7 +258,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: Edit
     path: Endpoints/Players/PlayersClient.cs
-    startLine: 81
+    startLine: 80
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Endpoints.Players
@@ -310,13 +303,6 @@ references:
   name: SRLApiClient.Endpoints.Players
   nameWithType: SRLApiClient.Endpoints.Players
   fullName: SRLApiClient.Endpoints.Players
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
 - uid: SRLApiClient.Endpoints.SRLEndpoint
   commentId: T:SRLApiClient.Endpoints.SRLEndpoint
   parent: SRLApiClient.Endpoints
@@ -335,291 +321,6 @@ references:
   name: SrlClient
   nameWithType: SRLEndpoint.SrlClient
   fullName: SRLApiClient.Endpoints.SRLEndpoint.SrlClient
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: SRLApiClient.Endpoints
   commentId: N:SRLApiClient.Endpoints
   name: SRLApiClient.Endpoints
@@ -647,8 +348,6 @@ references:
   nameWithType: PlayersClient.Get
   fullName: SRLApiClient.Endpoints.Players.PlayersClient.Get
 - uid: System.String
-  commentId: T:System.String
-  parent: System
   isExternal: true
   name: String
   nameWithType: String
@@ -664,21 +363,20 @@ references:
   name: GetAsync
   nameWithType: PlayersClient.GetAsync
   fullName: SRLApiClient.Endpoints.Players.PlayersClient.GetAsync
-- uid: System.Threading.Tasks.Task{SRLApiClient.Endpoints.Players.Player}
-  commentId: T:System.Threading.Tasks.Task{SRLApiClient.Endpoints.Players.Player}
-  parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
+- uid: Task{SRLApiClient.Endpoints.Players.Player}
+  commentId: '!:Task{SRLApiClient.Endpoints.Players.Player}'
+  definition: Task`1
   name: Task<Player>
   nameWithType: Task<Player>
-  fullName: System.Threading.Tasks.Task<SRLApiClient.Endpoints.Players.Player>
+  fullName: Task<SRLApiClient.Endpoints.Players.Player>
   nameWithType.vb: Task(Of Player)
-  fullName.vb: System.Threading.Tasks.Task(Of SRLApiClient.Endpoints.Players.Player)
+  fullName.vb: Task(Of SRLApiClient.Endpoints.Players.Player)
   name.vb: Task(Of Player)
   spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: <
     nameWithType: <
@@ -691,10 +389,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -706,71 +404,63 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Threading.Tasks.Task`1
-  commentId: T:System.Threading.Tasks.Task`1
+- uid: Task`1
   isExternal: true
-  name: Task<TResult>
-  nameWithType: Task<TResult>
-  fullName: System.Threading.Tasks.Task<TResult>
-  nameWithType.vb: Task(Of TResult)
-  fullName.vb: System.Threading.Tasks.Task(Of TResult)
-  name.vb: Task(Of TResult)
+  name: Task<>
+  nameWithType: Task<>
+  fullName: Task<>
+  nameWithType.vb: Task(Of )
+  fullName.vb: Task(Of )
+  name.vb: Task(Of )
   spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: TResult
-    nameWithType: TResult
-    fullName: TResult
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
 - uid: SRLApiClient.Endpoints.Players.PlayersClient.Search*
   commentId: Overload:SRLApiClient.Endpoints.Players.PlayersClient.Search
   name: Search
   nameWithType: PlayersClient.Search
   fullName: SRLApiClient.Endpoints.Players.PlayersClient.Search
-- uid: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}
-  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}
-  parent: System.Collections.ObjectModel
-  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+- uid: ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}
+  commentId: '!:ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}'
+  definition: ReadOnlyCollection`1
   name: ReadOnlyCollection<Player>
   nameWithType: ReadOnlyCollection<Player>
-  fullName: System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Players.Player>
+  fullName: ReadOnlyCollection<SRLApiClient.Endpoints.Players.Player>
   nameWithType.vb: ReadOnlyCollection(Of Player)
-  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Players.Player)
+  fullName.vb: ReadOnlyCollection(Of SRLApiClient.Endpoints.Players.Player)
   name.vb: ReadOnlyCollection(Of Player)
   spec.csharp:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: <
     nameWithType: <
@@ -783,10 +473,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -798,79 +488,71 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+- uid: ReadOnlyCollection`1
   isExternal: true
-  name: ReadOnlyCollection<T>
-  nameWithType: ReadOnlyCollection<T>
-  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
-  nameWithType.vb: ReadOnlyCollection(Of T)
-  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
-  name.vb: ReadOnlyCollection(Of T)
+  name: ReadOnlyCollection<>
+  nameWithType: ReadOnlyCollection<>
+  fullName: ReadOnlyCollection<>
+  nameWithType.vb: ReadOnlyCollection(Of )
+  fullName.vb: ReadOnlyCollection(Of )
+  name.vb: ReadOnlyCollection(Of )
   spec.csharp:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.ObjectModel
-  commentId: N:System.Collections.ObjectModel
-  isExternal: true
-  name: System.Collections.ObjectModel
-  nameWithType: System.Collections.ObjectModel
-  fullName: System.Collections.ObjectModel
 - uid: SRLApiClient.Endpoints.Players.PlayersClient.SearchAsync*
   commentId: Overload:SRLApiClient.Endpoints.Players.PlayersClient.SearchAsync
   name: SearchAsync
   nameWithType: PlayersClient.SearchAsync
   fullName: SRLApiClient.Endpoints.Players.PlayersClient.SearchAsync
-- uid: System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}}
-  commentId: T:System.Threading.Tasks.Task{System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}}
-  parent: System.Threading.Tasks
-  definition: System.Threading.Tasks.Task`1
+- uid: Task{ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}}
+  commentId: '!:Task{ReadOnlyCollection{SRLApiClient.Endpoints.Players.Player}}'
+  definition: Task`1
   name: Task<ReadOnlyCollection<Player>>
   nameWithType: Task<ReadOnlyCollection<Player>>
-  fullName: System.Threading.Tasks.Task<System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Players.Player>>
+  fullName: Task<ReadOnlyCollection<SRLApiClient.Endpoints.Players.Player>>
   nameWithType.vb: Task(Of ReadOnlyCollection(Of Player))
-  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Players.Player))
+  fullName.vb: Task(Of ReadOnlyCollection(Of SRLApiClient.Endpoints.Players.Player))
   name.vb: Task(Of ReadOnlyCollection(Of Player))
   spec.csharp:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: <
     nameWithType: <
@@ -886,18 +568,18 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Threading.Tasks.Task`1
+  - uid: Task`1
     name: Task
     nameWithType: Task
-    fullName: System.Threading.Tasks.Task
+    fullName: Task
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -924,8 +606,6 @@ references:
   nameWithType: StreamApi
   fullName: SRLApiClient.Endpoints.StreamApi
 - uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
   isExternal: true
   name: Boolean
   nameWithType: Boolean

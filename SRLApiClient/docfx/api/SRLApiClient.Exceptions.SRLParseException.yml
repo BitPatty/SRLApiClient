@@ -6,9 +6,9 @@ items:
   parent: SRLApiClient.Exceptions
   children:
   - SRLApiClient.Exceptions.SRLParseException.#ctor
-  - SRLApiClient.Exceptions.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+  - SRLApiClient.Exceptions.SRLParseException.#ctor(SerializationInfo,StreamingContext)
   - SRLApiClient.Exceptions.SRLParseException.#ctor(System.String)
-  - SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,System.Exception)
+  - SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,Exception)
   langs:
   - csharp
   - vb
@@ -28,35 +28,12 @@ items:
   - SRLApiClient
   namespace: SRLApiClient.Exceptions
   syntax:
-    content: 'public class SRLParseException : Exception, ISerializable'
+    content: 'public class SRLParseException : Exception'
     content.vb: >-
       Public Class SRLParseException
           Inherits Exception
-          Implements ISerializable
   inheritance:
   - System.Object
-  - System.Exception
-  implements:
-  - System.Runtime.Serialization.ISerializable
-  inheritedMembers:
-  - System.Exception.GetBaseException
-  - System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  - System.Exception.GetType
-  - System.Exception.ToString
-  - System.Exception.Data
-  - System.Exception.HelpLink
-  - System.Exception.HResult
-  - System.Exception.InnerException
-  - System.Exception.Message
-  - System.Exception.Source
-  - System.Exception.StackTrace
-  - System.Exception.TargetSite
-  - System.Exception.SerializeObjectState
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
   modifiers.csharp:
   - public
   - class
@@ -111,7 +88,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Exceptions/SRLParseException.cs
-    startLine: 10
+    startLine: 13
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Exceptions
@@ -126,16 +103,16 @@ items:
   - public
   modifiers.vb:
   - Public
-- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,System.Exception)
-  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,System.Exception)
-  id: '#ctor(System.String,System.Exception)'
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,Exception)
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,Exception)
+  id: '#ctor(System.String,Exception)'
   parent: SRLApiClient.Exceptions.SRLParseException
   langs:
   - csharp
   - vb
   name: SRLParseException(String, Exception)
   nameWithType: SRLParseException.SRLParseException(String, Exception)
-  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.String, System.Exception)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.String, Exception)
   type: Constructor
   source:
     remote:
@@ -144,7 +121,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Exceptions/SRLParseException.cs
-    startLine: 11
+    startLine: 17
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Exceptions
@@ -154,23 +131,23 @@ items:
     - id: message
       type: System.String
     - id: inner
-      type: System.Exception
+      type: Exception
     content.vb: Public Sub New(message As String, inner As Exception)
   overload: SRLApiClient.Exceptions.SRLParseException.#ctor*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  id: '#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)'
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(SerializationInfo,StreamingContext)
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(SerializationInfo,StreamingContext)
+  id: '#ctor(SerializationInfo,StreamingContext)'
   parent: SRLApiClient.Exceptions.SRLParseException
   langs:
   - csharp
   - vb
   name: SRLParseException(SerializationInfo, StreamingContext)
   nameWithType: SRLParseException.SRLParseException(SerializationInfo, StreamingContext)
-  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(SerializationInfo, StreamingContext)
   type: Constructor
   source:
     remote:
@@ -179,7 +156,7 @@ items:
       repo: git@github.com:BitPatty/SRLApiClient.git
     id: .ctor
     path: Exceptions/SRLParseException.cs
-    startLine: 12
+    startLine: 21
   assemblies:
   - SRLApiClient
   namespace: SRLApiClient.Exceptions
@@ -187,9 +164,9 @@ items:
     content: protected SRLParseException(SerializationInfo info, StreamingContext context)
     parameters:
     - id: info
-      type: System.Runtime.Serialization.SerializationInfo
+      type: SerializationInfo
     - id: context
-      type: System.Runtime.Serialization.StreamingContext
+      type: StreamingContext
     content.vb: Protected Sub New(info As SerializationInfo, context As StreamingContext)
   overload: SRLApiClient.Exceptions.SRLParseException.#ctor*
   modifiers.csharp:
@@ -202,492 +179,28 @@ references:
   name: SRLApiClient.Exceptions
   nameWithType: SRLApiClient.Exceptions
   fullName: SRLApiClient.Exceptions
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
-- uid: System.Exception
-  commentId: T:System.Exception
-  parent: System
-  isExternal: true
-  name: Exception
-  nameWithType: Exception
-  fullName: System.Exception
-- uid: System.Runtime.Serialization.ISerializable
-  commentId: T:System.Runtime.Serialization.ISerializable
-  parent: System.Runtime.Serialization
-  isExternal: true
-  name: ISerializable
-  nameWithType: ISerializable
-  fullName: System.Runtime.Serialization.ISerializable
-- uid: System.Exception.GetBaseException
-  commentId: M:System.Exception.GetBaseException
-  parent: System.Exception
-  isExternal: true
-  name: GetBaseException()
-  nameWithType: Exception.GetBaseException()
-  fullName: System.Exception.GetBaseException()
-  spec.csharp:
-  - uid: System.Exception.GetBaseException
-    name: GetBaseException
-    nameWithType: Exception.GetBaseException
-    fullName: System.Exception.GetBaseException
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Exception.GetBaseException
-    name: GetBaseException
-    nameWithType: Exception.GetBaseException
-    fullName: System.Exception.GetBaseException
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  commentId: M:System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  parent: System.Exception
-  isExternal: true
-  name: GetObjectData(SerializationInfo, StreamingContext)
-  nameWithType: Exception.GetObjectData(SerializationInfo, StreamingContext)
-  fullName: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
-  spec.csharp:
-  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-    name: GetObjectData
-    nameWithType: Exception.GetObjectData
-    fullName: System.Exception.GetObjectData
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Runtime.Serialization.SerializationInfo
-    name: SerializationInfo
-    nameWithType: SerializationInfo
-    fullName: System.Runtime.Serialization.SerializationInfo
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Runtime.Serialization.StreamingContext
-    name: StreamingContext
-    nameWithType: StreamingContext
-    fullName: System.Runtime.Serialization.StreamingContext
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Exception.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-    name: GetObjectData
-    nameWithType: Exception.GetObjectData
-    fullName: System.Exception.GetObjectData
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Runtime.Serialization.SerializationInfo
-    name: SerializationInfo
-    nameWithType: SerializationInfo
-    fullName: System.Runtime.Serialization.SerializationInfo
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Runtime.Serialization.StreamingContext
-    name: StreamingContext
-    nameWithType: StreamingContext
-    fullName: System.Runtime.Serialization.StreamingContext
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Exception.GetType
-  commentId: M:System.Exception.GetType
-  parent: System.Exception
-  isExternal: true
-  name: GetType()
-  nameWithType: Exception.GetType()
-  fullName: System.Exception.GetType()
-  spec.csharp:
-  - uid: System.Exception.GetType
-    name: GetType
-    nameWithType: Exception.GetType
-    fullName: System.Exception.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Exception.GetType
-    name: GetType
-    nameWithType: Exception.GetType
-    fullName: System.Exception.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Exception.ToString
-  commentId: M:System.Exception.ToString
-  parent: System.Exception
-  isExternal: true
-  name: ToString()
-  nameWithType: Exception.ToString()
-  fullName: System.Exception.ToString()
-  spec.csharp:
-  - uid: System.Exception.ToString
-    name: ToString
-    nameWithType: Exception.ToString
-    fullName: System.Exception.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Exception.ToString
-    name: ToString
-    nameWithType: Exception.ToString
-    fullName: System.Exception.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Exception.Data
-  commentId: P:System.Exception.Data
-  parent: System.Exception
-  isExternal: true
-  name: Data
-  nameWithType: Exception.Data
-  fullName: System.Exception.Data
-- uid: System.Exception.HelpLink
-  commentId: P:System.Exception.HelpLink
-  parent: System.Exception
-  isExternal: true
-  name: HelpLink
-  nameWithType: Exception.HelpLink
-  fullName: System.Exception.HelpLink
-- uid: System.Exception.HResult
-  commentId: P:System.Exception.HResult
-  parent: System.Exception
-  isExternal: true
-  name: HResult
-  nameWithType: Exception.HResult
-  fullName: System.Exception.HResult
-- uid: System.Exception.InnerException
-  commentId: P:System.Exception.InnerException
-  parent: System.Exception
-  isExternal: true
-  name: InnerException
-  nameWithType: Exception.InnerException
-  fullName: System.Exception.InnerException
-- uid: System.Exception.Message
-  commentId: P:System.Exception.Message
-  parent: System.Exception
-  isExternal: true
-  name: Message
-  nameWithType: Exception.Message
-  fullName: System.Exception.Message
-- uid: System.Exception.Source
-  commentId: P:System.Exception.Source
-  parent: System.Exception
-  isExternal: true
-  name: Source
-  nameWithType: Exception.Source
-  fullName: System.Exception.Source
-- uid: System.Exception.StackTrace
-  commentId: P:System.Exception.StackTrace
-  parent: System.Exception
-  isExternal: true
-  name: StackTrace
-  nameWithType: Exception.StackTrace
-  fullName: System.Exception.StackTrace
-- uid: System.Exception.TargetSite
-  commentId: P:System.Exception.TargetSite
-  parent: System.Exception
-  isExternal: true
-  name: TargetSite
-  nameWithType: Exception.TargetSite
-  fullName: System.Exception.TargetSite
-- uid: System.Exception.SerializeObjectState
-  commentId: E:System.Exception.SerializeObjectState
-  parent: System.Exception
-  isExternal: true
-  name: SerializeObjectState
-  nameWithType: Exception.SerializeObjectState
-  fullName: System.Exception.SerializeObjectState
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: System.Runtime.Serialization
-  commentId: N:System.Runtime.Serialization
-  isExternal: true
-  name: System.Runtime.Serialization
-  nameWithType: System.Runtime.Serialization
-  fullName: System.Runtime.Serialization
 - uid: SRLApiClient.Exceptions.SRLParseException.#ctor*
   commentId: Overload:SRLApiClient.Exceptions.SRLParseException.#ctor
   name: SRLParseException
   nameWithType: SRLParseException.SRLParseException
   fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException
 - uid: System.String
-  commentId: T:System.String
-  parent: System
   isExternal: true
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.Runtime.Serialization.SerializationInfo
-  commentId: T:System.Runtime.Serialization.SerializationInfo
-  parent: System.Runtime.Serialization
+- uid: Exception
+  isExternal: true
+  name: Exception
+  nameWithType: Exception
+  fullName: Exception
+- uid: SerializationInfo
   isExternal: true
   name: SerializationInfo
   nameWithType: SerializationInfo
-  fullName: System.Runtime.Serialization.SerializationInfo
-- uid: System.Runtime.Serialization.StreamingContext
-  commentId: T:System.Runtime.Serialization.StreamingContext
-  parent: System.Runtime.Serialization
+  fullName: SerializationInfo
+- uid: StreamingContext
   isExternal: true
   name: StreamingContext
   nameWithType: StreamingContext
-  fullName: System.Runtime.Serialization.StreamingContext
+  fullName: StreamingContext

@@ -37,15 +37,13 @@ namespace SRLApiClient.User
     /// </summary>
     /// <param name="baseClient">The base client used for requests</param>
     public SRLUser(SRLClient baseClient)
-    {
-      _srlClient = baseClient;
-    }
+      => _srlClient = baseClient;
 
     /// <summary>
     /// Verifies that the <see cref="SRLUser"/> is an authenticated user
     /// </summary>
     /// <returns>Returns true if the <see cref="SRLUser"/> account could be verified</returns>
-    public bool Verify() => VerifyAsync().Result;
+    public bool Verify() => VerifyAsync().ConfigureAwait(false).GetAwaiter().GetResult();
 
     /// <summary>
     /// Asynchronously verifies that the <see cref="SRLUser"/> is properly authenticated
@@ -74,42 +72,48 @@ namespace SRLApiClient.User
     /// </summary>
     /// <param name="s">The users channel name</param>
     /// <returns>Returns true on success</returns>
-    public bool SetChannel(string s) => new PlayersClient(_srlClient).Edit(Name, channel: s);
+    public bool SetChannel(string s)
+      => new PlayersClient(_srlClient).Edit(Name, channel: s);
 
     /// <summary>
     /// Modifies the users twitter account
     /// </summary>
     /// <param name="s">The users twitter name</param>
     /// <returns>Returns true on success</returns>
-    public bool SetTwitter(string s) => new PlayersClient(_srlClient).Edit(Name, twitter: s);
+    public bool SetTwitter(string s)
+      => new PlayersClient(_srlClient).Edit(Name, twitter: s);
 
     /// <summary>
     /// Modifies the users youtube account
     /// </summary>
     /// <param name="s">The users youtube name</param>
     /// <returns>Returns true on success</returns>
-    public bool SetYoutube(string s) => new PlayersClient(_srlClient).Edit(Name, youtube: s);
+    public bool SetYoutube(string s)
+      => new PlayersClient(_srlClient).Edit(Name, youtube: s);
 
     /// <summary>
     /// Modifies the capitalization of the users username
     /// </summary>
     /// <param name="s">The username with the new capitalizatione</param>
     /// <returns>Returns true on success</returns>
-    public bool SetCapitalization(string s) => new PlayersClient(_srlClient).Edit(Name, casename: s);
+    public bool SetCapitalization(string s)
+      => new PlayersClient(_srlClient).Edit(Name, casename: s);
 
     /// <summary>
     /// Modifies the users streaming API
     /// </summary>
     /// <param name="s">The API used for streams</param>
     /// <returns>Returns true on success</returns>
-    public bool SetApi(StreamApi s) => new PlayersClient(_srlClient).Edit(Name, api: s);
+    public bool SetApi(StreamApi s)
+      => new PlayersClient(_srlClient).Edit(Name, api: s);
 
     /// <summary>
     /// Modifies the users country
     /// </summary>
     /// <param name="s">The users country name. To get a list of valid countries use <see cref="SRLClient.Countries"/></param>
     /// <returns>Returns true on success</returns>
-    public bool SetCountry(string s) => new PlayersClient(_srlClient).Edit(Name, country: s);
+    public bool SetCountry(string s)
+      => new PlayersClient(_srlClient).Edit(Name, country: s);
 
     [DataContract, KnownType(typeof(SRLData))]
     private class Token : SRLData
@@ -121,21 +125,16 @@ namespace SRLApiClient.User
       private string _role { get; set; }
 
       public UserRole Role
-      {
-        get
+        => _role switch
         {
-          switch (_role)
-          {
-            case "anon": return UserRole.Anon;
-            case "user": return UserRole.User;
-            case "voice": return UserRole.Voice;
-            case "halfop": return UserRole.Halfop;
-            case "op": return UserRole.Op;
-            case "admin": return UserRole.Admin;
-            default: return UserRole.Unknown;
-          }
-        }
-      }
+          "anon" => UserRole.Anon,
+          "user" => UserRole.User,
+          "voice" => UserRole.Voice,
+          "halfop" => UserRole.Halfop,
+          "op" => UserRole.Op,
+          "admin" => UserRole.Admin,
+          _ => UserRole.Unknown,
+        };
     }
   }
 }

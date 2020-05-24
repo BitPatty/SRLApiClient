@@ -4,7 +4,6 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.Serialization;
 using System.Threading.Tasks;
-using SRLApiClient.Exceptions;
 
 namespace SRLApiClient.Endpoints.PastRaces
 {
@@ -42,8 +41,8 @@ namespace SRLApiClient.Endpoints.PastRaces
       if (page < 1) throw new ArgumentException(nameof(page), "Parameter must be 1 or greater");
       if (pageSize < 1) throw new ArgumentException(nameof(pageSize), "Parameter must be 1 or greater");
 
-      string playerFilter = !String.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
-      string gameFilter = !String.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
+      string playerFilter = !string.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
+      string gameFilter = !string.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
 
       return SrlClient.Get<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}{playerFilter}{gameFilter}")?.Races?.AsReadOnly();
     }
@@ -61,8 +60,8 @@ namespace SRLApiClient.Endpoints.PastRaces
       if (page < 1) throw new ArgumentException(nameof(page), "Parameter must be 1 or greater");
       if (pageSize < 1) throw new ArgumentException(nameof(pageSize), "Parameter must be 1 or greater");
 
-      string playerFilter = !String.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
-      string gameFilter = !String.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
+      string playerFilter = !string.IsNullOrWhiteSpace(playerName) ? $"&player={playerName}" : "";
+      string gameFilter = !string.IsNullOrWhiteSpace(gameAbbreviation) ? $"&game={gameAbbreviation}" : "";
 
       return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}?page={page}&pageSize={pageSize}{playerFilter}{gameFilter}").ConfigureAwait(false))?.Races?.AsReadOnly();
     }
@@ -74,7 +73,7 @@ namespace SRLApiClient.Endpoints.PastRaces
     /// <returns>Returns the past race</returns>
     public PastRace Get(string raceId)
     {
-      if (String.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
       return SrlClient.Get<PastRacesCollection>($"{BasePath}/{raceId.ToLower()}")?.Races?.FirstOrDefault();
     }
 
@@ -85,7 +84,7 @@ namespace SRLApiClient.Endpoints.PastRaces
     /// <returns>Returns the past race</returns>
     public async Task<PastRace> GetAsync(string raceId)
     {
-      if (String.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(raceId)) throw new ArgumentException(nameof(raceId), "Parameter can't be empty");
       return (await SrlClient.GetAsync<PastRacesCollection>($"{BasePath}/{raceId.ToLower()}").ConfigureAwait(false))?.Races?.FirstOrDefault();
     }
   }

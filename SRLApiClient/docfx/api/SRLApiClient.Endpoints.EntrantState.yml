@@ -65,10 +65,10 @@ items:
   summary: "\nFallback value\n"
   example: []
   syntax:
-    content: Unknown = 0U
+    content: Unknown = null
     return:
       type: SRLApiClient.Endpoints.EntrantState
-    content.vb: Unknown = 0UI
+    content.vb: Unknown = Nothing
   modifiers.csharp:
   - public
   - const
@@ -100,10 +100,10 @@ items:
   summary: "\nThe entrant joined the race but hasn&apos;t readied up yet\n"
   example: []
   syntax:
-    content: Entered = 1U
+    content: Entered = null
     return:
       type: SRLApiClient.Endpoints.EntrantState
-    content.vb: Entered = 1UI
+    content.vb: Entered = Nothing
   modifiers.csharp:
   - public
   - const
@@ -135,10 +135,10 @@ items:
   summary: "\nThe entrant is ready\n"
   example: []
   syntax:
-    content: Ready = 2U
+    content: Ready = null
     return:
       type: SRLApiClient.Endpoints.EntrantState
-    content.vb: Ready = 2UI
+    content.vb: Ready = Nothing
   modifiers.csharp:
   - public
   - const
@@ -170,10 +170,10 @@ items:
   summary: "\nThe entrant has finished the race\n"
   example: []
   syntax:
-    content: Done = 3U
+    content: Done = null
     return:
       type: SRLApiClient.Endpoints.EntrantState
-    content.vb: Done = 3UI
+    content.vb: Done = Nothing
   modifiers.csharp:
   - public
   - const
@@ -205,10 +205,10 @@ items:
   summary: "\nThe entrant quit the race\n"
   example: []
   syntax:
-    content: Forfeit = 4U
+    content: Forfeit = null
     return:
       type: SRLApiClient.Endpoints.EntrantState
-    content.vb: Forfeit = 4UI
+    content.vb: Forfeit = Nothing
   modifiers.csharp:
   - public
   - const
@@ -240,10 +240,10 @@ items:
   summary: "\nThe entrant got disqualified\n"
   example: []
   syntax:
-    content: Disqualified = 5U
+    content: Disqualified = null
     return:
       type: SRLApiClient.Endpoints.EntrantState
-    content.vb: Disqualified = 5UI
+    content.vb: Disqualified = Nothing
   modifiers.csharp:
   - public
   - const

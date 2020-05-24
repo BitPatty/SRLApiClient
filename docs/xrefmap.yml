@@ -1887,11 +1887,11 @@ references:
   commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor
   fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException()
   nameWithType: SRLParseException.SRLParseException()
-- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(SerializationInfo,StreamingContext)
   name: SRLParseException(SerializationInfo, StreamingContext)
-  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_SerializationInfo_StreamingContext_
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(SerializationInfo,StreamingContext)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(SerializationInfo, StreamingContext)
   nameWithType: SRLParseException.SRLParseException(SerializationInfo, StreamingContext)
 - uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.String)
   name: SRLParseException(String)
@@ -1899,11 +1899,11 @@ references:
   commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.String)
   fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.String)
   nameWithType: SRLParseException.SRLParseException(String)
-- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,System.Exception)
+- uid: SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,Exception)
   name: SRLParseException(String, Exception)
-  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_System_String_System_Exception_
-  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,System.Exception)
-  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.String, System.Exception)
+  href: api/SRLApiClient.Exceptions.SRLParseException.html#SRLApiClient_Exceptions_SRLParseException__ctor_System_String_Exception_
+  commentId: M:SRLApiClient.Exceptions.SRLParseException.#ctor(System.String,Exception)
+  fullName: SRLApiClient.Exceptions.SRLParseException.SRLParseException(System.String, Exception)
   nameWithType: SRLParseException.SRLParseException(String, Exception)
 - uid: SRLApiClient.Exceptions.SRLParseException.#ctor*
   name: SRLParseException
@@ -1924,11 +1924,11 @@ references:
   commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor
   fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException()
   nameWithType: SRLTimeoutException.SRLTimeoutException()
-- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(SerializationInfo,StreamingContext)
   name: SRLTimeoutException(SerializationInfo, StreamingContext)
-  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_System_Runtime_Serialization_SerializationInfo_System_Runtime_Serialization_StreamingContext_
-  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.Runtime.Serialization.SerializationInfo, System.Runtime.Serialization.StreamingContext)
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_SerializationInfo_StreamingContext_
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(SerializationInfo,StreamingContext)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(SerializationInfo, StreamingContext)
   nameWithType: SRLTimeoutException.SRLTimeoutException(SerializationInfo, StreamingContext)
 - uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String)
   name: SRLTimeoutException(String)
@@ -1936,11 +1936,11 @@ references:
   commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String)
   fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.String)
   nameWithType: SRLTimeoutException.SRLTimeoutException(String)
-- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,System.Exception)
+- uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,Exception)
   name: SRLTimeoutException(String, Exception)
-  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_System_String_System_Exception_
-  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,System.Exception)
-  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.String, System.Exception)
+  href: api/SRLApiClient.Exceptions.SRLTimeoutException.html#SRLApiClient_Exceptions_SRLTimeoutException__ctor_System_String_Exception_
+  commentId: M:SRLApiClient.Exceptions.SRLTimeoutException.#ctor(System.String,Exception)
+  fullName: SRLApiClient.Exceptions.SRLTimeoutException.SRLTimeoutException(System.String, Exception)
   nameWithType: SRLTimeoutException.SRLTimeoutException(String, Exception)
 - uid: SRLApiClient.Exceptions.SRLTimeoutException.#ctor*
   name: SRLTimeoutException
@@ -1993,13 +1993,13 @@ references:
   commentId: T:SRLApiClient.Extensions.RaceExtensions
   fullName: SRLApiClient.Extensions.RaceExtensions
   nameWithType: RaceExtensions
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
   name: FilterByEntrant(ReadOnlyCollection<Race>, String)
-  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByEntrant_System_Collections_ObjectModel_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__System_String_
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByEntrant_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__System_String_
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
   name.vb: FilterByEntrant(ReadOnlyCollection(Of Race), String)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
   nameWithType: RaceExtensions.FilterByEntrant(ReadOnlyCollection<Race>, String)
   nameWithType.vb: RaceExtensions.FilterByEntrant(ReadOnlyCollection(Of Race), String)
 - uid: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant*
@@ -2009,13 +2009,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant
   nameWithType: RaceExtensions.FilterByEntrant
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByGame(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
   name: FilterByGame(ReadOnlyCollection<Race>, String)
-  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByGame_System_Collections_ObjectModel_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__System_String_
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByGame_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__System_String_
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByGame(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
   name.vb: FilterByGame(ReadOnlyCollection(Of Race), String)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByGame(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByGame(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
   nameWithType: RaceExtensions.FilterByGame(ReadOnlyCollection<Race>, String)
   nameWithType.vb: RaceExtensions.FilterByGame(ReadOnlyCollection(Of Race), String)
 - uid: SRLApiClient.Extensions.RaceExtensions.FilterByGame*
@@ -2025,13 +2025,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Extensions.RaceExtensions.FilterByGame
   nameWithType: RaceExtensions.FilterByGame
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterById(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterById(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
   name: FilterById(ReadOnlyCollection<Race>, String)
-  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterById_System_Collections_ObjectModel_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__System_String_
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterById(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterById_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__System_String_
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterById(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
   name.vb: FilterById(ReadOnlyCollection(Of Race), String)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterById(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterById(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterById(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterById(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
   nameWithType: RaceExtensions.FilterById(ReadOnlyCollection<Race>, String)
   nameWithType.vb: RaceExtensions.FilterById(ReadOnlyCollection(Of Race), String)
 - uid: SRLApiClient.Extensions.RaceExtensions.FilterById*
@@ -2041,13 +2041,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Extensions.RaceExtensions.FilterById
   nameWithType: RaceExtensions.FilterById
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   name: FilterByMaxState(ReadOnlyCollection<Race>, RaceState)
-  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByMaxState_System_Collections_ObjectModel_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__SRLApiClient_Endpoints_RaceState_
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByMaxState_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__SRLApiClient_Endpoints_RaceState_
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   name.vb: FilterByMaxState(ReadOnlyCollection(Of Race), RaceState)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
   nameWithType: RaceExtensions.FilterByMaxState(ReadOnlyCollection<Race>, RaceState)
   nameWithType.vb: RaceExtensions.FilterByMaxState(ReadOnlyCollection(Of Race), RaceState)
 - uid: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState*
@@ -2057,13 +2057,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState
   nameWithType: RaceExtensions.FilterByMaxState
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   name: FilterByMinState(ReadOnlyCollection<Race>, RaceState)
-  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByMinState_System_Collections_ObjectModel_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__SRLApiClient_Endpoints_RaceState_
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByMinState_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__SRLApiClient_Endpoints_RaceState_
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByMinState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   name.vb: FilterByMinState(ReadOnlyCollection(Of Race), RaceState)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
   nameWithType: RaceExtensions.FilterByMinState(ReadOnlyCollection<Race>, RaceState)
   nameWithType.vb: RaceExtensions.FilterByMinState(ReadOnlyCollection(Of Race), RaceState)
 - uid: SRLApiClient.Extensions.RaceExtensions.FilterByMinState*
@@ -2073,13 +2073,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMinState
   nameWithType: RaceExtensions.FilterByMinState
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   name: FilterByState(ReadOnlyCollection<Race>, RaceState)
-  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByState_System_Collections_ObjectModel_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__SRLApiClient_Endpoints_RaceState_
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  href: api/SRLApiClient.Extensions.RaceExtensions.html#SRLApiClient_Extensions_RaceExtensions_FilterByState_ReadOnlyCollection_SRLApiClient_Endpoints_Races_Race__SRLApiClient_Endpoints_RaceState_
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   name.vb: FilterByState(ReadOnlyCollection(Of Race), RaceState)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByState(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByState(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
   nameWithType: RaceExtensions.FilterByState(ReadOnlyCollection<Race>, RaceState)
   nameWithType.vb: RaceExtensions.FilterByState(ReadOnlyCollection(Of Race), RaceState)
 - uid: SRLApiClient.Extensions.RaceExtensions.FilterByState*
@@ -2095,12 +2095,12 @@ references:
   commentId: T:SRLApiClient.SRLClient
   fullName: SRLApiClient.SRLClient
   nameWithType: SRLClient
-- uid: SRLApiClient.SRLClient.#ctor(System.Int32,System.String)
-  name: SRLClient(Int32, String)
-  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient__ctor_System_Int32_System_String_
-  commentId: M:SRLApiClient.SRLClient.#ctor(System.Int32,System.String)
-  fullName: SRLApiClient.SRLClient.SRLClient(System.Int32, System.String)
-  nameWithType: SRLClient.SRLClient(Int32, String)
+- uid: SRLApiClient.SRLClient.#ctor(System.String)
+  name: SRLClient(String)
+  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient__ctor_System_String_
+  commentId: M:SRLApiClient.SRLClient.#ctor(System.String)
+  fullName: SRLApiClient.SRLClient.SRLClient(System.String)
+  nameWithType: SRLClient.SRLClient(String)
 - uid: SRLApiClient.SRLClient.#ctor*
   name: SRLClient
   href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient__ctor_
@@ -2141,13 +2141,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLClient.DeSerialize
   nameWithType: SRLClient.DeSerialize
-- uid: SRLApiClient.SRLClient.DeSerialize``1(System.IO.Stream)
+- uid: SRLApiClient.SRLClient.DeSerialize``1(Stream)
   name: DeSerialize<T>(Stream)
-  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_DeSerialize__1_System_IO_Stream_
-  commentId: M:SRLApiClient.SRLClient.DeSerialize``1(System.IO.Stream)
+  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_DeSerialize__1_Stream_
+  commentId: M:SRLApiClient.SRLClient.DeSerialize``1(Stream)
   name.vb: DeSerialize(Of T)(Stream)
-  fullName: SRLApiClient.SRLClient.DeSerialize<T>(System.IO.Stream)
-  fullName.vb: SRLApiClient.SRLClient.DeSerialize(Of T)(System.IO.Stream)
+  fullName: SRLApiClient.SRLClient.DeSerialize<T>(Stream)
+  fullName.vb: SRLApiClient.SRLClient.DeSerialize(Of T)(Stream)
   nameWithType: SRLClient.DeSerialize<T>(Stream)
   nameWithType.vb: SRLClient.DeSerialize(Of T)(Stream)
 - uid: SRLApiClient.SRLClient.Dispose
@@ -2234,13 +2234,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLClient.IsAuthenticated
   nameWithType: SRLClient.IsAuthenticated
-- uid: SRLApiClient.SRLClient.JsonSerialize(System.Collections.Generic.Dictionary{System.String,System.String})
+- uid: SRLApiClient.SRLClient.JsonSerialize(Dictionary{System.String,System.String})
   name: JsonSerialize(Dictionary<String, String>)
-  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_JsonSerialize_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:SRLApiClient.SRLClient.JsonSerialize(System.Collections.Generic.Dictionary{System.String,System.String})
+  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_JsonSerialize_Dictionary_System_String_System_String__
+  commentId: M:SRLApiClient.SRLClient.JsonSerialize(Dictionary{System.String,System.String})
   name.vb: JsonSerialize(Dictionary(Of String, String))
-  fullName: SRLApiClient.SRLClient.JsonSerialize(System.Collections.Generic.Dictionary<System.String, System.String>)
-  fullName.vb: SRLApiClient.SRLClient.JsonSerialize(System.Collections.Generic.Dictionary(Of System.String, System.String))
+  fullName: SRLApiClient.SRLClient.JsonSerialize(Dictionary<System.String, System.String>)
+  fullName.vb: SRLApiClient.SRLClient.JsonSerialize(Dictionary(Of System.String, System.String))
   nameWithType: SRLClient.JsonSerialize(Dictionary<String, String>)
   nameWithType.vb: SRLClient.JsonSerialize(Dictionary(Of String, String))
 - uid: SRLApiClient.SRLClient.JsonSerialize*
@@ -2302,13 +2302,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLClient.Players
   nameWithType: SRLClient.Players
-- uid: SRLApiClient.SRLClient.Post(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+- uid: SRLApiClient.SRLClient.Post(System.String,Dictionary{System.String,System.String})
   name: Post(String, Dictionary<String, String>)
-  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_Post_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:SRLApiClient.SRLClient.Post(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_Post_System_String_Dictionary_System_String_System_String__
+  commentId: M:SRLApiClient.SRLClient.Post(System.String,Dictionary{System.String,System.String})
   name.vb: Post(String, Dictionary(Of String, String))
-  fullName: SRLApiClient.SRLClient.Post(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
-  fullName.vb: SRLApiClient.SRLClient.Post(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  fullName: SRLApiClient.SRLClient.Post(System.String, Dictionary<System.String, System.String>)
+  fullName.vb: SRLApiClient.SRLClient.Post(System.String, Dictionary(Of System.String, System.String))
   nameWithType: SRLClient.Post(String, Dictionary<String, String>)
   nameWithType.vb: SRLClient.Post(String, Dictionary(Of String, String))
 - uid: SRLApiClient.SRLClient.Post*
@@ -2318,13 +2318,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLClient.Post
   nameWithType: SRLClient.Post
-- uid: SRLApiClient.SRLClient.PostAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+- uid: SRLApiClient.SRLClient.PostAsync(System.String,Dictionary{System.String,System.String})
   name: PostAsync(String, Dictionary<String, String>)
-  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_PostAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:SRLApiClient.SRLClient.PostAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_PostAsync_System_String_Dictionary_System_String_System_String__
+  commentId: M:SRLApiClient.SRLClient.PostAsync(System.String,Dictionary{System.String,System.String})
   name.vb: PostAsync(String, Dictionary(Of String, String))
-  fullName: SRLApiClient.SRLClient.PostAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
-  fullName.vb: SRLApiClient.SRLClient.PostAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  fullName: SRLApiClient.SRLClient.PostAsync(System.String, Dictionary<System.String, System.String>)
+  fullName.vb: SRLApiClient.SRLClient.PostAsync(System.String, Dictionary(Of System.String, System.String))
   nameWithType: SRLClient.PostAsync(String, Dictionary<String, String>)
   nameWithType.vb: SRLClient.PostAsync(String, Dictionary(Of String, String))
 - uid: SRLApiClient.SRLClient.PostAsync*
@@ -2334,13 +2334,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLClient.PostAsync
   nameWithType: SRLClient.PostAsync
-- uid: SRLApiClient.SRLClient.Put(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+- uid: SRLApiClient.SRLClient.Put(System.String,Dictionary{System.String,System.String})
   name: Put(String, Dictionary<String, String>)
-  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_Put_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:SRLApiClient.SRLClient.Put(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_Put_System_String_Dictionary_System_String_System_String__
+  commentId: M:SRLApiClient.SRLClient.Put(System.String,Dictionary{System.String,System.String})
   name.vb: Put(String, Dictionary(Of String, String))
-  fullName: SRLApiClient.SRLClient.Put(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
-  fullName.vb: SRLApiClient.SRLClient.Put(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  fullName: SRLApiClient.SRLClient.Put(System.String, Dictionary<System.String, System.String>)
+  fullName.vb: SRLApiClient.SRLClient.Put(System.String, Dictionary(Of System.String, System.String))
   nameWithType: SRLClient.Put(String, Dictionary<String, String>)
   nameWithType.vb: SRLClient.Put(String, Dictionary(Of String, String))
 - uid: SRLApiClient.SRLClient.Put*
@@ -2350,13 +2350,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLClient.Put
   nameWithType: SRLClient.Put
-- uid: SRLApiClient.SRLClient.PutAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+- uid: SRLApiClient.SRLClient.PutAsync(System.String,Dictionary{System.String,System.String})
   name: PutAsync(String, Dictionary<String, String>)
-  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_PutAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:SRLApiClient.SRLClient.PutAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_PutAsync_System_String_Dictionary_System_String_System_String__
+  commentId: M:SRLApiClient.SRLClient.PutAsync(System.String,Dictionary{System.String,System.String})
   name.vb: PutAsync(String, Dictionary(Of String, String))
-  fullName: SRLApiClient.SRLClient.PutAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>)
-  fullName.vb: SRLApiClient.SRLClient.PutAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String))
+  fullName: SRLApiClient.SRLClient.PutAsync(System.String, Dictionary<System.String, System.String>)
+  fullName.vb: SRLApiClient.SRLClient.PutAsync(System.String, Dictionary(Of System.String, System.String))
   nameWithType: SRLClient.PutAsync(String, Dictionary<String, String>)
   nameWithType.vb: SRLClient.PutAsync(String, Dictionary(Of String, String))
 - uid: SRLApiClient.SRLClient.PutAsync*
@@ -2418,13 +2418,13 @@ references:
   isSpec: "True"
   fullName: SRLApiClient.SRLClient.Stats
   nameWithType: SRLClient.Stats
-- uid: SRLApiClient.SRLClient.SubmitPayloadAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Net.Http.HttpMethod)
+- uid: SRLApiClient.SRLClient.SubmitPayloadAsync(System.String,Dictionary{System.String,System.String},HttpMethod)
   name: SubmitPayloadAsync(String, Dictionary<String, String>, HttpMethod)
-  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_SubmitPayloadAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Net_Http_HttpMethod_
-  commentId: M:SRLApiClient.SRLClient.SubmitPayloadAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Net.Http.HttpMethod)
+  href: api/SRLApiClient.SRLClient.html#SRLApiClient_SRLClient_SubmitPayloadAsync_System_String_Dictionary_System_String_System_String__HttpMethod_
+  commentId: M:SRLApiClient.SRLClient.SubmitPayloadAsync(System.String,Dictionary{System.String,System.String},HttpMethod)
   name.vb: SubmitPayloadAsync(String, Dictionary(Of String, String), HttpMethod)
-  fullName: SRLApiClient.SRLClient.SubmitPayloadAsync(System.String, System.Collections.Generic.Dictionary<System.String, System.String>, System.Net.Http.HttpMethod)
-  fullName.vb: SRLApiClient.SRLClient.SubmitPayloadAsync(System.String, System.Collections.Generic.Dictionary(Of System.String, System.String), System.Net.Http.HttpMethod)
+  fullName: SRLApiClient.SRLClient.SubmitPayloadAsync(System.String, Dictionary<System.String, System.String>, HttpMethod)
+  fullName.vb: SRLApiClient.SRLClient.SubmitPayloadAsync(System.String, Dictionary(Of System.String, System.String), HttpMethod)
   nameWithType: SRLClient.SubmitPayloadAsync(String, Dictionary<String, String>, HttpMethod)
   nameWithType.vb: SRLClient.SubmitPayloadAsync(String, Dictionary(Of String, String), HttpMethod)
 - uid: SRLApiClient.SRLClient.SubmitPayloadAsync*

@@ -11,12 +11,12 @@ using SRLApiClient.Endpoints.Stats;
 
 namespace Tests
 {
-  public class Endpoints
+  public class Endpoints : BaseTest
   {
-    internal static SRLClient _client { get; set; } = new SRLClient(poolSize: 10);
+    internal static SRLClient _client { get; set; } = new SRLClient();
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Countries()
     {
@@ -25,7 +25,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Games()
     {
@@ -34,7 +34,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Games_Bulk()
     {
@@ -43,7 +43,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Games_Rules()
     {
@@ -52,7 +52,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Races_Active()
     {
@@ -62,7 +62,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void RacesAndPlayers()
     {
@@ -75,7 +75,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void PastRaces_Paginated()
     {
@@ -92,7 +92,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void PastRaces_GameFilter()
     {
@@ -101,7 +101,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void PastRacesAndPlayers()
     {
@@ -113,7 +113,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Leaderboards()
     {
@@ -124,7 +124,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Stats_SRL()
     {
@@ -134,7 +134,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Stats_Game()
     {
@@ -144,7 +144,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Stats_Player()
     {
@@ -154,7 +154,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Endpoints")]
+    [Category(nameof(Endpoints))]
     [Parallelizable]
     public void Stats_PlayerAndGame()
     {

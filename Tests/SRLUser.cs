@@ -18,7 +18,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Authentication")]
+    [Category(nameof(SRLUser))]
     public void Authenticate()
     {
       Assert.IsTrue(_client.IsAuthenticated);
@@ -26,7 +26,7 @@ namespace Tests
     }
 
     [Test]
-    [Category("Authentication")]
+    [Category(nameof(SRLUser))]
     public void ChangeCapitalization()
     {
       Assert.IsTrue(_client.IsAuthenticated);

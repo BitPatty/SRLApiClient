@@ -7,9 +7,20 @@ namespace SRLApiClient.Exceptions
 {
   public class SRLParseException : Exception
   {
-    public SRLParseException() { }
-    public SRLParseException(string message) : base(message) { }
-    public SRLParseException(string message, Exception inner) : base(message, inner) { }
-    protected SRLParseException(SerializationInfo info, StreamingContext context) : base(info, context) { }
+    public SRLParseException()
+    {
+    }
+
+    public SRLParseException(string message) : base(message)
+    {
+    }
+
+    public SRLParseException(string message, Exception inner) : base(message, inner)
+    {
+    }
+
+    protected SRLParseException(SerializationInfo info, StreamingContext context) : base(info, context)
+    {
+    }
   }
 }

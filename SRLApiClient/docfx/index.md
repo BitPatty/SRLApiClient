@@ -1,5 +1,5 @@
 # SRLApiClient
-A .NET Standard 2.0 wrapper around the [SpeedRunsLive](http://speedrunslive.com) API.
+A .NET Standard 2.1 wrapper around the [SpeedRunsLive](http://speedrunslive.com) API.
 
 
 ## Quick Start Notes:
@@ -19,7 +19,7 @@ Install-Package SRLApiClient
 
 ### Requirements
 
-The SRL API Client supports any platform that implements [.NET Standard 2.0](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support).
+The SRL API Client supports any platform that implements [.NET Standard 2.1](https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support).
 
 ### Dependencies
 
@@ -27,7 +27,12 @@ _none_
 
 ## Changelog
 
-#### v1.2
+
+#### v2.0.0
+
+- Drop HTTP Client Pool
+
+#### v1.2.0
 
 - Update target framework to .NET Standard 2.1
 

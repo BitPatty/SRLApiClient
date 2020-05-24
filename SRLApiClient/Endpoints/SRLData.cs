@@ -18,8 +18,6 @@ namespace SRLApiClient.Endpoints
 
     [OnDeserialized()]
     private void SetTimeStamp(StreamingContext context)
-    {
-      Deserialized = DateTime.Now;
-    }
+      => Deserialized = DateTime.Now;
   }
 }

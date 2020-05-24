@@ -65,10 +65,10 @@ items:
   summary: "\nFallback value\n"
   example: []
   syntax:
-    content: Unknown = 0U
+    content: Unknown = null
     return:
       type: SRLApiClient.Endpoints.RaceState
-    content.vb: Unknown = 0UI
+    content.vb: Unknown = Nothing
   modifiers.csharp:
   - public
   - const
@@ -100,10 +100,10 @@ items:
   summary: "\nThe race is open for players\n"
   example: []
   syntax:
-    content: EntryOpen = 1U
+    content: EntryOpen = null
     return:
       type: SRLApiClient.Endpoints.RaceState
-    content.vb: EntryOpen = 1UI
+    content.vb: EntryOpen = Nothing
   modifiers.csharp:
   - public
   - const
@@ -135,10 +135,10 @@ items:
   summary: "\nThe race is closed but the race hasn&apos;t started yet\n(This is where the 10 second countdown happens)\n"
   example: []
   syntax:
-    content: EntryClosed = 2U
+    content: EntryClosed = null
     return:
       type: SRLApiClient.Endpoints.RaceState
-    content.vb: EntryClosed = 2UI
+    content.vb: EntryClosed = Nothing
   modifiers.csharp:
   - public
   - const
@@ -170,10 +170,10 @@ items:
   summary: "\nThe race is in progress\n"
   example: []
   syntax:
-    content: InProgress = 3U
+    content: InProgress = null
     return:
       type: SRLApiClient.Endpoints.RaceState
-    content.vb: InProgress = 3UI
+    content.vb: InProgress = Nothing
   modifiers.csharp:
   - public
   - const
@@ -205,10 +205,10 @@ items:
   summary: "\nThe race has finished but hasn&apos;t been recorded yet\n"
   example: []
   syntax:
-    content: Finished = 4U
+    content: Finished = null
     return:
       type: SRLApiClient.Endpoints.RaceState
-    content.vb: Finished = 4UI
+    content.vb: Finished = Nothing
   modifiers.csharp:
   - public
   - const
@@ -240,10 +240,10 @@ items:
   summary: "\nThe race has been recorded\n"
   example: []
   syntax:
-    content: Over = 5U
+    content: Over = null
     return:
       type: SRLApiClient.Endpoints.RaceState
-    content.vb: Over = 5UI
+    content.vb: Over = Nothing
   modifiers.csharp:
   - public
   - const

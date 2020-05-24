@@ -87,35 +87,12 @@
     <div>
       <a class="xref" href="SRLApiClient.Endpoints.SRLData.html#SRLApiClient_Endpoints_SRLData_Deserialized">SRLData.Deserialized</a>
     </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="SRLApiClient.Endpoints.Leaderboards.html">SRLApiClient.Endpoints.Leaderboards</a></h6>
   <h6><strong>Assembly</strong>: SRLApiClient.dll</h6>
   <h5 id="SRLApiClient_Endpoints_Leaderboards_Leaderboard_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataContract]
-[KnownType(typeof(SRLData))]
-public class Leaderboard : SRLData</code></pre>
+    <pre><code class="lang-csharp hljs">public class Leaderboard : SRLData</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -133,8 +110,7 @@ public class Leaderboard : SRLData</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;game&quot;, IsRequired = true)]
-public Game Game { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Game Game { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -177,7 +153,7 @@ public Game Game { get; protected set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<a class="xref" href="SRLApiClient.Endpoints.Leaderboards.Leader.html">Leader</a>&gt;</td>
+        <td><span class="xref">ReadOnlyCollection</span>&lt;<a class="xref" href="SRLApiClient.Endpoints.Leaderboards.Leader.html">Leader</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -196,8 +172,7 @@ public Game Game { get; protected set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;leadersCount&quot;, IsRequired = true)]
-public int LeadersCount { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int LeadersCount { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -240,7 +215,7 @@ public int LeadersCount { get; protected set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.ObjectModel.ReadOnlyCollection</span>&lt;<a class="xref" href="SRLApiClient.Endpoints.Leaderboards.Leader.html">Leader</a>&gt;</td>
+        <td><span class="xref">ReadOnlyCollection</span>&lt;<a class="xref" href="SRLApiClient.Endpoints.Leaderboards.Leader.html">Leader</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -259,8 +234,7 @@ public int LeadersCount { get; protected set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[DataMember(Name = &quot;unrankedCount&quot;, IsRequired = true)]
-public int UnrankedCount { get; protected set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public int UnrankedCount { get; protected set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">

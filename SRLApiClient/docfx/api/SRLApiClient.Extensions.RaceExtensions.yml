@@ -5,12 +5,12 @@ items:
   id: RaceExtensions
   parent: SRLApiClient.Extensions
   children:
-  - SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
-  - SRLApiClient.Extensions.RaceExtensions.FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
-  - SRLApiClient.Extensions.RaceExtensions.FilterById(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
-  - SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
-  - SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
-  - SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  - SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  - SRLApiClient.Extensions.RaceExtensions.FilterByGame(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  - SRLApiClient.Extensions.RaceExtensions.FilterById(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  - SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  - SRLApiClient.Extensions.RaceExtensions.FilterByMinState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  - SRLApiClient.Extensions.RaceExtensions.FilterByState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   langs:
   - csharp
   - vb
@@ -32,18 +32,12 @@ items:
   summary: "\nExtensions for the <xref href=\"SRLApiClient.Endpoints.Races.Race\" data-throw-if-not-resolved=\"false\"></xref> type\n"
   example: []
   syntax:
-    content: public static class RaceExtensions
-    content.vb: Public Module RaceExtensions
+    content: 'public static class RaceExtensions : object'
+    content.vb: >-
+      Public Module RaceExtensions
+          Inherits Object
   inheritance:
   - System.Object
-  inheritedMembers:
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
   modifiers.csharp:
   - public
   - static
@@ -51,9 +45,9 @@ items:
   modifiers.vb:
   - Public
   - Module
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
-  id: FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByGame(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByGame(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  id: FilterByGame(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
   isExtensionMethod: true
   parent: SRLApiClient.Extensions.RaceExtensions
   langs:
@@ -61,7 +55,7 @@ items:
   - vb
   name: FilterByGame(ReadOnlyCollection<Race>, String)
   nameWithType: RaceExtensions.FilterByGame(ReadOnlyCollection<Race>, String)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByGame(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
   type: Method
   source:
     remote:
@@ -80,13 +74,13 @@ items:
     content: public static ReadOnlyCollection<Race> FilterByGame(this ReadOnlyCollection<Race> races, string gameAbbreviation)
     parameters:
     - id: races
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: The original collection to apply the filter on
     - id: gameAbbreviation
       type: System.String
       description: The games abbreviation look for
     return:
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: Returns the races with the provided game abbreviation
     content.vb: >-
       <ExtensionAttribute>
@@ -100,11 +94,11 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByGame(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByGame(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
   name.vb: FilterByGame(ReadOnlyCollection(Of Race), String)
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
-  id: FilterByState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  id: FilterByState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   isExtensionMethod: true
   parent: SRLApiClient.Extensions.RaceExtensions
   langs:
@@ -112,7 +106,7 @@ items:
   - vb
   name: FilterByState(ReadOnlyCollection<Race>, RaceState)
   nameWithType: RaceExtensions.FilterByState(ReadOnlyCollection<Race>, RaceState)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByState(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
   type: Method
   source:
     remote:
@@ -131,13 +125,13 @@ items:
     content: public static ReadOnlyCollection<Race> FilterByState(this ReadOnlyCollection<Race> races, RaceState state)
     parameters:
     - id: races
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: The original collection to apply the filter on
     - id: state
       type: SRLApiClient.Endpoints.RaceState
       description: The games abbreviation to look for
     return:
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: Returns the races with the provided race state
     content.vb: >-
       <ExtensionAttribute>
@@ -151,11 +145,11 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByState(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByState(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
   name.vb: FilterByState(ReadOnlyCollection(Of Race), RaceState)
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
-  id: FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByMinState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  id: FilterByMinState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   isExtensionMethod: true
   parent: SRLApiClient.Extensions.RaceExtensions
   langs:
@@ -163,7 +157,7 @@ items:
   - vb
   name: FilterByMinState(ReadOnlyCollection<Race>, RaceState)
   nameWithType: RaceExtensions.FilterByMinState(ReadOnlyCollection<Race>, RaceState)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
   type: Method
   source:
     remote:
@@ -182,13 +176,13 @@ items:
     content: public static ReadOnlyCollection<Race> FilterByMinState(this ReadOnlyCollection<Race> races, RaceState minState)
     parameters:
     - id: races
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: The original collection to apply the filter on
     - id: minState
       type: SRLApiClient.Endpoints.RaceState
       description: The minimum state to keep
     return:
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: Returns the races with the state being greater or equal the <code data-dev-comment-type="paramref" class="paramref">minState</code>
     content.vb: >-
       <ExtensionAttribute>
@@ -202,11 +196,11 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByMinState(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
   name.vb: FilterByMinState(ReadOnlyCollection(Of Race), RaceState)
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
-  id: FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
+  id: FilterByMaxState(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},SRLApiClient.Endpoints.RaceState)
   isExtensionMethod: true
   parent: SRLApiClient.Extensions.RaceExtensions
   langs:
@@ -214,7 +208,7 @@ items:
   - vb
   name: FilterByMaxState(ReadOnlyCollection<Race>, RaceState)
   nameWithType: RaceExtensions.FilterByMaxState(ReadOnlyCollection<Race>, RaceState)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, SRLApiClient.Endpoints.RaceState)
   type: Method
   source:
     remote:
@@ -233,13 +227,13 @@ items:
     content: public static ReadOnlyCollection<Race> FilterByMaxState(this ReadOnlyCollection<Race> races, RaceState maxState)
     parameters:
     - id: races
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: The original collection to apply the filter on
     - id: maxState
       type: SRLApiClient.Endpoints.RaceState
       description: The maximum state to keep
     return:
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: Returns the races with the state bing less or equal the <code data-dev-comment-type="paramref" class="paramref">maxState</code>
     content.vb: >-
       <ExtensionAttribute>
@@ -253,11 +247,11 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByMaxState(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), SRLApiClient.Endpoints.RaceState)
   name.vb: FilterByMaxState(ReadOnlyCollection(Of Race), RaceState)
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
-  id: FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  id: FilterByEntrant(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
   isExtensionMethod: true
   parent: SRLApiClient.Extensions.RaceExtensions
   langs:
@@ -265,7 +259,7 @@ items:
   - vb
   name: FilterByEntrant(ReadOnlyCollection<Race>, String)
   nameWithType: RaceExtensions.FilterByEntrant(ReadOnlyCollection<Race>, String)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
   type: Method
   source:
     remote:
@@ -284,13 +278,13 @@ items:
     content: public static ReadOnlyCollection<Race> FilterByEntrant(this ReadOnlyCollection<Race> races, string playerName)
     parameters:
     - id: races
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: The original collection to apply the filter on
     - id: playerName
       type: System.String
       description: The entrants name
     return:
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: Returns the races the provided player joined
     content.vb: >-
       <ExtensionAttribute>
@@ -304,11 +298,11 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterByEntrant(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
   name.vb: FilterByEntrant(ReadOnlyCollection(Of Race), String)
-- uid: SRLApiClient.Extensions.RaceExtensions.FilterById(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
-  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterById(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
-  id: FilterById(System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+- uid: SRLApiClient.Extensions.RaceExtensions.FilterById(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  commentId: M:SRLApiClient.Extensions.RaceExtensions.FilterById(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
+  id: FilterById(ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race},System.String)
   isExtensionMethod: true
   parent: SRLApiClient.Extensions.RaceExtensions
   langs:
@@ -316,7 +310,7 @@ items:
   - vb
   name: FilterById(ReadOnlyCollection<Race>, String)
   nameWithType: RaceExtensions.FilterById(ReadOnlyCollection<Race>, String)
-  fullName: SRLApiClient.Extensions.RaceExtensions.FilterById(System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
+  fullName: SRLApiClient.Extensions.RaceExtensions.FilterById(ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>, System.String)
   type: Method
   source:
     remote:
@@ -335,7 +329,7 @@ items:
     content: public static Race FilterById(this ReadOnlyCollection<Race> races, string raceId)
     parameters:
     - id: races
-      type: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+      type: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
       description: The collection to apply the filter on
     - id: raceId
       type: System.String
@@ -355,7 +349,7 @@ items:
   modifiers.vb:
   - Public
   - Shared
-  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterById(System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
+  fullName.vb: SRLApiClient.Extensions.RaceExtensions.FilterById(ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race), System.String)
   name.vb: FilterById(ReadOnlyCollection(Of Race), String)
 references:
 - uid: SRLApiClient.Endpoints.Races.Race
@@ -369,323 +363,30 @@ references:
   name: SRLApiClient.Extensions
   nameWithType: SRLApiClient.Extensions
   fullName: SRLApiClient.Extensions
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
 - uid: SRLApiClient.Endpoints.Races
   commentId: N:SRLApiClient.Endpoints.Races
   name: SRLApiClient.Endpoints.Races
   nameWithType: SRLApiClient.Endpoints.Races
   fullName: SRLApiClient.Endpoints.Races
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: SRLApiClient.Extensions.RaceExtensions.FilterByGame*
   commentId: Overload:SRLApiClient.Extensions.RaceExtensions.FilterByGame
   name: FilterByGame
   nameWithType: RaceExtensions.FilterByGame
   fullName: SRLApiClient.Extensions.RaceExtensions.FilterByGame
-- uid: System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
-  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
-  parent: System.Collections.ObjectModel
-  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+- uid: ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}
+  commentId: '!:ReadOnlyCollection{SRLApiClient.Endpoints.Races.Race}'
+  definition: ReadOnlyCollection`1
   name: ReadOnlyCollection<Race>
   nameWithType: ReadOnlyCollection<Race>
-  fullName: System.Collections.ObjectModel.ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>
+  fullName: ReadOnlyCollection<SRLApiClient.Endpoints.Races.Race>
   nameWithType.vb: ReadOnlyCollection(Of Race)
-  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race)
+  fullName.vb: ReadOnlyCollection(Of SRLApiClient.Endpoints.Races.Race)
   name.vb: ReadOnlyCollection(Of Race)
   spec.csharp:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: <
     nameWithType: <
@@ -698,10 +399,10 @@ references:
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
@@ -714,57 +415,48 @@ references:
     nameWithType: )
     fullName: )
 - uid: System.String
-  commentId: T:System.String
-  parent: System
   isExternal: true
   name: String
   nameWithType: String
   fullName: System.String
-- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
-  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+- uid: ReadOnlyCollection`1
   isExternal: true
-  name: ReadOnlyCollection<T>
-  nameWithType: ReadOnlyCollection<T>
-  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
-  nameWithType.vb: ReadOnlyCollection(Of T)
-  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
-  name.vb: ReadOnlyCollection(Of T)
+  name: ReadOnlyCollection<>
+  nameWithType: ReadOnlyCollection<>
+  fullName: ReadOnlyCollection<>
+  nameWithType.vb: ReadOnlyCollection(Of )
+  fullName.vb: ReadOnlyCollection(Of )
+  name.vb: ReadOnlyCollection(Of )
   spec.csharp:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: <
     nameWithType: <
     fullName: <
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: '>'
     nameWithType: '>'
     fullName: '>'
   spec.vb:
-  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  - uid: ReadOnlyCollection`1
     name: ReadOnlyCollection
     nameWithType: ReadOnlyCollection
-    fullName: System.Collections.ObjectModel.ReadOnlyCollection
+    fullName: ReadOnlyCollection
     isExternal: true
   - name: '(Of '
     nameWithType: '(Of '
     fullName: '(Of '
-  - name: T
-    nameWithType: T
-    fullName: T
+  - name: ''
+    nameWithType: ''
+    fullName: ''
   - name: )
     nameWithType: )
     fullName: )
-- uid: System.Collections.ObjectModel
-  commentId: N:System.Collections.ObjectModel
-  isExternal: true
-  name: System.Collections.ObjectModel
-  nameWithType: System.Collections.ObjectModel
-  fullName: System.Collections.ObjectModel
 - uid: SRLApiClient.Extensions.RaceExtensions.FilterByState*
   commentId: Overload:SRLApiClient.Extensions.RaceExtensions.FilterByState
   name: FilterByState

@@ -32,17 +32,8 @@ items:
   summary: "\nGameStats object\n"
   example: []
   syntax:
-    content: >-
-      [DataContract]
-
-      [KnownType(typeof(SRLData))]
-
-      public class GameStats : SRLData
+    content: 'public class GameStats : SRLData'
     content.vb: >-
-      <DataContract>
-
-      <KnownType(GetType(SRLData))>
-
       Public Class GameStats
           Inherits SRLData
   inheritance:
@@ -50,22 +41,6 @@ items:
   - SRLApiClient.Endpoints.SRLData
   inheritedMembers:
   - SRLApiClient.Endpoints.SRLData.Deserialized
-  - System.Object.Equals(System.Object)
-  - System.Object.Equals(System.Object,System.Object)
-  - System.Object.GetHashCode
-  - System.Object.GetType
-  - System.Object.MemberwiseClone
-  - System.Object.ReferenceEquals(System.Object,System.Object)
-  - System.Object.ToString
-  attributes:
-  - type: System.Runtime.Serialization.DataContractAttribute
-    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
-    arguments: []
-  - type: System.Runtime.Serialization.KnownTypeAttribute
-    ctor: System.Runtime.Serialization.KnownTypeAttribute.#ctor(System.Type)
-    arguments:
-    - type: System.Type
-      value: SRLApiClient.Endpoints.SRLData
   modifiers.csharp:
   - public
   - class
@@ -97,29 +72,12 @@ items:
   summary: "\nThe games total race count\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "totalRaces", IsRequired = true)]
-
-      public int TotalRaces { get; protected set; }
+    content: public int TotalRaces { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="totalRaces", IsRequired:=True)>
-
-      Public Property TotalRaces As Integer
+    content.vb: Public Property TotalRaces As Integer
   overload: SRLApiClient.Endpoints.Stats.GameStats.TotalRaces*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: totalRaces
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -153,29 +111,12 @@ items:
   summary: "\nThe games total player count\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "totalPlayers", IsRequired = true)]
-
-      public int TotalPlayers { get; protected set; }
+    content: public int TotalPlayers { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="totalPlayers", IsRequired:=True)>
-
-      Public Property TotalPlayers As Integer
+    content.vb: Public Property TotalPlayers As Integer
   overload: SRLApiClient.Endpoints.Stats.GameStats.TotalPlayers*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: totalPlayers
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -209,29 +150,12 @@ items:
   summary: "\nThe ID of the largest race\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "largestRace", IsRequired = true)]
-
-      public int LargestRaceId { get; protected set; }
+    content: public int LargestRaceId { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="largestRace", IsRequired:=True)>
-
-      Public Property LargestRaceId As Integer
+    content.vb: Public Property LargestRaceId As Integer
   overload: SRLApiClient.Endpoints.Stats.GameStats.LargestRaceId*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: largestRace
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -265,29 +189,12 @@ items:
   summary: "\nThe games total player count in the largest race\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "largestRaceSize", IsRequired = true)]
-
-      public int LargestRaceSize { get; protected set; }
+    content: public int LargestRaceSize { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="largestRaceSize", IsRequired:=True)>
-
-      Public Property LargestRaceSize As Integer
+    content.vb: Public Property LargestRaceSize As Integer
   overload: SRLApiClient.Endpoints.Stats.GameStats.LargestRaceSize*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: largestRaceSize
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -321,29 +228,12 @@ items:
   summary: "\nThe games total accumulated race time for the game\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "totalRaceTime", IsRequired = true)]
-
-      public int TotalTimeRaced { get; protected set; }
+    content: public int TotalTimeRaced { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="totalRaceTime", IsRequired:=True)>
-
-      Public Property TotalTimeRaced As Integer
+    content.vb: Public Property TotalTimeRaced As Integer
   overload: SRLApiClient.Endpoints.Stats.GameStats.TotalTimeRaced*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: totalRaceTime
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -377,29 +267,12 @@ items:
   summary: "\nThe games total accumulated play time\n"
   example: []
   syntax:
-    content: >-
-      [DataMember(Name = "totalTimePlayed", IsRequired = true)]
-
-      public int TotalTimePlayed { get; protected set; }
+    content: public int TotalTimePlayed { get; protected set; }
     parameters: []
     return:
       type: System.Int32
-    content.vb: >-
-      <DataMember(Name:="totalTimePlayed", IsRequired:=True)>
-
-      Public Property TotalTimePlayed As Integer
+    content.vb: Public Property TotalTimePlayed As Integer
   overload: SRLApiClient.Endpoints.Stats.GameStats.TotalTimePlayed*
-  attributes:
-  - type: System.Runtime.Serialization.DataMemberAttribute
-    ctor: System.Runtime.Serialization.DataMemberAttribute.#ctor
-    arguments: []
-    namedArguments:
-    - name: Name
-      type: System.String
-      value: totalTimePlayed
-    - name: IsRequired
-      type: System.Boolean
-      value: true
   modifiers.csharp:
   - public
   - get
@@ -414,13 +287,6 @@ references:
   name: SRLApiClient.Endpoints.Stats
   nameWithType: SRLApiClient.Endpoints.Stats
   fullName: SRLApiClient.Endpoints.Stats
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
 - uid: SRLApiClient.Endpoints.SRLData
   commentId: T:SRLApiClient.Endpoints.SRLData
   parent: SRLApiClient.Endpoints
@@ -433,291 +299,6 @@ references:
   name: Deserialized
   nameWithType: SRLData.Deserialized
   fullName: SRLApiClient.Endpoints.SRLData.Deserialized
-- uid: System.Object.Equals(System.Object)
-  commentId: M:System.Object.Equals(System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.Equals(System.Object,System.Object)
-  commentId: M:System.Object.Equals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.Equals(System.Object,System.Object)
-    name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetHashCode
-  commentId: M:System.Object.GetHashCode
-  parent: System.Object
-  isExternal: true
-  name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
-  spec.csharp:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetHashCode
-    name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.GetType
-  commentId: M:System.Object.GetType
-  parent: System.Object
-  isExternal: true
-  name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
-  spec.csharp:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.GetType
-    name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.MemberwiseClone
-  commentId: M:System.Object.MemberwiseClone
-  parent: System.Object
-  isExternal: true
-  name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
-  spec.csharp:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.MemberwiseClone
-    name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ReferenceEquals(System.Object,System.Object)
-  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
-  parent: System.Object
-  isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
-  spec.csharp:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
-    name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
-  - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
-    isExternal: true
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System.Object.ToString
-  commentId: M:System.Object.ToString
-  parent: System.Object
-  isExternal: true
-  name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
-  spec.csharp:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-  spec.vb:
-  - uid: System.Object.ToString
-    name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
-    isExternal: true
-  - name: (
-    nameWithType: (
-    fullName: (
-  - name: )
-    nameWithType: )
-    fullName: )
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: SRLApiClient.Endpoints
   commentId: N:SRLApiClient.Endpoints
   name: SRLApiClient.Endpoints
@@ -729,8 +310,6 @@ references:
   nameWithType: GameStats.TotalRaces
   fullName: SRLApiClient.Endpoints.Stats.GameStats.TotalRaces
 - uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
   isExternal: true
   name: Int32
   nameWithType: Int32

@@ -1,6 +1,6 @@
 ﻿/*
  * SRLApiClient - A .NET client library for the SpeedRunsLive API
- * Copyright (c) 2018 - 2019 Matteias Collet
+ * Copyright (c) 2018 - 2020 Matteias Collet
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Affero General Public License as
@@ -42,12 +42,13 @@ namespace SRLApiClient
     /// The host used for requests
     /// </summary>
     public string Host { get; private set; }
+
     private string _baseDomain => "." + Host;
     private string _apiUrl => "http://api." + Host;
     private string _authUrl => "http://login." + Host + ":9000/login";
     private string _baseUrl => "http://" + Host;
 
-    private readonly HttpClientPool _clientPool;
+    private readonly HttpClient _clientPool;
     private CookieContainer _cookieJar = new CookieContainer();
     private readonly HttpClientHandler _clientHandler = new HttpClientHandler();
 
@@ -55,6 +56,7 @@ namespace SRLApiClient
     /// The user account associated with the client (if authenticated)
     /// </summary>
     public SRLUser User { get; private set; }
+
     private string _userName { get; set; }
     private string _userPassword { get; set; }
 
@@ -116,15 +118,14 @@ namespace SRLApiClient
     /// <summary>
     /// Initializes a new SRL Client
     /// </summary>
-    /// <param name="poolSize">The HTTP client pool size</param>
     /// <param name="host">The custom host</param>
-    public SRLClient(int poolSize = 1, string host = "speedrunslive.com")
+    public SRLClient(string host = "speedrunslive.com")
     {
-      if (String.IsNullOrWhiteSpace(host)) throw new ArgumentException(nameof(host), "Parameter cannot be empty");
+      if (string.IsNullOrWhiteSpace(host)) throw new ArgumentException(nameof(host), "Parameter cannot be empty");
 
       Host = host;
       _clientHandler.CookieContainer = _cookieJar;
-      _clientPool = new HttpClientPool(_clientHandler, poolSize, _baseUrl, RequestTimeout);
+      _clientPool = new HttpClient(_clientHandler, _baseUrl, RequestTimeout);
 
       Games = new Endpoints.Games.GamesClient(this);
       Players = new Endpoints.Players.PlayersClient(this);
@@ -143,7 +144,8 @@ namespace SRLApiClient
     /// <returns>Returns the parsed response</returns>
     /// <exception cref="SRLParseException" />
     /// <exception cref="SRLTimeoutException" />
-    public T Get<T>(string endpoint) where T : SRLData => GetAsync<T>(endpoint).Result;
+    public T Get<T>(string endpoint) where T : SRLData
+      => GetAsync<T>(endpoint).ConfigureAwait(false).GetAwaiter().GetResult();
 
     /// <summary>
     /// Performs an asynchronous GET request on an endpoint
@@ -155,16 +157,15 @@ namespace SRLApiClient
     /// <exception cref="SRLTimeoutException" />
     public async Task<T> GetAsync<T>(string endpoint) where T : SRLData
     {
-      using (Stream responseStream = await GetStreamAsync($"{_apiUrl}/{endpoint.TrimStart('/')}").ConfigureAwait(false))
+      using Stream responseStream = await GetStreamAsync($"{_apiUrl}/{endpoint.TrimStart('/')}").ConfigureAwait(false);
+
+      try
       {
-        try
-        {
-          return DeSerialize<T>(responseStream);
-        }
-        catch (SerializationException ex)
-        {
-          throw new SRLParseException("Failed to deserialize the response stream", ex);
-        }
+        return DeSerialize<T>(responseStream);
+      }
+      catch (SerializationException ex)
+      {
+        throw new SRLParseException("Failed to deserialize the response stream", ex);
       }
     }
 
@@ -174,7 +175,8 @@ namespace SRLApiClient
     /// <param name="endpoint">The endpoint to perform the request on</param>
     /// <param name="data">The data to PUT</param>
     /// <returns>Returns true if the endpoint responds with HTTP 200</returns>
-    public bool Put(string endpoint, Dictionary<string, string> data) => PutAsync(endpoint, data).Result;
+    public bool Put(string endpoint, Dictionary<string, string> data)
+      => PutAsync(endpoint, data).ConfigureAwait(false).GetAwaiter().GetResult();
 
     /// <summary>
     /// Performs an asynchronous PUT request on an endpoint
@@ -194,7 +196,11 @@ namespace SRLApiClient
     /// <param name="endpoint">The endpoint to perform the request on</param>
     /// <param name="data">The data to POST</param>
     /// <returns>Returns true if the endpoint responds with HTTP 200</returns>
-    public bool Post(string endpoint, Dictionary<string, string> data) => PostAsync(endpoint, data).Result;
+    public bool Post(string endpoint, Dictionary<string, string> data)
+      => PostAsync(endpoint, data)
+         .ConfigureAwait(false)
+         .GetAwaiter()
+         .GetResult();
 
     /// <summary>
     /// Performs an asynchronous POST request on an endpoint
@@ -219,16 +225,13 @@ namespace SRLApiClient
     {
       string payload = JsonSerialize(data);
 
-      using (HttpRequestMessage req = new HttpRequestMessage(method, String.Concat(_apiUrl, endpoint)) { Content = new StringContent(payload) })
-      {
-        req.Headers.Accept.Clear();
-        req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+      using HttpRequestMessage req = new HttpRequestMessage(method, string.Concat(_apiUrl, endpoint)) { Content = new StringContent(payload) };
 
-        using (HttpResponseMessage r = await _clientPool.SendAsync(req).ConfigureAwait(false))
-        {
-          return r.IsSuccessStatusCode;
-        }
-      }
+      req.Headers.Accept.Clear();
+      req.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+      using HttpResponseMessage r = await _clientPool.SendAsync(req).ConfigureAwait(false);
+      return r.IsSuccessStatusCode;
     }
 
     /// <summary>
@@ -257,7 +260,7 @@ namespace SRLApiClient
       foreach (KeyValuePair<string, string> kvp in dict)
         s.AppendFormat("{0}:{1},", HttpUtility.JavaScriptStringEncode(kvp.Key, true), HttpUtility.JavaScriptStringEncode(kvp.Value, true));
 
-      return String.Concat(s.ToString().TrimEnd(','), '}');
+      return string.Concat(s.ToString().TrimEnd(','), '}');
     }
 
     /// <summary>
@@ -295,7 +298,7 @@ namespace SRLApiClient
     /// Reauthenticate the client with the stored credentials
     /// </summary>
     /// <returns>Returns true if the authentication was successful</returns>
-    public bool ReAuthenticate() => !String.IsNullOrWhiteSpace(_userName) && !string.IsNullOrWhiteSpace(_userPassword) && Authenticate(_userName, _userPassword, true);
+    public bool ReAuthenticate() => !string.IsNullOrWhiteSpace(_userName) && !string.IsNullOrWhiteSpace(_userPassword) && Authenticate(_userName, _userPassword, true);
 
     /// <summary>
     /// Asssociate the client with a user account
@@ -306,8 +309,8 @@ namespace SRLApiClient
     /// <returns>Returns true if the authentication was successful</returns>
     public bool Authenticate(string username, string password, bool storeCredentials = false)
     {
-      if (String.IsNullOrWhiteSpace(username)) throw new ArgumentNullException(nameof(username), "Parameter can't be empty");
-      if (String.IsNullOrWhiteSpace(password)) throw new ArgumentNullException(nameof(password), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(username)) throw new ArgumentNullException(nameof(username), "Parameter can't be empty");
+      if (string.IsNullOrWhiteSpace(password)) throw new ArgumentNullException(nameof(password), "Parameter can't be empty");
 
       if (IsAuthenticated) Logout();
 
@@ -332,46 +335,50 @@ namespace SRLApiClient
 
         try
         {
-          using (HttpResponseMessage resp = _clientPool.SendAsync(authRequest).Result)
+          using HttpResponseMessage resp = _clientPool
+            .SendAsync(authRequest)
+            .ConfigureAwait(false)
+            .GetAwaiter()
+            .GetResult();
+
+          if (resp.IsSuccessStatusCode || resp.StatusCode == HttpStatusCode.MovedPermanently)
           {
-            if (resp.IsSuccessStatusCode || resp.StatusCode == HttpStatusCode.MovedPermanently)
+            if (resp.StatusCode == HttpStatusCode.MovedPermanently)
             {
-              if (resp.StatusCode == HttpStatusCode.MovedPermanently)
+              foreach (KeyValuePair<string, IEnumerable<string>> val in resp.Headers.Where(t => t.Key.Equals("set-cookie", StringComparison.OrdinalIgnoreCase)))
               {
-                foreach (KeyValuePair<string, IEnumerable<string>> val in resp.Headers.Where(t => t.Key.Equals("set-cookie", StringComparison.OrdinalIgnoreCase)))
+                foreach (string key in val.Value)
                 {
-                  foreach (string key in val.Value)
-                  {
-                    string[] c_key = key.Split(';');
-                    Dictionary<string, string> cookie = new Dictionary<string, string>();
-                    for (int i = 1; i < c_key.Length; i++) cookie.Add(c_key[i].Trim().Split(new char[] { '=' }, 2)[0].ToLower(), c_key[i].Trim().Split(new char[] { '=' }, 2)[1]);
+                  string[] c_key = key.Split(';');
+                  Dictionary<string, string> cookie = new Dictionary<string, string>();
+                  for (int i = 1; i < c_key.Length; i++) cookie.Add(c_key[i].Trim().Split(new char[] { '=' }, 2)[0].ToLower(), c_key[i].Trim().Split(new char[] { '=' }, 2)[1]);
 
-                    string c_name = c_key[0].Split('=')[0];
-                    string c_val = c_key[0].Split(new char[] { '=' }, 2)[1];
-                    string c_path = cookie.ContainsKey("path") ? cookie["path"] : "";
-                    string c_domain = cookie.ContainsKey("domain") ? cookie["domain"] : _baseDomain;
-                    DateTime c_expires = cookie.ContainsKey("expires") && DateTime.TryParse(cookie["expires"], out DateTime dt) ?
-                      dt : cookie.ContainsKey("max-age") && Int32.TryParse(cookie["max-age"], out int res) ?
-                      DateTime.Now + TimeSpan.FromMilliseconds(res) : default(DateTime);
+                  string c_name = c_key[0].Split('=')[0];
+                  string c_val = c_key[0].Split(new char[] { '=' }, 2)[1];
+                  string c_path = cookie.ContainsKey("path") ? cookie["path"] : "";
+                  string c_domain = cookie.ContainsKey("domain") ? cookie["domain"] : _baseDomain;
+                  DateTime c_expires = cookie.ContainsKey("expires") && DateTime.TryParse(cookie["expires"], out DateTime dt) ?
+                    dt : cookie.ContainsKey("max-age") && int.TryParse(cookie["max-age"], out int res) ?
+                    DateTime.Now + TimeSpan.FromMilliseconds(res) : default;
 
-                    _cookieJar.Add(new Cookie(c_name, c_val, c_path, c_domain) { Expires = c_expires });
-                  }
-                }
-              }
-
-              using (HttpRequestMessage authCheckRequest = new HttpRequestMessage(HttpMethod.Get, _apiUrl + "/token/login"))
-              {
-                authCheckRequest.Headers.Accept.Clear();
-                authCheckRequest.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
-                using (HttpResponseMessage authCheckResponse = _clientPool.SendAsync(authCheckRequest).Result)
-                {
-                  if (authCheckResponse.IsSuccessStatusCode)
-                  {
-                    User = new SRLUser(this);
-                  }
+                  _cookieJar.Add(new Cookie(c_name, c_val, c_path, c_domain) { Expires = c_expires });
                 }
               }
             }
+
+            using HttpRequestMessage authCheckRequest = new HttpRequestMessage(HttpMethod.Get, _apiUrl + "/token/login");
+
+            authCheckRequest.Headers.Accept.Clear();
+            authCheckRequest.Headers.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+            using HttpResponseMessage authCheckResponse = _clientPool
+                .SendAsync(authCheckRequest)
+                .ConfigureAwait(false)
+                .GetAwaiter()
+                .GetResult();
+
+            if (authCheckResponse.IsSuccessStatusCode)
+              User = new SRLUser(this);
           }
         }
         catch
