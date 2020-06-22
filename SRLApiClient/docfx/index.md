@@ -27,6 +27,9 @@ _none_
 
 ## Changelog
 
+#### v2.0.1
+
+- Switch to HTTPs
 
 #### v2.0.0
 

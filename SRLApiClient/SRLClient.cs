@@ -44,9 +44,9 @@ namespace SRLApiClient
     public string Host { get; private set; }
 
     private string _baseDomain => "." + Host;
-    private string _apiUrl => "http://api." + Host;
+    private string _apiUrl => "https://api." + Host;
     private string _authUrl => "http://login." + Host + ":9000/login";
-    private string _baseUrl => "http://" + Host;
+    private string _baseUrl => "https://" + Host;
 
     private readonly HttpClient _clientPool;
     private CookieContainer _cookieJar = new CookieContainer();
